@@ -1,0 +1,87 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1775789370114.9954,
+  "_id": "j97eztnknhzajtvrhvs29x36zh84kdae",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1793363942534.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Disfigure is a grim-dark rogue-like where you battle relentless hordes of monsters lurking in the shadows. Unlock powerful weapons, craft god-like builds with hundreds of upgrades, slay colossal bosses, and push your limits in intense 20–30 minute survival runs."
+  },
+  "developers": [
+   "Cold Brew Entertainment"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1786031819330.6313,
+  "firstPublishedAt": 1782740461396.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1793397863002.0,
+  "lastUpdatedDate": "2026-10-30",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/media-1775789449793-e056baf3.mp4"
+   },
+   {
+    "type": "VIDEO",
+    "url": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/media-1775789463375-f4b27461.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/media-1775789489831-f0e6e08f.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/media-1775789495437-5250f5e8.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/media-1775789498500-f6a40e4f.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1775789365487.077,
+   "_id": "jd79t7jbpbws668wn161xmrx0n84kyp0",
+   "avatarUrl": "organizationAvatars/jd79t7jbpbws668wn161xmrx0n84kyp0/1775789867609.jpg",
+   "description": "Cold Brew Entertainment is an indie games development team based in New Jersey. We’re currently working on our first title, Disfigure!",
+   "location": "New Jersey",
+   "name": "Cold Brew Entertainment",
+   "slug": "cold-brew-entertainment",
+   "timezone": "America/Los_Angeles",
+   "website": "https://coldbrewentertainment.com/"
+  },
+  "organizationId": "jd79t7jbpbws668wn161xmrx0n84kyp0",
+  "productionGameCloudId": "mx7751qbsffxsd8wgxew4p086d84j0de",
+  "publishers": [],
+  "releaseDate": "2023-07-26",
+  "shareableBuildsEnabled": true,
+  "slug": "disfigure",
+  "squareCover": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/squareCover-1775789631650-a31dd43c.jpg",
+  "tags": [
+   "Bullet Hell",
+   "2D",
+   "Top-Down Shooter"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/thumbnailVideo-1787335249668-67206f24.mp4"
+  },
+  "title": "Disfigure",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/wideCover-1787335235776-0ff2a6e8.webp"
+  }
+ }
+}

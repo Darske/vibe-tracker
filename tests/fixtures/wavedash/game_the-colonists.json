@@ -1,0 +1,71 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1785795269835.1492,
+  "_id": "j9744hqgsratwee0bh66k0eeqh8br2k9",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse"
+  ],
+  "creatorFundOptedInAt": 1791125987124.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1791125987124.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "**The Colonists** is a relaxing settlement-building game inspired by classics like *The Settlers* and the *Anno* series.\n\nTake control of a team of self-replicating robots built to simulate human civilization. After escaping Earth, they’re free to explore the galaxy, find a new home, and construct their dream settlement.\n\n## Build Your Colony\n\nAdvance through **three different Ages** as you develop your settlement and build road, boat, and train transport networks.\n\nHarvest natural resources, establish farms and food production, send expeditions to discover new lands, and research technologies to help your colony grow. Explore, manage, tweak, and refine every detail to your heart’s content.\n\n## Choose Your Approach\n\nFollow two separate campaign tracks: build sprawling settlements in peace or compete against AI colonies in military, winner-takes-all scenarios.\n\nTake on individual missions, explore randomly generated maps, test yourself on player-created challenges, or build freely in **Sandbox Mode**.\n\n## Create Your Own Worlds\n\nUse the extensive map editor to design custom maps with your own victory conditions. Create, share, and explore new settings for your next colony.\n\n## Features\n\n- **Campaign:** Play 14 missions across separate peaceful and military tracks.\n- **Random Maps:** Discover new challenges across procedurally generated maps.\n- **Sandbox Mode:** Customize game settings and build your colony your way.\n- **Multiplayer:** Join friends for the co-op campaign or compete against them in PvP.\n- **Map Editor:** Create, play, and share custom maps with your own victory conditions.\n- **Frontiers:** Compete for the best completion time on a new map every month.\n- **Challenge Trophies:** Put your colony-building skills to the test with dedicated speedrun challenges."
+  },
+  "developers": [],
+  "donationsOptedInAt": 1791125987124.0,
+  "firstPaidContentAt": 1786041276528.8555,
+  "firstPublishedAt": 1791125987124.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "zh-CN",
+   "it",
+   "pt-BR",
+   "ru",
+   "cs",
+   "es",
+   "ja",
+   "zh-TW",
+   "tr"
+  ],
+  "lastBuildUploadedAt": 1786482948012.0,
+  "lastUpdatedDate": "2026-10-04",
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1773875529981.8193,
+   "_id": "jd76wrq8f1jbxvdcbpaq10yah98351ym",
+   "avatarUrl": "organizationAvatars/jd76wrq8f1jbxvdcbpaq10yah98351ym/1773875742947.png",
+   "name": "Mode 7",
+   "slug": "mode-7",
+   "timezone": "America/Los_Angeles"
+  },
+  "organizationId": "jd76wrq8f1jbxvdcbpaq10yah98351ym",
+  "productionGameCloudId": "mx7a558zs4xnhhrwvp1amfjj7s8brv82",
+  "publishers": [],
+  "releaseDate": "2018-10-24",
+  "shareableBuildsEnabled": true,
+  "slug": "the-colonists",
+  "tags": [
+   "City Builder",
+   "Colony Sim",
+   "Automation",
+   "Building",
+   "Economy"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9744hqgsratwee0bh66k0eeqh8br2k9/assets/thumbnailVideo-1791124639591-c2ec2623.mp4"
+  },
+  "title": "The Colonists",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9744hqgsratwee0bh66k0eeqh8br2k9/assets/wideCover-1791123751164-3ff3df48.webp"
+  }
+ }
+}

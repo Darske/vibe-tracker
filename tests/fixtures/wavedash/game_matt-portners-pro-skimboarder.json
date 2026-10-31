@@ -1,0 +1,64 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1780619723158.2285,
+  "_id": "j97ayshk0g83hsbg2r4v0ppm9s883scg",
+  "autoReleaseDate": true,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Touch"
+  ],
+  "creatorFundOptedInAt": 1785812022099.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1792710414136.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Hit the shoreline in Matt Portner’s Pro Skimboarder, a playful tribute to classic extreme sports games. Skim across shallow water, carve through the shore break, and chase the perfect ride. The waves are real, the stakes are low, and the pro status is self-proclaimed."
+  },
+  "developers": [],
+  "donationsOptedInAt": 1785812022099.0,
+  "firstPublishedAt": 1784142249602.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1792703109730.0,
+  "lastGameUpdateNotifiedAt": 1791834752781.0,
+  "lastUpdatedDate": "2026-10-22",
+  "mobileLayout": "dynamic",
+  "organization": {
+   "_creationTime": 1772894956539.062,
+   "_id": "jd74jryrbrt4tx8qfcx6n1mve182fxx2",
+   "avatarUrl": "organizationAvatars/jd74jryrbrt4tx8qfcx6n1mve182fxx2/1776883382188.png",
+   "description": "solo dev trying my best!",
+   "location": "Los Angeles, CA",
+   "name": "@portner",
+   "slug": "0",
+   "timezone": "America/Los_Angeles",
+   "website": "https://x.com/portner"
+  },
+  "organizationId": "jd74jryrbrt4tx8qfcx6n1mve182fxx2",
+  "productionGameCloudId": "mx71xtjb14j8ptnk6jd4wn9j1x88384j",
+  "publishers": [],
+  "releaseDate": "2026-07-15",
+  "shareableBuildsEnabled": true,
+  "slug": "matt-portners-pro-skimboarder",
+  "tags": [
+   "Sports",
+   "Skating",
+   "Arcade",
+   "Simulation",
+   "Old School"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97ayshk0g83hsbg2r4v0ppm9s883scg/assets/thumbnailVideo-1790200875894-60cc17e0.mp4"
+  },
+  "title": "Matt Portner's Pro Skimboarder",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97ayshk0g83hsbg2r4v0ppm9s883scg/assets/wideCover-1790187857432-3e5efb32.webp"
+  }
+ }
+}

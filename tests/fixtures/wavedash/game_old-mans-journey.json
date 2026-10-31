@@ -1,0 +1,115 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1773418386911.829,
+  "_id": "j975sz8f4jfsfhm89rmzg5c76982vak7",
+  "autoReleaseDate": true,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Touch",
+   "Controller"
+  ],
+  "currency": "usd",
+  "currentReleasePublishedAt": 1792688832007.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Old Man’s Journey, a soul-searching puzzle adventure, tells a story of life, loss, reconciliation, and hope. Entrenched in a beautifully sunkissed and handcrafted world, embark on a heartfelt journey interwoven with lighthearted and pressure-free puzzle solving.\n\nA visual narrative about life’s precious moments, broken dreams, and changed plans, uncover stories of the old man’s life told through beautiful vignettes of his memories. Interacting with the serene and whimsical environment, solve playful puzzles by shaping the landscape, growing the hills to create the old man’s path forward.\n\nDuring this compact gameplay experience, you’ll be transported to a vibrant and wishful world, exploring life’s complexities through the old man’s eyes. Meditatively delightful and reflective, Old Man’s Journey invites you to immerse yourself in quiet and inquisitive puzzles, and experience the old man’s heartache, regret, and hope.\n\nFeatures:\n- A powerful and emotional narrative told only through imagery\n- Gorgeously whimsical landscapes with hand-drawn art and frame-by-frame animations\n- Handcrafted, pressure-free puzzles\n- Unique delightful landscape-shaping mechanic\n- A compact game experience perfect for a wanderlust-evoking escape\n- Original and emotionally compelling soundtrack by SCNTFC\n\nAwards: \n- Apple Design Award 2017\n- Best Art Award 2017 Sense of Wonder Night\n- Excellence in Art Award 2017 Busan Indie Connect\n- Best Art and Innovation Award 2017 BIG Festival\n- Media Choice Award 2017 Indiecade Europe\n- Leftfield Selection 2017 EGX Reezed\n- GDC Selection 2017 Unity Showcase\n- Official Selection 2016 PAX\n- Digital Selection 2016 Indiecade\n- Official Selection 2016 Day of the Devs"
+  },
+  "developers": [
+   "Broken Rules"
+  ],
+  "firstPaidContentAt": 1781025142695.716,
+  "firstPublishedAt": 1786475174802.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "es",
+   "it",
+   "pt",
+   "pt-BR",
+   "ru",
+   "ja",
+   "ko",
+   "zh-CN",
+   "zh-TW",
+   "pl",
+   "tr",
+   "ar",
+   "th",
+   "vi",
+   "id",
+   "nl",
+   "sv",
+   "no",
+   "da",
+   "fi",
+   "cs",
+   "ro",
+   "hu",
+   "uk",
+   "el",
+   "bg"
+  ],
+  "lastBuildUploadedAt": 1790736991763.0,
+  "lastUpdatedDate": "2026-10-22",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/media-1774301712705-04ea9cdf.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/media-1774301717476-2fac2e3b.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/media-1774301720070-91a06087.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/media-1774301723178-ed140d86.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/media-1774301725944-89a46cf6.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1773418381408.0266,
+   "_id": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f",
+   "avatarUrl": "organizationAvatars/jd73bx7b8wfb76b1pkgg9cfw9x82t68f/1773425168697.jpg",
+   "name": "Broken Rules",
+   "slug": "broken-rules",
+   "timezone": "America/Los_Angeles"
+  },
+  "organizationId": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f",
+  "productionGameCloudId": "mx7fhvemzetc707664y84680sh82vnvk",
+  "publishers": [
+   "Broken Rules"
+  ],
+  "releaseDate": "2026-08-11",
+  "shareableBuildsEnabled": true,
+  "slug": "old-mans-journey",
+  "squareCover": "broken-rules/old-man-s-journey/assets/squareCover-1773426262577-5029ab37.webp",
+  "tags": [
+   "Puzzle",
+   "Adventure",
+   "Casual",
+   "Atmospheric",
+   "Story Rich"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/thumbnailVideo-1792003631415-2e15c301.mp4"
+  },
+  "title": "Old Man's Journey",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/wideCover-1792148167695-c35d058e.webp"
+  }
+ }
+}

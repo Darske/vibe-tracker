@@ -1,0 +1,525 @@
+{
+ "status": "success",
+ "value": {
+  "cursor": {
+   "offset": 15.0,
+   "phase": 1.0
+  },
+  "includeFeatured": true,
+  "isDone": false,
+  "page": [
+   {
+    "game": {
+     "_id": "j977jg62ttvrr9dnwv9xnbwqf9870rfs",
+     "description": "AFTERS is a short demo. Walk through moonlit woods at night, down a dripping storm drain, and into a packed underground rave hidden in an old bunker. Push through hundreds of dancers fading into thick haze, find a spot on the floor, and dance along with the crowd.",
+     "hasLiveRelease": true,
+     "slug": "afters",
+     "tags": [
+      "Music",
+      "Electronic Music",
+      "Simulation",
+      "Walking Simulator",
+      "Underground"
+     ],
+     "thumbnailVideo": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j977jg62ttvrr9dnwv9xnbwqf9870rfs/assets/thumbnailVideo-1790555017561-a5050b24.mp4",
+     "title": "Afters",
+     "wideCover": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j977jg62ttvrr9dnwv9xnbwqf9870rfs/assets/wideCover-1790555304031-2feab7e6.webp"
+    },
+    "organization": {
+     "name": "@portner",
+     "slug": "0"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9724rph0rydz56yt1exqcrxfd889vxw",
+     "description": "Originally launched in 1990 on the boundary-pushing 16-bit computers and consoles of the day, this bodacious sequel to the immensely popular California Games sees you competing in five awesome events: hang-gliding, jet-skiing, snowboarding, body-boarding and skateboarding!",
+     "hasLiveRelease": true,
+     "slug": "california-games-ii",
+     "tags": [
+      "Sports",
+      "Sailing",
+      "Pixel Graphics",
+      "Driving",
+      "2D"
+     ],
+     "thumbnailVideo": "jd7faejg3a5gs4qycvht793dk581x99y/j9724rph0rydz56yt1exqcrxfd889vxw/assets/thumbnailVideo-agent-1787066641557-e139ec8b.mp4",
+     "title": "California Games II",
+     "wideCover": "jd7faejg3a5gs4qycvht793dk581x99y/j9724rph0rydz56yt1exqcrxfd889vxw/assets/wideCover-1787243029276-f7dbcf98.webp"
+    },
+    "organization": {
+     "name": "Pixel Games UK",
+     "slug": "pixel-games-uk"
+    }
+   },
+   {
+    "game": {
+     "_id": "j977y1avw5k5et99jd3ndxbzp188t85k",
+     "description": "The classic brain-twisting grid-based puzzle game returns in this collection, including the original 1989 Atari Lynx version, three classic ports, and two brand new Sega Mega Drive and SNES ports. Help Chip impress Melinda the Mental Marvel by beating her 140+ tough challenges.",
+     "hasLiveRelease": true,
+     "slug": "chip-s-challenge",
+     "tags": [
+      "Retro",
+      "Puzzle",
+      "Grid-Based Movement",
+      "Strategy",
+      "Difficult"
+     ],
+     "thumbnailVideo": "jd7faejg3a5gs4qycvht793dk581x99y/j977y1avw5k5et99jd3ndxbzp188t85k/assets/thumbnailVideo-agent-1787059969677-8dbbceb6.mp4",
+     "title": "Chip's Challenge",
+     "wideCover": "jd7faejg3a5gs4qycvht793dk581x99y/j977y1avw5k5et99jd3ndxbzp188t85k/assets/wideCover-1787243157799-3b26f0da.webp"
+    },
+    "organization": {
+     "name": "Pixel Games UK",
+     "slug": "pixel-games-uk"
+    }
+   },
+   {
+    "game": {
+     "_id": "j974jvkztw455j72841grqb2qd85psq3",
+     "description": "Vextorial is a mind-bending puzzle-platformer where you swap between 2D and 3D perspectives and twist gravity itself to solve impossible puzzles, explore a surreal, ancient ruin suspended in shifting dimensions, and uncover a mystery only you can piece together.\n\nIf you enjoyed this demo, try the full game on steam!\nhttps://store.steampowered.com/app/3068710/Vextorial/",
+     "hasLiveRelease": true,
+     "slug": "vextorial",
+     "tags": [
+      "Casual",
+      "Strategy"
+     ],
+     "thumbnailVideo": "jd782xqcm7rh54payd4ca3h00985q7v8/j974jvkztw455j72841grqb2qd85psq3/assets/thumbnailVideo-agent-1787036407070-57ba0c46.mp4",
+     "title": "Vextorial",
+     "wideCover": "jd782xqcm7rh54payd4ca3h00985q7v8/j974jvkztw455j72841grqb2qd85psq3/assets/wideCover-1787185285769-dbf74074.webp"
+    },
+    "organization": {
+     "name": "vextgamesofficial",
+     "slug": "vextgamesofficial"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9776s6z3mkw31736bq8qe9r9h883et1",
+     "description": "In this classic soccer simulation from 1997, experience fast-paced action with a variety of game modes, from friendlies to seasons. Play with one of 11 national teams, Alan Shearer's hand picked All Star team, or your own custom team. Features motion capture from a young Michael Owen.",
+     "hasLiveRelease": true,
+     "slug": "actua-soccer-2",
+     "tags": [
+      "Football (Soccer)",
+      "1990's",
+      "Retro",
+      "Sports",
+      "3D"
+     ],
+     "thumbnailVideo": "jd7faejg3a5gs4qycvht793dk581x99y/j9776s6z3mkw31736bq8qe9r9h883et1/assets/thumbnailVideo-agent-1787049485140-e732eb5c.mp4",
+     "title": "Actua Soccer 2",
+     "wideCover": "jd7faejg3a5gs4qycvht793dk581x99y/j9776s6z3mkw31736bq8qe9r9h883et1/assets/wideCover-1787243573643-91e87826.webp"
+    },
+    "organization": {
+     "name": "Pixel Games UK",
+     "slug": "pixel-games-uk"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9735kzfj6fsfrnjbvefyx3wfd8gtbbb",
+     "description": "Out 4 Blood is a first-person shooter about one thing: a squad of four, a building, and a horde that gets bigger every wave. It runs in your browser, with friends or with AI teammates.",
+     "hasLiveRelease": true,
+     "slug": "out-4-blood",
+     "tags": [
+      "Shooter",
+      "Zombies",
+      "Co-op",
+      "FPS"
+     ],
+     "thumbnailVideo": "jd77s7w3h6qyg16ndye1e3y6n98gtxyv/j9735kzfj6fsfrnjbvefyx3wfd8gtbbb/assets/thumbnailVideo-1792952200675-f26591ab.mp4",
+     "title": "Out 4 Blood",
+     "wideCover": "jd77s7w3h6qyg16ndye1e3y6n98gtxyv/j9735kzfj6fsfrnjbvefyx3wfd8gtbbb/assets/wideCover-1792794858717-06f9cf99.webp"
+    },
+    "organization": {
+     "name": "Cesharpe",
+     "slug": "cesharpe"
+    }
+   },
+   {
+    "game": {
+     "_id": "j973p2yehfanpq785f2wfct9cn883q0q",
+     "description": "In this classic golf simulation game from 1996, test your golfing skills on two challenging 18-hole courses, across a variety of game modes such as foursome, four ball challenge, and skins. Customize your golfer and lead them up through amateur and pro ranks.",
+     "hasLiveRelease": true,
+     "slug": "actua-golf",
+     "tags": [
+      "Sports",
+      "Retro",
+      "Simulation",
+      "Golf",
+      "3D"
+     ],
+     "thumbnailVideo": "jd7faejg3a5gs4qycvht793dk581x99y/j973p2yehfanpq785f2wfct9cn883q0q/assets/thumbnailVideo-agent-1787044844878-4c86f6c1.mp4",
+     "title": "Actua Golf",
+     "wideCover": "jd7faejg3a5gs4qycvht793dk581x99y/j973p2yehfanpq785f2wfct9cn883q0q/assets/wideCover-1787178392976-150ecfaa.webp"
+    },
+    "organization": {
+     "name": "Pixel Games UK",
+     "slug": "pixel-games-uk"
+    }
+   },
+   {
+    "game": {
+     "_id": "j971sh05n3hjkt542w2ha8477n8eyp8j",
+     "description": "MICE HOCKEY is a fast-paced, 3-on-3 arcade hockey game starring scrappy mice with oversized attitudes. Deliver huge hits, sprint across the ice, and blast slap shots past the goalie in chaotic, no-rules matches. Retro graphics and over-the-top action make every face-off a battle for bragging rights.",
+     "hasLiveRelease": true,
+     "slug": "mice-hockey",
+     "tags": [
+      "Hockey",
+      "Sports",
+      "Arcade",
+      "Retro",
+      "Old School"
+     ],
+     "thumbnailVideo": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j971sh05n3hjkt542w2ha8477n8eyp8j/assets/thumbnailVideo-1790289663429-eb2a3807.mp4",
+     "title": "Mice Hockey",
+     "wideCover": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j971sh05n3hjkt542w2ha8477n8eyp8j/assets/wideCover-1790289348207-4b04a0f3.webp"
+    },
+    "organization": {
+     "name": "@portner",
+     "slug": "0"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97d0mskqsyq5ear7q63243xzn8f5yj2",
+     "description": "Tawla is Egyptian backgammon at a lantern-lit cafe table in Cairo's Khan el-Khalili. Play the three classic cafe games (3ada, Ma7boussa and 31) against a CPU opponent with a new Egyptian name every match, or invite a friend through Wavedash lobbies. Shake and throw physically simulated dice, drag hand-crafted walnut, mother-of-pearl and turquoise checkers, and hear every roll called in Egyptian Arabic over the murmur of the cafe. Plays in English, Egyptian Arabic and French. NEW: in the Arabic version, 3al Qahwa Radio plays beside your table - an hour of original golden-era-style songs from six singers, each introduced by announcer Farag El Zahr, plus comic cafe news bulletins.",
+     "hasLiveRelease": true,
+     "slug": "tawla",
+     "tags": [
+      "Board Game",
+      "Multiplayer",
+      "Turn-Based Strategy",
+      "Casual"
+     ],
+     "thumbnailVideo": "jd756h8kd2bd8a5kte7rfsxczh8edsv8/j97d0mskqsyq5ear7q63243xzn8f5yj2/assets/thumbnailVideo-1792828487179-c3fec7a2.mp4",
+     "title": "Tawla",
+     "wideCover": "jd756h8kd2bd8a5kte7rfsxczh8edsv8/j97d0mskqsyq5ear7q63243xzn8f5yj2/assets/wideCover-1792826959245-dd61e198.webp"
+    },
+    "organization": {
+     "name": "selmously",
+     "slug": "selmously"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97a7br0p13sken9er3177m60x88zfnd",
+     "description": "Creatura Obscura is an on-rails cryptid photography adventure with eerie atmosphere and nostalgic N64-inspired visuals. Travel through moonlit forests, search the shadows, and capture elusive creatures before they disappear from view. Keep your camera ready—you never know what’s waiting around the next bend.",
+     "hasLiveRelease": true,
+     "slug": "creatura-obscura",
+     "tags": [
+      "Creature Collector",
+      "On-Rails Shooter",
+      "Dark Fantasy"
+     ],
+     "thumbnailVideo": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97a7br0p13sken9er3177m60x88zfnd/assets/thumbnailVideo-1790300101575-0e05f47b.mp4",
+     "title": "Creatura Obscura",
+     "wideCover": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97a7br0p13sken9er3177m60x88zfnd/assets/wideCover-1790299710063-78461bd1.webp"
+    },
+    "organization": {
+     "name": "@portner",
+     "slug": "0"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97efg3rj64hfpxfkhz4yfcnqd8fhy57",
+     "description": "Tetro Merge is a physics based merge puzzle game where Tetromino blocks come to life. You’ll drop Tetrominoes of all shapes classic, extended, and brand new originals. \nWhen two matching pieces touch, they merge into a bigger, more complex block. \n\nMaster the bounce, plan your stacks, and build powerful combos as the board slowly fills up. Will you manage your space wisely… or let the blocks overflow? A perfect blend of strategy, physics, and classic Tetris nostalgia.\n\nMove the block using mouse or drag, and drop the block by click or release.",
+     "hasLiveRelease": true,
+     "slug": "tetro-merge",
+     "tags": [
+      "Puzzle",
+      "Falling Blocks",
+      "Casual",
+      "Relaxing",
+      "Cozy"
+     ],
+     "thumbnailVideo": "jd73t4hmq9ybmw0a6xv05yfz8d85jred/j97efg3rj64hfpxfkhz4yfcnqd8fhy57/assets/thumbnailVideo-1790901287321-ba3bd062.mp4",
+     "title": "Tetro Merge",
+     "wideCover": "jd73t4hmq9ybmw0a6xv05yfz8d85jred/j97efg3rj64hfpxfkhz4yfcnqd8fhy57/assets/wideCover-1790900912894-edb3fedc.webp"
+    },
+    "organization": {
+     "name": "orenjispark",
+     "slug": "orenjispark"
+    }
+   },
+   {
+    "game": {
+     "_id": "j970zwpenphrcysvbrycn4wha98fjqq6",
+     "description": "The Goblin Game is a free online multiplayer party brawler you play right in your browser. Up to 16 goblins, one hit and you're out. Grab a six-shooter, light some dynamite and be the last goblin standing in this fast, chaotic Wild West pixel art platform fighter. No download, no install.\n\n## One hit. Last goblin standing.\n\nEvery round is a short, frantic shootout. Crates drop guns, explosives and dirty tricks across multi-level arenas, and every goblin starts somewhere new each round, so no two fights play out the same. Duck under bullets, take cover behind planks, dig a tunnel with your pickaxe, play dead to fool your rivals, then turn the fight around with one lucky throw. First goblin to win five rounds runs the town.\n\n## Game modes\n\n- **Online multiplayer:** quick match, public or private lobbies, invite links, and drop-in play for **2 to 16 players**\n- **Local couch co-op:** up to **4 players on one keyboard or with gamepads**, with bots filling the empty seats\n- **Solo vs bots:** brawl against smart AI goblins at 4, 8, 12 or 16 goblins per match\n- **Team play:** split into two posses for team deathmatch\n\n## Fast, fair online play\n\n- **Shooter-favored hit detection:** if your shot lands on your screen, it counts\n- **Smooth, lag-tolerant netcode** tuned for browser play, so goblins move cleanly even on shaky connections\n- **Drop in mid-match** and keep playing when the host leaves\n\n## Weapons and items\n\n- **Guns:** revolver, scattergun, rifle, magnum, Gatling gun and bow\n- **Explosives:** dynamite, nitro, buried TNT and land mines\n- **Melee:** dagger, sword, mace, axe, cleaver and a pickaxe that **digs through anything**\n- **Gear and dirty tricks:** cowboy hats and iron plates that save your hide, whiskey bottles, bear traps and more\n\n## Features\n\n- **12 playable goblins** in 4 rival clans, with any goblin able to carry any weapon\n- **6 Wild West arenas:** Dry Gulch, Main Street, Boot Hill, Busted Lode, Bone Yard and Rattlesnake Canyon\n- **Random spawn points** every round keep every match fresh\n- **House rules:** choose the weapon set, starting weapon, arena rotation and rounds to win\n- **Mouse aiming** with 360° free aim, plus full **controller support** and fully remappable keys\n- Hand-drawn **pixel art**, punchy sound and quick rounds made for party nights with friends\n\n## Controls\n\n| Action | Keyboard + Mouse | Controller |\n| --- | --- | --- |\n| Move | WASD / arrow keys | Left stick / D-pad |\n| Jump | W / Space | A |\n| Aim | Mouse | Right stick |\n| Fire / attack | Left click / J | X / RB |\n| Grab / throw | Right click / K | Y / LB |\n| Taunt | E | B |\n\nIf you love chaotic local and online party games like **Duck Game**, **Towerfall** or **Stick Fight**, grab some friends, share an invite link and start the brawl. Play The Goblin Game free online on Wavedash.",
+     "hasLiveRelease": true,
+     "slug": "the-goblin-game",
+     "tags": [
+      "Party Game"
+     ],
+     "thumbnailVideo": "jd73k9y18se748vvahs9twex7187vtnt/j970zwpenphrcysvbrycn4wha98fjqq6/assets/thumbnailVideo-agent-1791929341478-78b69226.mp4",
+     "title": "The Goblin Game",
+     "wideCover": "jd73k9y18se748vvahs9twex7187vtnt/j970zwpenphrcysvbrycn4wha98fjqq6/assets/wideCover-1792292267639-b58165df.webp"
+    },
+    "organization": {
+     "name": "Out Of Tokens Studios",
+     "slug": "out-of-tokens-studios"
+    }
+   },
+   {
+    "game": {
+     "_id": "j979fnpn9f042v0ebhpfg2s2618f2hq6",
+     "description": "Build a squad of pixel-art beasts and battle your way through the warp in this deck-building auto-battler roguelike. Draft beasts, equip abilities and items, collect relics, and destroy other players with broken builds.",
+     "hasLiveRelease": true,
+     "slug": "deck-beasts",
+     "tags": [
+      "Roguelike",
+      "Roguelike Deckbuilder",
+      "Creature Collector",
+      "Auto Battler",
+      "Strategy"
+     ],
+     "thumbnailVideo": "jd70211j82nwhcsxwt2bcg83598f32qv/j979fnpn9f042v0ebhpfg2s2618f2hq6/assets/thumbnailVideo-1790364975751-7ee6e785.mp4",
+     "title": "Deck Beasts",
+     "wideCover": "jd70211j82nwhcsxwt2bcg83598f32qv/j979fnpn9f042v0ebhpfg2s2618f2hq6/assets/wideCover-1790364961397-efbf7116.webp"
+    },
+    "organization": {
+     "name": "timothyvincent2626",
+     "slug": "timothyvincent2626"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97b2efzxbvx7b3jrgdf4nj6bh8fnb82",
+     "description": "About\n\nDio is a physics-based dice roguelike about creating satisfying chain reactions.\n\nFling dice onto the table and match dice showing the same face. Matching dice merge and leap toward nearby matches, potentially triggering huge combos across the board. Build around different dice, stickers, and modifiers to push your score higher with every roll.\n\nHow to Play\nAim and fling a die onto the table. Match identical faces to merge them and start a chain reaction. Every merged die contributes to your score and multipliers.\n\nReach the round's target before you run out of dice to keep your run going.\n\nMore Coming Soon\nDio is still growing! More dice, stickers, table types, modifiers, starting decks, and other surprises are planned as the game develops.\n\nFling dice. Match faces. Chain everything.",
+     "hasLiveRelease": true,
+     "slug": "dio",
+     "tags": [
+      "Puzzle",
+      "Roguelike Deckbuilder",
+      "Dice",
+      "Roguelike"
+     ],
+     "thumbnailVideo": "jd78fk0be25xjebjyzm7sm43vd87r4r6/j97b2efzxbvx7b3jrgdf4nj6bh8fnb82/assets/thumbnailVideo-agent-1791168397884-45c84e78.mp4",
+     "title": "Dio",
+     "wideCover": "jd78fk0be25xjebjyzm7sm43vd87r4r6/j97b2efzxbvx7b3jrgdf4nj6bh8fnb82/assets/wideCover-1791151102531-51f4e25b.webp"
+    },
+    "organization": {
+     "name": "EJTheBae",
+     "slug": "ejthebae"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9725t0jz4hqycwzdcstjzx71s8cbyej",
+     "description": "The story continues in an expanded 16-bit JRPG adventure blending high fantasy, lost technology, and refined turn-based battles.\n\nThe Black Knight is pulled back into a web of mystery, betrayal, and ancient powers. Reuniting with familiar allies and bringing new companions into the fold, the journey stretches far beyond what fate originally intended. Face unprecedented threats as science runs amok, testing the balance of the realm in a quest defined by courage and sacrifice.\n\nFeatures:\n- A Massive World: An adventure nearly twice the size of the original game, packed with diverse regions, side quests, and secrets.\n- Refined Side-View Combat: Fast-paced, strategic turn-based encounters polished for smoother flow and deeper party tactics.\n- Puzzle-Focused Dungeons: Complex, rewarding dungeon layouts designed to challenge your problem-solving skills alongside your battle readiness.\n- The Ancient Cave Returns: Test your limits in an expanded, 70-floor optional dungeon built for master strategists.\n- Evolving Hybrid Soundtrack: An all-new score by Alexander Ehlers, fusing classic orchestral composition with modern electronic influences.",
+     "hasLiveRelease": true,
+     "slug": "the-black-knight-chronicles-the-quest-beyond-destiny",
+     "tags": [
+      "JRPG",
+      "2D",
+      "Exploration",
+      "Lore-Rich",
+      "Party-Based RPG"
+     ],
+     "thumbnailVideo": "jd7bszbpk4vv1zk4j8g365hths8cbjqb/j9725t0jz4hqycwzdcstjzx71s8cbyej/assets/thumbnailVideo-1789752829573-17cc36eb.mp4",
+     "title": "The Black Knight Chronicles - The Quest Beyond Destiny",
+     "wideCover": "jd7bszbpk4vv1zk4j8g365hths8cbjqb/j9725t0jz4hqycwzdcstjzx71s8cbyej/assets/wideCover-1789752634125-4f29a4c9.webp"
+    },
+    "organization": {
+     "name": "ERMedia",
+     "slug": "ermedia"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9742jekgk6bhnx6r661hsjbrh8ggxe7",
+     "description": "Slice the grid, trap the orbs. 50 sectors plus a level editor to build and share your own. A retro remake game inspired by old games Jezzball on Win98 and Barrack by Ambrosia for Mac circa 1990s.",
+     "hasLiveRelease": true,
+     "slug": "jezzbarrax",
+     "tags": [
+      "1990's",
+      "Arcade",
+      "Retro",
+      "Fast-Paced",
+      "Nostalgia"
+     ],
+     "thumbnailVideo": "jd71567ba1bry2h49s72da3rjd8gha2r/j9742jekgk6bhnx6r661hsjbrh8ggxe7/assets/thumbnailVideo-1792364471823-5f077957.mp4",
+     "title": "JezzBarrax",
+     "wideCover": "jd71567ba1bry2h49s72da3rjd8gha2r/j9742jekgk6bhnx6r661hsjbrh8ggxe7/assets/wideCover-1792355176564-0a2340f3.webp"
+    },
+    "organization": {
+     "name": "Superheart Games",
+     "slug": "superheart-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9702rpac5s3ecv9bafsxbkjzd8cs085",
+     "description": "Fist your friends in the LITE version of the game where you fist or be fisted! Single player only.",
+     "hasLiveRelease": true,
+     "slug": "fister-lite",
+     "tags": [
+      "Action",
+      "3D Fighter",
+      "Multiplayer",
+      "Physics"
+     ],
+     "thumbnailVideo": "jd741cwa8kybtk34ddqt9sc51985qa2b/j9702rpac5s3ecv9bafsxbkjzd8cs085/assets/thumbnailVideo-1787154037236-21c090f0.mp4",
+     "title": "Fister Lite",
+     "wideCover": "jd741cwa8kybtk34ddqt9sc51985qa2b/j9702rpac5s3ecv9bafsxbkjzd8cs085/assets/wideCover-1791939594931-8dabd3a4.webp"
+    },
+    "organization": {
+     "name": "MAX BIDDING LLC",
+     "slug": "max-bidding"
+    }
+   },
+   {
+    "game": {
+     "_id": "j978nvh1b9y0r9p8rqn0ma7bt98g0e4j",
+     "description": "A tiny MMO you play with one thumb. Tap PLAY, get a name, and about four minutes later a Legendary sword beams gold into the sunset sky while everyone online watches it drop.\n\nDrag to move and your hero swings on its own. Fight slimes, boars and crystal mites next to real players in one shared voxel world, and loot gear in five rarities from Common to Legendary.\n\n• Every kill can pay: gear drops, a Lucky Elite every 25 kills, and a Star Meter that builds toward a guaranteed Legendary\n• Forge your gear up to +10. It never breaks\n• Team up on the Elder Golem world boss every 15 minutes; everyone who helps gets a chest\n• Push through the Sunscorch Dunes and Rimefrost Peaks to level 30\n• Daily Chest, quick-chat and emotes. Your hero saves to your Wavedash account.",
+     "hasLiveRelease": true,
+     "slug": "pocket-grind",
+     "tags": [
+      "MMORPG",
+      "Pixel Graphics",
+      "Multiplayer",
+      "Casual",
+      "Loot"
+     ],
+     "thumbnailVideo": "jd71trmaxtzncxgpesmm0m31q98g0n5f/j978nvh1b9y0r9p8rqn0ma7bt98g0e4j/assets/thumbnailVideo-1791878094380-0a967016.mp4",
+     "title": "Pocket Grind",
+     "wideCover": "jd71trmaxtzncxgpesmm0m31q98g0n5f/j978nvh1b9y0r9p8rqn0ma7bt98g0e4j/assets/wideCover-1791878089689-79280ee1.webp"
+    },
+    "organization": {
+     "name": "Rareless Studios",
+     "slug": "rareless"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97c9smrjj0xt2rawp86asj4718g0dh1",
+     "description": "Blocks rain from the sky and pile into a tower. \n\nYour only way out is up! Pace UP Rush is a fast 16-bit arcade climber. Ride falling blocks as they land, slide down walls and kick off them, smash through ceilings, and dig your way out when you're boxed in. Keep moving: the lava never stops rising, and a full row collapses beneath your feet.\n\nONLINE MULTIPLAYER RACES\nRace up to 6 players to 40 metres. Jump into Quick Match, or create a private room and share the 4-letter code or an invite link with friends. Grab weapon crates (blasters, bombs and rockets) and knock your rivals back down the tower. Not enough players? Fill the room with bots.\n\nFEATURES\n• Solo climb on Easy, Medium or Hard\n• Online races for up to 6 players with Quick Match, room codes and invite links\n• Weapon pickups: blaster, bombs and rockets\n• Wall slides, wall kicks, ceiling smashes and digging\n• Zombies, hearts and a constantly rising lava floor\n• Fully procedural retro pixel art, CRT effects and an adaptive chiptune soundtrack\n• Built-in tutorial\n• Plays on desktop (keyboard) and mobile (touch)\n\nCONTROLS\n• Left / Right: run\n• Jump button: jump and wall-kick\n• K or X: fire weapon\n• P: pause\n• Touch: on-screen controls on mobile\n\nHow high can you climb?",
+     "hasLiveRelease": true,
+     "slug": "paceuprush",
+     "tags": [
+      "Arcade",
+      "1990's",
+      "2D",
+      "2D Platformer"
+     ],
+     "thumbnailVideo": "jd77xpp7et74wtst7ccp612den8aat89/j97c9smrjj0xt2rawp86asj4718g0dh1/assets/thumbnailVideo-1791781728980-4c7037f6.mp4",
+     "title": "Pace UP Rush",
+     "wideCover": "jd77xpp7et74wtst7ccp612den8aat89/j97c9smrjj0xt2rawp86asj4718g0dh1/assets/wideCover-1791781210247-0f293e98.webp"
+    },
+    "organization": {
+     "name": "khwajamohdtaha",
+     "slug": "khwajamohdtaha"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97424pbt73h1ayz6gyxhyk4k9876d3y",
+     "description": "There was a third Armstrong brother: Neil was into space, Lance was into cycling, and Arthur was into both, which made him uniquely qualified to become the Silver Cyclist. Ride down an endless, snaking half-pipe of neon glass through deep space, threading glowing gates timed to the music as you pick up speed. Clip a wall or drift over the rim and you're lost to the stars, so chase a bigger score every run and climb the leaderboard.",
+     "hasLiveRelease": true,
+     "slug": "the-silver-cyclist",
+     "tags": [
+      "Cycling",
+      "Runner",
+      "Racing"
+     ],
+     "thumbnailVideo": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97424pbt73h1ayz6gyxhyk4k9876d3y/assets/thumbnailVideo-1790554513631-80d99f11.mp4",
+     "title": "The Silver Cyclist",
+     "wideCover": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97424pbt73h1ayz6gyxhyk4k9876d3y/assets/wideCover-1787175555893-93f724ee.webp"
+    },
+    "organization": {
+     "name": "@portner",
+     "slug": "0"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97ctj85xq4xhzyeytkrspq8b58g1tyr",
+     "description": "Fist your friends in the browser-based multiplayer game where you fist or be fisted!",
+     "hasLiveRelease": true,
+     "slug": "fister",
+     "tags": [
+      "Multiplayer",
+      "3D Fighter",
+      "Physics",
+      "Sandbox",
+      "Competitive"
+     ],
+     "thumbnailVideo": "jd741cwa8kybtk34ddqt9sc51985qa2b/j97ctj85xq4xhzyeytkrspq8b58g1tyr/assets/thumbnailVideo-1791662372531-8729e702.mp4",
+     "title": "Fister",
+     "wideCover": "jd741cwa8kybtk34ddqt9sc51985qa2b/j97ctj85xq4xhzyeytkrspq8b58g1tyr/assets/wideCover-1791662357927-7e7c6c40.webp"
+    },
+    "organization": {
+     "name": "MAX BIDDING LLC",
+     "slug": "max-bidding"
+    }
+   },
+   {
+    "game": {
+     "_id": "j976fqk5s88dshzgee7avwf3s58e0wnt",
+     "description": "You are a translucent slime the size of a small animal, and the planet under you is covered in things bigger than you are. Roll over the grass and swallow it. Then the flowers, then the fence, then the sheep that was ignoring you a minute ago. Every bite makes you heavier, and every kilogram of mass moves the edge of what you can eat a little further out.\n\nThere is nothing to fail. No timers, no enemies, no currency to manage. A building too large to swallow simply pushes back and bends you around it, until it does not. The pleasure is watching the scale of the world turn over: the tree that filled your screen becomes a snack, the car becomes a crumb, the skyscraper becomes the next goal.\n\nClear one planet and the galaxy map opens the next, each with its own look, its own skyline and its own ladder of things to devour. Hats, trails and skins are yours to collect along the way, purely so your slime looks the way you want while it eats a world.\n\nHow to play: hold the left mouse button and drag where you want to roll, or use WASD and the arrows. On a phone, touch the screen and drag; the slime follows your finger. Everything else is automatic.",
+     "hasLiveRelease": true,
+     "slug": "slime-planet-eater",
+     "tags": [
+      "Casual",
+      "Arcade",
+      "Relaxing",
+      "Physics",
+      "3D"
+     ],
+     "thumbnailVideo": "jd71wtbpqg47fka6ng7gyeqry985hgkk/j976fqk5s88dshzgee7avwf3s58e0wnt/assets/thumbnailVideo-1788870404457-4a244fa6.mp4",
+     "title": "Slime Planet Eater",
+     "wideCover": "jd71wtbpqg47fka6ng7gyeqry985hgkk/j976fqk5s88dshzgee7avwf3s58e0wnt/assets/wideCover-1788869338099-1ec9e7d5.webp"
+    },
+    "organization": {
+     "name": "d954mas",
+     "slug": "d954mas"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97angbyafmc6nt9sxf0bnngs58cbzca",
+     "description": "The dark fantasy series returns as a top-down RPG featuring active-time combat, non-linear exploration, and 90s visual flair.\n\nUndead legions continue to plague the realm, but seasoned monster hunter Gabriel Dorleac has made a career out of putting them in the ground. When a new threat emerges over Citadale Castle, Gabriel sets off to confront the mysterious Shadow Maker, only to discover that this siege might require more than just raw strength to survive.\n\nFeatures:\n\n- Top-Down World Exploration: Traverse a non-linear castle layout packed with secrets, hidden paths, and Metroidvania-style progression.\n- Active-Time Turn Battles: Engage in tactical side-view combat driven by a dynamic action-gauge system where speed and timing dictate your turns.\n- Classic 90s RPG Presentation: Crafted with detailed 16-bit era pixel art, atmospheric dungeons, and a dark fantasy aesthetic.\n- ersatile Controls: Play seamlessly using a controller, standard keyboard, or mouse-only inputs.\n- Atmospheric Score: Features an eerie soundtrack crafted to build tension across every corridor and chamber.",
+     "hasLiveRelease": true,
+     "slug": "untold-tales-of-citadale-the-shadow-maker",
+     "tags": [
+      "JRPG",
+      "Metroidvania",
+      "Turn-Based Combat",
+      "Pixel Graphics",
+      "Gothic"
+     ],
+     "thumbnailVideo": "jd7bszbpk4vv1zk4j8g365hths8cbjqb/j97angbyafmc6nt9sxf0bnngs58cbzca/assets/thumbnailVideo-1789726980593-cf88ceeb.mp4",
+     "title": "Untold Tales of Citadale: The Shadow Maker",
+     "wideCover": "jd7bszbpk4vv1zk4j8g365hths8cbjqb/j97angbyafmc6nt9sxf0bnngs58cbzca/assets/wideCover-1787608755669-3debe961.webp"
+    },
+    "organization": {
+     "name": "ERMedia",
+     "slug": "ermedia"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97che2m8rx9c699c0z7hk44t18aeedt",
+     "description": "Ping to escape, Prowl to hunt\n\nPing&Prowl is an multiplayer chase game set up in pitch black alleys. No one can see the map. Your only guides are sound echoes and the footprints left behind. Use echoes to reveal walls, doorways, dead ends, and anything else hidden in the darkness. Move faster but louder, or sneak quietly but slower. Every move is a trade-off. Will you hunt your target through the darkness, or escape before you're caught ?\n\nGame Modes: \n  1. Local 1v1\n  2. Play with Computer\n  3. Remote Multiplayer (Testing)\n\nControls\n\nGeneral\n  Move: Arrow Keys\n  Sneak: Shift\n  Bigger Echo / Sprint: Space\n\nLocal Multiplayer\n  Player 1 \n      Move: WASD\n      Sneak: Shift(L)\n      Bigger : Space\n  Player 2\n      Move: Arrow Keys\n      Sneak: Right Shift\n      Sprint: Enter",
+     "hasLiveRelease": true,
+     "slug": "pingandprowl",
+     "tags": [
+      "2D",
+      "Multiplayer",
+      "PvP",
+      "Stealth"
+     ],
+     "thumbnailVideo": "jd7da9rqmab4zrhstkhhb3t1td85fb3d/j97che2m8rx9c699c0z7hk44t18aeedt/assets/thumbnailVideo-1787306992507-3c20c74c.mp4",
+     "title": "Ping&Prowl",
+     "wideCover": "jd7da9rqmab4zrhstkhhb3t1td85fb3d/j97che2m8rx9c699c0z7hk44t18aeedt/assets/wideCover-1788609758821-3bfc4877.webp"
+    },
+    "organization": {
+     "name": "10JQ",
+     "slug": "10jq"
+    }
+   }
+  ],
+  "seed": 1.0
+ }
+}

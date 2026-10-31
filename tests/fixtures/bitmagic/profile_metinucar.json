@@ -1,0 +1,435 @@
+{
+ "success": true,
+ "profile": {
+  "publicId": "9zwfzx9p",
+  "brandId": "metinucar",
+  "displayName": "Metin Uçar",
+  "avatarUrl": "https://bitmagic.ai/user-content/avatars/776db27275384502f12044d4b7435f122391217d.jpg",
+  "bio": null,
+  "homePageUrl": null,
+  "homePageTitle": null,
+  "memberSince": "2026-09-29T08:05:55.566Z",
+  "isCreator": true,
+  "banned": false,
+  "monetizationEnabled": false,
+  "totalXP": 290,
+  "totalAchievementsUnlocked": 0,
+  "recentUnlocks": [],
+  "followerCount": 0,
+  "games": [
+   {
+    "gameId": "OFLUNOOPWAT3",
+    "name": "Rage Room",
+    "thumbnailUrl": "https://bitmagic.ai/worlds/v3/OFLUNOOPWAT3/1792498243502-thumbnail.webp",
+    "thumbnailVariants": {
+     "16x9": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-16x9.webp",
+     "2x1": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-2x1.webp"
+    },
+    "thumbnailSizes": {
+     "cover": {
+      "width": 1024,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "16x9": {
+      "width": 1920,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-55d3d82a-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-55d3d82a-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "2x1": {
+      "width": 2048,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-7715d151-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-7715d151-768w.webp",
+        "width": 768
+       }
+      ]
+     }
+    },
+    "thumbnailFocus": null,
+    "likeCount": 1,
+    "playCount": 31,
+    "publishedAt": "2026-10-20T12:10:48.503Z",
+    "comingSoon": false,
+    "creator": {
+     "publicId": "9zwfzx9p",
+     "brandId": "metinucar",
+     "displayName": "Metin Uçar"
+    }
+   },
+   {
+    "gameId": "26KFD4DLFRGK",
+    "name": "Bubble Wrap Rush",
+    "thumbnailUrl": "https://bitmagic.ai/worlds/v3/26KFD4DLFRGK/1792492750076-thumbnail.webp",
+    "thumbnailVariants": {
+     "16x9": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-16x9.webp",
+     "2x1": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-2x1.webp"
+    },
+    "thumbnailSizes": {
+     "cover": {
+      "width": 1024,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "16x9": {
+      "width": 1920,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d150ae67-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d150ae67-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "2x1": {
+      "width": 2048,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-b65b51d1-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-b65b51d1-768w.webp",
+        "width": 768
+       }
+      ]
+     }
+    },
+    "thumbnailFocus": null,
+    "likeCount": 1,
+    "playCount": 7,
+    "publishedAt": "2026-10-20T10:39:15.236Z",
+    "comingSoon": false,
+    "creator": {
+     "publicId": "9zwfzx9p",
+     "brandId": "metinucar",
+     "displayName": "Metin Uçar"
+    }
+   },
+   {
+    "gameId": "D3C27KX0UH0Y",
+    "name": "Swat the Heat",
+    "thumbnailUrl": "https://bitmagic.ai/worlds/v3/D3C27KX0UH0Y/1792348690280-thumbnail.webp",
+    "thumbnailVariants": {
+     "16x9": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-16x9.webp",
+     "2x1": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-2x1.webp"
+    },
+    "thumbnailSizes": {
+     "cover": {
+      "width": 1024,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "16x9": {
+      "width": 1920,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "2x1": {
+      "width": 2048,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-768w.webp",
+        "width": 768
+       }
+      ]
+     }
+    },
+    "thumbnailFocus": null,
+    "likeCount": 93,
+    "playCount": 876,
+    "publishedAt": "2026-10-18T18:38:14.921Z",
+    "comingSoon": false,
+    "creator": {
+     "publicId": "9zwfzx9p",
+     "brandId": "metinucar",
+     "displayName": "Metin Uçar"
+    }
+   }
+  ],
+  "gamesTotal": 3,
+  "totalPlays": 914,
+  "totalViews": 1770,
+  "likedGames": [
+   {
+    "gameId": "OFLUNOOPWAT3",
+    "name": "Rage Room",
+    "thumbnailUrl": "https://bitmagic.ai/worlds/v3/OFLUNOOPWAT3/1792498243502-thumbnail.webp",
+    "thumbnailVariants": {
+     "16x9": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-16x9.webp",
+     "2x1": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-2x1.webp"
+    },
+    "thumbnailSizes": {
+     "cover": {
+      "width": 1024,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "16x9": {
+      "width": 1920,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-55d3d82a-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-55d3d82a-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "2x1": {
+      "width": 2048,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-7715d151-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-7715d151-768w.webp",
+        "width": 768
+       }
+      ]
+     }
+    },
+    "thumbnailFocus": null,
+    "likeCount": 1,
+    "playCount": 31,
+    "publishedAt": "2026-10-20T12:10:48.503Z",
+    "comingSoon": false,
+    "creator": {
+     "publicId": "9zwfzx9p",
+     "brandId": "metinucar",
+     "displayName": "Metin Uçar"
+    }
+   },
+   {
+    "gameId": "26KFD4DLFRGK",
+    "name": "Bubble Wrap Rush",
+    "thumbnailUrl": "https://bitmagic.ai/worlds/v3/26KFD4DLFRGK/1792492750076-thumbnail.webp",
+    "thumbnailVariants": {
+     "16x9": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-16x9.webp",
+     "2x1": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-2x1.webp"
+    },
+    "thumbnailSizes": {
+     "cover": {
+      "width": 1024,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d1523ce3-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "16x9": {
+      "width": 1920,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d150ae67-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-d150ae67-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "2x1": {
+      "width": 2048,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-b65b51d1-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/26KFD4DLFRGK-b65b51d1-768w.webp",
+        "width": 768
+       }
+      ]
+     }
+    },
+    "thumbnailFocus": null,
+    "likeCount": 1,
+    "playCount": 7,
+    "publishedAt": "2026-10-20T10:39:15.236Z",
+    "comingSoon": false,
+    "creator": {
+     "publicId": "9zwfzx9p",
+     "brandId": "metinucar",
+     "displayName": "Metin Uçar"
+    }
+   },
+   {
+    "gameId": "D3C27KX0UH0Y",
+    "name": "Swat the Heat",
+    "thumbnailUrl": "https://bitmagic.ai/worlds/v3/D3C27KX0UH0Y/1792348690280-thumbnail.webp",
+    "thumbnailVariants": {
+     "16x9": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-16x9.webp",
+     "2x1": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-2x1.webp"
+    },
+    "thumbnailSizes": {
+     "cover": {
+      "width": 1024,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "16x9": {
+      "width": 1920,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-768w.webp",
+        "width": 768
+       }
+      ]
+     },
+     "2x1": {
+      "width": 2048,
+      "renditions": [
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-384w.webp",
+        "width": 384
+       },
+       {
+        "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-768w.webp",
+        "width": 768
+       }
+      ]
+     }
+    },
+    "thumbnailFocus": null,
+    "likeCount": 93,
+    "playCount": 876,
+    "publishedAt": "2026-10-18T18:38:14.921Z",
+    "comingSoon": false,
+    "creator": {
+     "publicId": "9zwfzx9p",
+     "brandId": "metinucar",
+     "displayName": "Metin Uçar"
+    }
+   }
+  ],
+  "likedGamesTotal": 3,
+  "favoriteCreators": [
+   {
+    "publicId": "2byv2jdg",
+    "brandId": "rpb",
+    "displayName": "Ricardo",
+    "avatarUrl": "https://bitmagic.ai/creators/2byv2jdg/avatar.jpg",
+    "gameCount": 9
+   },
+   {
+    "publicId": "3gedkx83",
+    "brandId": null,
+    "displayName": "Josh English",
+    "avatarUrl": null,
+    "gameCount": 1
+   },
+   {
+    "publicId": "394c9k2k",
+    "brandId": "drax",
+    "displayName": "Drax",
+    "avatarUrl": "https://bitmagic.ai/creators/394c9k2k/avatar.webp",
+    "gameCount": 4
+   },
+   {
+    "publicId": "8aexs92j",
+    "brandId": "ilmari",
+    "displayName": "Ilmari",
+    "avatarUrl": "https://bitmagic.ai/creators/8aexs92j/avatar.png",
+    "gameCount": 8
+   },
+   {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png",
+    "gameCount": 8
+   },
+   {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg",
+    "gameCount": 18
+   }
+  ],
+  "favoriteCreatorsTotal": 6,
+  "friends": [],
+  "friendsTotal": 0
+ }
+}

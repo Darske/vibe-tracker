@@ -1,0 +1,103 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1774308250331.5833,
+  "_id": "j9710dchdw2g8f0zh3h1qscnj983f8az",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1789416238366.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1789416238366.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Wytchwood is a crafting adventure game set in an expressive land of gothic fables and fairytales. As the mysterious old witch of the woods, you will explore a strange countryside, collect magical ingredients, brew sorcerous enchantments, and pass your twisted judgement upon a capricious cast of characters and creatures.\nAfter all, how will they ever learn if you don’t teach them the moral of the story?\n\n- Lovingly rendered storybook art style\n- Gather, collect, grow and craft bizarre ingredients: Toxic toadstools, eye of newt and bottled fear.\n- Research and concoct devious spells and sorceries. Turn the greedy into frogs! Trick the wicked with cunning curses!\n- Explore an allegorical world of tall tales, uncovering colourful personas and fantastical narratives.\n- Use your wit and guile to solve puzzles and best the strange monsters of the forest."
+  },
+  "developers": [
+   "Alientrap"
+  ],
+  "donationsOptedInAt": 1789416238366.0,
+  "firstPaidContentAt": 1788976517984.4507,
+  "firstPublishedAt": 1789416238366.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "es",
+   "it",
+   "ja",
+   "pt-BR",
+   "ko",
+   "ru",
+   "zh-CN",
+   "zh-TW",
+   "pl",
+   "tr"
+  ],
+  "lastBuildUploadedAt": 1789072713587.0,
+  "lastUpdatedDate": "2026-09-14",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/media-1774308749601-73a9cb5c.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/media-1774308756356-8565508c.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/media-1774308756751-f6204283.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/media-1774308757163-d4336d87.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/media-1774308757815-507f3ebe.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1771093349295.971,
+   "_id": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+   "avatarUrl": "organizationAvatars/jd70jkwge4sqyd89c4sbpyq2k1815knt/1773350249879.jpg",
+   "description": "We’re an indie game publisher focusing on pleasant, easy-going games that can be played in pieces, that require no special skills or knowledge, and that anyone can pick up and play. We’re believers in accessibility, inclusion, and widening the audience that gets to play. We like to consider ourselves the defenders of easy games.",
+   "location": "Erie, Pennsylvania",
+   "name": "Whitethorn Games",
+   "slug": "whitethorn-games",
+   "timezone": "America/New_York",
+   "website": "https://whitethorngames.com/"
+  },
+  "organizationId": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+  "productionGameCloudId": "mx73pt50ne4w4j0kwp6xjsrvgs83erth",
+  "publishers": [
+   "Whitethorn Games"
+  ],
+  "releaseDate": "2021-12-09",
+  "shareableBuildsEnabled": true,
+  "slug": "wytchwood",
+  "squareCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/squareCover-1774308400106-2564f1de.jpeg",
+  "tags": [
+   "Crafting",
+   "Adventure",
+   "Story Rich",
+   "Exploration",
+   "Dark Fantasy"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/thumbnailVideo-1789416179240-d4ec5004.mp4"
+  },
+  "title": "Wytchwood",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/wideCover-1787875504547-c34f11c2.webp"
+  }
+ }
+}

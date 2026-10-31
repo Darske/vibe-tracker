@@ -1,0 +1,90 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1772147752707.4768,
+  "_id": "j970h35ep6ecvh7gwqhm8p6ted81w3ra",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1782152804001.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Offspring Fling is a game about a poor forest creature that has misplaced all of her children. She'll have to fight her way through over 100 levels of action puzzle platforming to get them all back home. There's danger around every corner, but she won't rest until her family is safe again.\n\nFEATURES\n+ An intense number of levels (Over 100!)\n+ Awesome puzzles, and rad platforming action\n+ Ghost replays to help you beat your best time\n+ Replay sharing that lets you race against others\n+ A lot of secret unlockables if you're cool enough!\n+ A beautiful soundtrack by Alec Holowka\n+ Throwing babies and watching them bounce off stuff!\n+ Cute and cuddly looking things to look at!\n+ Immense satisfaction"
+  },
+  "developers": [
+   "Kyle Pulver"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1782146676818.2903,
+  "firstPublishedAt": 1774892244243.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1782152726997.0,
+  "lastUpdatedDate": "2026-06-22",
+  "media": [
+   {
+    "type": "IMAGE",
+    "url": "kyle-pulver/offspring-fling/assets/media-1773789010148-a6fc2ea9.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "kyle-pulver/offspring-fling/assets/media-1773789010653-ae8cc799.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "kyle-pulver/offspring-fling/assets/media-1773789011059-62e264d6.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "kyle-pulver/offspring-fling/assets/media-1773789011696-a857a088.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "kyle-pulver/offspring-fling/assets/media-1773789012094-43e22aa0.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1773348860758.3936,
+   "_id": "jd7cm81rapgc4wjzz5qvfb32ax82s2yp",
+   "avatarUrl": "organizationAvatars/jd7cm81rapgc4wjzz5qvfb32ax82s2yp/1773350665435.png",
+   "description": "Hi! I'm Kyle Pulver and I make video games most of the time. I also made a 2d game framework named Otter.",
+   "location": "Seattle, Washington",
+   "name": "Kyle Pulver",
+   "slug": "kyle-pulver",
+   "timezone": "America/Los_Angeles",
+   "website": "https://kpulv.com/"
+  },
+  "organizationId": "jd7cm81rapgc4wjzz5qvfb32ax82s2yp",
+  "productionGameCloudId": "mx74ntxggwgz44wjpxxa3q5mx581xmg7",
+  "publishers": [
+   "Kyle Pulver"
+  ],
+  "releaseDate": "2012-05-11",
+  "shareableBuildsEnabled": true,
+  "slug": "offspring-fling",
+  "squareCover": "kyler-pulver/offspring-fling/assets/squareCover-1773694088738-1e80b70a.webp",
+  "tags": [
+   "Puzzle",
+   "Platformer",
+   "Retro",
+   "Cute",
+   "Adventure"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd7cm81rapgc4wjzz5qvfb32ax82s2yp/j970h35ep6ecvh7gwqhm8p6ted81w3ra/assets/thumbnailVideo-1787242496554-4c479225.mp4"
+  },
+  "title": "Offspring Fling!",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd7cm81rapgc4wjzz5qvfb32ax82s2yp/j970h35ep6ecvh7gwqhm8p6ted81w3ra/assets/wideCover-1787179308715-8debdb5f.webp"
+  }
+ }
+}

@@ -1,0 +1,26 @@
+name: keepalive
+
+# GitHub disables scheduled workflows after 60 days without a commit. This job commits a heartbeat
+# file weekly so the scrape schedule never silently stops.
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  heartbeat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Commit heartbeat
+        run: |
+          date -u +"%Y-%m-%dT%H:%M:%SZ" > .heartbeat
+          git config user.name "vibe-tracker bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add .heartbeat
+          git commit -m "chore: heartbeat $(cat .heartbeat)" || echo "nothing to commit"
+          git push

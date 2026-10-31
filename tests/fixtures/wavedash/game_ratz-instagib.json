@@ -1,0 +1,73 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1786573615171.799,
+  "_id": "j97ac82630mzqsy25dcq5y1n298ca6r5",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse"
+  ],
+  "creatorFundOptedInAt": 1792428635050.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1792439681772.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Shoot first, eat cheese later! Jump into a fast, frenetic and exciting one-hit, one-kill FPS arena shooter with a totally level playing field, tonnes of maps, customisation and a robust map editor!"
+  },
+  "developers": [
+   "Lino Slahuschek"
+  ],
+  "donationsOptedInAt": 1792428635050.0,
+  "firstPaidContentAt": 1787267073192.9482,
+  "firstPublishedAt": 1792428635050.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "es",
+   "ru",
+   "zh-CN",
+   "tr"
+  ],
+  "lastBuildUploadedAt": 1792438817670.0,
+  "lastUpdatedDate": "2026-10-19",
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1773081008558.1958,
+   "_id": "jd7dqfdkpzjwxa8zabayp733bn82khc0",
+   "avatarUrl": "organizationAvatars/jd7dqfdkpzjwxa8zabayp733bn82khc0/1773341876191.png",
+   "description": "We are an Austrian independent game studio with 19+ years’ experience in Unity-based games and a track record of 25+ published titles.",
+   "location": "Austria",
+   "name": "Rarebyte",
+   "slug": "rarebyte",
+   "timezone": "America/Los_Angeles",
+   "website": "https://www.rarebyte.com/"
+  },
+  "organizationId": "jd7dqfdkpzjwxa8zabayp733bn82khc0",
+  "productionGameCloudId": "mx764xw9jfm5wd3zjb3jtyw18x8cbg8q",
+  "publishers": [
+   " Rarebyte"
+  ],
+  "releaseDate": "2016-07-27",
+  "shareableBuildsEnabled": true,
+  "slug": "ratz-instagib",
+  "tags": [
+   "Action",
+   "FPS",
+   "Arena Shooter",
+   "Multiplayer",
+   "Shooter"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97ac82630mzqsy25dcq5y1n298ca6r5/assets/thumbnailVideo-1787715459777-83e03e11.mp4"
+  },
+  "title": "Ratz Instagib",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97ac82630mzqsy25dcq5y1n298ca6r5/assets/wideCover-1787715443709-6de2c03b.webp"
+  }
+ }
+}

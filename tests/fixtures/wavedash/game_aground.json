@@ -1,0 +1,94 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1766018947175.0774,
+  "_id": "j974fgvb7gx6yyntf2vq32wtbd7xhd8d",
+  "autoReleaseDate": true,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1782490812409.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Aground is a Mining/Crafting RPG, where there is an overarching goal, story and reason to craft and build. As you progress, you will meet new NPCs, unlock new technology, and maybe magic too. Will you be able to raise dragons? Launch into space? The sky is literally not the limit. Beneath its simple exterior, Aground hides a lot of depth and surprises that will keep you wondering “what’s next?”\n\nSurvival is only the beginning. The only way for humanity to have a future is to return to the stars and confront them. But, it will require a lot of ingenuity and help to recover everything that was lost, and even that might not be enough...\n\nWHAT CAN YOU DO IN AGROUND?\n\nWhile it starts simple, Aground slowly evolves into a much larger game with tons of features and things to do. Here is an incomplete list:\n\n- Mine Ores, Gems, and other Resources\n- Build Structures\n- Complete Quests\n- Fight Enemies and Bosses\n- Craft Tools\n- Farm Crops\n- Cook Foods\n- Befriend NPCs (or not)\n- Advance your Technology\n- Discover Magic\n- Ride Vehicles and Mounts\n- Travel to other Islands and Planets\n- Raise Dragons\n- Capture Enemies\n- Level up your Skills\n- Go Fishing\n- Explore Secrets\n\nWHO ARE WE?\nWe’re Fancy Fish Games - a small indie team that has released 12 games since 2012. We follow our passion, making games that catch our fancy - our games tend to be quirky, surprising or thought-provoking."
+  },
+  "developers": [
+   "Fancy Fish Games",
+   "SnöBox Studio"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1782156184841.7476,
+  "firstPublishedAt": 1776873580908.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1782434952728.0,
+  "lastUpdatedDate": "2026-06-26",
+  "media": [
+   {
+    "streamId": "a4f43c8b427101be242383ee620d4114",
+    "streamReadyAt": 1776706571584.0,
+    "type": "VIDEO"
+   },
+   {
+    "type": "IMAGE",
+    "url": "fancy-fish-games/aground-1766018947175/assets/media-1774029048563-1ac50a38.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "fancy-fish-games/aground-1766018947175/assets/media-1774029049103-02319791.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "fancy-fish-games/aground-1766018947175/assets/media-1774029049530-2fb7fb84.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "fancy-fish-games/aground-1766018947175/assets/media-1774029050010-939b3604.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1766018910488.3997,
+   "_id": "jd7d28th2am1ar9kn9xk9pmef57xhtmn",
+   "avatarUrl": "organizationAvatars/jd7d28th2am1ar9kn9xk9pmef57xhtmn/1773341851864.jpg",
+   "description": "Fancy Fish Games is an indie game development studio dedicated to creating imaginative and thought-provoking experiences.",
+   "location": "Connecticut",
+   "name": "Fancy Fish Games",
+   "slug": "fancy-fish-games",
+   "timezone": "America/New_York",
+   "website": "https://fancyfishgames.com/"
+  },
+  "organizationId": "jd7d28th2am1ar9kn9xk9pmef57xhtmn",
+  "productionGameCloudId": "mx72fe72df3372pkkspge4w0an81xqv8",
+  "publishers": [
+   "Fancy Fish Games",
+   "Whitethorn Games"
+  ],
+  "releaseDate": "2026-04-22",
+  "shareableBuildsEnabled": false,
+  "slug": "aground",
+  "squareCover": "jd7d28th2am1ar9kn9xk9pmef57xhtmn/j974fgvb7gx6yyntf2vq32wtbd7xhd8d/assets/squareCover-1778698718475-c62a4f19.png",
+  "tags": [
+   "Exploration",
+   "Open World",
+   "Survival",
+   "Base Building",
+   "Mining"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd7d28th2am1ar9kn9xk9pmef57xhtmn/j974fgvb7gx6yyntf2vq32wtbd7xhd8d/assets/thumbnailVideo-1787241901834-1214b393.mp4"
+  },
+  "title": "Aground",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd7d28th2am1ar9kn9xk9pmef57xhtmn/j974fgvb7gx6yyntf2vq32wtbd7xhd8d/assets/wideCover-1787177979646-5f357062.webp"
+  }
+ }
+}

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.env
+.streamlit/secrets.toml
+run.log
+# research evidence is kept out of the repo (large raw captures); summary lives in docs/SOURCES.md
+research/

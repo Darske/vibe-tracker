@@ -1,0 +1,103 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1774308262261.8137,
+  "_id": "j979xzrgf9xf91g4x28f2gqjfx83f8h5",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1783436842918.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Teacup is a short and wholesome narrative adventure game with a focus on exploration and non-linear progression.\n\nYou play as the titular Teacup, a shy and introverted young frog who loves drinking tea and reading. The day before she is to host a tea party at her house, she realizes she is completely out of tea, and thus must venture into the woods around her to find the herbs she needs to restock her pantry.\n\nYou are free to tackle the list of ingredients Teacup must gather in any order you wish. Find your own path through the world of Little Pond.\n\nDuring your adventure you will meet the charming inhabitants of the forest. Some are talkative, some are grumpy, but all of them will lend you an ear on your adventure.\n\nMost of the animals you meet will be glad to help Teacup… in exchange for a small favor or some help. Organize a (oddly shaped) market stall, win an underwater race and more!"
+  },
+  "developers": [
+   "Smarto Club"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1782409385151.6467,
+  "firstPublishedAt": 1783000843670.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "es",
+   "de",
+   "it",
+   "pt-BR",
+   "ru",
+   "ja",
+   "ko",
+   "zh-CN",
+   "zh-TW",
+   "tr",
+   "pl"
+  ],
+  "lastBuildUploadedAt": 1783400770694.0,
+  "lastUpdatedDate": "2026-07-07",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/media-1774308442928-f1768d79.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/media-1774308449279-a81ada03.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/media-1774308449726-aa67136b.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/media-1774308450105-c1c39a4b.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/media-1774308450514-812320b6.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1771093349295.971,
+   "_id": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+   "avatarUrl": "organizationAvatars/jd70jkwge4sqyd89c4sbpyq2k1815knt/1773350249879.jpg",
+   "description": "We’re an indie game publisher focusing on pleasant, easy-going games that can be played in pieces, that require no special skills or knowledge, and that anyone can pick up and play. We’re believers in accessibility, inclusion, and widening the audience that gets to play. We like to consider ourselves the defenders of easy games.",
+   "location": "Erie, Pennsylvania",
+   "name": "Whitethorn Games",
+   "slug": "whitethorn-games",
+   "timezone": "America/New_York",
+   "website": "https://whitethorngames.com/"
+  },
+  "organizationId": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+  "productionGameCloudId": "mx74s36sdpgmmg5nrx8m9vaa3583e9pg",
+  "publishers": [
+   "Whitethorn Games"
+  ],
+  "releaseDate": "2021-09-23",
+  "shareableBuildsEnabled": false,
+  "slug": "teacup",
+  "squareCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/squareCover-1774308375066-6e5ae2d6.jpeg",
+  "tags": [
+   "Adventure",
+   "Cute",
+   "Exploration",
+   "Narrative",
+   "Relaxing"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": true,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/thumbnailVideo-agent-1787027359844-3c77478d.mp4"
+  },
+  "title": "Teacup",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/wideCover-1787071266867-f4b0f21f.webp"
+  }
+ }
+}

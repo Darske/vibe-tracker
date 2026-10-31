@@ -1,0 +1,88 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1783541213727.4558,
+  "_id": "j971xtvyeeejmt9ank6vrhz86d8a5feh",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1790625194922.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1792097187649.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Bring color to the world in **Spray Paint Simulator!** Restore worn-out surfaces with a fresh coat of paint and watch them come back to life. Use your spray tool with precision, cover every inch, and enjoy the satisfaction of a flawless finish.\n\nStep into Spatterville, where you'll build your own spray-painting business. Meet the locals as you restore, repair, mask, and spray paint everything—from kitchens and local landmarks to a giant robot. Buy new tools and equipment, unlock Free Spray mode, and transform the town.\n\n## Prepare the Perfect Canvas\n\nYou've got to earn your stripes before becoming the town's top spray painter. No worries, though—there's plenty to keep you busy! Mask surfaces to protect them from overspray, remove and repair objects, and fill damaged areas to create the perfect canvas.\n\n## Bring the Color\n\nGrab your spray tools and watch worn-out objects spring back to life with fresh, snazzy colors! Feel the thrill of transformation, groove to the soothing rhythm of spraying, and enjoy the satisfaction of rejuvenating each item. It's all about making things look brand new and having a blast while doing it.\n\n## Build Your Business\n\nRunning a spray-painting business has never been more fun! Keep an eye on your consumables, upgrade your equipment, and find the right tools for every job.\n\n- **Manage your supplies.** Stock up on paint, masking paper, and tape to keep every project moving.\n- **Upgrade your spray tools.** Unlock more paint capacity, greater coverage, and bigger batteries.\n- **Reach new heights.** Choose from a variety of step ladders and scaffolding to tackle those hard-to-reach spots.\n\nManaging your supplies and equipment adds just the right amount of strategy, keeping things fun and lighthearted without getting too complicated.\n\n## Make Spatterville Your Canvas\n\nAfter completing jobs for customers, dive into **Free Spray mode!** Return to your finished projects and let your imagination run wild. Spray the job and the surrounding environment any way you please.\n\nWith a rainbow of colors at your disposal, the entire town becomes your canvas. Express yourself freely and enjoy hours of creative fun. Make Spatterville your masterpiece, one spray at a time!\n\n## Made with Care\n\nThis game is our baby, lovingly started by two dedicated developers! We're here to hear your thoughts, suggestions, critiques, and even wild theories about our caffeine consumption. We promise to listen—and possibly giggle—at your feedback. Reach out and let's make this game even better together!\n\nJoin us in Spatterville for a relaxing, creative, and humorous adventure. Happy spraying!"
+  },
+  "developers": [],
+  "donationsOptedInAt": 1790625194922.0,
+  "firstPaidContentAt": 1787248531668.3408,
+  "firstPublishedAt": 1790625194922.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1792097117695.0,
+  "lastUpdatedDate": "2026-10-15",
+  "media": [
+   {
+    "streamId": "9e13639cd98ed03bb8b7dd1fe951a817",
+    "streamReadyAt": 1783541447255.0,
+    "type": "VIDEO"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/media-1783541347553-fd1706a1.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/media-1783541348069-d4a027bb.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/media-1783541348811-2b32aab7.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/media-1783541349421-19cc7666.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1771093349295.971,
+   "_id": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+   "avatarUrl": "organizationAvatars/jd70jkwge4sqyd89c4sbpyq2k1815knt/1773350249879.jpg",
+   "description": "We’re an indie game publisher focusing on pleasant, easy-going games that can be played in pieces, that require no special skills or knowledge, and that anyone can pick up and play. We’re believers in accessibility, inclusion, and widening the audience that gets to play. We like to consider ourselves the defenders of easy games.",
+   "location": "Erie, Pennsylvania",
+   "name": "Whitethorn Games",
+   "slug": "whitethorn-games",
+   "timezone": "America/New_York",
+   "website": "https://whitethorngames.com/"
+  },
+  "organizationId": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+  "productionGameCloudId": "mx75nc0fs3mykv52s592kkgcqs8a416x",
+  "publishers": [],
+  "releaseDate": "2025-05-29",
+  "shareableBuildsEnabled": true,
+  "slug": "spray-paint-simulator",
+  "squareCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/squareCover-1783541300139-5dbe68ad.jpg",
+  "tags": [
+   "Casual",
+   "Simulation",
+   "First-Person",
+   "Job Simulator",
+   "Colorful"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/thumbnailVideo-1790624929317-c876d605.mp4"
+  },
+  "title": "Spray Paint Simulator",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/wideCover-1787875601811-3f330607.webp"
+  }
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1792115917185.4194,
+  "_id": "j978agtfy4wcqnb8d2zzznxn358gcjqy",
+  "autoReleaseDate": true,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Touch"
+  ],
+  "currency": "usd",
+  "currentReleasePublishedAt": 1793373224382.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "A chaotic multiplayer arena with realistic combat inspired by Overgrowth! Includes a roguelike singleplayer arena mode."
+  },
+  "developers": [],
+  "donationsOptedInAt": 1792116153674.0,
+  "firstPaidContentAt": 1792614694766.8984,
+  "firstPublishedAt": 1792116153674.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1793373219844.0,
+  "lastGameUpdateNotifiedAt": 1793209977802.0,
+  "lastUpdatedDate": "2026-10-30",
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1777378078786.1572,
+   "_id": "jd741cwa8kybtk34ddqt9sc51985qa2b",
+   "avatarUrl": "organizationAvatars/jd741cwa8kybtk34ddqt9sc51985qa2b/1787154178176.png",
+   "description": "Building stuff with computer",
+   "name": "MAX BIDDING LLC",
+   "slug": "max-bidding",
+   "timezone": "America/Los_Angeles",
+   "website": "https://offmylawn.com"
+  },
+  "organizationId": "jd741cwa8kybtk34ddqt9sc51985qa2b",
+  "productionGameCloudId": "mx7e387992s925kcn90q3qx4rd8gcscp",
+  "publishers": [],
+  "releaseDate": "2026-10-15",
+  "shareableBuildsEnabled": false,
+  "slug": "splinter-kick",
+  "tags": [
+   "Fighting",
+   "3D Fighter",
+   "Multiplayer"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd741cwa8kybtk34ddqt9sc51985qa2b/j978agtfy4wcqnb8d2zzznxn358gcjqy/assets/thumbnailVideo-1792116049371-f0707545.mp4"
+  },
+  "title": "Splinter Kick",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd741cwa8kybtk34ddqt9sc51985qa2b/j978agtfy4wcqnb8d2zzznxn358gcjqy/assets/wideCover-1792464122360-b05a20bf.webp"
+  }
+ }
+}

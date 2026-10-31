@@ -1,0 +1,5 @@
+# Streamlit Community Cloud installs from this file (set "Main file path" to dashboard/app.py).
+streamlit==1.50.0
+plotly==6.3.0
+pandas==2.3.3
+psycopg[binary]==3.2.9

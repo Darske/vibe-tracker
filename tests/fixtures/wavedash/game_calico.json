@@ -1,0 +1,103 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1771093388972.232,
+  "_id": "j976pkj3b4qatx7pp44nssw51x814v8d",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1787698123779.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Calico is a day-in-the-life community sim game where you are given an important and adorable task: rebuild the town’s cat café and fill it with cute and cuddly creatures! Build up your café by filling it with cute furniture, fun decorations, yummy pastries, and get it bustling with animals again!\n\nCalico is meant to make you feel all warm and fuzzy inside. The gameplay reflects that with a laid back, low stress creative environment to explore and play in.\n\nThe Calico character creator will allow players to create their own magical person to experience the world through. There will also be plenty of clothing to choose from and collect throughout the game!\n\nThe player will encounter many animals in the world of Calico. Once befriended, you can name them, add them to your party, or send them to their new home at the café. Animals in your party will follow you everywhere you go and listen to your commands. The animals in your café will relax and play with any customers that pop in for a visit.\n\nYour task in Calico is to bring the town's café back to life again. This isn’t just achieved by bringing in cats and animals alone, however – you can also decorate your café with furniture of different styles to create the perfect cozy home for you and your animals!\n\nCreate a wonderful café by making yummy baked goods and drinks for the townspeople! Learn about your follow villagers to pick and choose their favorite foods to sell!\n\nWe wanted there to be no limits to how you could find happiness in Calico. Magic potions are a system that allow us to break the rules of what is possible and to find what would be most fun. Example: the More-to-pet Potion allows the player to magically turn a single animal giant-sized! You can hang out with a giant animal, or even ride a giant cat!"
+  },
+  "developers": [
+   "Peachy Keen Games"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1782162624126.0674,
+  "firstPublishedAt": 1783087175616.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "es",
+   "it",
+   "ja",
+   "ko",
+   "pt-BR",
+   "ru",
+   "zh-CN",
+   "zh-TW",
+   "tr",
+   "pl"
+  ],
+  "lastBuildUploadedAt": 1787698084371.0,
+  "lastUpdatedDate": "2026-08-25",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/media-1774306591784-e8f47fb9.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/media-1774306637400-9282d491.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/media-1774306637796-91a8a89c.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/media-1774306638183-7654a3e3.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/media-1774306638546-3fe38e79.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1771093349295.971,
+   "_id": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+   "avatarUrl": "organizationAvatars/jd70jkwge4sqyd89c4sbpyq2k1815knt/1773350249879.jpg",
+   "description": "We’re an indie game publisher focusing on pleasant, easy-going games that can be played in pieces, that require no special skills or knowledge, and that anyone can pick up and play. We’re believers in accessibility, inclusion, and widening the audience that gets to play. We like to consider ourselves the defenders of easy games.",
+   "location": "Erie, Pennsylvania",
+   "name": "Whitethorn Games",
+   "slug": "whitethorn-games",
+   "timezone": "America/New_York",
+   "website": "https://whitethorngames.com/"
+  },
+  "organizationId": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+  "productionGameCloudId": "mx7ew5jj3dkrbejapgft9s7gn181xdwn",
+  "publishers": [
+   "Whitethorn Games"
+  ],
+  "releaseDate": "2020-12-15",
+  "shareableBuildsEnabled": true,
+  "slug": "calico",
+  "squareCover": "adam/calico/assets/squareCover-1773350269594-d3dd93ba.webp",
+  "tags": [
+   "Casual",
+   "Cute",
+   "Cats",
+   "Simulation",
+   "Life Sim"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/thumbnailVideo-1787177366027-69fc03c0.mp4"
+  },
+  "title": "Calico",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/wideCover-1787071237498-12558e76.webp"
+  }
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1790561615149.0405,
+  "_id": "j970t453fa7hnm1w4gzwxkhhyx8f8ejc",
+  "autoReleaseDate": true,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Touch"
+  ],
+  "creatorFundOptedInAt": 1790865465125.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1793407263776.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "REAL-WORLD SPOTS\nSurf Pipeline, Teahupo'o, J-Bay and Waikiki with up to 6 friends. Each has its own character: heavy barrels at Pipe and Teahupo'o, long fast walls at J-Bay, soft longboard waves at Waikiki. There are also four relaxed beaches just for hanging out with friends.\n\nREEF BREAKS\nTen reef breaks, from easy Pantai Kuda to Ombak Raksasa, a 30 metre giant you tow into behind a jet ski. Every spot has its own leaderboard.\n\nCOMPETE\nSurf contests for up to 6 players. Climb the world ranking, and pick your flag to score points for your country.\n\nBOARDS\nShortboard, twin fin, fish, longboard, gun, alaia, bodyboard, or just bodysurf. Or design your own board.\n\nCONTROLS\nPhone: hold it sideways, steer with your right thumb, tap the buttons with your left.\nComputer: arrow keys to steer, Space to paddle and pump, Shift to stall."
+  },
+  "developers": [],
+  "donationsOptedInAt": 1790569450927.0,
+  "firstPublishedAt": 1790569450927.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1793418121183.0,
+  "lastUpdatedDate": "2026-10-30",
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1790561141470.2168,
+   "_id": "jd7462vt71w9kmjy6571p8jjvn8f8mfv",
+   "name": "SumbaSurf",
+   "slug": "sumbasurf",
+   "timezone": "America/Los_Angeles"
+  },
+  "organizationId": "jd7462vt71w9kmjy6571p8jjvn8f8mfv",
+  "productionGameCloudId": "mx7c6p547cmca5t0b83j9mcbe58f9jds",
+  "publishers": [],
+  "releaseDate": "2026-09-27",
+  "shareableBuildsEnabled": false,
+  "slug": "sumbasurf",
+  "tags": [
+   "Sports",
+   "First-Person",
+   "3D",
+   "Multiplayer",
+   "Simulation"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd7462vt71w9kmjy6571p8jjvn8f8mfv/j970t453fa7hnm1w4gzwxkhhyx8f8ejc/assets/thumbnailVideo-1791105291972-14d84743.mp4"
+  },
+  "title": "SumbaSurf",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd7462vt71w9kmjy6571p8jjvn8f8mfv/j970t453fa7hnm1w4gzwxkhhyx8f8ejc/assets/wideCover-1790705232418-8ee60ba4.webp"
+  }
+ }
+}

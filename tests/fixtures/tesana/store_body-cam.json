@@ -1,0 +1,2925 @@
+{
+ "id": 276352,
+ "public_id": "d19e7e64-1953-4292-acc8-85a68c3f68e9",
+ "name": "BODY-CAM",
+ "slug": "body-cam",
+ "tagline": "Serve a warrant at 1147 Elm St. through a body camera lens. Clear the house, room by room.",
+ "description": "**BODY-CAM** is a single-player, first-person shooter that plays out through the fisheye lens of an Axon Body 3 camera, complete with a running timestamp, unit ID and a blinking REC indicator. You are part of a SWAT element on a warrant service at **1147 Elm St.**, and your orders are simple: **clear the house**.\r\n\r\nInside, the house is dim and decaying: peeling paint, stained walls, bullet holes, and debris scattered across the floor. Your rifle and holographic sight lead the way around every doorframe and corner. A tracker in the corner of the screen counts **suspects (0/7)** and shows your current objective, starting with the entry.\r\n\r\nFrom the staging area, rack the charging handle to start the mission. Check the **Field Manual** for controls and procedures, and use **Settings** to tune the lens, sensitivity and audio. Play in real time with keyboard and mouse or a controller.",
+ "status": "completed",
+ "age_rating": "all",
+ "engine_version": "v2",
+ "engine_game_name": "game-20260927-ea04c8dc",
+ "title_poster_path": "title_poster.webp",
+ "title_poster_url": "https://play.tesana.ai/game-20260927-ea04c8dc/capture/cap_208c3986e2c6449ab14ff706/poster.webp",
+ "title_poster_sm_url": "https://play.tesana.ai/game-20260927-ea04c8dc/capture/cap_208c3986e2c6449ab14ff706/poster.webp",
+ "download_url": "https://play.tesana.ai/game-20261012-6334236b/4405f71bd514/",
+ "platform_tier": "web",
+ "pck_url": null,
+ "pck_sha": null,
+ "is_mobile": false,
+ "orientation": "landscape",
+ "engine_kind": "web",
+ "banner_image": null,
+ "cover_image": null,
+ "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/juicer-body-cam.webp",
+ "banner_image_url": "https://play.tesana.ai/game-20260927-ea04c8dc/banner.webp",
+ "cover_image_url": "https://play.tesana.ai/game-20260927-ea04c8dc/cover.webp",
+ "icon_image_url": "https://play.tesana.ai/game-20260927-ea04c8dc/app_icon.webp",
+ "video_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/276352/body-cam-202610130854.mp4",
+ "video_poster_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/276352/body-cam-202610130854-poster.webp",
+ "cover_url": "https://play.tesana.ai/game-20260927-ea04c8dc/cover.webp",
+ "banner_url": "https://play.tesana.ai/game-20260927-ea04c8dc/banner.webp",
+ "cover_sm_url": "https://play.tesana.ai/game-20260927-ea04c8dc/cover_sm.webp",
+ "banner_sm_url": null,
+ "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/juicer-body-cam_sm.webp",
+ "video_preview_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/276352/preview-body-cam-202610130854.mp4",
+ "storefront_theme": {
+  "color_theme": "midnight",
+  "font_family": "monospace",
+  "border_radius": "none"
+ },
+ "release_date": "2026-10-11",
+ "created_at": "2026-09-27T03:53:17.732527Z",
+ "published_at": "2026-09-27T03:53:17Z",
+ "classified_category": {
+  "id": 7,
+  "name": "Shooter",
+  "slug": "shooter",
+  "description": "First or third-person games where shooting is the primary mechanic.",
+  "icon": "🎯",
+  "tile_image_url": "https://cdn.tesana.ai/one-tap/media/marketplace/category_tiles/dust-strike-clean_VCoE5yw.webp",
+  "sort_order": 6,
+  "game_count": null
+ },
+ "tags": [
+  {
+   "id": 48,
+   "name": "Controller Support",
+   "slug": "controller-support",
+   "group": "feature",
+   "description": "Designed to be played with a gamepad.",
+   "game_count": null
+  },
+  {
+   "id": 49,
+   "name": "Keyboard & Mouse",
+   "slug": "keyboard-mouse",
+   "group": "feature",
+   "description": "Optimized for keyboard and mouse input.",
+   "game_count": null
+  },
+  {
+   "id": 18,
+   "name": "Linear",
+   "slug": "linear",
+   "group": "mechanic",
+   "description": "Structured progression through a set sequence of levels.",
+   "game_count": null
+  },
+  {
+   "id": 14,
+   "name": "Real-Time",
+   "slug": "real-time",
+   "group": "mechanic",
+   "description": "All actions happen simultaneously in continuous time.",
+   "game_count": null
+  },
+  {
+   "id": 9,
+   "name": "Singleplayer",
+   "slug": "singleplayer",
+   "group": "mechanic",
+   "description": "Designed for one player only.",
+   "game_count": null
+  },
+  {
+   "id": 1,
+   "name": "First Person",
+   "slug": "first-person",
+   "group": "perspective",
+   "description": "Gameplay from the player character's point of view.",
+   "game_count": null
+  },
+  {
+   "id": 46,
+   "name": "Dark & Gritty",
+   "slug": "dark-gritty",
+   "group": "visual_style",
+   "description": "Muted tones, rough textures, and oppressive atmosphere.",
+   "game_count": null
+  },
+  {
+   "id": 39,
+   "name": "Realistic",
+   "slug": "realistic",
+   "group": "visual_style",
+   "description": "High-fidelity graphics aiming for photorealism.",
+   "game_count": null
+  }
+ ],
+ "screenshots": [
+  {
+   "id": 916,
+   "image": "https://cdn.tesana.ai/one-tap/media/game_screenshots/2026/09/27/game-20260927-ea04c8dc-0.jpg",
+   "caption": "",
+   "order": 0,
+   "uploaded_at": "2026-09-27T05:52:14.671540Z",
+   "source": "upload"
+  },
+  {
+   "id": 917,
+   "image": "https://cdn.tesana.ai/one-tap/media/game_screenshots/2026/09/27/game-20260927-ea04c8dc-1.jpg",
+   "caption": "",
+   "order": 1,
+   "uploaded_at": "2026-09-27T05:52:15.172983Z",
+   "source": "upload"
+  },
+  {
+   "id": 918,
+   "image": "https://cdn.tesana.ai/one-tap/media/game_screenshots/2026/09/27/game-20260927-ea04c8dc-2.jpg",
+   "caption": "",
+   "order": 2,
+   "uploaded_at": "2026-09-27T05:52:15.632481Z",
+   "source": "upload"
+  },
+  {
+   "id": 2834,
+   "image": "https://cdn.tesana.ai/one-tap/media/game_screenshots/2026/10/13/cap_604aed93675240aeb9b17f45-shot-1.webp",
+   "caption": "",
+   "order": 3,
+   "uploaded_at": "2026-10-13T09:04:45.524390Z",
+   "source": "capture"
+  },
+  {
+   "id": 2835,
+   "image": "https://cdn.tesana.ai/one-tap/media/game_screenshots/2026/10/13/cap_604aed93675240aeb9b17f45-shot-2.webp",
+   "caption": "",
+   "order": 4,
+   "uploaded_at": "2026-10-13T09:04:46.032215Z",
+   "source": "capture"
+  },
+  {
+   "id": 2836,
+   "image": "https://cdn.tesana.ai/one-tap/media/game_screenshots/2026/10/13/cap_604aed93675240aeb9b17f45-shot-3.webp",
+   "caption": "",
+   "order": 5,
+   "uploaded_at": "2026-10-13T09:04:46.598762Z",
+   "source": "capture"
+  }
+ ],
+ "play_count": 6519,
+ "favorite_count": 90,
+ "remix_count": null,
+ "is_remix": null,
+ "remixed_from": null,
+ "should_index": true,
+ "canonical_slug": "body-cam",
+ "visibility": "published",
+ "is_public": true,
+ "vanity_url": "https://body-cam.tesana.com",
+ "storefront_url": "https://tesana.com/game/body-cam",
+ "message_count": 6,
+ "is_favorited": false,
+ "is_featured": false,
+ "editor_choice": false,
+ "admin_rank": null,
+ "editorial_note": null,
+ "badges": [
+  "trending"
+ ],
+ "pricing_type": "free",
+ "price": null,
+ "minimum_price": null,
+ "has_access": true,
+ "purchasable": false,
+ "purchase_block_reason": null,
+ "shop_items": [],
+ "services_summary": {
+  "leaderboards": 0,
+  "achievements": 0,
+  "shop_items": 0,
+  "multiplayer": null
+ },
+ "allow_remixing": false,
+ "creator": {
+  "username": "Juicer",
+  "profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+  "games_count": 85,
+  "connect_onboarding_complete": false
+ },
+ "creator_games": [
+  {
+   "id": 284403,
+   "public_id": "79064623-c21e-4a66-927d-389e934ed1cc",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "New Game",
+   "slug": "new-game-424d047f",
+   "tagline": "Thirty seconds. One glowing square. As many coins as you can grab.",
+   "description": "## Grab every coin before the clock runs out\n\n**Coin Square** is a bite-sized neon arcade dash. Guide a glowing cyan square around a glowing grid arena with the arrow keys and snatch spinning gold co…",
+   "category": "",
+   "classified_category": {
+    "id": 16,
+    "name": "Arcade",
+    "slug": "arcade",
+    "icon": "🕹️"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 3,
+     "name": "Top-Down",
+     "slug": "top-down",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    },
+    {
+     "id": 41,
+     "name": "Neon / Cyberpunk",
+     "slug": "neon-cyberpunk",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "godot",
+   "engine_release": "Godot-engine",
+   "harness_profile": "",
+   "project_layout": "",
+   "engine_game_name": "lt-baseline-godot-0",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/lt-baseline-godot-0/d97b05a224cf/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/frame.webp",
+   "trailer_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/trailer.webp",
+   "cover_url": "https://play.tesana.ai/lt-baseline-godot-0/cover.webp",
+   "banner_url": "https://play.tesana.ai/lt-baseline-godot-0/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/lt-baseline-godot-0/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/lt-baseline-godot-0/capture/cap_035217f2a1a54cc2afaf7e46/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T13:09:16.933090Z",
+   "completed_at": "2026-10-27T13:23:48.434571Z",
+   "published_at": "2026-10-27T13:23:48.540319Z",
+   "play_count": 0,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284402,
+   "public_id": "cf1bf800-abcd-4d3f-b228-3eb344f7df16",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Astro Drift",
+   "slug": "astro-drift",
+   "tagline": "Pilot a lone neon ship through a starfield and blast drifting asteroids, wave after wave.",
+   "description": "**Astro Drift** is a compact top-down space shooter. You fly a small glowing cyan ship across a dark starfield, steering with **WASD** and shooting down the gray, cratered asteroids that drift toward…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 78,
+     "name": "Space",
+     "slug": "space",
+     "group": "genre"
+    },
+    {
+     "id": 25,
+     "name": "Flying",
+     "slug": "flying",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 19,
+     "name": "Wave Survival",
+     "slug": "wave-survival",
+     "group": "mechanic"
+    },
+    {
+     "id": 3,
+     "name": "Top-Down",
+     "slug": "top-down",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "lt-baseline-web-2",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/lt-baseline-web-2/8234c5ac9a91/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/lt-baseline-web-2/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/lt-baseline-web-2/poster_sm.webp",
+   "explore_image_url": "https://play.tesana.ai/lt-baseline-web-2/explore.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/lt-baseline-web-2/explore_sm.webp",
+   "trailer_url": "",
+   "trailer_short_url": "",
+   "video_url": null,
+   "video_poster_url": null,
+   "cover_url": "https://play.tesana.ai/lt-baseline-web-2/cover.webp",
+   "banner_url": "https://play.tesana.ai/lt-baseline-web-2/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/lt-baseline-web-2/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/lt-baseline-web-2/poster_sm.webp",
+   "video_preview_url": null,
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T13:09:09.485555Z",
+   "completed_at": "2026-10-27T13:17:41.997547Z",
+   "published_at": "2026-10-27T13:17:42.109337Z",
+   "play_count": 2,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284401,
+   "public_id": "0cb5aa3c-459d-4d3f-aa5e-086ccda59f9e",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Star Hopper",
+   "slug": "star-hopper",
+   "tagline": "A bite-sized 2D platformer: hop across floating platforms and collect all 5 stars in one cheerful level.",
+   "description": "**Star Hopper** is a small, friendly platformer built around one simple goal: find and grab all 5 stars scattered across a single bright level.\n\nYou play as a round orange blob with big curious eyes.…",
+   "category": "",
+   "classified_category": {
+    "id": 3,
+    "name": "Platformer",
+    "slug": "platformer",
+    "icon": "🦘"
+   },
+   "tags": [
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 62,
+     "name": "Speedrun-Friendly",
+     "slug": "speedrun-friendly",
+     "group": "feature"
+    },
+    {
+     "id": 18,
+     "name": "Linear",
+     "slug": "linear",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 68,
+     "name": "Wholesome",
+     "slug": "wholesome",
+     "group": "mood"
+    },
+    {
+     "id": 4,
+     "name": "Side-Scrolling",
+     "slug": "side-scrolling",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    },
+    {
+     "id": 40,
+     "name": "Stylized",
+     "slug": "stylized",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "lt-baseline-web-1",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/lt-baseline-web-1/946ac9135334/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/frame.webp",
+   "trailer_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/trailer.webp",
+   "cover_url": "https://play.tesana.ai/lt-baseline-web-1/cover.webp",
+   "banner_url": "https://play.tesana.ai/lt-baseline-web-1/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/lt-baseline-web-1/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/lt-baseline-web-1/capture/cap_3764ef6110424a12bac439f5/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T13:07:35.974451Z",
+   "completed_at": "2026-10-27T13:19:05.220236Z",
+   "published_at": "2026-10-27T13:19:05.309368Z",
+   "play_count": 9,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284400,
+   "public_id": "d6c6cd13-1e1a-414c-8913-65e8fc3c3dfe",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Cube Runner",
+   "slug": "cube-runner-23792829",
+   "tagline": "Steer a blue cube down a night road and weave past red blocks for as long as you can last.",
+   "description": "**Cube Runner** is a tiny 3D endless runner. You are a bright blue cube rolling down a dark asphalt road striped with yellow lane markings, flanked by green fields under a deep navy sky.\n\nRed cube ob…",
+   "category": "",
+   "classified_category": {
+    "id": 1,
+    "name": "Action",
+    "slug": "action",
+    "icon": "🔫"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 34,
+     "name": "Infinite Runner",
+     "slug": "infinite-runner",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 69,
+     "name": "Tense",
+     "slug": "tense",
+     "group": "mood"
+    },
+    {
+     "id": 2,
+     "name": "Third Person",
+     "slug": "third-person",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "lt-baseline-web-0",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/lt-baseline-web-0/0481a16009a1/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/frame.webp",
+   "trailer_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/trailer.webp",
+   "cover_url": "https://play.tesana.ai/lt-baseline-web-0/cover.webp",
+   "banner_url": "https://play.tesana.ai/lt-baseline-web-0/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/lt-baseline-web-0/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/lt-baseline-web-0/capture/cap_a399bd6cb77e4932a1969c48/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T13:06:55.406131Z",
+   "completed_at": "2026-10-27T13:09:45.356166Z",
+   "published_at": "2026-10-27T13:09:45.458598Z",
+   "play_count": 2,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284327,
+   "public_id": "d70abdd6-3e68-4ba8-9c98-cb7285cfbcf3",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Big Button Clicker",
+   "slug": "big-button-clicker",
+   "tagline": "One giant red button, one score counter, and your personal best. Click, climb, reset, repeat.",
+   "description": "**Big Button Clicker** is about as simple as a game gets: a huge round red button sits in the middle of the screen with a bold \"CLICK!\" label, and every press adds a point to your score.\n\nYour curren…",
+   "category": "",
+   "classified_category": {
+    "id": 18,
+    "name": "Idle & Clicker",
+    "slug": "idle-clicker",
+    "icon": "👆"
+   },
+   "tags": [
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 64,
+     "name": "Relaxing",
+     "slug": "relaxing",
+     "group": "mood"
+    },
+    {
+     "id": 6,
+     "name": "2D",
+     "slug": "2d",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    },
+    {
+     "id": 40,
+     "name": "Stylized",
+     "slug": "stylized",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "smoke-lambda-web-2",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/smoke-lambda-web-2/f00a739cfefb/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/frame.webp",
+   "trailer_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/trailer.webp",
+   "cover_url": "https://play.tesana.ai/smoke-lambda-web-2/cover.webp",
+   "banner_url": "https://play.tesana.ai/smoke-lambda-web-2/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/smoke-lambda-web-2/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/smoke-lambda-web-2/capture/cap_3d7abd7fea94454ba80b1e33/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-26T11:20:30.666577Z",
+   "completed_at": "2026-10-26T11:23:18.177471Z",
+   "published_at": "2026-10-26T11:23:18.280531Z",
+   "play_count": 6,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284303,
+   "public_id": "b807c8bb-7c76-489d-84e8-8a536d53331d",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Brick Blitz",
+   "slug": "brick-blitz",
+   "tagline": "Bounce the ball, smash a rainbow wall of bricks, and clear all three walls before your three lives run out.",
+   "description": "**Brick Blitz** is a tiny browser arcade game in the classic brick-breaker mold. Guide a glowing blue paddle along the bottom of the screen and keep the ball in play as it chips away at a wall of col…",
+   "category": "",
+   "classified_category": {
+    "id": 16,
+    "name": "Arcade",
+    "slug": "arcade",
+    "icon": "🕹️"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 32,
+     "name": "Physics-Based",
+     "slug": "physics-based",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 6,
+     "name": "2D",
+     "slug": "2d",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    },
+    {
+     "id": 41,
+     "name": "Neon / Cyberpunk",
+     "slug": "neon-cyberpunk",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "smoke-lambda-web-1",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/smoke-lambda-web-1/761f60c00649/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/smoke-lambda-web-1/capture/cap_0b4aad505c95414db9bc54ee/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/smoke-lambda-web-1/capture/cap_0b4aad505c95414db9bc54ee/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/smoke-lambda-web-1/capture/cap_0b4aad505c95414db9bc54ee/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/smoke-lambda-web-1/capture/cap_0b4aad505c95414db9bc54ee/frame.webp",
+   "trailer_url": "",
+   "trailer_short_url": "",
+   "video_url": null,
+   "video_poster_url": null,
+   "cover_url": "https://play.tesana.ai/smoke-lambda-web-1/cover.webp",
+   "banner_url": "https://play.tesana.ai/smoke-lambda-web-1/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/smoke-lambda-web-1/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/smoke-lambda-web-1/capture/cap_0b4aad505c95414db9bc54ee/poster.webp",
+   "video_preview_url": null,
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-26T02:19:33.328593Z",
+   "completed_at": "2026-10-26T02:29:09.882069Z",
+   "published_at": "2026-10-26T02:29:09.981134Z",
+   "play_count": 12,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  }
+ ],
+ "related_games": [
+  {
+   "id": 284652,
+   "public_id": "1b8a68f3-af01-40f5-8637-5a22a15f18ed",
+   "user": "tozemstortik",
+   "user_id": 371096,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_114.webp",
+   "name": "Void Rift Shift",
+   "slug": "void-rift-shift",
+   "tagline": "Survive while reality tears itself apart in a shattered violet void of floating crystal shards.",
+   "description": "**Void Rift Shift** drops you into a fractured, twilight void where shards of crystal and stone drift through a haze of violet static. Jagged slabs, floating debris and a looming ring structure hang…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 16,
+     "name": "Roguelike",
+     "slug": "roguelike",
+     "group": "mechanic"
+    },
+    {
+     "id": 19,
+     "name": "Wave Survival",
+     "slug": "wave-survival",
+     "group": "mechanic"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 36,
+     "name": "Low Poly",
+     "slug": "low-poly",
+     "group": "visual_style"
+    },
+    {
+     "id": 40,
+     "name": "Stylized",
+     "slug": "stylized",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261029-acbe7508",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261029-acbe7508/77c0ec944ad6/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261029-acbe7508/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261029-acbe7508/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261029-acbe7508/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261029-acbe7508/capture/cap_27fa5ebbbb7d427d9d7c8927/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-29T18:33:52.552173Z",
+   "completed_at": "2026-10-29T19:34:28.627876Z",
+   "published_at": "2026-10-29T18:44:47.316708Z",
+   "play_count": 4,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 3,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284449,
+   "public_id": "5db5070e-52aa-4ec5-98df-c40390cdd3a9",
+   "user": "antonio764",
+   "user_id": 305173,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/antonio764_profile_1791466421.jpg",
+   "name": "A cobra fumou - FEB",
+   "slug": "a-cobra-fumou-feb",
+   "tagline": "Suba Monte Castello como um pracinha da FEB, avançando entre crateras na neve e na névoa do inverno italiano.",
+   "description": "**Monte Castello 1945: FEB** é um jogo de tiro em primeira pessoa no navegador ambientado na campanha brasileira na Itália. Você é um pracinha da Força Expedicionária Brasileira, com o emblema da Cob…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 51,
+     "name": "Story-Rich",
+     "slug": "story-rich",
+     "group": "feature"
+    },
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 18,
+     "name": "Linear",
+     "slug": "linear",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 69,
+     "name": "Tense",
+     "slug": "tense",
+     "group": "mood"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261027-830964d2",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261027-830964d2/0b649bf94ef4/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261027-830964d2/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261027-830964d2/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261027-830964d2/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/27/cover-284449-store-poster_sm.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer-720.mp4",
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/27/cover-284449-store-poster.webp",
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T23:28:45.529951Z",
+   "completed_at": "2026-10-28T19:28:58.899502Z",
+   "published_at": "2026-10-27T23:56:26.865426Z",
+   "play_count": 16,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284442,
+   "public_id": "7170837b-e6e7-4abb-876c-573394db7c45",
+   "user": "leonardo56",
+   "user_id": 361659,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_147.webp",
+   "name": "SOLIPSE",
+   "slug": "solipse",
+   "tagline": "Monday, 06:15 AM. Your alarm didn't go off, and the house is far too quiet. Go check on your family.",
+   "description": "**SOLIPSE** opens on an ordinary morning that feels wrong from the first second. You wake at home before dawn: the alarm never rang, the hallways are dim, and nobody is answering.\n\nExplore your house…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 51,
+     "name": "Story-Rich",
+     "slug": "story-rich",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 23,
+     "name": "Hacking",
+     "slug": "hacking",
+     "group": "mechanic"
+    },
+    {
+     "id": 19,
+     "name": "Wave Survival",
+     "slug": "wave-survival",
+     "group": "mechanic"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 46,
+     "name": "Dark & Gritty",
+     "slug": "dark-gritty",
+     "group": "visual_style"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261027-a9c1af95",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261027-a9c1af95/5c7e549f8711/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261027-a9c1af95/capture/cap_ad65b88340ff4a839ac1ed68/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261027-a9c1af95/capture/cap_ad65b88340ff4a839ac1ed68/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261027-a9c1af95/capture/cap_ad65b88340ff4a839ac1ed68/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261027-a9c1af95/capture/cap_ad65b88340ff4a839ac1ed68/frame.webp",
+   "trailer_url": "",
+   "trailer_short_url": "",
+   "video_url": null,
+   "video_poster_url": null,
+   "cover_url": "https://play.tesana.ai/game-20261027-a9c1af95/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261027-a9c1af95/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261027-a9c1af95/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/27/cover-284442-store-poster_sm.webp",
+   "video_preview_url": null,
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/27/cover-284442-store-poster.webp",
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T21:56:04.804748Z",
+   "completed_at": "2026-10-27T23:06:34.648495Z",
+   "published_at": "2026-10-27T22:34:40.065446Z",
+   "play_count": 10,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284431,
+   "public_id": "f8b9bc0d-5cfb-4056-93c9-408cd23fc5bc",
+   "user": "darelk",
+   "user_id": 369197,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_128.webp",
+   "name": "Pabėgimas iš Korėjos",
+   "slug": "pabegimas-is-korejos",
+   "tagline": "A man, a draft notice, and a score to settle. Sneak, shoot, and fight your way out in this pixel art action game.",
+   "description": "**Escape from Korea** is a 2D pixel art action game set under a blood-red night sky. Your hero, a lone civilian in a brown jacket, has received a draft notice and refuses to answer it. He has a score…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 51,
+     "name": "Story-Rich",
+     "slug": "story-rich",
+     "group": "feature"
+    },
+    {
+     "id": 73,
+     "name": "Post-Apocalyptic",
+     "slug": "post-apocalyptic",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 24,
+     "name": "Driving",
+     "slug": "driving",
+     "group": "mechanic"
+    },
+    {
+     "id": 22,
+     "name": "Stealth",
+     "slug": "stealth",
+     "group": "mechanic"
+    },
+    {
+     "id": 3,
+     "name": "Top-Down",
+     "slug": "top-down",
+     "group": "perspective"
+    },
+    {
+     "id": 46,
+     "name": "Dark & Gritty",
+     "slug": "dark-gritty",
+     "group": "visual_style"
+    },
+    {
+     "id": 35,
+     "name": "Pixel Art",
+     "slug": "pixel-art",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261027-f5e7a013",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261027-f5e7a013/9f12a89f99a6/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261027-f5e7a013/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261027-f5e7a013/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261027-f5e7a013/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261027-f5e7a013/capture/cap_4abf631c0b074b02b2fd7648/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T19:31:04.450212Z",
+   "completed_at": "2026-10-27T21:46:13.078058Z",
+   "published_at": "2026-10-27T19:56:15.935263Z",
+   "play_count": 9,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284402,
+   "public_id": "cf1bf800-abcd-4d3f-b228-3eb344f7df16",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Astro Drift",
+   "slug": "astro-drift",
+   "tagline": "Pilot a lone neon ship through a starfield and blast drifting asteroids, wave after wave.",
+   "description": "**Astro Drift** is a compact top-down space shooter. You fly a small glowing cyan ship across a dark starfield, steering with **WASD** and shooting down the gray, cratered asteroids that drift toward…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 78,
+     "name": "Space",
+     "slug": "space",
+     "group": "genre"
+    },
+    {
+     "id": 25,
+     "name": "Flying",
+     "slug": "flying",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 19,
+     "name": "Wave Survival",
+     "slug": "wave-survival",
+     "group": "mechanic"
+    },
+    {
+     "id": 3,
+     "name": "Top-Down",
+     "slug": "top-down",
+     "group": "perspective"
+    },
+    {
+     "id": 42,
+     "name": "Minimalist",
+     "slug": "minimalist",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "lt-baseline-web-2",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/lt-baseline-web-2/8234c5ac9a91/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/lt-baseline-web-2/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/lt-baseline-web-2/poster_sm.webp",
+   "explore_image_url": "https://play.tesana.ai/lt-baseline-web-2/explore.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/lt-baseline-web-2/explore_sm.webp",
+   "trailer_url": "",
+   "trailer_short_url": "",
+   "video_url": null,
+   "video_poster_url": null,
+   "cover_url": "https://play.tesana.ai/lt-baseline-web-2/cover.webp",
+   "banner_url": "https://play.tesana.ai/lt-baseline-web-2/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/lt-baseline-web-2/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/lt-baseline-web-2/poster_sm.webp",
+   "video_preview_url": null,
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T13:09:09.485555Z",
+   "completed_at": "2026-10-27T13:17:41.997547Z",
+   "published_at": "2026-10-27T13:17:42.109337Z",
+   "play_count": 2,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284342,
+   "public_id": "218a7470-d1e6-45b6-a67c-5199251d11fc",
+   "user": "younes24",
+   "user_id": 368324,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_121.webp",
+   "name": "Redstone Rift",
+   "slug": "redstone-rift",
+   "tagline": "Pilotez un chasseur futuriste au fil d'un canyon de grès rouge baigné d'une lumière chaude.",
+   "description": "**Redstone Rift** vous place aux commandes d'un chasseur futuriste lancé au-dessus de la rivière qui serpente au fond d'un immense canyon de grès rouge. La vue se place derrière le vaisseau, dont les…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 25,
+     "name": "Flying",
+     "slug": "flying",
+     "group": "mechanic"
+    },
+    {
+     "id": 18,
+     "name": "Linear",
+     "slug": "linear",
+     "group": "mechanic"
+    },
+    {
+     "id": 2,
+     "name": "Third Person",
+     "slug": "third-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261026-94620e70",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261026-94620e70/145e731563c6/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261026-94620e70/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261026-94620e70/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261026-94620e70/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261026-94620e70/capture/cap_5b769f76dbd84d698f627186/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-26T18:04:02.408282Z",
+   "completed_at": "2026-10-26T18:53:42.138904Z",
+   "published_at": "2026-10-26T18:44:15.437362Z",
+   "play_count": 9,
+   "players_7d": null,
+   "players_today": null,
+   "players_7d_prev": null,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  }
+ ],
+ "more_by": [
+  {
+   "id": 276343,
+   "public_id": "b5ae027f-d03a-4a7b-bd74-e14dc2aa222d",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Open Road",
+   "slug": "open-road-0379f35f",
+   "tagline": "Cruise a sunlit mountain valley in an orange supercar and race festival events to earn your wristbands.",
+   "description": "**Open Road** drops you behind the wheel of the Vantara GT-R in Horizon Valley, a stylized stretch of winding mountain highway lined with pine forests, golden grass and guardrails, all glowing under…",
+   "category": "",
+   "classified_category": {
+    "id": 5,
+    "name": "Racing",
+    "slug": "racing",
+    "icon": "🏎️"
+   },
+   "tags": [
+    {
+     "id": 48,
+     "name": "Controller Support",
+     "slug": "controller-support",
+     "group": "feature"
+    },
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 24,
+     "name": "Driving",
+     "slug": "driving",
+     "group": "mechanic"
+    },
+    {
+     "id": 17,
+     "name": "Open World",
+     "slug": "open-world",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 65,
+     "name": "Atmospheric",
+     "slug": "atmospheric",
+     "group": "mood"
+    },
+    {
+     "id": 2,
+     "name": "Third Person",
+     "slug": "third-person",
+     "group": "perspective"
+    },
+    {
+     "id": 40,
+     "name": "Stylized",
+     "slug": "stylized",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "",
+   "project_layout": "project",
+   "engine_game_name": "game-20260927-d048ed0e",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20260927-d048ed0e/f1e007ec6238/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20260927-d048ed0e/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20260927-d048ed0e/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20260927-d048ed0e/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/juicer-open-road_sm.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20260927-d048ed0e/capture/cap_bf913eaa9a7d4cafb10dbf67/trailer-720.mp4",
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/juicer-open-road.webp",
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-09-27T03:52:55.400344Z",
+   "completed_at": null,
+   "published_at": "2026-09-27T03:52:55.399666Z",
+   "play_count": 3485,
+   "players_7d": 430,
+   "players_today": 65,
+   "players_7d_prev": 321,
+   "favorite_count": 35,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 276336,
+   "public_id": "ba05a002-1c81-4379-b8fb-07dba0dbddcd",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Spear Gate",
+   "slug": "spear-gate",
+   "tagline": "Sweep through a demon horde with a blazing spear, cut down three officers, and break the Spear Gate before sunset.",
+   "description": "**Break the demon host. Shatter the Spear Gate.** Three demon officers hold the plain. Cut them down, force the gate open, and destroy the Gate Warden before the sun sets.\n\nYou play a spear-wielding…",
+   "category": "",
+   "classified_category": {
+    "id": 1,
+    "name": "Action",
+    "slug": "action",
+    "icon": "🔫"
+   },
+   "tags": [
+    {
+     "id": 53,
+     "name": "Leaderboard",
+     "slug": "leaderboard",
+     "group": "feature"
+    },
+    {
+     "id": 47,
+     "name": "Mobile-Friendly",
+     "slug": "mobile-friendly",
+     "group": "feature"
+    },
+    {
+     "id": 75,
+     "name": "Fantasy",
+     "slug": "fantasy",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 19,
+     "name": "Wave Survival",
+     "slug": "wave-survival",
+     "group": "mechanic"
+    },
+    {
+     "id": 2,
+     "name": "Third Person",
+     "slug": "third-person",
+     "group": "perspective"
+    },
+    {
+     "id": 40,
+     "name": "Stylized",
+     "slug": "stylized",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20260927-c1354fd9",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20260927-c1354fd9/546b82e12514/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/trailer.webp",
+   "cover_url": "https://cdn.tesana.ai/one-tap/media/game_covers/2026/09/27/juicer-spear-gate-keyart.webp",
+   "banner_url": "https://play.tesana.ai/game-20260927-c1354fd9/banner.webp",
+   "cover_sm_url": "https://cdn.tesana.ai/one-tap/media/game_covers/2026/09/27/juicer-spear-gate-keyart_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/game-20260927-c1354fd9-poster-shot_sm.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20260927-c1354fd9/capture/cap_6c2c1da64b3c4e22870498d1/trailer-720.mp4",
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/game-20260927-c1354fd9-poster-shot.jpg",
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-09-27T03:52:33.000902Z",
+   "completed_at": "2026-10-06T03:32:25.040670Z",
+   "published_at": "2026-09-27T03:52:32.999679Z",
+   "play_count": 1596,
+   "players_7d": 48,
+   "players_today": 9,
+   "players_7d_prev": 64,
+   "favorite_count": 15,
+   "is_favorited": false,
+   "playing_now": 1,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 277222,
+   "public_id": "75923fcd-2307-496b-a50b-154649c95b2f",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Sky Ace",
+   "slug": "sky-ace",
+   "tagline": "",
+   "description": "",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 48,
+     "name": "Controller Support",
+     "slug": "controller-support",
+     "group": "feature"
+    },
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 25,
+     "name": "Flying",
+     "slug": "flying",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 2,
+     "name": "Third Person",
+     "slug": "third-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20260928-6dd1aa3d",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/0660c79c70a8/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/trailer.webp",
+   "cover_url": null,
+   "banner_url": null,
+   "cover_sm_url": null,
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20260928-6dd1aa3d/capture/cap_3bd180c11fdf4b74b918c8b0/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-09-28T02:58:33.279847Z",
+   "completed_at": null,
+   "published_at": "2026-09-28T02:58:33.279051Z",
+   "play_count": 573,
+   "players_7d": 99,
+   "players_today": 23,
+   "players_7d_prev": 95,
+   "favorite_count": 11,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 276338,
+   "public_id": "45b4446d-8686-4b6b-9be9-5880f754cec2",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Red Acre",
+   "slug": "red-acre",
+   "tagline": "Ride a palomino through red rock canyon country and reach the Red Acre livery before the sun goes down.",
+   "description": "**Red Acre** is a third-person western ride through dusty frontier country. You play a cowboy in a blue shirt and suspenders, mounted on a palomino horse, with one clear job: get your horse to the Re…",
+   "category": "",
+   "classified_category": {
+    "id": 2,
+    "name": "Adventure",
+    "slug": "adventure",
+    "icon": "🗺️"
+   },
+   "tags": [
+    {
+     "id": 51,
+     "name": "Story-Rich",
+     "slug": "story-rich",
+     "group": "feature"
+    },
+    {
+     "id": 77,
+     "name": "Western",
+     "slug": "western",
+     "group": "genre"
+    },
+    {
+     "id": 24,
+     "name": "Driving",
+     "slug": "driving",
+     "group": "mechanic"
+    },
+    {
+     "id": 65,
+     "name": "Atmospheric",
+     "slug": "atmospheric",
+     "group": "mood"
+    },
+    {
+     "id": 2,
+     "name": "Third Person",
+     "slug": "third-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "",
+   "project_layout": "project",
+   "engine_game_name": "game-20260927-0a0406eb",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20260927-0a0406eb/bef0073246ae/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20260927-0a0406eb/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20260927-0a0406eb/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20260927-0a0406eb/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/juicer-red-acre_sm.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20260927-0a0406eb/capture/cap_aa02e8a8707645a3986872ee/trailer-720.mp4",
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/09/27/juicer-red-acre.webp",
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-09-27T03:52:55.103635Z",
+   "completed_at": null,
+   "published_at": "2026-09-27T03:52:55.102952Z",
+   "play_count": 513,
+   "players_7d": 48,
+   "players_today": 9,
+   "players_7d_prev": 43,
+   "favorite_count": 6,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  }
+ ],
+ "similar": [
+  {
+   "id": 282828,
+   "public_id": "97f4f369-436b-4dd9-95e9-2715acd2985c",
+   "user": "houser",
+   "user_id": 327251,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_116.webp",
+   "name": "Brasidas",
+   "slug": "brasidas",
+   "tagline": "10v10 Big Team Slayer on a ring world: storm the beach or fight above the clouds in a marble sanctum.",
+   "description": "Halo-style Big Team Slayer in your browser. Two teams of ten fight to 50 kills — real players and Spartan bots fill every slot, so a match is always full, and you can drop in mid-game.\r\n\r\nPick your b…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 47,
+     "name": "Mobile-Friendly",
+     "slug": "mobile-friendly",
+     "group": "feature"
+    },
+    {
+     "id": 50,
+     "name": "Short Sessions",
+     "slug": "short-sessions",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 12,
+     "name": "Competitive",
+     "slug": "competitive",
+     "group": "mechanic"
+    },
+    {
+     "id": 10,
+     "name": "Multiplayer",
+     "slug": "multiplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "",
+   "project_layout": "project",
+   "engine_game_name": "game-20261011-a8211df9",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261011-a8211df9/1a02de8a3e6d/",
+   "title_poster_path": "assets/ui/title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261011-a8211df9/capture/cap_2d720489cb83438c90213bcf/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261011-a8211df9/capture/cap_2d720489cb83438c90213bcf/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261011-a8211df9/capture/cap_2d720489cb83438c90213bcf/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261011-a8211df9/capture/cap_2d720489cb83438c90213bcf/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261011-a8211df9/capture/cap_2d720489cb83438c90213bcf/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/282828/brasidas-202610130901.mp4",
+   "video_poster_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/282828/brasidas-202610130901-poster.webp",
+   "cover_url": "https://cdn.tesana.ai/one-tap/media/game_covers/2026/10/12/Futuristiskt_vapen_over_gotiskt_slott.png",
+   "banner_url": "https://cdn.tesana.ai/one-tap/media/game_banners/2026/10/11/juicer-scifi-arena-banner.webp",
+   "cover_sm_url": "https://cdn.tesana.ai/one-tap/media/game_covers/2026/10/12/Futuristiskt_vapen_over_gotiskt_slott_sm.webp",
+   "banner_sm_url": "https://cdn.tesana.ai/one-tap/media/game_banners/2026/10/11/juicer-scifi-arena-banner_md.webp",
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/12/BRASIDAS__Slott_over_den_gyllene_dalen_sm.webp",
+   "video_preview_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/282828/preview-brasidas-202610130901.mp4",
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/12/BRASIDAS__Slott_over_den_gyllene_dalen.png",
+   "icon_image": "https://cdn.tesana.ai/one-tap/media/game_icons/2026/10/12/Isbla_omloppssymbol_pa_midnattsbla_bakgrund.png",
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-11T02:59:03.466270Z",
+   "completed_at": null,
+   "published_at": "2026-10-11T02:58:27Z",
+   "play_count": 1469,
+   "players_7d": 250,
+   "players_today": 35,
+   "players_7d_prev": 276,
+   "favorite_count": 18,
+   "is_favorited": false,
+   "playing_now": 1,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 278306,
+   "public_id": "5c8aabfd-75eb-4c20-95ca-c55c12025406",
+   "user": "jackjack",
+   "user_id": 335360,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/subprime_profile_1790797925.jpg",
+   "name": "Beanstalk Blaster",
+   "slug": "beanstalk-blaster",
+   "tagline": "Aim, shoot, and Bean Burst your way through a sunny 3D farm in Jack vs. the Giant's Revenge.",
+   "description": "**Beanstalk Blaster** is a colorful 3D action shooter set in a fairy-tale countryside. You play as Jack in *Jack vs. the Giant's Revenge*, starting out at **Level 1: The Cottage**, a cheerful farmste…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 48,
+     "name": "Controller Support",
+     "slug": "controller-support",
+     "group": "feature"
+    },
+    {
+     "id": 75,
+     "name": "Fantasy",
+     "slug": "fantasy",
+     "group": "genre"
+    },
+    {
+     "id": 29,
+     "name": "Boss Fights",
+     "slug": "boss-fights",
+     "group": "mechanic"
+    },
+    {
+     "id": 26,
+     "name": "Climbing",
+     "slug": "climbing",
+     "group": "mechanic"
+    },
+    {
+     "id": 18,
+     "name": "Linear",
+     "slug": "linear",
+     "group": "mechanic"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 38,
+     "name": "Cel-Shaded",
+     "slug": "cel-shaded",
+     "group": "visual_style"
+    },
+    {
+     "id": 40,
+     "name": "Stylized",
+     "slug": "stylized",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20260929-896db4fc",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20260929-896db4fc/f872d57a058d/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20260929-896db4fc/capture/cap_cc13e8c5dec44f5c865b4050/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20260929-896db4fc/capture/cap_cc13e8c5dec44f5c865b4050/poster.webp",
+   "explore_image_url": "https://cdn.tesana.ai/one-tap/media/games/explore_frames/manual/278306/beanstalk-blaster-202610130854.webp",
+   "explore_image_sm_url": "https://cdn.tesana.ai/one-tap/media/games/explore_frames/manual/278306/beanstalk-blaster-202610130854-sm.webp",
+   "trailer_url": "https://play.tesana.ai/game-20260929-896db4fc/capture/cap_cc13e8c5dec44f5c865b4050/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/278306/beanstalk-blaster-202610130854.mp4",
+   "video_poster_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/278306/beanstalk-blaster-202610130854-poster.webp",
+   "cover_url": "https://play.tesana.ai/game-20260929-896db4fc/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20260929-896db4fc/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20260929-896db4fc/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20260929-896db4fc/capture/cap_cc13e8c5dec44f5c865b4050/poster.webp",
+   "video_preview_url": "https://cdn.tesana.ai/one-tap/media/games/showcase_videos/278306/preview-beanstalk-blaster-202610130854.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-09-29T15:48:15.488019Z",
+   "completed_at": "2026-10-02T17:43:26.726036Z",
+   "published_at": "2026-10-02T19:18:22.248013Z",
+   "play_count": 1004,
+   "players_7d": 166,
+   "players_today": 41,
+   "players_7d_prev": 131,
+   "favorite_count": 12,
+   "is_favorited": false,
+   "playing_now": 2,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 282064,
+   "public_id": "4f9b8de0-ca56-48d5-b3b6-f410dab4eb56",
+   "user": "maxify",
+   "user_id": 180880,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_115.webp",
+   "name": "UPLINK: Rebellion vs Super Brain",
+   "slug": "uplink-rebellion-vs-super-brain",
+   "tagline": "5v5 tactical rounds: upload the virus to a Data Port, or stop it, and push the front line to win the war.",
+   "description": "**ZERO DAY: Rebellion vs Super Brain** is a round-based 5v5 tactical shooter played against and alongside bots. **Attackers** carry a virus to one of two Data Ports, A or B, and hold E to upload it.…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 74,
+     "name": "Sci-Fi",
+     "slug": "sci-fi",
+     "group": "genre"
+    },
+    {
+     "id": 12,
+     "name": "Competitive",
+     "slug": "competitive",
+     "group": "mechanic"
+    },
+    {
+     "id": 10,
+     "name": "Multiplayer",
+     "slug": "multiplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 46,
+     "name": "Dark & Gritty",
+     "slug": "dark-gritty",
+     "group": "visual_style"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261004-0cb481db",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261004-0cb481db/9492c749ac74/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261004-0cb481db/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261004-0cb481db/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261004-0cb481db/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261004-0cb481db/capture/cap_e8d10dd0e22549ecb2f6ad7e/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-04T20:29:32.602244Z",
+   "completed_at": "2026-10-06T16:18:39.980801Z",
+   "published_at": "2026-10-05T03:43:16.939868Z",
+   "play_count": 313,
+   "players_7d": 102,
+   "players_today": 15,
+   "players_7d_prev": 31,
+   "favorite_count": 1,
+   "is_favorited": false,
+   "playing_now": 2,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284449,
+   "public_id": "5db5070e-52aa-4ec5-98df-c40390cdd3a9",
+   "user": "antonio764",
+   "user_id": 305173,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/antonio764_profile_1791466421.jpg",
+   "name": "A cobra fumou - FEB",
+   "slug": "a-cobra-fumou-feb",
+   "tagline": "Suba Monte Castello como um pracinha da FEB, avançando entre crateras na neve e na névoa do inverno italiano.",
+   "description": "**Monte Castello 1945: FEB** é um jogo de tiro em primeira pessoa no navegador ambientado na campanha brasileira na Itália. Você é um pracinha da Força Expedicionária Brasileira, com o emblema da Cob…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 51,
+     "name": "Story-Rich",
+     "slug": "story-rich",
+     "group": "feature"
+    },
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 18,
+     "name": "Linear",
+     "slug": "linear",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 69,
+     "name": "Tense",
+     "slug": "tense",
+     "group": "mood"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261027-830964d2",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261027-830964d2/0b649bf94ef4/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261027-830964d2/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261027-830964d2/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261027-830964d2/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/27/cover-284449-store-poster_sm.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261027-830964d2/capture/cap_9f758d3308434c32b4ff7955/trailer-720.mp4",
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/27/cover-284449-store-poster.webp",
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-27T23:28:45.529951Z",
+   "completed_at": "2026-10-28T19:28:58.899502Z",
+   "published_at": "2026-10-27T23:56:26.865426Z",
+   "play_count": 12,
+   "players_7d": 2,
+   "players_today": 0,
+   "players_7d_prev": 0,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 282984,
+   "public_id": "453f9d8f-1f1d-4175-97c0-2701616a821d",
+   "user": "matthew945",
+   "user_id": 224976,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/assets/avatar_144.webp",
+   "name": "DEADLINE",
+   "slug": "deadline-edb68c9b",
+   "tagline": "A foggy first-person survival horror walk through dark woods toward the lights of Blackwood Lodge.",
+   "description": "Fog swallows the forest. Tall, dark trunks rise into a grey sky, and through the haze the warm windows of a lone building glow at the treeline. Your orders are simple: **Investigate Blackwood Lodge**…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 48,
+     "name": "Controller Support",
+     "slug": "controller-support",
+     "group": "feature"
+    },
+    {
+     "id": 57,
+     "name": "Inventory System",
+     "slug": "inventory-system",
+     "group": "feature"
+    },
+    {
+     "id": 73,
+     "name": "Post-Apocalyptic",
+     "slug": "post-apocalyptic",
+     "group": "genre"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 9,
+     "name": "Singleplayer",
+     "slug": "singleplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 46,
+     "name": "Dark & Gritty",
+     "slug": "dark-gritty",
+     "group": "visual_style"
+    },
+    {
+     "id": 36,
+     "name": "Low Poly",
+     "slug": "low-poly",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "full",
+   "project_layout": "project",
+   "engine_game_name": "game-20261012-9330fac7",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261012-9330fac7/255cc29ece98/",
+   "title_poster_path": "title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/poster.webp",
+   "explore_image_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/frame.webp",
+   "explore_image_sm_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/frame.webp",
+   "trailer_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/trailer.mp4",
+   "trailer_short_url": "",
+   "video_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/trailer.mp4",
+   "video_poster_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/trailer.webp",
+   "cover_url": "https://play.tesana.ai/game-20261012-9330fac7/cover.webp",
+   "banner_url": "https://play.tesana.ai/game-20261012-9330fac7/banner.webp",
+   "cover_sm_url": "https://play.tesana.ai/game-20261012-9330fac7/cover_sm.webp",
+   "banner_sm_url": null,
+   "poster_sm_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/poster.webp",
+   "video_preview_url": "https://play.tesana.ai/game-20261012-9330fac7/capture/cap_717b912e677745df83843ec0/trailer-720.mp4",
+   "poster_image": null,
+   "icon_image": null,
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-12T14:23:01.842083Z",
+   "completed_at": "2026-10-12T15:24:19.458470Z",
+   "published_at": "2026-10-12T15:24:19.465652Z",
+   "play_count": 24,
+   "players_7d": 2,
+   "players_today": 0,
+   "players_7d_prev": 0,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  },
+  {
+   "id": 284060,
+   "public_id": "6ab84909-d7f3-4f95-9356-73caaa7bff64",
+   "user": "Juicer",
+   "user_id": 25,
+   "user_profile_picture": "https://cdn.tesana.ai/one-tap/media/profile_pictures/Juicer_profile_1779148312.jpg",
+   "name": "Shoot House",
+   "slug": "shoot-house",
+   "tagline": "Close-quarters 6v6 in a desert shoot house. Five guns, a gunsmith, killstreaks, kill cams and live multiplayer.",
+   "description": "Fast, close-quarters gunfights in a sun-baked desert training compound. Tight lanes, a two-storey shoot house, wrecked cars to slide behind and long sightlines across the yard: every corner is a figh…",
+   "category": "",
+   "classified_category": {
+    "id": 7,
+    "name": "Shooter",
+    "slug": "shooter",
+    "icon": "🎯"
+   },
+   "tags": [
+    {
+     "id": 49,
+     "name": "Keyboard & Mouse",
+     "slug": "keyboard-mouse",
+     "group": "feature"
+    },
+    {
+     "id": 55,
+     "name": "Upgrades & Progression",
+     "slug": "upgrades-progression",
+     "group": "feature"
+    },
+    {
+     "id": 12,
+     "name": "Competitive",
+     "slug": "competitive",
+     "group": "mechanic"
+    },
+    {
+     "id": 10,
+     "name": "Multiplayer",
+     "slug": "multiplayer",
+     "group": "mechanic"
+    },
+    {
+     "id": 14,
+     "name": "Real-Time",
+     "slug": "real-time",
+     "group": "mechanic"
+    },
+    {
+     "id": 63,
+     "name": "Action-Packed",
+     "slug": "action-packed",
+     "group": "mood"
+    },
+    {
+     "id": 1,
+     "name": "First Person",
+     "slug": "first-person",
+     "group": "perspective"
+    },
+    {
+     "id": 39,
+     "name": "Realistic",
+     "slug": "realistic",
+     "group": "visual_style"
+    }
+   ],
+   "status": "completed",
+   "engine_version": "v2",
+   "engine_kind": "web",
+   "engine_release": "web-engine-v3",
+   "harness_profile": "",
+   "project_layout": "project",
+   "engine_game_name": "game-20261024-c3085129",
+   "is_mobile": false,
+   "orientation": "landscape",
+   "age_rating": "all",
+   "platform_tier": "web",
+   "download_url": "https://play.tesana.ai/game-20261024-c3085129/18b7487cf498/",
+   "title_poster_path": "assets/ui/title_poster.webp",
+   "title_poster_url": "https://play.tesana.ai/game-20261024-c3085129/poster.webp",
+   "title_poster_sm_url": "https://play.tesana.ai/game-20261024-c3085129/poster_sm.webp",
+   "explore_image_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/25/juicer-shoot-house-18b7487cf498-poster.webp",
+   "explore_image_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/25/juicer-shoot-house-18b7487cf498-poster_sm.webp",
+   "trailer_url": "",
+   "trailer_short_url": "",
+   "video_url": null,
+   "video_poster_url": null,
+   "cover_url": "https://cdn.tesana.ai/one-tap/media/game_covers/2026/10/25/juicer-shoot-house-18b7487cf498-cover.webp",
+   "banner_url": "https://cdn.tesana.ai/one-tap/media/game_banners/2026/10/25/juicer-shoot-house-18b7487cf498-banner.webp",
+   "cover_sm_url": "https://cdn.tesana.ai/one-tap/media/game_covers/2026/10/25/juicer-shoot-house-18b7487cf498-cover_sm.webp",
+   "banner_sm_url": "https://cdn.tesana.ai/one-tap/media/game_banners/2026/10/25/juicer-shoot-house-18b7487cf498-banner_md.webp",
+   "poster_sm_url": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/25/juicer-shoot-house-18b7487cf498-poster_sm.webp",
+   "video_preview_url": null,
+   "poster_image": "https://cdn.tesana.ai/one-tap/media/game_posters/2026/10/25/juicer-shoot-house-18b7487cf498-poster.webp",
+   "icon_image": "https://cdn.tesana.ai/one-tap/media/game_icons/2026/10/25/juicer-shoot-house-18b7487cf498-app_icon.webp",
+   "visibility": "published",
+   "allow_remixing": false,
+   "created_at": "2026-10-24T02:16:42.291099Z",
+   "completed_at": null,
+   "published_at": "2026-10-24T02:14:38.114849Z",
+   "play_count": 110,
+   "players_7d": 30,
+   "players_today": 10,
+   "players_7d_prev": 0,
+   "favorite_count": 0,
+   "is_favorited": false,
+   "playing_now": 0,
+   "is_featured": false,
+   "editor_choice": false,
+   "admin_rank": null,
+   "editorial_note": null,
+   "badges": [
+    "trending",
+    "new"
+   ],
+   "pricing_type": "free",
+   "price": null,
+   "minimum_price": null
+  }
+ ],
+ "viewer_playtime_seconds": null,
+ "playing_now": 4,
+ "verdict": {
+  "loved": 8,
+  "not_for_me": 0,
+  "total": 8,
+  "percent_loved": 100,
+  "mine": null
+ },
+ "chat_enabled": true,
+ "social_links": {
+  "twitter": "",
+  "instagram": "",
+  "youtube": "",
+  "tiktok": "",
+  "twitch": "",
+  "reddit": "",
+  "discord": ""
+ },
+ "latest_releases": [
+  {
+   "number": 4,
+   "published_at": "2026-10-13T09:03:23.393194+00:00",
+   "notes": [
+    "The new BODY-CAM: 5v5 matches."
+   ],
+   "is_live": true
+  },
+  {
+   "number": 3,
+   "published_at": "2026-10-11T18:22:31.034884+00:00",
+   "notes": [
+    "Fixed obstructed doorways at the motel",
+    "Improved navigation throughout the motel interior"
+   ],
+   "is_live": false
+  }
+ ],
+ "release_count": 4,
+ "public_play_url": "https://play.tesana.ai/game-20261012-6334236b/4405f71bd514/",
+ "seals": [
+  {
+   "key": "players_1000",
+   "tier": "rare",
+   "achieved_at": "2026-10-09T14:23:14.356262Z",
+   "game_id": 276352
+  },
+  {
+   "key": "playtime_100h",
+   "tier": "rare",
+   "achieved_at": "2026-10-15T17:27:38.834659Z",
+   "game_id": 276352
+  },
+  {
+   "key": "concurrent_10",
+   "tier": "rare",
+   "achieved_at": "2026-10-09T13:25:26.453534Z",
+   "game_id": 276352
+  },
+  {
+   "key": "players_250",
+   "tier": "rare",
+   "achieved_at": "2026-09-29T21:26:11.842524Z",
+   "game_id": 276352
+  },
+  {
+   "key": "playtime_10h",
+   "tier": "rare",
+   "achieved_at": "2026-09-30T05:03:55.202681Z",
+   "game_id": 276352
+  },
+  {
+   "key": "players_100",
+   "tier": "rare",
+   "achieved_at": "2026-09-28T01:26:10.899440Z",
+   "game_id": 276352
+  },
+  {
+   "key": "comment_1",
+   "tier": "rare",
+   "achieved_at": "2026-10-08T20:42:14.204688Z",
+   "game_id": 276352
+  },
+  {
+   "key": "concurrent_3",
+   "tier": "rare",
+   "achieved_at": "2026-09-27T19:48:20.114588Z",
+   "game_id": 276352
+  },
+  {
+   "key": "favorite_1",
+   "tier": "uncommon",
+   "achieved_at": "2026-09-27T12:47:58.985005Z",
+   "game_id": 276352
+  },
+  {
+   "key": "players_25",
+   "tier": "uncommon",
+   "achieved_at": "2026-09-27T16:35:01.815763Z",
+   "game_id": 276352
+  },
+  {
+   "key": "playtime_1h",
+   "tier": "uncommon",
+   "achieved_at": "2026-09-27T15:58:23.603702Z",
+   "game_id": 276352
+  },
+  {
+   "key": "concurrent_2",
+   "tier": "uncommon",
+   "achieved_at": "2026-09-27T13:06:56.106781Z",
+   "game_id": 276352
+  },
+  {
+   "key": "returning_1",
+   "tier": "uncommon",
+   "achieved_at": "2026-09-28T17:01:00.198516Z",
+   "game_id": 276352
+  }
+ ]
+}

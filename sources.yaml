@@ -1,0 +1,167 @@
+# Registry of platforms. The pipeline iterates over enabled entries only.
+# Adding a platform = one adapter file + one entry here + one fixture folder. See docs/ADDING_A_SOURCE.md.
+
+tesana:
+  module: tracker.sources.tesana
+  display_name: Tesana
+  segment: creation
+  enabled: true
+  lists: [played, trending, new, rising, popular, playing_now]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 400
+  metric_map:
+    plays: "plays = play sessions started (Tesana play_count)"
+    players: "players = unique players in the trailing 7 days (Tesana players_7d)"
+    players_now: "players now = concurrent players right now (Tesana playing_now)"
+
+rosebud:
+  module: tracker.sources.rosebud
+  display_name: Rosebud AI
+  segment: creation
+  enabled: true
+  lists: [top, new]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 400
+  metric_map:
+    plays: "plays = game-page loads / sessions started, not unique (Rosebud plays_count)"
+    remixes: "remixes = clones incl. unpublished (Rosebud clones_count)"
+
+bitmagic:
+  module: tracker.sources.bitmagic
+  display_name: Bitmagic
+  segment: creation
+  enabled: true
+  lists: [trending, popular, new]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 200
+  metric_map:
+    plays: "plays = Play-button presses, deduped per viewer session (Bitmagic playCount)"
+    players_now: "players now = players in a room right now (Bitmagic live counts)"
+
+astrocade:
+  module: tracker.sources.astrocade
+  display_name: Astrocade
+  segment: creation
+  enabled: true
+  # top_picks ("Players' Choice") and trending are the ranked lists (~30 each); genre rows cap at 100.
+  lists: [top_picks, trending, action, puzzle, platformer, adventure, simulation, horror, arcade, incremental]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 400
+  metric_map:
+    plays: "plays = session starts, each time a user starts the game (Astrocade plays)"
+    remixes: "remixes = child remixes (Astrocade remixCount)"
+
+spawn:
+  module: tracker.sources.spawn
+  display_name: Spawn
+  segment: creation
+  enabled: true
+  # Server-rendered HTML only (/api is robots-disallowed). top/new/multiplayer = /?filter=<name>, anything
+  # else = /?genre=<name>; each list is its first page (23-24 cards, 63 on multiplayer — ?offset= paging
+  # returns the same page). multiplayer is sorted by concurrent players and is the CCU source.
+  lists: [top, multiplayer, new, action, shooter, rpg, strategy, horror, cozy, puzzle]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 300
+  metric_map:
+    plays: "plays = cumulative play sessions (Spawn play_count)"
+    players_now: "players now = concurrent players in rooms right now (Spawn playing)"
+
+wavedash:
+  module: tracker.sources.wavedash
+  display_name: Wavedash
+  segment: aggregator
+  enabled: true
+  # trending = the ~4-12 games with a live concurrent-player count (2 requests); featured = feed phase 0,
+  # 48 games (2 requests). Optional `catalog` walks the whole feed in feed order (~53 requests, ~1 min at
+  # 1 r/s) so every one of the ~1,270 games gets a first-seen date (new games/day). There is no `new`
+  # list: the feed carries no publish dates and resolving them costs one request per game.
+  lists: [trending, featured]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 150
+  metric_map:
+    players_now: "players now = concurrent players in-game, published only for the ~12 trending games (Wavedash)"
+    plays: "plays = not public on Wavedash; only list placements and comments are tracked"
+
+remix:
+  module: tracker.sources.remix
+  display_name: Remix
+  segment: creation
+  enabled: true
+  # picks/latest/multiplayer = home-page shelves (one request); <category> = the 48-game grid with counters
+  # on /category/<name>; most_played_<category> = that page's "most played first" chip list (120 slugs, no
+  # counters, so each costs one /g/<slug> request). /api/* and /games/* are robots-disallowed and never used.
+  lists: [picks, latest, multiplayer, action, casual, adventure, puzzle, shooter, platformer, simulation, strategy, rpg, most_played_action, most_played_casual]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 400
+  metric_map:
+    plays: "plays = play sessions started (Remix playCount)"
+    players: "players = unique users who played, all time (Remix usersCount)"
+    likes: "likes = thumbs up (Remix thumbsUpCount)"
+
+playgama:
+  module: tracker.sources.playgama
+  display_name: Playgama
+  segment: aggregator
+  enabled: true
+  # /api/ is robots-disallowed; lists come from the SSR window.__query state of /category/<name>?page=N
+  # (45 per page); counters need one GET /game/<hru> per game (~200 requests ≈ 3.5 min at 1 r/s).
+  lists: [top_playgama, trending_now, new]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 250
+  metric_map:
+    votes: "votes = player ratings / likes (Playgama rating.count)"
+    players: "players = players ranked on the game's 7-day playtime leaderboard (Playgama leaderboard.totalPlayers)"
+    plays: "plays = not public on playgama.com; placements, votes and weekly leaderboard players are tracked"
+
+playgama_ai:
+  module: tracker.sources.playgama_ai
+  display_name: Playgama AI
+  segment: aggregator
+  enabled: true
+  # Static Astro HTML of https://playgama.ai/play (one request, all tabs); other tabs that exist:
+  # playtime, challenge, claude24h, codex24h, cursor24h. developer.playgama.com/api is robots-disallowed.
+  lists: [plays24h, playsAllTime, likesAllTime, freshDrops]
+  top_n: 100
+  poll_every_hours: 2
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 200
+  # game_pages: true → one GET /play/<id> per game for the exact all-time play count (cards only show "2.5k")
+  game_pages: true
+  metric_map:
+    plays: "plays = sessions of 30 s or more counted by Playgama Bridge (playgama.ai all-time plays)"
+    plays_24h: "plays 24h = Playgama's own trailing-24h play count"
+    likes: "likes = all-time likes shown on the Most Liked / Challenge cards only (rounded above 1k)"

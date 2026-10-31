@@ -1,0 +1,41 @@
+{
+ "status": "success",
+ "value": [
+  {
+   "_id": "j970t453fa7hnm1w4gzwxkhhyx8f8ejc",
+   "slug": "sumbasurf",
+   "title": "SumbaSurf",
+   "wideCover": {
+    "agentGenerated": false,
+    "r2Key": "jd7462vt71w9kmjy6571p8jjvn8f8mfv/j970t453fa7hnm1w4gzwxkhhyx8f8ejc/assets/wideCover-1790705232418-8ee60ba4.webp"
+   }
+  },
+  {
+   "_id": "j97ayshk0g83hsbg2r4v0ppm9s883scg",
+   "slug": "matt-portners-pro-skimboarder",
+   "title": "Matt Portner's Pro Skimboarder",
+   "wideCover": {
+    "agentGenerated": false,
+    "r2Key": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97ayshk0g83hsbg2r4v0ppm9s883scg/assets/wideCover-1790187857432-3e5efb32.webp"
+   }
+  },
+  {
+   "_id": "j978agtfy4wcqnb8d2zzznxn358gcjqy",
+   "slug": "splinter-kick",
+   "title": "Splinter Kick",
+   "wideCover": {
+    "agentGenerated": false,
+    "r2Key": "jd741cwa8kybtk34ddqt9sc51985qa2b/j978agtfy4wcqnb8d2zzznxn358gcjqy/assets/wideCover-1792464122360-b05a20bf.webp"
+   }
+  },
+  {
+   "_id": "j9716d7hzj7w9531ctk6zyffd58fgw5s",
+   "slug": "bmx-mountain",
+   "title": "BMX Mountain",
+   "wideCover": {
+    "agentGenerated": false,
+    "r2Key": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j9716d7hzj7w9531ctk6zyffd58fgw5s/assets/wideCover-1791071133500-b0ee3354.webp"
+   }
+  }
+ ]
+}

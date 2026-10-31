@@ -1,0 +1,3837 @@
+{
+ "success": true,
+ "games": [
+  {
+   "gameId": "B5U0A5XFC7K9",
+   "name": "Astra Meridian",
+   "description": "Fly a heavily armed starfighter through the ice rings of a turbulent blue gas giant. Shatter asteroids with independently aimed guns, paint multiple targets for guided seekers, and launch wingtip rockets against hostile squadrons. Survive escalating sectors and recurring Sentinels, earn ship and weapon upgrades, and chase your best run in an endless orbital battlefield. Switch between four cameras and master full-3D flight with boost, retro thrust, and optional flight assist.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/B5U0A5XFC7K9/1792371507202-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-44ad82c9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-44ad82c9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-393a1f9c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-393a1f9c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-19T00:58:31.275Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "landscape",
+   "viewCount": 1413,
+   "playCount": 834,
+   "likeCount": 66,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "3gedkx83",
+    "publicId": "3gedkx83",
+    "brandId": null,
+    "displayName": "Josh English",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "A5NFKUI9SMT3",
+   "name": "Xelda",
+   "description": "Step into Xelda, a voxel-built adventure where a wooden cottage, a cliffside waterfall, and a sprawling pond hide secrets waiting to be uncovered. Converse with townsfolk like Elena, sword and shield in hand, as you navigate a world shaped by constant refinement, from the trials that reward you with hidden chests to the pond's shore that keeps its own stubborn secrets. - Made with Bitmagic",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1785422433350-KeyArt.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-c269d44b-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-c269d44b-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-c269d44b-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-c269d44b-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-0dc7103a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-0dc7103a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-58a4c9d9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-58a4c9d9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-249036ab-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A5NFKUI9SMT3-249036ab-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-18T20:43:22.025Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 2770,
+   "playCount": 1979,
+   "likeCount": 98,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "rpb",
+    "publicId": "2byv2jdg",
+    "brandId": "rpb",
+    "displayName": "Ricardo",
+    "avatarUrl": "https://bitmagic.ai/creators/2byv2jdg/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "D3C27KX0UH0Y",
+   "name": "Swat the Heat",
+   "description": "🏜️ It's blazing hot, you're stuck in a beach chair, and the mosquitoes are HUNGRY! 🦟 Tap to swing your trusty plastic swatter and splat them before they bite. Big bugs and shiny golden ones pay the most ✨, kill streaks multiply your points 🔥, and the last 10 seconds pay double. Thirsty? 🥤🍉 Grab a sip or a slice from the side table, or your aim gets wobbly. Every round rolls a new forecast (Heatwave, Swarm Day, Windy, Rush Hour…), and Big Mama, the boss mosquito, always drops by. 60 seconds, one swatter: beat your best, then pass it to a friend! 👋",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/D3C27KX0UH0Y/1792348690280-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-18T18:38:14.921Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "landscape",
+   "viewCount": 1659,
+   "playCount": 876,
+   "likeCount": 93,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "metinucar",
+    "publicId": "9zwfzx9p",
+    "brandId": "metinucar",
+    "displayName": "Metin Uçar",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/776db27275384502f12044d4b7435f122391217d.jpg"
+   }
+  },
+  {
+   "gameId": "I2HWSLSHKASH",
+   "name": "BANGER MASH SOLO",
+   "description": "Smash, bash, and blast your way through the track in BANGER MASH SOLO, a voxel racing game where every collision chips away at your car and every lap is a fight for glory. Watch chunks of your ride fly off in the heat of the race, then respawn back into the action with your battle scars intact. Can you finish first while your car falls apart around you? - Made with Bitmagic",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1785339478601-BangerSolo.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 547,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-43dea52d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-43dea52d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-fd512d88-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-fd512d88-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-35b1178e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-35b1178e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1.8542372881355933,
+     "text": {
+      "x0": 0.13,
+      "y0": 0.1,
+      "x1": 0.91,
+      "y1": 0.94
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.15,
+      "y0": 0.29,
+      "x1": 0.97,
+      "y1": 0.85
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.15696610169491526,
+      "y0": 0.1,
+      "x1": 0.8801186440677966,
+      "y1": 0.94
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.08,
+      "y0": 0.27,
+      "x1": 0.94,
+      "y1": 0.68
+     }
+    }
+   },
+   "publishedAt": "2026-10-18T13:28:55.677Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 912,
+   "playCount": 433,
+   "likeCount": 14,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "rpb",
+    "publicId": "2byv2jdg",
+    "brandId": "rpb",
+    "displayName": "Ricardo",
+    "avatarUrl": "https://bitmagic.ai/creators/2byv2jdg/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "O4AWT688K98L",
+   "name": "Gravity Optional",
+   "description": "A night-time proving ground for a car that does not need the floor. Launch from 0 to 60 mph in under a second, stick to walls and ceilings on a limited suction, and fly and flip on bursts of pressurized air. Two tracks to master: Proving Ground, where you climb the giant wall, ride the ceiling over the pit and cross the canyon on jets, and Upside Down, a full loop over your own start, a drop from the ceiling and a thrust over a row of parked cars. Chase gold medals, collect the cells and race the ghost of your best run.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/O4AWT688K98L/1792214330294-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1080,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-97dc26ac-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-97dc26ac-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-5ee316f1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-5ee316f1-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-bd844445-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-bd844445-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-17T05:18:53.886Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "landscape",
+   "viewCount": 3702,
+   "playCount": 1332,
+   "likeCount": 83,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "SES941FZHXJA",
+   "name": "Vinterrustad - Bygg din beredskap",
+   "description": "Lär dig krisberedskap genom att spela. Bygg din beredskap, fatta beslut och upptäck hur ditt hushåll klarar olika krissituationer.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/prompt-images/1791438850432-Vinterrustad%20l%C3%A4genhet%20i%20sn%C3%B6gl%C3%B6d%20Kvadrat.png",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-de63d03b-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-de63d03b-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 576,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-de63d03b-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-a804d716-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-a804d716-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-0285515c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SES941FZHXJA-0285515c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.04,
+      "y0": 0.02,
+      "x1": 0.69,
+      "y1": 0.27
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.2,
+      "y0": 0.06,
+      "x1": 0.8,
+      "y1": 0.2
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.27,
+      "y0": 0.02,
+      "x1": 0.595,
+      "y1": 0.27
+     }
+    }
+   },
+   "publishedAt": "2026-10-12T20:11:43.145Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": null,
+   "viewCount": 33,
+   "playCount": 12,
+   "likeCount": 1,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2xrv668x",
+    "publicId": "2xrv668x",
+    "brandId": null,
+    "displayName": "Björn Karlsson",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "QT20DAECXU36",
+   "name": "The Pub",
+   "description": "# The Pub\n\nStep into a charming voxel-built pub where exploration and interaction come together in a relaxing, atmospheric experience. Discover the intimate details of a fully-realized bar environment, from the carefully crafted interior to the vehicles outside, as you navigate through episodes and customize your camera controls to suit your playstyle. Whether you're unwinding in the cozy ambiance or engaging with the tutorial's interactive elements, The Pub offers a unique, meditative escape perfect for mobile gaming. - Made with Bitmagic",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1788293327279-KeyArt.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-55d17788-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-55d17788-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 600,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-55d17788-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-188672bd-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-188672bd-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-7261cc6b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-7261cc6b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.14,
+      "y0": 0.07,
+      "x1": 0.88,
+      "y1": 0.22
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.25,
+      "y0": 0.07,
+      "x1": 0.73,
+      "y1": 0.22
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.32,
+      "y0": 0.07,
+      "x1": 0.69,
+      "y1": 0.22
+     }
+    }
+   },
+   "publishedAt": "2026-10-11T09:32:38.916Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 8814,
+   "playCount": 963,
+   "likeCount": 125,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "rpb",
+    "publicId": "2byv2jdg",
+    "brandId": "rpb",
+    "displayName": "Ricardo",
+    "avatarUrl": "https://bitmagic.ai/creators/2byv2jdg/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "VPCT0XSS4E64",
+   "name": "Party Boat",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/VPCT0XSS4E64/1791554277289-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-f8d3457a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-f8d3457a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-da904dcf-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-da904dcf-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-09T13:58:02.007Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 557,
+   "playCount": 281,
+   "likeCount": 12,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "mennytmies",
+    "publicId": "67fca7q8",
+    "brandId": "mennytmies",
+    "displayName": "Markus Hjort",
+    "avatarUrl": "https://bitmagic.ai/creators/67fca7q8/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "OM8ONSCMIZIN",
+   "name": "Happytown",
+   "description": "A 3D tabletop city sim on a child’s playroom board. Drag wooden toy pieces onto the maple table, fill lots with houses and shops, and grow from a hamlet to a Capital of 100,000 people.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/OM8ONSCMIZIN/1791527553837-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1254,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-42015299-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-42015299-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-476da8e8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-476da8e8-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-09T06:32:39.516Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 14714,
+   "playCount": 2546,
+   "likeCount": 250,
+   "commentCount": 3,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "GU9PM02UW77R",
+   "name": "Cabinet Fever",
+   "description": "Build your arcade from one 1972 cabinet into a neon megaplex. Every cabinet is a real, playable game: start with PING in 1972 and work your way through 31 machines, from CHOMPER and COSMIC INTRUDERS to TUBE STORM, STREET BRAWLER, SPEED CIRCUIT and DANCE BEAT in 1998. Buy and place cabinets, set the prices, keep them repaired, pay the rent, hire staff and move into bigger halls as the years roll by. Pick any machine and play it yourself, with a keyboard or with your thumbs on a phone.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/GU9PM02UW77R/1791499937563-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1440,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-1967a8f6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-1967a8f6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-9882daba-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-9882daba-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.2,
+      "y0": 0.1,
+      "x1": 0.92,
+      "y1": 0.36
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.25,
+      "y0": 0.07,
+      "x1": 0.75,
+      "y1": 0.29
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.35,
+      "y0": 0.1,
+      "x1": 0.71,
+      "y1": 0.36
+     }
+    }
+   },
+   "publishedAt": "2026-10-08T22:52:21.657Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 11764,
+   "playCount": 2994,
+   "likeCount": 180,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "BBUJYDOT4LPW",
+   "name": "Trick or Roll",
+   "description": "Tilt the world, not the ball. Guide a golden hamster in a glass ball across a floating Halloween harvest world: narrow plank walkways, spinning scarecrow discs, jack-o'-lantern bumpers, conveyor belts and launch ramps drifting in a violet twilight sky. Collect wrapped candy, roll through the glowing jack-o'-lantern goal before the 60-second timer runs out, and don't fall off the world. A comic-book take on the arcade tilt-and-roll classic.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/BBUJYDOT4LPW/1791491048832-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-0058a935-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-0058a935-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-03c3270b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-03c3270b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-08T20:24:13.399Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 12735,
+   "playCount": 3718,
+   "likeCount": 249,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "BINNMAMCVYBC",
+   "name": "Squall Riders",
+   "description": "Race jet skis through three storms. Every swell is a ramp: climb the face, launch off the lip, throw a backflip or a barrel roll, and land on the back of the wave for speed. Clean landings and tricks charge your SURGE boost — burn it to blast past four rivals. Race round a lonely lighthouse at sunset, through a city harbour as a night storm rolls in, or among the icebergs below an arctic glacier. First across the line wins.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/BINNMAMCVYBC/1791477083471-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-80e521c2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-80e521c2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-18b94ac0-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-18b94ac0-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.2,
+      "y0": 0.24,
+      "x1": 0.82,
+      "y1": 0.5
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.3,
+      "y0": 0.1,
+      "x1": 0.71,
+      "y1": 0.36
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.35,
+      "y0": 0.24,
+      "x1": 0.6599999999999999,
+      "y1": 0.5
+     }
+    }
+   },
+   "publishedAt": "2026-10-08T16:31:34.069Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": null,
+   "viewCount": 14573,
+   "playCount": 3421,
+   "likeCount": 171,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "GD9LZQAGXV6J",
+   "name": "Crumble Isles",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/GD9LZQAGXV6J/1791465765542-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-e543eab7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-e543eab7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-17a8aa6d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-17a8aa6d-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-08T13:22:49.682Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": null,
+   "viewCount": 36842,
+   "playCount": 9523,
+   "likeCount": 792,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "kiukku",
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "7DJEK1E7BL8L",
+   "name": "Dust Walkers",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/7DJEK1E7BL8L/1791293835400-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1672,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-2c218792-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-2c218792-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-bd4845e9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-bd4845e9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-c9d4c1b9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-c9d4c1b9-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-06T13:37:22.090Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "landscape",
+   "viewCount": 835,
+   "playCount": 415,
+   "likeCount": 28,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "kiukku",
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "03JCYJ9G6VGR",
+   "name": "Faction Wars",
+   "description": "# Faction Wars\n\n**Faction Wars** is a strategic card-collecting game set in a brutal sci-fi society where you build power through economic influence, political maneuvering, and military might. Each turn, you gain resources and recruit powerful characters to your tableau, watching them generate permanent bonuses that accelerate your path to dominance. Race against your opponent to claim 15 prestige points and forge the most formidable faction in the realm—or secure legendary Noble Houses to cement your victory. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/6c09c9fa-b4b9-4f45-8f4f-a713b1f41089/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-2286d4e4-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-2286d4e4-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-2286d4e4-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-2286d4e4-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-f7e4df49-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-f7e4df49-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-91666b37-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-91666b37-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-bcfaa63c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/03JCYJ9G6VGR-bcfaa63c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-05T07:35:19.685Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": null,
+   "viewCount": 21,
+   "playCount": 7,
+   "likeCount": 1,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "565a8dj5",
+    "publicId": "565a8dj5",
+    "brandId": null,
+    "displayName": "Maher Najjar",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "3R99FHAAPPCN",
+   "name": "Utopos",
+   "description": "Zero-gravity space combat in a derelict station: thrust and recoil, railguns, buchus and force-field bases for up to ten pilots. Fly solo against nine bots, or host a room and play online with friends. A port of the Unity game Utopos.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/3R99FHAAPPCN/1791099883221-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-64ba5839-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-64ba5839-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c79c238e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c79c238e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-04T07:44:46.793Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "landscape",
+   "viewCount": 20780,
+   "playCount": 2770,
+   "likeCount": 290,
+   "commentCount": 1,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "0V2XHPUGUEWS",
+   "name": "Aurora Wings",
+   "description": "Tiny wings. Big trouble. Mum is right behind you.\n\nMum is asleep beside the nest when one little egg cracks. Out tumbles a curious baby dragon with a whole world to explore—and wings that can’t quite fly yet. One slide down the hillside is all it takes to wake Mum. Now she’s coming to scoop her runaway hatchling up and take it home.\n\nMake your escape in Aurora Wings, a one-button dragon chase where every hill is a chance to soar. Dive into the downslopes, launch off the crests, and carry your momentum through eight kilometres of emerald meadows, cactus dunes, lush rainforest and snowy alpine peaks.\n\nFeeling brave? Flip through the air to leave a cloud that slows Mum down. Double up for a bigger cloud—but land before your flip is finished and you’ll tumble, lose speed, and hear her getting closer.\n\nEasy to control. Hard to escape. Chase your personal best and climb the Bitmagic leaderboard: every metre counts. Reach the sanctuary at 8,000 metres and every metre you leave Mum behind becomes a bonus point.\n\nOne button does it all: hold Space on desktop or touch anywhere on mobile to dive, release to soar, and tap in the air to flip. How far can your tiny wings take you?",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/0V2XHPUGUEWS/1790997135032-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-df0cce96-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-df0cce96-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-dd583826-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-dd583826-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-03T03:12:19.717Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": null,
+   "viewCount": 6489,
+   "playCount": 1476,
+   "likeCount": 141,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "S691S3C0Q4WY",
+   "name": "Bounce 3D",
+   "description": "Classic Nokia-inspired 3D platformer with accurate physics, golden hoops, spring trampolines, and crystal hazards. Built with AWS & Bitmagic at Stockholm Hackathon.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/S691S3C0Q4WY/1790833196172-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-6b5c65a3-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-6b5c65a3-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-40fe70c7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-40fe70c7-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-10-01T05:40:02.500Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 115,
+   "playCount": 61,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "akkireddy",
+    "publicId": "4jtj67sx",
+    "brandId": "akkireddy",
+    "displayName": "Akkireddy Challa",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/e7d2d6b531d5f4370d8f961c76e52270cc856560.jpg"
+   }
+  },
+  {
+   "gameId": "DDWOTIVTM0XK",
+   "name": "Desktop Brawl",
+   "description": "# Desktop Brawl\n\n**Desktop Brawl** is a chaotic 2-4 player local fighting game set inside a hilariously malfunctioning computer desktop, where stick figure brawlers throw punches across the taskbar and leap between floating app windows while Staply, an unhelpful AI assistant stapler, constantly interrupts with useless tips and sabotage. Master fluid, combo-driven combat with directional attacks, charged kicks, shield mechanics, and a damage-percentage system that sends opponents flying further the more they're beaten, all while dodging pop-up ads, system crashes, and the occasional \"Mom: dinner's ready!\" interrupt. With multiple game modes including 1v1, free-for-all, tag team, and last stand battles against CPU opponents, plus the ability to customize your fighter's color and choose from four distinct BrawlOS desktop themes, every match feels like a gloriously broken office computer coming to life. - Made with Bitmagic",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/DDWOTIVTM0XK/imported/2-image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-db9bbf82-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-db9bbf82-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-db9bbf82-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-db9bbf82-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-f7c8572f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-f7c8572f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-a908a4b4-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DDWOTIVTM0XK-a908a4b4-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-30T20:27:11.714Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 19,
+   "playCount": 10,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "6d5d4vzb",
+    "publicId": "6d5d4vzb",
+    "brandId": null,
+    "displayName": "Alex Alazar",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "C7PUP1YIFFME",
+   "name": "Nirvana",
+   "description": "# Nirvana\n\n**Nirvana** is a meditative scavenger hunt where you wander through a serene, hand-drawn isometric world seeking enlightenment. Discover hidden memories, complete mindful activities, and interact with meaningful objects across seven peaceful zones—a campsite, forest, kitchen, living room, bike trail, beach, and surf cove—each unlocking personal stories through doodle-art fact cards. When your Enlightenment meter reaches 100%, you'll sit in meditation at the center of the world and perform a rhythmic breathing ritual to \"escape the matrix\" and transcend, with the option to loop endlessly and chase higher scores. - Made with Bitmagic",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/7CZLSF3MZVGA/imported/2-image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-a89aab56-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-a89aab56-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-a89aab56-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-a89aab56-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-33b5eed7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-33b5eed7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-f085c2aa-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C7PUP1YIFFME-f085c2aa-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-30T13:57:01.310Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 27,
+   "playCount": 8,
+   "likeCount": 1,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "8dfv5bjn",
+    "publicId": "8dfv5bjn",
+    "brandId": null,
+    "displayName": "Pranit Popli",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "6V9ESFS3AQN5",
+   "name": "Office Chair Chaos",
+   "description": "Strap fire extinguishers to your office chair and blast through a corporate high-rise in this hilarious arcade platformer. Drift across slick tile floors, smash through paperwork, bounce off water coolers, and dodge robot vacuums—all while racing three checkpoint gates to the rooftop helicopter pad in 60 seconds. A fast, bouncy, low-poly satire of cubicle life where your escape vehicle is a squeaky swivel chair. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/ae73d6fc-be5b-487c-9e5b-8cb3144af75e/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-eebaf5c1-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-eebaf5c1-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-eebaf5c1-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-eebaf5c1-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-094bc2f6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-094bc2f6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-221c9e08-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-221c9e08-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-4f607242-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/6V9ESFS3AQN5-4f607242-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-30T05:47:25.665Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 101,
+   "playCount": 48,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "akkireddy",
+    "publicId": "4jtj67sx",
+    "brandId": "akkireddy",
+    "displayName": "Akkireddy Challa",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/e7d2d6b531d5f4370d8f961c76e52270cc856560.jpg"
+   }
+  },
+  {
+   "gameId": "R1ZXHW7ZGADO",
+   "name": "Stack & Dash",
+   "description": "# Stack & Dash\n\n**Stack & Dash** is a chaotic physics-based delivery game where you pilot a quirky electric delivery vehicle through a vibrant miniature city, stacking ridiculous cargo (giant cakes, aquariums, rubber ducks, and more) and racing against the clock to deliver them intact. Master arcade-style driving, exploit hilarious shortcuts through traffic, construction zones, and rooftops, while managing delicate package physics that wobble, slide, and threaten to tumble off at every turn. The more packages you stack and the more dangerous routes you take, the bigger your rewards—but one poorly timed jump or reckless turn through rush hour traffic could turn your delivery into a comedy of destruction. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/88009f00-3876-4219-93b9-4a70819d3d27/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-bcd85366-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-bcd85366-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-bcd85366-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-bcd85366-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-5bb5bbc9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-5bb5bbc9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-852dbe18-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R1ZXHW7ZGADO-852dbe18-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T21:27:06.300Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 18,
+   "playCount": 6,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "3quabmrk",
+    "publicId": "3quabmrk",
+    "brandId": null,
+    "displayName": "Nishant Mattupalli",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "8RU0H9OJ8XA9",
+   "name": "Disco Fever",
+   "description": "One dancer. Hit the arrows on the beat and watch the groove spread until the whole 70s disco hall is dancing, then the mirror ball goes KA-BLING!",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/8RU0H9OJ8XA9/1790716267256-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-f0b2f875-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-f0b2f875-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-65b2125f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-65b2125f-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T21:11:11.242Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "portrait",
+   "viewCount": 186,
+   "playCount": 80,
+   "likeCount": 7,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "6av2zx3c",
+    "publicId": "6av2zx3c",
+    "brandId": null,
+    "displayName": "(Phineas) Yunfei Yu",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/4202b611c2c2f4c08aa8fc2919b934703b2f6ad2.jpg"
+   }
+  },
+  {
+   "gameId": "LWUT77SX0974",
+   "name": "Elemental Battle",
+   "description": "Clash of elements in an epic voxel battle royale where you harness the power of earth, fire, wind, and water to outmaneuver opponents and dominate the arena. Scavenge iconic weapons like swords, hammers, and bows while mastering elemental interactions—watch fire merge with earth to forge devastating lava attacks or exploit wind and water synergies for tactical advantage. Experience intense keyboard-controlled multiplayer combat across a diverse, obstacle-filled landscape where strategic positioning and elemental mastery determine who claims victory in this cozy-yet-chaotic fantasy showdown. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/9d4f35df-2e7e-4e7f-bb5c-b414f0cdb4f9/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-689af961-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-689af961-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-689af961-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1536,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-689af961-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-689af961-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-ee0a9fa2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-ee0a9fa2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-dba24410-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-dba24410-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-19550e1c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LWUT77SX0974-19550e1c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:55:45.215Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 40,
+   "playCount": 13,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2vqe6zqz",
+    "publicId": "2vqe6zqz",
+    "brandId": null,
+    "displayName": "Antonio",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "U3OOZHEA1LII",
+   "name": "Runway🚀",
+   "description": "# RUNWAY 🚀\n\n**RUNWAY** is a hilarious multiplayer 3D voxel runner where you and other players compete as sleep-deprived startup founders racing to raise money before your cash runs out. Sprint down a neon-soaked road from your mom's basement through a startup ecosystem, dodging burn-rate fires and competitors' limousines while collecting customers and pitching to VCs at three elevator towers—throw basketballs at their hoops to score funding and keep your runway alive. The founder with the highest valuation becomes a glowing, horn-adorned unicorn while a quirky AI safety researcher jogs backwards in front of them preaching responsible scaling, making every race a wild, satirical celebration of startup chaos. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/3c48f673-c992-4b59-9bbb-21296cb35f39/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-3a929181-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-3a929181-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-4fc71f64-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-4fc71f64-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:55:06.946Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 195,
+   "playCount": 99,
+   "likeCount": 4,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "8dvfywqc",
+    "publicId": "8dvfywqc",
+    "brandId": null,
+    "displayName": "Filip Landin",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "8DSLLYY00TUF",
+   "name": "Logo-game",
+   "description": "LOCI is a calm island of small memory and focus games. Train focus and memory with a few relaxing minutes a day — a calm daily practice.",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/82b6eb4f-e396-4ecf-99b2-286ba1ad04f0/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-15276e13-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-15276e13-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-15276e13-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-15276e13-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-f9def967-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-f9def967-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-f0c532c9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-f0c532c9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-37975f8e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8DSLLYY00TUF-37975f8e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 0.5714285714285714,
+     "text": {
+      "x0": 0.13,
+      "y0": 0.07,
+      "x1": 0.88,
+      "y1": 0.2
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.3810714285714286,
+      "y0": 0.07,
+      "x1": 0.6221428571428571,
+      "y1": 0.2
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.33,
+      "y0": 0.07,
+      "x1": 0.68,
+      "y1": 0.2
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.11,
+      "y0": 0.07,
+      "x1": 0.9,
+      "y1": 0.2
+     }
+    }
+   },
+   "publishedAt": "2026-09-29T18:45:00.516Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": "portrait",
+   "viewCount": 17,
+   "playCount": 5,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "9t9ynghz",
+    "publicId": "9t9ynghz",
+    "brandId": null,
+    "displayName": "Nix A",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "HQX8ZV2TVSMH",
+   "name": "Ice Time",
+   "description": "**Ice Time** is a vibrant neon-arcade bandy experience where you lace up your skates and compete in fast-paced matches between Finland and Sweden with dynamic AI teammates and opponents inspired by classic FIFA 94 gameplay. Master the unique mechanics of bandy—sliding across slick ice while wielding your stick to pass, shoot, and outmaneuver rivals—all while navigating a full-pitch overhead view that keeps the action constantly visible. Challenge a friend in co-op mode with split controls, but beware the referee's whistle—commit fouls and you'll find yourself sent off the ice in this electrifying, glow-drenched take on winter's most underrated sport. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/9f67ff80-a0a0-4508-9436-d189af997fe2/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-1ae07f3e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-1ae07f3e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-28d3c00c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-28d3c00c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:39:32.329Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 909,
+   "playCount": 64,
+   "likeCount": 4,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "5dmvyvbv",
+    "publicId": "5dmvyvbv",
+    "brandId": null,
+    "displayName": "Gustav Hauri",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "I4OH1730WGL9",
+   "name": "Echo",
+   "description": "# Echo Archive: Fractured Sanctum\n\nMaster time itself by recording your spells and movements, then commanding your past selves as ghostly Echoes to solve puzzles and defeat bosses that neither you nor they could conquer alone. Every chamber demands careful coordination across multiple Lives—watch your recorded magic interact with your present spells in unexpected ways as you manipulate fire, ice, lightning, and gravity to reshape a fractured magical sanctum. Echo across time, rewrite your strategy, and close the temporal rupture before the sanctum collapses into the void. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/6da01123-8571-4e47-9c0b-df8ecf573750/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-aec33850-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-aec33850-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-aec33850-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-aec33850-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-3423166d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-3423166d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-cbc821f0-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-cbc821f0-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-d9e01b10-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I4OH1730WGL9-d9e01b10-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:37:43.206Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 14,
+   "playCount": 6,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "37kte2vs",
+    "publicId": "37kte2vs",
+    "brandId": null,
+    "displayName": "Kuba Di Quattro",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "2ZMGNZM5PMI6",
+   "name": "WorldWar of Tanks",
+   "description": "# WorldWar of Tanks\n\nCommand authentic WW2 tanks across historically inspired battlegrounds in this intense voxel-based multiplayer experience where every nation's armored forces clash in strategic, terrain-dependent warfare. Experience the raw power of iconic tanks from Germany, Soviet Union, USA, and Britain, each meticulously designed to match their real-world counterparts with unique strengths and weaknesses that demand tactical adaptation. Dominate legendary WW2 locations reimagined in voxel form—from the frozen steppes of Russia to the deserts of North Africa—where environmental advantages can turn the tide of battle and separate victorious commanders from defeated ones. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/406deea5-bbba-4120-92b6-c7d337c7737f/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1536,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-f95b9045-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-f95b9045-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-800d97b7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-800d97b7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-d35ce02e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-d35ce02e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.07,
+      "y0": 0.07,
+      "x1": 0.95,
+      "y1": 0.28
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.07,
+      "y0": 0.07,
+      "x1": 0.95,
+      "y1": 0.28
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.11777777777777781,
+      "y0": 0.07,
+      "x1": 0.8999999999999999,
+      "y1": 0.28
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.1,
+      "y0": 0.22,
+      "x1": 0.92,
+      "y1": 0.34
+     }
+    }
+   },
+   "publishedAt": "2026-09-29T18:29:19.292Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 20,
+   "playCount": 15,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2ykddfsu",
+    "publicId": "2ykddfsu",
+    "brandId": null,
+    "displayName": "Jeremy evans",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "SFCJBUOMBALF",
+   "name": "Castle Battle",
+   "description": "# Castle Battle\n\n**Castle Battle** is a strategic tug-of-war lane battler where you command a medieval Builder who constructs army-spawning buildings to push back against an enemy castle. Rather than controlling individual units, you manage your economy—each building you construct permanently boosts your income and produces soldiers that march autonomously down a single battlefield lane, clashing with enemy forces in an organic, unfolding battle. Victory comes not from fast reflexes but from smart spending: do you rush units to overwhelm your opponent, build farms to snowball your economy, or save your one devastating Rescue Strike for the perfect counter-push moment? - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/f514b0d1-5d2d-4bd1-bf24-24bb5e3ba9a0/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-fe86eee2-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-fe86eee2-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-fe86eee2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-fe86eee2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-2cc0acc0-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-2cc0acc0-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-57441994-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SFCJBUOMBALF-57441994-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:29:07.208Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 21,
+   "playCount": 11,
+   "likeCount": 1,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "dejones",
+    "publicId": "2xagnjkg",
+    "brandId": "dejones",
+    "displayName": "Fyooche",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "7CWH72434G2B",
+   "name": "Merry Village",
+   "description": "# Merry Village\n\nWelcome to a charming voxel village where you play as a hobbit tasked with keeping the community happy and thriving! Manage deliveries from supply drops, gather resources like wood and food, care for wandering chickens, and ensure each Bavarian-style house gets what it needs—all while racing against time as the village's wellbeing meter ticks down. Experience the joy of a living, breathing world where your actions directly impact the villagers' happiness, complete with adorable hobbit characters, relaxing morning ambiance, and that satisfying Sims-like feedback when you successfully deliver items to grateful neighbors. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/dde1e575-a0cf-4582-9e92-03c6a991f1b1/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-70222768-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-70222768-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-70222768-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-70222768-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-4c84dec3-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-4c84dec3-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-74f0e144-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7CWH72434G2B-74f0e144-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:25:05.474Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 16,
+   "playCount": 10,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "92h52me7",
+    "publicId": "92h52me7",
+    "brandId": null,
+    "displayName": "Gulshan Mirzazada",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "13HFTFOB4TAU",
+   "name": "Office Run!",
+   "description": "Office Run! is a voxel stealth game where you play as a salaryman desperately racing against the clock to escape the office before 5 PM without being caught by your boss or colleagues. Sneak through cubicles and hallways using crawling mechanics to stay out of sight, carefully timing your movements to avoid detection by the increasing number of office workers patrolling the workspace. The tension builds as you navigate this everyday workplace obstacle course, turning a mundane office environment into an exciting challenge of wit and timing. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/0350ab61-5a1d-41ba-a8ae-d414cca472b6/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-a311b215-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-a311b215-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-a311b215-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-a311b215-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-65640158-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-65640158-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-d208d801-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/13HFTFOB4TAU-d208d801-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:23:21.845Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 13,
+   "playCount": 10,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "6vdcrb4n",
+    "publicId": "6vdcrb4n",
+    "brandId": null,
+    "displayName": "Adam Amrullah",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "KKFYB9VOZTMM",
+   "name": "Formula Friends",
+   "description": "# Formula Friends\n\nRace against four competitive AI rivals on a thrilling hybrid circuit that blends the high-speed straights of Monza, the technical flowing curves of Suzuka, and the dramatic elevation changes of Spa—all in beautifully crafted voxel form. Master intuitive touch controls with a responsive joystick for steering and dedicated gas/brake pedals to battle your way from 5th on the grid to victory across three intense laps. With a dynamic third-person chase camera, realistic car physics, and immersive cockpit details, Formula Friends delivers authentic open-wheel racing excitement that's accessible yet challenging for players of all skill levels. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/753e6b16-6454-47cc-9ccc-5a86469c96ce/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-8cc44e12-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-8cc44e12-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-8cc44e12-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-8cc44e12-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-7093d1bc-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-7093d1bc-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-d777e9fb-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KKFYB9VOZTMM-d777e9fb-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:18:55.495Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": null,
+   "viewCount": 29,
+   "playCount": 18,
+   "likeCount": 2,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "4d2x8k4q",
+    "publicId": "4d2x8k4q",
+    "brandId": null,
+    "displayName": "Pranav Chandode",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "G0GOFQQCNTQ9",
+   "name": "The endgame",
+   "description": "# The Endgame\n\nIn **The Endgame**, you are a warrior clad in glowing energy armor, navigating treacherous floating islands suspended in a cosmic void to reach the ultimate objective—activating the warp portal and escaping this celestial realm. Master fluid third-person combat with roll mechanics (bound to E) as you face waves of cybernetic patrol guards and hovering energy drones across three massive dimensional platforms marked by colossal 3D numbers, collecting brilliantly radiant rainbow-hued Chrono-Crystals that pulse with otherworldly light to unlock your passage. This action-adventure challenges you to balance platforming precision, strategic combat against overwhelming enemy forces, and resource management, all while a floating guide book provides detailed insights into your warrior's full arsenal of abilities and combat techniques in stylish, immersive framing—making every jump, slash, and crystal collection feel essential to your survival in this ancient temple merged with futuristic energy technology. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/c120bbf3-7792-40dd-bebc-e3cc2871e0a3/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-1edcfbfe-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-1edcfbfe-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-1edcfbfe-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-1edcfbfe-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-d994b576-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-d994b576-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-ba9e72fc-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/G0GOFQQCNTQ9-ba9e72fc-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:18:53.542Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 7,
+   "playCount": 2,
+   "likeCount": 1,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "7umysufq",
+    "publicId": "7umysufq",
+    "brandId": null,
+    "displayName": "Patrik Omari",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "3UHN95IVEW5C",
+   "name": "REF!!!",
+   "description": "# REF!!!\n\nBe the most incompetent referee in voxel football history! REF!!! is a chaotic sandbox simulation where you control a whistle-wielding official determined to disrupt every match—cancel legitimate goals, hand out cards to innocent players, and send off entire teams for your own amusement. With its colorful blocky aesthetic, responsive voxel NPCs, and zero consequences for your terrible decisions, this game transforms the beautiful game into hilarious mayhem where the only rule is that there are no rules. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/a464f23e-c48d-49f4-b31f-ee91d3571e3f/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-eff5a3c7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-eff5a3c7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-dd8446da-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-dd8446da-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:12:23.267Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 258,
+   "playCount": 127,
+   "likeCount": 4,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2yeuztsw",
+    "publicId": "2yeuztsw",
+    "brandId": null,
+    "displayName": "Mohamid Alfarraj",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "8YA70IU3EHBV",
+   "name": "NOVA Lunar Descent",
+   "description": "**NOVA Lunar Descent** is a precision lunar lander simulator where you command your descent to the Moon using voice, typed commands, or button controls while managing fuel, altitude, and descent rate against the clock. Master three difficulty levels—from Cadet to Ace—each introducing new hazards like crosswinds, fuel leaks, and communications blackouts that force you to think and react like a real pilot. Chase the leaderboard and perfect your landing technique as you guide your lander through the stark beauty of the lunar surface, with NOVA's AI copilot guiding you every step of the way. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/596928ac-9be8-4443-b581-2ca2525c0196/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-13274353-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-13274353-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-13274353-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-13274353-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-b008a6e6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-b008a6e6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-7504c4ae-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8YA70IU3EHBV-7504c4ae-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T18:05:08.441Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 31,
+   "playCount": 22,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "28xn6q2a",
+    "publicId": "28xn6q2a",
+    "brandId": null,
+    "displayName": "Ali Hassan Mirza",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "5W3S7IZWZZOY",
+   "name": "How to Shoot",
+   "description": "# Last Round\n\nIn **Last Round**, every bullet counts—literally. This voxel-based shooting puzzle game rewards precision and creativity by multiplying your earnings based on unused ammunition and shot distance, turning each mission into a tactical challenge where one perfectly-placed shot beats ten careless ones. Master your aim, experiment with ricochets and environmental explosions, then gamble your winnings at the in-game roulette to upgrade your arsenal and push for even greater rewards in this cozy, minimalist shooting range where efficiency is everything. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/510f9dd5-c64b-44bd-a6ac-c7c825c506f6/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1344,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-b95df99f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-b95df99f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-a0ab30b8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-a0ab30b8-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-9958a834-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-9958a834-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T17:59:02.465Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 927,
+   "playCount": 79,
+   "likeCount": 6,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2dm6nmkq",
+    "publicId": "2dm6nmkq",
+    "brandId": null,
+    "displayName": "Jorge Martinez",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "EJT8YH8XOFOH",
+   "name": "So you want to be a trader?!",
+   "description": "# So you want to be a trader?!\n\nStep onto the bustling floors of the world's most famous stock exchanges in this voxel-based trading simulator designed to make learning the ropes of institutional trading genuinely fun. Progress through an immersive Career Mode where you'll compete against dynamic NPC traders and climb the ranks, or jump straight into Training Mode to master the essential mini-games with guided tutorials and Day Trader scenarios complete with realistic candlestick charts. With fully-skinned characters, populated trading floors, polished NPC interactions, and an intuitive start screen to choose your path, this game transforms dry trading concepts into an engaging, hands-on experience that prepares you for the real thing. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/cb4c7886-a6e7-4aab-b8e8-8eab670d45fa/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-5bfaba1a-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-5bfaba1a-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-5bfaba1a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-5bfaba1a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-aa02194a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-aa02194a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-daf6f3e5-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/EJT8YH8XOFOH-daf6f3e5-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T17:56:27.449Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 4,
+   "playCount": 2,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "4qhnu2nn",
+    "publicId": "4qhnu2nn",
+    "brandId": null,
+    "displayName": "TY",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "QKF36HD4VSOZ",
+   "name": "Push off the Cliff",
+   "description": "# Push off the Cliff\n\nPush your opponents off a narrow cylindrical mountain in this intense voxel brawler where timing, positioning, and combo attacks reign supreme. Master the art of the shove by chaining three consecutive pushes for devastating combo strikes while defending against aggressive sumo wrestlers who won't hesitate to send you tumbling into the void. Smash destructible Japanese-inspired obstacles, collect health pickups, and outlast your rivals on this precarious peak in a neon-soaked arcade showdown where one wrong move means a fatal plunge. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/a743efbc-5dea-4d51-a395-91a790fd58a6/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-4204f4d4-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-4204f4d4-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-4204f4d4-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-4204f4d4-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-7d5f13ad-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-7d5f13ad-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-8ac360b7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-8ac360b7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-e8c69fdb-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QKF36HD4VSOZ-e8c69fdb-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 0.75,
+     "text": {
+      "x0": 0.11,
+      "y0": 0.04,
+      "x1": 0.93,
+      "y1": 0.32
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.29,
+      "y0": 0.07,
+      "x1": 0.75,
+      "y1": 0.24
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.35375,
+      "y0": 0.04,
+      "x1": 0.66125,
+      "y1": 0.32
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.20750000000000002,
+      "y0": 0.04,
+      "x1": 0.8225,
+      "y1": 0.32
+     }
+    }
+   },
+   "publishedAt": "2026-09-29T17:23:27.818Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 3,
+   "playCount": 1,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2ej55vwx",
+    "publicId": "2ej55vwx",
+    "brandId": null,
+    "displayName": "Adam S",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "AR9UZNZ2BFXD",
+   "name": "ark",
+   "description": "Race against time in Noah's Ark, an intense voxel survival game where you must herd two of every animal across a desert landscape to your massive vessel before a catastrophic flood wipes out everything left behind. Lead each animal one at a time to your ark's sanctuary while managing the rising waters and increasingly challenging terrain. Experience the ultimate test of speed and strategy as rain begins to fall and the water level rises—can you save all the creatures before it's too late? - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/436b0c8d-a968-46f2-b130-58ac6fb1e7e3/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-0b92c6f4-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-0b92c6f4-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-0b92c6f4-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-0b92c6f4-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-80105b0d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-80105b0d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-bba70655-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-bba70655-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-dfb6639a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AR9UZNZ2BFXD-dfb6639a-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T17:03:25.207Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 18,
+   "playCount": 4,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "2z3hh8nd",
+    "publicId": "2z3hh8nd",
+    "brandId": null,
+    "displayName": "ilmariih",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "R4S977SK25GB",
+   "name": "Friendenmy",
+   "description": "# Friendenmy\n\nIn Friendenmy, transform your enemies into allies by gunning them down in this unique voxel shooter where defeated foes join your ever-growing squad, embodying the redemption theme of sins forgiven through defeat. Battle across vibrant neon-lit arenas against enemy voxel characters while piloting vehicles and tracking your shots with precision bullet trajectories, all wrapped in a stunning arcade UI of glowing cyan and magenta. Build the ultimate team of reformed enemies while mastering the art of tactical shooting in this addictive blend of action, recruitment, and retro-futuristic aesthetics. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/894e62e6-2700-4700-8ad4-0313f43cd5cc/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-82e348db-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-82e348db-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-82e348db-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-82e348db-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-b163d29f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-b163d29f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-3d72af4b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/R4S977SK25GB-3d72af4b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T16:33:54.860Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 6,
+   "playCount": 3,
+   "likeCount": 0,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "876n4w6v",
+    "publicId": "876n4w6v",
+    "brandId": null,
+    "displayName": "Anand Mohan",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "UJBTBKQII0RW",
+   "name": "Luxury Watches",
+   "description": "# Luxury Watches\n\nSpin a sophisticated multi-ring roulette wheel styled like the intricate bezel and dial of a high-end automatic watch, where each ring represents luxury brands and prize tiers that determine which exclusive item you'll win. Hover over any segment to preview stunning product animations showcasing the exact item and its retail value before you place your bet, combining the thrill of chance with the tactile satisfaction of mechanical watch complications. With an elegant VIP Vault aesthetic featuring rose-gold accents, sapphire-blue winning states, and weighted odds designed for sustainability, this gamified luxury experience transforms e-commerce into a prestigious, high-stakes spinning game. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/2fcacdda-7014-4aab-921e-15d231b76671/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-afd19b55-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-afd19b55-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-afd19b55-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-afd19b55-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-74d0529e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-74d0529e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-3729ea91-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/UJBTBKQII0RW-3729ea91-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-29T16:21:35.527Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 14,
+   "playCount": 7,
+   "likeCount": 1,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "3qzj7fjt",
+    "publicId": "3qzj7fjt",
+    "brandId": null,
+    "displayName": "Keith Leo-Smith",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "5T5RUIGPX2Z3",
+   "name": "Kölsch Taxi",
+   "description": "You are the passenger, not the driver. Say where you want to go — out loud — and Jupp takes you there: 61, born in Nippes, driving a cab since 1987, full of jokes, opinions about every building, and serious doubts that Düsseldorf really exists.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/5T5RUIGPX2Z3/1790166342471-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-606966dd-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-606966dd-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-70db344c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-70db344c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-23T12:25:48.074Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "mobile",
+   "mobileOrientation": "landscape",
+   "viewCount": 19495,
+   "playCount": 3919,
+   "likeCount": 373,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "mennytmies",
+    "publicId": "67fca7q8",
+    "brandId": "mennytmies",
+    "displayName": "Markus Hjort",
+    "avatarUrl": "https://bitmagic.ai/creators/67fca7q8/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "SMBI3584E1CV",
+   "name": "Oh no we have an orc infestation",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/SMBI3584E1CV/1789749820648-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1659,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-f7e69e3a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-f7e69e3a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-6d1e5ccb-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-6d1e5ccb-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-af207b70-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-af207b70-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-18T16:43:46.754Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "portrait",
+   "viewCount": 12200,
+   "playCount": 1842,
+   "likeCount": 210,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "harri",
+    "publicId": "3pyg9645",
+    "brandId": "harri",
+    "displayName": "Harri",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "KGHW00CT3P6P",
+   "name": "Skyline Golf",
+   "description": "Take your golf game to ridiculous new heights.\n\nTee off from skyscrapers, thread shots through a New York-inspired skyline, and chase birdies across nine wildly elevated holes. Judge the wind, choose your club, and use the projected flight path to line up your next rooftop landing. Some holes demand a clever stop along the way.\n\nMiss the green? The city is part of the course. Shatter office windows, smash parked cars, and turn a wayward shot into glorious urban chaos. Sink the putt, celebrate, then climb aboard your helicopter golf cart for a sweeping flight to the next tee.\n\nEasy drag-to-swing controls. Outrageous hazards. Every stroke counts.\n\nPlay Skyline Golf in your browser—and make the skyline your fairway.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/KGHW00CT3P6P/1789712854680-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-63d78ee5-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-63d78ee5-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-93cf8af9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-93cf8af9-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-18T06:27:56.894Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": "landscape",
+   "viewCount": 6364,
+   "playCount": 986,
+   "likeCount": 130,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "AK7UUONXYQUS",
+   "name": "Brainrot Heist",
+   "description": "Brainrot Heist is a fast heist tycoon in a sunlit arena of eight rival bases. Buy absurd made-up brainrots off the conveyor belt, seat them on your pedestals and watch them print cash every second.\n\nLock your gate when the raiders come, punch thieves to make them drop their loot, and slip into open bases to steal their best earners. Gear up at the shop with sprint boots, snare traps and heavier gloves, then rebirth for permanent income multipliers and new floors.\n\nSeven rivals were here before you, keep their bases and fortunes between your sessions, and come and go like real players. A live leaderboard ranks everyone by lifetime earnings. Your base, your name over the gate, your heist.",
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/AK7UUONXYQUS/1789623863224-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-c2e862ae-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-c2e862ae-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-a42efc6a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-a42efc6a-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-17T05:44:31.174Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 15794,
+   "playCount": 3435,
+   "likeCount": 347,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "jani",
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "WSWXRVIDMAU8",
+   "name": "Proving Ground",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/WSWXRVIDMAU8/1789054958896-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-e48a980c-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-e48a980c-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-e48a980c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-e48a980c-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-8f30639d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-8f30639d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-d02311be-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/WSWXRVIDMAU8-d02311be-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-10T15:42:42.816Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 3978,
+   "playCount": 674,
+   "likeCount": 90,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "mennytmies",
+    "publicId": "67fca7q8",
+    "brandId": "mennytmies",
+    "displayName": "Markus Hjort",
+    "avatarUrl": "https://bitmagic.ai/creators/67fca7q8/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "HJHR7N6VB1D6",
+   "name": "Warden of the Vale: Emerald March",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/HJHR7N6VB1D6/1788940122374-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1672,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5576a914-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5576a914-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-d57d5619-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-d57d5619-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5e5ca50e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5e5ca50e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-09T07:48:47.735Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 4823,
+   "playCount": 878,
+   "likeCount": 119,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "kiukku",
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "W0XB8LYCHA5Y",
+   "name": "Rune Vault",
+   "description": null,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/W0XB8LYCHA5Y/1788532079441-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-e2ac4621-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-e2ac4621-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-e2ac4621-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-e2ac4621-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-6fc94712-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-6fc94712-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-1948768a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/W0XB8LYCHA5Y-1948768a-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-04T14:28:05.778Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 3785,
+   "playCount": 403,
+   "likeCount": 72,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "4b867z7x",
+    "publicId": "4b867z7x",
+    "brandId": null,
+    "displayName": "outi",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "OLNIO3A7D7IG",
+   "name": "Penguin Fortress",
+   "description": "# Penguin Fortress\n\nDefend your icy stronghold from waves of enemies by strategically placing unique penguin towers with special abilities in this voxel-based tower defense game. Build the perfect fortress defense with six distinct towers—from the frost-wielding Frosty to the skilled Fisher—each with upgradeable abilities and increasing range as you progress through volcanic and frozen landscapes. Challenge yourself across multiple levels with intensifying waves, tighter enemy spacing, and dynamic path-guiding arrows that keep you focused on the battle ahead. - Made with Bitmagic",
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/7f18311d-cd04-472d-812b-5ea87c3fa469/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-b1933da4-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-b1933da4-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-20c90a8b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-20c90a8b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "publishedAt": "2026-09-03T13:35:47.306Z",
+   "comingSoon": false,
+   "access": "public",
+   "primaryPlatform": "desktop",
+   "mobileOrientation": null,
+   "viewCount": 860,
+   "playCount": 470,
+   "likeCount": 26,
+   "commentCount": 0,
+   "creator": {
+    "canonicalId": "23f34aad",
+    "publicId": "23f34aad",
+    "brandId": null,
+    "displayName": "Pepisso",
+    "avatarUrl": null
+   }
+  }
+ ],
+ "total": 150,
+ "nextOffset": 50
+}

@@ -1,0 +1,538 @@
+{
+ "status": "success",
+ "value": {
+  "cursor": {
+   "offset": 24.0,
+   "phase": 0.0
+  },
+  "includeFeatured": true,
+  "isDone": false,
+  "page": [
+   {
+    "game": {
+     "_id": "j972q2fr3s330fems2nq4dv6m583fpvb",
+     "description": "Botany Manor is a first-person puzzle game set in a Victorian English manor.\n\nIt's 1890, and you play as botanist Arabella Greene, who is working to finish her botanical research book 'Forgotten Flora'.\n\nExplore a complete historical English manor and its grounds, researching how to grow rare plant specimens from seed.\n\nThere are many rooms and gardens to discover, all set inside a beautiful countryside surrounding.\n\nThe manor is filled with mysterious clues for you to discover, including books, posters, letters and fascinating Victorian contraptions.\n\nThe plants you grow are fantastical, but still inspired by real phenomena in nature, so some of them require you to think outside the box. Using what's available to you in the manor, you must create the ideal conditions for each plant.\n\nRoom by room, you learn more about the life and career of Arabella, and the challenges she faced as a woman navigating her scientific career.\n\nBotany Manor offers a relaxing and peaceful environment, feel free to stop and smell the roses.",
+     "hasLiveRelease": true,
+     "slug": "botany-manor",
+     "tags": [
+      "Puzzle",
+      "Exploration",
+      "Adventure",
+      "Relaxing",
+      "First-Person"
+     ],
+     "thumbnailVideo": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/thumbnailVideo-1793120282934-49cf2ed7.mp4",
+     "title": "Botany Manor",
+     "wideCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/wideCover-1787875574969-e325128f.webp"
+    },
+    "organization": {
+     "name": "Whitethorn Games",
+     "slug": "whitethorn-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j975sz8f4jfsfhm89rmzg5c76982vak7",
+     "description": "Old Man’s Journey, a soul-searching puzzle adventure, tells a story of life, loss, reconciliation, and hope. Entrenched in a beautifully sunkissed and handcrafted world, embark on a heartfelt journey interwoven with lighthearted and pressure-free puzzle solving.\n\nA visual narrative about life’s precious moments, broken dreams, and changed plans, uncover stories of the old man’s life told through beautiful vignettes of his memories. Interacting with the serene and whimsical environment, solve playful puzzles by shaping the landscape, growing the hills to create the old man’s path forward.\n\nDuring this compact gameplay experience, you’ll be transported to a vibrant and wishful world, exploring life’s complexities through the old man’s eyes. Meditatively delightful and reflective, Old Man’s Journey invites you to immerse yourself in quiet and inquisitive puzzles, and experience the old man’s heartache, regret, and hope.\n\nFeatures:\n- A powerful and emotional narrative told only through imagery\n- Gorgeously whimsical landscapes with hand-drawn art and frame-by-frame animations\n- Handcrafted, pressure-free puzzles\n- Unique delightful landscape-shaping mechanic\n- A compact game experience perfect for a wanderlust-evoking escape\n- Original and emotionally compelling soundtrack by SCNTFC\n\nAwards: \n- Apple Design Award 2017\n- Best Art Award 2017 Sense of Wonder Night\n- Excellence in Art Award 2017 Busan Indie Connect\n- Best Art and Innovation Award 2017 BIG Festival\n- Media Choice Award 2017 Indiecade Europe\n- Leftfield Selection 2017 EGX Reezed\n- GDC Selection 2017 Unity Showcase\n- Official Selection 2016 PAX\n- Digital Selection 2016 Indiecade\n- Official Selection 2016 Day of the Devs",
+     "hasLiveRelease": true,
+     "slug": "old-mans-journey",
+     "tags": [
+      "Puzzle",
+      "Adventure",
+      "Casual",
+      "Atmospheric",
+      "Story Rich"
+     ],
+     "thumbnailVideo": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/thumbnailVideo-1792003631415-2e15c301.mp4",
+     "title": "Old Man's Journey",
+     "wideCover": "jd73bx7b8wfb76b1pkgg9cfw9x82t68f/j975sz8f4jfsfhm89rmzg5c76982vak7/assets/wideCover-1792148167695-c35d058e.webp"
+    },
+    "organization": {
+     "name": "Broken Rules",
+     "slug": "broken-rules"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97eztnknhzajtvrhvs29x36zh84kdae",
+     "description": "Disfigure is a grim-dark rogue-like where you battle relentless hordes of monsters lurking in the shadows. Unlock powerful weapons, craft god-like builds with hundreds of upgrades, slay colossal bosses, and push your limits in intense 20–30 minute survival runs.",
+     "hasLiveRelease": true,
+     "slug": "disfigure",
+     "tags": [
+      "Bullet Hell",
+      "2D",
+      "Top-Down Shooter"
+     ],
+     "thumbnailVideo": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/thumbnailVideo-1787335249668-67206f24.mp4",
+     "title": "Disfigure",
+     "wideCover": "jd79t7jbpbws668wn161xmrx0n84kyp0/j97eztnknhzajtvrhvs29x36zh84kdae/assets/wideCover-1787335235776-0ff2a6e8.webp"
+    },
+    "organization": {
+     "name": "Cold Brew Entertainment",
+     "slug": "cold-brew-entertainment"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9739evnydp9nkbzpfb68yptjx7v6rsn",
+     "description": "Experience the adrenaline-pumping thrill of rally racing in the most unlikely venues imaginable. Parking Garage Rally Circuit transforms parking structures across North America and Europe into heart-stopping, high-speed racing circuits that will push your reflexes and nerve to the absolute limit. Navigate tight corners, dodge concrete pillars, and master multiple levels of architectural chaos as you battle for the fastest lap times. With its distinctive Sega Saturn-inspired retro arcade aesthetic, pulse-pounding gameplay, and iconic ska soundtrack, this is rally racing like you've never experienced before.\n\nSeamless Leaderboards\nAfter beating the gold trophy for a course, ghosts from other players just barely ahead of you on the leaderboard are automatically downloaded to race against, getting you into that \"just one more\" flow as you chase down rivals. \n\nRealtime Multiplayer\nCreate or join a lobby of up to 8 players for realtime peer-to-peer non-contact racing!\n\nSplit-screen Multiplayer\nConnect multiple controllers and relive the glory days of split-screen multiplayer for 2-4 players with contact and non-contact options.\n\nRetro Style\nDesigned to look and feel like a long lost Sega Saturn game that could have been released in ~1998. This includes low-resolution, low-poly, chunky textures of course, but also extends to the audio, simple interface, and streamlined game scope.  Oh, and CHEAT CODES too!\n\nThis special \"DX\" version of Parking Garage Rally Circuit includes all 8 original US tracks + 8 brand new tracks set in Europe all in one package.",
+     "hasLiveRelease": true,
+     "slug": "pgrc",
+     "tags": [
+      "Racing",
+      "Arcade",
+      "Retro",
+      "Driving",
+      "3D"
+     ],
+     "thumbnailVideo": "jd72x24z5w3tadb8was9d2pjks7v7n1d/j9739evnydp9nkbzpfb68yptjx7v6rsn/assets/thumbnailVideo-1787242011945-95c0efb5.mp4",
+     "title": "Parking Garage Rally Circuit DX",
+     "wideCover": "jd72x24z5w3tadb8was9d2pjks7v7n1d/j9739evnydp9nkbzpfb68yptjx7v6rsn/assets/wideCover-1787177575044-c6e32d1e.webp"
+    },
+    "organization": {
+     "name": "Walaber Entertainment",
+     "slug": "walaber-entertainment"
+    }
+   },
+   {
+    "game": {
+     "_id": "j971xtvyeeejmt9ank6vrhz86d8a5feh",
+     "description": "Bring color to the world in **Spray Paint Simulator!** Restore worn-out surfaces with a fresh coat of paint and watch them come back to life. Use your spray tool with precision, cover every inch, and enjoy the satisfaction of a flawless finish.\n\nStep into Spatterville, where you'll build your own spray-painting business. Meet the locals as you restore, repair, mask, and spray paint everything—from kitchens and local landmarks to a giant robot. Buy new tools and equipment, unlock Free Spray mode, and transform the town.\n\n## Prepare the Perfect Canvas\n\nYou've got to earn your stripes before becoming the town's top spray painter. No worries, though—there's plenty to keep you busy! Mask surfaces to protect them from overspray, remove and repair objects, and fill damaged areas to create the perfect canvas.\n\n## Bring the Color\n\nGrab your spray tools and watch worn-out objects spring back to life with fresh, snazzy colors! Feel the thrill of transformation, groove to the soothing rhythm of spraying, and enjoy the satisfaction of rejuvenating each item. It's all about making things look brand new and having a blast while doing it.\n\n## Build Your Business\n\nRunning a spray-painting business has never been more fun! Keep an eye on your consumables, upgrade your equipment, and find the right tools for every job.\n\n- **Manage your supplies.** Stock up on paint, masking paper, and tape to keep every project moving.\n- **Upgrade your spray tools.** Unlock more paint capacity, greater coverage, and bigger batteries.\n- **Reach new heights.** Choose from a variety of step ladders and scaffolding to tackle those hard-to-reach spots.\n\nManaging your supplies and equipment adds just the right amount of strategy, keeping things fun and lighthearted without getting too complicated.\n\n## Make Spatterville Your Canvas\n\nAfter completing jobs for customers, dive into **Free Spray mode!** Return to your finished projects and let your imagination run wild. Spray the job and the surrounding environment any way you please.\n\nWith a rainbow of colors at your disposal, the entire town becomes your canvas. Express yourself freely and enjoy hours of creative fun. Make Spatterville your masterpiece, one spray at a time!\n\n## Made with Care\n\nThis game is our baby, lovingly started by two dedicated developers! We're here to hear your thoughts, suggestions, critiques, and even wild theories about our caffeine consumption. We promise to listen—and possibly giggle—at your feedback. Reach out and let's make this game even better together!\n\nJoin us in Spatterville for a relaxing, creative, and humorous adventure. Happy spraying!",
+     "hasLiveRelease": true,
+     "slug": "spray-paint-simulator",
+     "tags": [
+      "Casual",
+      "Simulation",
+      "First-Person",
+      "Job Simulator",
+      "Colorful"
+     ],
+     "thumbnailVideo": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/thumbnailVideo-1790624929317-c876d605.mp4",
+     "title": "Spray Paint Simulator",
+     "wideCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j971xtvyeeejmt9ank6vrhz86d8a5feh/assets/wideCover-1787875601811-3f330607.webp"
+    },
+    "organization": {
+     "name": "Whitethorn Games",
+     "slug": "whitethorn-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j970t453fa7hnm1w4gzwxkhhyx8f8ejc",
+     "description": "REAL-WORLD SPOTS\nSurf Pipeline, Teahupo'o, J-Bay and Waikiki with up to 6 friends. Each has its own character: heavy barrels at Pipe and Teahupo'o, long fast walls at J-Bay, soft longboard waves at Waikiki. There are also four relaxed beaches just for hanging out with friends.\n\nREEF BREAKS\nTen reef breaks, from easy Pantai Kuda to Ombak Raksasa, a 30 metre giant you tow into behind a jet ski. Every spot has its own leaderboard.\n\nCOMPETE\nSurf contests for up to 6 players. Climb the world ranking, and pick your flag to score points for your country.\n\nBOARDS\nShortboard, twin fin, fish, longboard, gun, alaia, bodyboard, or just bodysurf. Or design your own board.\n\nCONTROLS\nPhone: hold it sideways, steer with your right thumb, tap the buttons with your left.\nComputer: arrow keys to steer, Space to paddle and pump, Shift to stall.",
+     "hasLiveRelease": true,
+     "slug": "sumbasurf",
+     "tags": [
+      "Sports",
+      "First-Person",
+      "3D",
+      "Multiplayer",
+      "Simulation"
+     ],
+     "thumbnailVideo": "jd7462vt71w9kmjy6571p8jjvn8f8mfv/j970t453fa7hnm1w4gzwxkhhyx8f8ejc/assets/thumbnailVideo-1791105291972-14d84743.mp4",
+     "title": "SumbaSurf",
+     "wideCover": "jd7462vt71w9kmjy6571p8jjvn8f8mfv/j970t453fa7hnm1w4gzwxkhhyx8f8ejc/assets/wideCover-1790705232418-8ee60ba4.webp"
+    },
+    "organization": {
+     "name": "SumbaSurf",
+     "slug": "sumbasurf"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97ddx89ydzykawxqe21tsz05583fah3",
+     "description": "Evan's Remains is a mystery-thriller puzzle adventure about finding a missing boy: Evan. The game combines logic-based platform puzzles with narrative inspired by Japanese graphic adventure games.\n\nGameplay:\nEvery time the player solves from two to three puzzles, the story goes forward and new mechanics are introduced. The challenge of the puzzles lies in the player’s ability to figure out what do rather than solve challenges based on skill. As the difficulty curve increases, the puzzles become more complex by combining two or more previously introduced mechanics.\n\nStory:\nEvan, the genius boy, has been missing for years. One day, a letter signed by him is received, claiming he’s on an uninhabited island somewhere in the Pacific Ocean. Nobody knows why, but he asked specifically for a girl named “Dysis” to go and look for him. The player will take control of this girl, who we don’t know much about. As we follow Dysis’s adventure, questions will start to be answered little by little. All of the little puzzle pieces which seemed unrelated in the beginning will now begin to slowly fit together as the truth is slowly revealed.",
+     "hasLiveRelease": true,
+     "slug": "evans-remains",
+     "tags": [
+      "Puzzle",
+      "Platformer",
+      "Visual Novel",
+      "Mystery",
+      "Story Rich"
+     ],
+     "thumbnailVideo": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/thumbnailVideo-1787724897133-984f8cde.mp4",
+     "title": "Evan's Remains",
+     "wideCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/wideCover-1787953024205-44ea9bb8.webp"
+    },
+    "organization": {
+     "name": "Whitethorn Games",
+     "slug": "whitethorn-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97ac82630mzqsy25dcq5y1n298ca6r5",
+     "description": "Shoot first, eat cheese later! Jump into a fast, frenetic and exciting one-hit, one-kill FPS arena shooter with a totally level playing field, tonnes of maps, customisation and a robust map editor!",
+     "hasLiveRelease": true,
+     "slug": "ratz-instagib",
+     "tags": [
+      "Action",
+      "FPS",
+      "Arena Shooter",
+      "Multiplayer",
+      "Shooter"
+     ],
+     "thumbnailVideo": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97ac82630mzqsy25dcq5y1n298ca6r5/assets/thumbnailVideo-1787715459777-83e03e11.mp4",
+     "title": "Ratz Instagib",
+     "wideCover": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97ac82630mzqsy25dcq5y1n298ca6r5/assets/wideCover-1787715443709-6de2c03b.webp"
+    },
+    "organization": {
+     "name": "Rarebyte",
+     "slug": "rarebyte"
+    }
+   },
+   {
+    "game": {
+     "_id": "j979xzrgf9xf91g4x28f2gqjfx83f8h5",
+     "description": "Teacup is a short and wholesome narrative adventure game with a focus on exploration and non-linear progression.\n\nYou play as the titular Teacup, a shy and introverted young frog who loves drinking tea and reading. The day before she is to host a tea party at her house, she realizes she is completely out of tea, and thus must venture into the woods around her to find the herbs she needs to restock her pantry.\n\nYou are free to tackle the list of ingredients Teacup must gather in any order you wish. Find your own path through the world of Little Pond.\n\nDuring your adventure you will meet the charming inhabitants of the forest. Some are talkative, some are grumpy, but all of them will lend you an ear on your adventure.\n\nMost of the animals you meet will be glad to help Teacup… in exchange for a small favor or some help. Organize a (oddly shaped) market stall, win an underwater race and more!",
+     "hasLiveRelease": true,
+     "slug": "teacup",
+     "tags": [
+      "Adventure",
+      "Cute",
+      "Exploration",
+      "Narrative",
+      "Relaxing"
+     ],
+     "thumbnailVideo": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/thumbnailVideo-agent-1787027359844-3c77478d.mp4",
+     "title": "Teacup",
+     "wideCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j979xzrgf9xf91g4x28f2gqjfx83f8h5/assets/wideCover-1787071266867-f4b0f21f.webp"
+    },
+    "organization": {
+     "name": "Whitethorn Games",
+     "slug": "whitethorn-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9772msxrra9ydjyspk9c3744n8353kn",
+     "description": "Tokyo 42 is a hyper-stylish isometric open-world shooter. Framed for a murder you didn't commit, you'll delve into a world of assassins, deadly corporate intrigue and...tactical cats.\n\nSpin the camera to see every angle of this beautifully hand-crafted micro Tokyo, as you discover a huge range of weapons, secrets and stories.\n\nSkillful shooting, bullet physics, sneaky stealth and crowd simulation all play a role in this ultra-colourful kinetic frenzy.\n\nA single player open-world story mode and a host of multiplayer modes await in this unique and critically acclaimed action masterpiece.\n\n\"Stunning...looks like Monument Valley and plays like Grand Theft Auto set in the world of Blade Runner\" (Vice)\n\n\"Gorgeous...Tokyo 42 is shaping up to be something pretty special\" (Kotaku)",
+     "hasLiveRelease": true,
+     "slug": "tokyo-42",
+     "tags": [
+      "Action",
+      "Isometric",
+      "Open World",
+      "Cyberpunk",
+      "Stealth"
+     ],
+     "thumbnailVideo": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/thumbnailVideo-1787691360360-48644284.mp4",
+     "title": "Tokyo 42",
+     "wideCover": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/wideCover-1787180977256-bcd88d18.webp"
+    },
+    "organization": {
+     "name": "Mode 7",
+     "slug": "mode-7"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9744hqgsratwee0bh66k0eeqh8br2k9",
+     "description": "**The Colonists** is a relaxing settlement-building game inspired by classics like *The Settlers* and the *Anno* series.\n\nTake control of a team of self-replicating robots built to simulate human civilization. After escaping Earth, they’re free to explore the galaxy, find a new home, and construct their dream settlement.\n\n## Build Your Colony\n\nAdvance through **three different Ages** as you develop your settlement and build road, boat, and train transport networks.\n\nHarvest natural resources, establish farms and food production, send expeditions to discover new lands, and research technologies to help your colony grow. Explore, manage, tweak, and refine every detail to your heart’s content.\n\n## Choose Your Approach\n\nFollow two separate campaign tracks: build sprawling settlements in peace or compete against AI colonies in military, winner-takes-all scenarios.\n\nTake on individual missions, explore randomly generated maps, test yourself on player-created challenges, or build freely in **Sandbox Mode**.\n\n## Create Your Own Worlds\n\nUse the extensive map editor to design custom maps with your own victory conditions. Create, share, and explore new settings for your next colony.\n\n## Features\n\n- **Campaign:** Play 14 missions across separate peaceful and military tracks.\n- **Random Maps:** Discover new challenges across procedurally generated maps.\n- **Sandbox Mode:** Customize game settings and build your colony your way.\n- **Multiplayer:** Join friends for the co-op campaign or compete against them in PvP.\n- **Map Editor:** Create, play, and share custom maps with your own victory conditions.\n- **Frontiers:** Compete for the best completion time on a new map every month.\n- **Challenge Trophies:** Put your colony-building skills to the test with dedicated speedrun challenges.",
+     "hasLiveRelease": true,
+     "slug": "the-colonists",
+     "tags": [
+      "City Builder",
+      "Colony Sim",
+      "Automation",
+      "Building",
+      "Economy"
+     ],
+     "thumbnailVideo": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9744hqgsratwee0bh66k0eeqh8br2k9/assets/thumbnailVideo-1791124639591-c2ec2623.mp4",
+     "title": "The Colonists",
+     "wideCover": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9744hqgsratwee0bh66k0eeqh8br2k9/assets/wideCover-1791123751164-3ff3df48.webp"
+    },
+    "organization": {
+     "name": "Mode 7",
+     "slug": "mode-7"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97ayshk0g83hsbg2r4v0ppm9s883scg",
+     "description": "Hit the shoreline in Matt Portner’s Pro Skimboarder, a playful tribute to classic extreme sports games. Skim across shallow water, carve through the shore break, and chase the perfect ride. The waves are real, the stakes are low, and the pro status is self-proclaimed.",
+     "hasLiveRelease": true,
+     "slug": "matt-portners-pro-skimboarder",
+     "tags": [
+      "Sports",
+      "Skating",
+      "Arcade",
+      "Simulation",
+      "Old School"
+     ],
+     "thumbnailVideo": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97ayshk0g83hsbg2r4v0ppm9s883scg/assets/thumbnailVideo-1790200875894-60cc17e0.mp4",
+     "title": "Matt Portner's Pro Skimboarder",
+     "wideCover": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j97ayshk0g83hsbg2r4v0ppm9s883scg/assets/wideCover-1790187857432-3e5efb32.webp"
+    },
+    "organization": {
+     "name": "@portner",
+     "slug": "0"
+    }
+   },
+   {
+    "game": {
+     "_id": "j970h35ep6ecvh7gwqhm8p6ted81w3ra",
+     "description": "Offspring Fling is a game about a poor forest creature that has misplaced all of her children. She'll have to fight her way through over 100 levels of action puzzle platforming to get them all back home. There's danger around every corner, but she won't rest until her family is safe again.\n\nFEATURES\n+ An intense number of levels (Over 100!)\n+ Awesome puzzles, and rad platforming action\n+ Ghost replays to help you beat your best time\n+ Replay sharing that lets you race against others\n+ A lot of secret unlockables if you're cool enough!\n+ A beautiful soundtrack by Alec Holowka\n+ Throwing babies and watching them bounce off stuff!\n+ Cute and cuddly looking things to look at!\n+ Immense satisfaction",
+     "hasLiveRelease": true,
+     "slug": "offspring-fling",
+     "tags": [
+      "Puzzle",
+      "Platformer",
+      "Retro",
+      "Cute",
+      "Adventure"
+     ],
+     "thumbnailVideo": "jd7cm81rapgc4wjzz5qvfb32ax82s2yp/j970h35ep6ecvh7gwqhm8p6ted81w3ra/assets/thumbnailVideo-1787242496554-4c479225.mp4",
+     "title": "Offspring Fling!",
+     "wideCover": "jd7cm81rapgc4wjzz5qvfb32ax82s2yp/j970h35ep6ecvh7gwqhm8p6ted81w3ra/assets/wideCover-1787179308715-8debdb5f.webp"
+    },
+    "organization": {
+     "name": "Kyle Pulver",
+     "slug": "kyle-pulver"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9710dchdw2g8f0zh3h1qscnj983f8az",
+     "description": "Wytchwood is a crafting adventure game set in an expressive land of gothic fables and fairytales. As the mysterious old witch of the woods, you will explore a strange countryside, collect magical ingredients, brew sorcerous enchantments, and pass your twisted judgement upon a capricious cast of characters and creatures.\nAfter all, how will they ever learn if you don’t teach them the moral of the story?\n\n- Lovingly rendered storybook art style\n- Gather, collect, grow and craft bizarre ingredients: Toxic toadstools, eye of newt and bottled fear.\n- Research and concoct devious spells and sorceries. Turn the greedy into frogs! Trick the wicked with cunning curses!\n- Explore an allegorical world of tall tales, uncovering colourful personas and fantastical narratives.\n- Use your wit and guile to solve puzzles and best the strange monsters of the forest.",
+     "hasLiveRelease": true,
+     "slug": "wytchwood",
+     "tags": [
+      "Crafting",
+      "Adventure",
+      "Story Rich",
+      "Exploration",
+      "Dark Fantasy"
+     ],
+     "thumbnailVideo": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/thumbnailVideo-1789416179240-d4ec5004.mp4",
+     "title": "Wytchwood",
+     "wideCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j9710dchdw2g8f0zh3h1qscnj983f8az/assets/wideCover-1787875504547-c34f11c2.webp"
+    },
+    "organization": {
+     "name": "Whitethorn Games",
+     "slug": "whitethorn-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j975p53ws0z0f7yne5nepg8tzx839w4m",
+     "description": "Shadow Blade is an action-platformer set in a visually striking world where the ancient teachings of ninjas and samurai clash upon a modern landscape. Sprint through stages littered with traps, slaying enemies along your path without hesitation as Kuro, the blade of shadow!\n\nSTORY\nDarkness and chaos are once again creeping into the world of man. The covenant made in a time almost forgotten has failed, the three clans now in a violent struggle for dominance. The medallion is almost made whole again and it falls upon Kuro?s shoulders to restore balance. All his training has led up to this one moment, where the fate of the world will rest in his blood-stained hands.\n\nFEATURES\n\nEpic NINJA Platforming: \nTest your skills in fast-paced platforming, mastering the skills of the ninja to breeze through challenging levels.\n\nVicious NINJA Combat: \nKill your enemies with extreme prejudice through the mastery of the katana, shurikens and kusarigama!\n\nShadow Ninja: \nAttack the guards before they see you and alert all other mobs.\n\nStory Campaign: \nFully voiced motion comics tell the story of Kuro?s plight to restore balance!\n\nMore than 50 Challenging Levels: \nEnvironmental hazards, rifle-toting warriors and many more challenges await a hardened warrior.\n\nLevel Secrets: \nRaw speed doesn?t guarantee the highest rank. A true ninja is ever vigilant, aware of any possibly hidden areas.\n\nNinja = Hardcore: \nCleared the normal campaign? Prepare for the Hardcore variation and if you dare, the ultimate Master Class version awaiting only the foolhardy.\n\nChallenge Modes and Leaderboards: \nFeel the need to gloat? Challenge yourself in these specially crafted stages only for the masters. Compare your stats with friends and other players as you fight for the top of the leaderboards!\n\nLevel Editor and Workshop Integration: \nCreate and upload your own levels to Steam Workshop for your friends and other players to check out. Become the ultimate Dojo Builder!\n\nStylish 3D World: \nFeast your eyes on a world where ninja and samurai clash in a modern landscape.\n\nAchievements: \nUnlock a full list of achievements as you embark on your mission to restore balance.\n\nCloud Saving: All progress saved through Wavedash for pick-up-and-play on any device.",
+     "hasLiveRelease": true,
+     "slug": "shadow-blade-reload",
+     "tags": [
+      "Action",
+      "Platformer",
+      "Ninja",
+      "Fast-Paced",
+      "Singleplayer"
+     ],
+     "thumbnailVideo": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/thumbnailVideo-agent-1787034511740-180b9138.mp4",
+     "title": "Shadow Blade: Reload",
+     "wideCover": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/wideCover-1787180891913-400f4c96.webp"
+    },
+    "organization": {
+     "name": "Dead Mage",
+     "slug": "dead-mage"
+    }
+   },
+   {
+    "game": {
+     "_id": "j9716d7hzj7w9531ctk6zyffd58fgw5s",
+     "description": "Bomb down a steep, fast dirt trail through pine forest and golden aspens, carving berms, pumping rollers and launching off jumps with snowy peaks all around. In the air, spin, flip, tuck, barspin and tailwhip however you like, then stomp it clean, ride it away backwards, or tumble down the mountain as a ragdoll. Everyone who drops in rides the same mountain together, each in their own kit, so you can follow friends down the line and watch their best tricks land.",
+     "hasLiveRelease": true,
+     "slug": "bmx-mountain",
+     "tags": [
+      "BMX",
+      "Bikes",
+      "Sports",
+      "Multiplayer",
+      "3D"
+     ],
+     "thumbnailVideo": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j9716d7hzj7w9531ctk6zyffd58fgw5s/assets/thumbnailVideo-1791079790872-e028334f.mp4",
+     "title": "BMX Mountain",
+     "wideCover": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j9716d7hzj7w9531ctk6zyffd58fgw5s/assets/wideCover-1791071133500-b0ee3354.webp"
+    },
+    "organization": {
+     "name": "@portner",
+     "slug": "0"
+    }
+   },
+   {
+    "game": {
+     "_id": "j974fgvb7gx6yyntf2vq32wtbd7xhd8d",
+     "description": "Aground is a Mining/Crafting RPG, where there is an overarching goal, story and reason to craft and build. As you progress, you will meet new NPCs, unlock new technology, and maybe magic too. Will you be able to raise dragons? Launch into space? The sky is literally not the limit. Beneath its simple exterior, Aground hides a lot of depth and surprises that will keep you wondering “what’s next?”\n\nSurvival is only the beginning. The only way for humanity to have a future is to return to the stars and confront them. But, it will require a lot of ingenuity and help to recover everything that was lost, and even that might not be enough...\n\nWHAT CAN YOU DO IN AGROUND?\n\nWhile it starts simple, Aground slowly evolves into a much larger game with tons of features and things to do. Here is an incomplete list:\n\n- Mine Ores, Gems, and other Resources\n- Build Structures\n- Complete Quests\n- Fight Enemies and Bosses\n- Craft Tools\n- Farm Crops\n- Cook Foods\n- Befriend NPCs (or not)\n- Advance your Technology\n- Discover Magic\n- Ride Vehicles and Mounts\n- Travel to other Islands and Planets\n- Raise Dragons\n- Capture Enemies\n- Level up your Skills\n- Go Fishing\n- Explore Secrets\n\nWHO ARE WE?\nWe’re Fancy Fish Games - a small indie team that has released 12 games since 2012. We follow our passion, making games that catch our fancy - our games tend to be quirky, surprising or thought-provoking.",
+     "hasLiveRelease": true,
+     "slug": "aground",
+     "tags": [
+      "Exploration",
+      "Open World",
+      "Survival",
+      "Base Building",
+      "Mining"
+     ],
+     "thumbnailVideo": "jd7d28th2am1ar9kn9xk9pmef57xhtmn/j974fgvb7gx6yyntf2vq32wtbd7xhd8d/assets/thumbnailVideo-1787241901834-1214b393.mp4",
+     "title": "Aground",
+     "wideCover": "jd7d28th2am1ar9kn9xk9pmef57xhtmn/j974fgvb7gx6yyntf2vq32wtbd7xhd8d/assets/wideCover-1787177979646-5f357062.webp"
+    },
+    "organization": {
+     "name": "Fancy Fish Games",
+     "slug": "fancy-fish-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97e1zwy74vdxtnyx4y0ms1zrx82js06",
+     "description": "Rogue Glitch Ultra is packed with unlockable items, characters, and cosmetics to make every run a worthwhile one.\n\nWorry less about aiming with auto-targeting and more about landing your jumps and building the best loadout - throwing sponges at your foes, using a minion pistol to summon little helpers, firing projectiles from another dimension, or any of the other 150+ weapon options to advance in this hostile universe! By using the currency known as Malbytes, you’ll be able to transform your existing characters into more powerful glitched evolutions as you proceed deeper into the unknown and meet an ominous being who wants to make a deal...\n\nFEATURES\n- Play solo or with up to 6 players online\n- Collect and evolve 150+ unique weapons and powerups that offer radically different playstyles\n- Embody 18 character variants, each with upgrading stats and skins\n- Auto-targeting lets you focus on platforming finesse and the perfect loadout\n- Complete events to unlock a narrative about a video game world that is starting to glitch\n- Experience the ultimate version of Rogue Glitch with Rogue Glitch Ultra, which features reworked graphics, all-new content, items, and boss fights",
+     "hasLiveRelease": true,
+     "slug": "rogue-glitch-ultra",
+     "tags": [
+      "Action",
+      "Roguelite",
+      "Platformer",
+      "2D",
+      "Co-op"
+     ],
+     "thumbnailVideo": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/thumbnailVideo-1787724613251-4f39d97c.mp4",
+     "title": "Rogue Glitch Ultra",
+     "wideCover": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/wideCover-1787177724642-cbc1124c.webp"
+    },
+    "organization": {
+     "name": "Rarebyte",
+     "slug": "rarebyte"
+    }
+   },
+   {
+    "game": {
+     "_id": "j976pkj3b4qatx7pp44nssw51x814v8d",
+     "description": "Calico is a day-in-the-life community sim game where you are given an important and adorable task: rebuild the town’s cat café and fill it with cute and cuddly creatures! Build up your café by filling it with cute furniture, fun decorations, yummy pastries, and get it bustling with animals again!\n\nCalico is meant to make you feel all warm and fuzzy inside. The gameplay reflects that with a laid back, low stress creative environment to explore and play in.\n\nThe Calico character creator will allow players to create their own magical person to experience the world through. There will also be plenty of clothing to choose from and collect throughout the game!\n\nThe player will encounter many animals in the world of Calico. Once befriended, you can name them, add them to your party, or send them to their new home at the café. Animals in your party will follow you everywhere you go and listen to your commands. The animals in your café will relax and play with any customers that pop in for a visit.\n\nYour task in Calico is to bring the town's café back to life again. This isn’t just achieved by bringing in cats and animals alone, however – you can also decorate your café with furniture of different styles to create the perfect cozy home for you and your animals!\n\nCreate a wonderful café by making yummy baked goods and drinks for the townspeople! Learn about your follow villagers to pick and choose their favorite foods to sell!\n\nWe wanted there to be no limits to how you could find happiness in Calico. Magic potions are a system that allow us to break the rules of what is possible and to find what would be most fun. Example: the More-to-pet Potion allows the player to magically turn a single animal giant-sized! You can hang out with a giant animal, or even ride a giant cat!",
+     "hasLiveRelease": true,
+     "slug": "calico",
+     "tags": [
+      "Casual",
+      "Cute",
+      "Cats",
+      "Simulation",
+      "Life Sim"
+     ],
+     "thumbnailVideo": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/thumbnailVideo-1787177366027-69fc03c0.mp4",
+     "title": "Calico",
+     "wideCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j976pkj3b4qatx7pp44nssw51x814v8d/assets/wideCover-1787071237498-12558e76.webp"
+    },
+    "organization": {
+     "name": "Whitethorn Games",
+     "slug": "whitethorn-games"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97behynqn3qqpvcjt6d0hm73s8fn80k",
+     "description": "An open world MMO rogue lite where you dig to the depths of the world, find gems, and return to the surface for massive upgrades and loot. But beware, the deeper you go, the less likely you will make it back.",
+     "hasLiveRelease": true,
+     "slug": "dig-or-die",
+     "tags": [
+      "MMORPG",
+      "Roguelike",
+      "Roguelite",
+      "Action-Adventure",
+      "Dungeon Crawler"
+     ],
+     "thumbnailVideo": "jd7c1v3pqdpmd7s0rwtpbg811x8fnb2r/j97behynqn3qqpvcjt6d0hm73s8fn80k/assets/thumbnailVideo-1791150591891-eb210357.mp4",
+     "title": "Dig or Die",
+     "wideCover": "jd7c1v3pqdpmd7s0rwtpbg811x8fnb2r/j97behynqn3qqpvcjt6d0hm73s8fn80k/assets/wideCover-1791150582518-15e5ea52.webp"
+    },
+    "organization": {
+     "name": "kecokings",
+     "slug": "kecokings"
+    }
+   },
+   {
+    "game": {
+     "_id": "j971xbfc7tb4v0dygj458wdeth865z6d",
+     "description": "Welcome to **Feather Party**, a chaotic multiplayer party game set on an adorable planet of chicks! Gather your friends or jump into quick play with other players for colorful competition and physics-driven fun with **up to 8 players**.\n\n## Hub of Fun\n\nWelcome to **Lobby Island**, your central hub between competitions! Customize your chick, explore the available game options, and hang out with friends before diving into the next mini-game challenge.\n\n## Board Game Mode\n\nRoll your way around the board and compete in mini-games to collect feathers. Spend them strategically on eggs, valuable properties, and powerful action cards to get ahead of the competition.\n\nSpecial tiles can bring surprising rewards or unexpected penalties, so every turn can change your fortunes. Collect the most eggs by the end to claim victory!\n\n## Party Mode\n\nCompete across **22 dynamic mini-games** as you race to reach the target score. Work together to score goals in Football, test your speed in Track Race, or fight to be the last chick standing in survival challenges.\n\nEach mini-game brings different mechanics and new opportunities to outplay your opponents. Team up, compete with friends or other players, and adapt your strategy from one challenge to the next.\n\n## Elemental Chaos and Physics\n\nIce, electricity, and fire can transform mini-games in surprising ways, changing the physics and adding another layer of chaos to the competition.\n\nAdapt to shifting conditions, navigate unpredictable interactions, and enjoy Feather Party’s playful, physics-driven gameplay!",
+     "hasLiveRelease": true,
+     "slug": "feather-party",
+     "tags": [
+      "Multiplayer",
+      "Casual",
+      "Funny",
+      "Online Co-Op",
+      "Party Game"
+     ],
+     "thumbnailVideo": "jd7839g62a97z9tswafdvca0es85x8z5/j971xbfc7tb4v0dygj458wdeth865z6d/assets/thumbnailVideo-1790467713957-5ac87e48.mp4",
+     "title": "Feather Party",
+     "wideCover": "jd7839g62a97z9tswafdvca0es85x8z5/j971xbfc7tb4v0dygj458wdeth865z6d/assets/wideCover-1790416496396-5b977cd3.webp"
+    },
+    "organization": {
+     "name": "Teneke Kafalar",
+     "slug": "teneke-kafalar"
+    }
+   },
+   {
+    "game": {
+     "_id": "j970kwnm4f29xcg0d9pw4rht8h837gg5",
+     "description": "Block'Em! is an action-filled block-building party game for 2 to 4 players!\nThe controls are simple but the road to victory is complex.\nBe the first to reach the goal or be the last Blocky standing!\n\nCute, addictive and fast paced party game to be enjoyed by 2-4 players.\nOutsmarting your opponent with cunning moves is easier said than done!\n\nAn exciting mix of platform and puzzle!\nFind your way through the vibrant, chaotic arena. Watch out for the fireballs!\n\nBlock’Em brings out your competitive side.\nA sure way to make friendships stronger… or not!\n\nBeat your opponents in a race to the finish or be the last Block to survive.\n\nEat. Sleep. Block’Em. Repeat.",
+     "hasLiveRelease": true,
+     "slug": "block-em",
+     "tags": [
+      "Action",
+      "Casual",
+      "Multiplayer"
+     ],
+     "thumbnailVideo": "jd774wqm86jv5wdzjphkapx7vs837md5/j970kwnm4f29xcg0d9pw4rht8h837gg5/assets/thumbnailVideo-1787183619966-5074b3d3.mp4",
+     "title": "Block'Em!",
+     "wideCover": "jd774wqm86jv5wdzjphkapx7vs837md5/j970kwnm4f29xcg0d9pw4rht8h837gg5/assets/wideCover-1787182469578-acfebd0e.webp"
+    },
+    "organization": {
+     "name": "Aurora Punks",
+     "slug": "aurora-punks"
+    }
+   },
+   {
+    "game": {
+     "_id": "j979kwpmf03mg0yws33t1z4cy981xz27",
+     "description": "In the early 1980s, a computer game emerged that changed the world of fantasy gaming forever. Randomly generated rooms meant that each journey into the infamous Dungeons of Doom was unique. The potent combination of random generation with perma-death proved to be intoxicating, and the game was so influential it spawned an entire genre: \"Rogue-likes\".\n\nNow you too can experience the thrill of dungeon crawling for the fabled Amulet of Yendor in this pioneering game.\n\nThe original Rogue had many different versions and variations, and was ported to a wide variety of computer platforms. This particular version is Epyx Rogue, one of the earliest versions designed for commercial distribution, ported to MSDOS on the IBM PC, and is v1.49 of that port.\n\n- Battle dozens of unique and powerful enemies.\n- Gather armor, weapons, food and other items to help you on your quest.\n- Scour rooms for secret hidden doors and traps.\n- Discover strange magical spells and potions, which have different wonderous effects every time you play the game.\n- Survive through 26 randomly generated levels, each more tricky and dangerous than the last, to find the Amulet, then escape... if you can!",
+     "hasLiveRelease": true,
+     "slug": "rogue",
+     "tags": [
+      "Roguelike",
+      "Dungeon Crawler",
+      "Procedural Generation",
+      "Retro",
+      "Turn-Based"
+     ],
+     "thumbnailVideo": "jd7faejg3a5gs4qycvht793dk581x99y/j979kwpmf03mg0yws33t1z4cy981xz27/assets/thumbnailVideo-agent-1787027727588-fd8b2478.mp4",
+     "title": "Rogue",
+     "wideCover": "jd7faejg3a5gs4qycvht793dk581x99y/j979kwpmf03mg0yws33t1z4cy981xz27/assets/wideCover-1788454682996-d20ae4dc.webp"
+    },
+    "organization": {
+     "name": "Pixel Games UK",
+     "slug": "pixel-games-uk"
+    }
+   },
+   {
+    "game": {
+     "_id": "j97ffeweyv5txv56zznxy9xfb982s5gx",
+     "description": "Ask anyone who considered themselves a true gamer in 1987 and the chances are they will fondly remember California Games. Whatever platform you played it on, sun-drenched sports played by the tanned and beautiful were the order of the day.\n\nEnjoy the six radical and awesome events:\n- Half-pipe\n- Roller skating\n- Surfing\n- BMX\n- Footbag\n- Flying Disc\n\nAppearing in many website and magazine ‘top 100 games of all time’ lists, California Games appealed equally to male and female gamers, something considered rather unusual at the time. Easy to play but hard to master, the game often led to playground arguments about which event was the best… arguments that can (maybe) now be settled once and for all!\n\nSo get ready to put your shades on, turn the stereo up nice and loud, and go gnarly to the max with a sweet 720 kick-flip backwards ollie. Or something like that, anyway...\n\nAccording to the original instructions...\n\nIntroducing the gnarliest bunch of games under the sun! Games invented on the beaches by sun-baked beach bums with a fondness for ripping, grinding and shredding - with six radically thrilling events intended to bring you to the edge and blow your mind... and make adrenalin California’s most plentiful natural resource.\n\nWish they all could be California Games\n\nGet ready to shred the face off an awesomely tubular wave. Turn a ‘berm’ on a BMX bike and spray up a wall of dirt. Launch a few feet off-the-lip with your skateboard tucked high. And while you’re up there, dance for the crowd. Or if you’re feeling like kicking back a bit, float a flying disk, juggle a foot bag with your heels, or just slalom the boardwalk on your skates.\n\nWhen the going gets weird, the weird turn pro.\n\nBut this ain’t beach blanket bingo. In fact, before you even set foot on California turf, you’ll choose an on-screen sponsor from among the heaviest names on the circuit. Then, hit the competition route. Prizes include trophies for a single event and a top prize in overall competition.\n\nSo get air. Go crazy. Welcome to a new state of intensity!",
+     "hasLiveRelease": true,
+     "slug": "california-games",
+     "tags": [
+      "Retro",
+      "Sports",
+      "Arcade",
+      "Multiplayer",
+      "Pixel Graphics"
+     ],
+     "thumbnailVideo": "jd7faejg3a5gs4qycvht793dk581x99y/j97ffeweyv5txv56zznxy9xfb982s5gx/assets/thumbnailVideo-agent-1787038354414-9e6703c6.mp4",
+     "title": "California Games",
+     "wideCover": "jd7faejg3a5gs4qycvht793dk581x99y/j97ffeweyv5txv56zznxy9xfb982s5gx/assets/wideCover-1787243608158-43abfad7.webp"
+    },
+    "organization": {
+     "name": "Pixel Games UK",
+     "slug": "pixel-games-uk"
+    }
+   }
+  ],
+  "seed": 1.0
+ }
+}

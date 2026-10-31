@@ -1,0 +1,32 @@
+{
+ "id": "1a37a20e-bafd-465d-b822-8dcee16fb3da",
+ "name": "Six Midnight Shifts - Skinwalker Horror!",
+ "description": "A single-player convenience-store horror game that combines survival simulation, identity verification, and anomaly spotting. Serve impatient customers, maintain the store, compare faces and answers with county records, and use your sidearm only when you are certain a skinwalker is not human. Inspired by Shift at Midnight.",
+ "claim_expires_at": null,
+ "mode": "Universal",
+ "asset_reference_mode": "path_v2",
+ "clones_count": 196,
+ "plays_count": 94355,
+ "likes_count": 220,
+ "comments_count": 19,
+ "source_project": null,
+ "preview_image": "https://storage.googleapis.com/rosebud_assets_storage/project_preview_images/1a37a20e-bafd-465d-b822-8dcee16fb3da.png?v=1786633506.990978",
+ "preview_video": null,
+ "creator_username": "Jason",
+ "creator_id": "6a20c763-e8d2-43ba-9d9e-b162fbac37ec",
+ "tags": [
+  "Horror",
+  "Play Page"
+ ],
+ "is_remixable": true,
+ "tips_enabled": true,
+ "can_receive_tips": false,
+ "published_revision": {
+  "id": "babc3bb9-a92a-4a5d-bfe2-795d64a49837"
+ },
+ "deployed_revision": {
+  "id": "fd1e64db-7681-4439-92ca-99e7ecdff417"
+ },
+ "published_name": "six-midnight-shifts-skinwalker-horror",
+ "requires_cross_origin_isolation": false
+}

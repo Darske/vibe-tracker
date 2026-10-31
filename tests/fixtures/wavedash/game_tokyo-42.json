@@ -1,0 +1,96 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1773875541928.982,
+  "_id": "j9772msxrra9ydjyspk9c3744n8353kn",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1786052045088.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1792103654735.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Tokyo 42 is a hyper-stylish isometric open-world shooter. Framed for a murder you didn't commit, you'll delve into a world of assassins, deadly corporate intrigue and...tactical cats.\n\nSpin the camera to see every angle of this beautifully hand-crafted micro Tokyo, as you discover a huge range of weapons, secrets and stories.\n\nSkillful shooting, bullet physics, sneaky stealth and crowd simulation all play a role in this ultra-colourful kinetic frenzy.\n\nA single player open-world story mode and a host of multiplayer modes await in this unique and critically acclaimed action masterpiece.\n\n\"Stunning...looks like Monument Valley and plays like Grand Theft Auto set in the world of Blade Runner\" (Vice)\n\n\"Gorgeous...Tokyo 42 is shaping up to be something pretty special\" (Kotaku)"
+  },
+  "developers": [
+   "SMAC Games"
+  ],
+  "donationsOptedInAt": 1786052045088.0,
+  "firstPaidContentAt": 1781123395729.7026,
+  "firstPublishedAt": 1786052045088.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "it",
+   "de",
+   "es",
+   "ja",
+   "pt-BR",
+   "ru",
+   "zh-CN"
+  ],
+  "lastBuildUploadedAt": 1792103430687.0,
+  "lastUpdatedDate": "2026-10-15",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/media-1774303607225-f45228ea.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/media-1774303614341-4e9db3e3.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/media-1774303614746-99010d4f.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/media-1774303615157-5e93d7ba.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/media-1774303615547-20a59aaa.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1773875529981.8193,
+   "_id": "jd76wrq8f1jbxvdcbpaq10yah98351ym",
+   "avatarUrl": "organizationAvatars/jd76wrq8f1jbxvdcbpaq10yah98351ym/1773875742947.png",
+   "name": "Mode 7",
+   "slug": "mode-7",
+   "timezone": "America/Los_Angeles"
+  },
+  "organizationId": "jd76wrq8f1jbxvdcbpaq10yah98351ym",
+  "productionGameCloudId": "mx71pyzrktwjxzst4z8h3vzw29835j85",
+  "publishers": [
+   "Mode 7"
+  ],
+  "releaseDate": "2017-05-31",
+  "shareableBuildsEnabled": true,
+  "slug": "tokyo-42",
+  "squareCover": "mode-7/tokyo-42-1773875541929/assets/squareCover-1773875667141-678617a2.jpg",
+  "tags": [
+   "Action",
+   "Isometric",
+   "Open World",
+   "Cyberpunk",
+   "Stealth"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/thumbnailVideo-1787691360360-48644284.mp4"
+  },
+  "title": "Tokyo 42",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd76wrq8f1jbxvdcbpaq10yah98351ym/j9772msxrra9ydjyspk9c3744n8353kn/assets/wideCover-1787180977256-bcd88d18.webp"
+  }
+ }
+}

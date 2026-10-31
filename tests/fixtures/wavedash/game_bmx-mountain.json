@@ -1,0 +1,65 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1790977318396.2258,
+  "_id": "j9716d7hzj7w9531ctk6zyffd58fgw5s",
+  "autoReleaseDate": true,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller",
+   "Touch"
+  ],
+  "creatorFundOptedInAt": 1791089270289.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1792621039694.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Bomb down a steep, fast dirt trail through pine forest and golden aspens, carving berms, pumping rollers and launching off jumps with snowy peaks all around. In the air, spin, flip, tuck, barspin and tailwhip however you like, then stomp it clean, ride it away backwards, or tumble down the mountain as a ragdoll. Everyone who drops in rides the same mountain together, each in their own kit, so you can follow friends down the line and watch their best tricks land."
+  },
+  "developers": [],
+  "donationsOptedInAt": 1791089270289.0,
+  "firstPublishedAt": 1791089270289.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1792620853496.0,
+  "lastGameUpdateNotifiedAt": 1792617021348.0,
+  "lastUpdatedDate": "2026-10-21",
+  "mobileLayout": "tall",
+  "organization": {
+   "_creationTime": 1772894956539.062,
+   "_id": "jd74jryrbrt4tx8qfcx6n1mve182fxx2",
+   "avatarUrl": "organizationAvatars/jd74jryrbrt4tx8qfcx6n1mve182fxx2/1776883382188.png",
+   "description": "solo dev trying my best!",
+   "location": "Los Angeles, CA",
+   "name": "@portner",
+   "slug": "0",
+   "timezone": "America/Los_Angeles",
+   "website": "https://x.com/portner"
+  },
+  "organizationId": "jd74jryrbrt4tx8qfcx6n1mve182fxx2",
+  "productionGameCloudId": "mx73991psazdpp9w16acd1e6xd8fhq77",
+  "publishers": [],
+  "releaseDate": "2026-10-03",
+  "shareableBuildsEnabled": false,
+  "slug": "bmx-mountain",
+  "tags": [
+   "BMX",
+   "Bikes",
+   "Sports",
+   "Multiplayer",
+   "3D"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j9716d7hzj7w9531ctk6zyffd58fgw5s/assets/thumbnailVideo-1791079790872-e028334f.mp4"
+  },
+  "title": "BMX Mountain",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd74jryrbrt4tx8qfcx6n1mve182fxx2/j9716d7hzj7w9531ctk6zyffd58fgw5s/assets/wideCover-1791071133500-b0ee3354.webp"
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1774308257986.1533,
+  "_id": "j97ddx89ydzykawxqe21tsz05583fah3",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1785218310697.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Evan's Remains is a mystery-thriller puzzle adventure about finding a missing boy: Evan. The game combines logic-based platform puzzles with narrative inspired by Japanese graphic adventure games.\n\nGameplay:\nEvery time the player solves from two to three puzzles, the story goes forward and new mechanics are introduced. The challenge of the puzzles lies in the player’s ability to figure out what do rather than solve challenges based on skill. As the difficulty curve increases, the puzzles become more complex by combining two or more previously introduced mechanics.\n\nStory:\nEvan, the genius boy, has been missing for years. One day, a letter signed by him is received, claiming he’s on an uninhabited island somewhere in the Pacific Ocean. Nobody knows why, but he asked specifically for a girl named “Dysis” to go and look for him. The player will take control of this girl, who we don’t know much about. As we follow Dysis’s adventure, questions will start to be answered little by little. All of the little puzzle pieces which seemed unrelated in the beginning will now begin to slowly fit together as the truth is slowly revealed."
+  },
+  "developers": [
+   "maitan69"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1781123803836.0376,
+  "firstPublishedAt": 1775840770719.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": false,
+  "languagesSupported": [
+   "en",
+   "es",
+   "ja",
+   "zh-CN",
+   "pt-BR",
+   "ko",
+   "fr",
+   "de",
+   "ru"
+  ],
+  "lastBuildUploadedAt": 1785146991308.0,
+  "lastUpdatedDate": "2026-07-28",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/media-1774308571901-d4d49c72.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/media-1774308578930-af389248.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/media-1774308579348-e7faebba.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/media-1774308579710-b9474181.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/media-1774308580107-150e5a31.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1771093349295.971,
+   "_id": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+   "avatarUrl": "organizationAvatars/jd70jkwge4sqyd89c4sbpyq2k1815knt/1773350249879.jpg",
+   "description": "We’re an indie game publisher focusing on pleasant, easy-going games that can be played in pieces, that require no special skills or knowledge, and that anyone can pick up and play. We’re believers in accessibility, inclusion, and widening the audience that gets to play. We like to consider ourselves the defenders of easy games.",
+   "location": "Erie, Pennsylvania",
+   "name": "Whitethorn Games",
+   "slug": "whitethorn-games",
+   "timezone": "America/New_York",
+   "website": "https://whitethorngames.com/"
+  },
+  "organizationId": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+  "productionGameCloudId": "mx76gq4s3w3p7q9yze12t6stk583e5db",
+  "publishers": [
+   "Whitethorn Games"
+  ],
+  "releaseDate": "2020-06-11",
+  "shareableBuildsEnabled": true,
+  "slug": "evans-remains",
+  "squareCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/squareCover-1774308390074-099b33cc.jpeg",
+  "tags": [
+   "Puzzle",
+   "Platformer",
+   "Visual Novel",
+   "Mystery",
+   "Story Rich"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/thumbnailVideo-1787724897133-984f8cde.mp4"
+  },
+  "title": "Evan's Remains",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j97ddx89ydzykawxqe21tsz05583fah3/assets/wideCover-1787953024205-44ea9bb8.webp"
+  }
+ }
+}

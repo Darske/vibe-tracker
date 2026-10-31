@@ -1,0 +1,3631 @@
+{
+ "success": true,
+ "items": [
+  {
+   "gameId": "GD9LZQAGXV6J",
+   "name": "Crumble Isles",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/GD9LZQAGXV6J/1791465765542-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-a2c1f32b-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-e543eab7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-e543eab7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-17a8aa6d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GD9LZQAGXV6J-17a8aa6d-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 792,
+   "playCount": 9523,
+   "globalRank": 1,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "O4AWT688K98L",
+   "name": "Gravity Optional",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/O4AWT688K98L/1792214330294-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1080,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-68771a92-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-97dc26ac-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-97dc26ac-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-5ee316f1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-5ee316f1-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-bd844445-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/O4AWT688K98L-bd844445-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 83,
+   "playCount": 1332,
+   "globalRank": 2,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "BBUJYDOT4LPW",
+   "name": "Trick or Roll",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/BBUJYDOT4LPW/1791491048832-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-ef5117f7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-0058a935-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-0058a935-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-03c3270b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BBUJYDOT4LPW-03c3270b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 249,
+   "playCount": 3718,
+   "globalRank": 3,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "GU9PM02UW77R",
+   "name": "Cabinet Fever",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/GU9PM02UW77R/1791499937563-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1440,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-6b4b4613-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-1967a8f6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-1967a8f6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-9882daba-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GU9PM02UW77R-9882daba-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.2,
+      "y0": 0.1,
+      "x1": 0.92,
+      "y1": 0.36
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.25,
+      "y0": 0.07,
+      "x1": 0.75,
+      "y1": 0.29
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.35,
+      "y0": 0.1,
+      "x1": 0.71,
+      "y1": 0.36
+     }
+    }
+   },
+   "likeCount": 180,
+   "playCount": 2994,
+   "globalRank": 4,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "BINNMAMCVYBC",
+   "name": "Squall Riders",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/BINNMAMCVYBC/1791477083471-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-86f736ce-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-80e521c2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-80e521c2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-18b94ac0-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/BINNMAMCVYBC-18b94ac0-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.2,
+      "y0": 0.24,
+      "x1": 0.82,
+      "y1": 0.5
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.3,
+      "y0": 0.1,
+      "x1": 0.71,
+      "y1": 0.36
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.35,
+      "y0": 0.24,
+      "x1": 0.6599999999999999,
+      "y1": 0.5
+     }
+    }
+   },
+   "likeCount": 171,
+   "playCount": 3421,
+   "globalRank": 5,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "8LHM1WDFVVH1",
+   "name": "Ninja Blade Rush",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/8fde5e1c-6344-49a7-b86e-6a02d8f911e7/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-76789b60-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-76789b60-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-76789b60-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-76789b60-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-b479694b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-b479694b-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-b707115c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8LHM1WDFVVH1-b707115c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 386,
+   "playCount": 5343,
+   "globalRank": 6,
+   "creator": {
+    "publicId": "2vh4rvg9",
+    "brandId": "gatlenshado",
+    "displayName": "Gatlen Shado",
+    "avatarUrl": "https://bitmagic.ai/creators/2vh4rvg9/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "SMBI3584E1CV",
+   "name": "Oh no we have an orc infestation",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/SMBI3584E1CV/1789749820648-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1659,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-11a798e7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-f7e69e3a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-f7e69e3a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-6d1e5ccb-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-6d1e5ccb-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-af207b70-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SMBI3584E1CV-af207b70-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 210,
+   "playCount": 1842,
+   "globalRank": 7,
+   "creator": {
+    "publicId": "3pyg9645",
+    "brandId": "harri",
+    "displayName": "Harri",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "NGPOPA5G05QL",
+   "name": "Joyride",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1786565695160-joyride.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-9aec434d-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-9aec434d-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-9aec434d-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-9aec434d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-9aec434d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-19b55b4a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-19b55b4a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-3592790e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-3592790e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-806d9eb4-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/NGPOPA5G05QL-806d9eb4-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.26,
+      "y0": 0.36,
+      "x1": 0.76,
+      "y1": 0.54
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.26,
+      "y0": 0.36,
+      "x1": 0.76,
+      "y1": 0.54
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.2866666666666667,
+      "y0": 0.36,
+      "x1": 0.7311111111111112,
+      "y1": 0.54
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.22,
+      "y0": 0.35,
+      "x1": 0.79,
+      "y1": 0.46
+     }
+    }
+   },
+   "likeCount": 922,
+   "playCount": 11852,
+   "globalRank": 8,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "LHJN0C5HD2F6",
+   "name": "Mower Mania",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/LHJN0C5HD2F6/imported/0-image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-8d515c1f-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-8d515c1f-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-8d515c1f-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-8d515c1f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-8d515c1f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-bc0bc7c6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-bc0bc7c6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-deb22470-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-deb22470-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-49e5f586-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/LHJN0C5HD2F6-49e5f586-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 1103,
+   "playCount": 10294,
+   "globalRank": 9,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "AK7UUONXYQUS",
+   "name": "Brainrot Heist",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/AK7UUONXYQUS/1789623863224-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-ef0b22ff-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-c2e862ae-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-c2e862ae-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-a42efc6a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AK7UUONXYQUS-a42efc6a-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 347,
+   "playCount": 3435,
+   "globalRank": 10,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "3R99FHAAPPCN",
+   "name": "Utopos",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/3R99FHAAPPCN/1791099883221-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c39f90e8-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-64ba5839-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-64ba5839-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c79c238e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3R99FHAAPPCN-c79c238e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 290,
+   "playCount": 2770,
+   "globalRank": 11,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "B5U0A5XFC7K9",
+   "name": "Astra Meridian",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/B5U0A5XFC7K9/1792371507202-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-355c1121-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-44ad82c9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-44ad82c9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-393a1f9c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/B5U0A5XFC7K9-393a1f9c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 66,
+   "playCount": 834,
+   "globalRank": 12,
+   "creator": {
+    "publicId": "3gedkx83",
+    "brandId": null,
+    "displayName": "Josh English",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "OM8ONSCMIZIN",
+   "name": "Happytown",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/OM8ONSCMIZIN/1791527553837-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1254,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-1456d201-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-42015299-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-42015299-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-476da8e8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OM8ONSCMIZIN-476da8e8-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 250,
+   "playCount": 2546,
+   "globalRank": 13,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "0V2XHPUGUEWS",
+   "name": "Aurora Wings",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/0V2XHPUGUEWS/1790997135032-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-835e271f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-df0cce96-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-df0cce96-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-dd583826-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/0V2XHPUGUEWS-dd583826-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 141,
+   "playCount": 1476,
+   "globalRank": 14,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "OLNIO3A7D7IG",
+   "name": "Penguin Fortress",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/7f18311d-cd04-472d-812b-5ea87c3fa469/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-8f974724-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-b1933da4-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-b1933da4-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-20c90a8b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OLNIO3A7D7IG-20c90a8b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 26,
+   "playCount": 470,
+   "globalRank": 15,
+   "creator": {
+    "publicId": "23f34aad",
+    "brandId": null,
+    "displayName": "Pepisso",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "D3C27KX0UH0Y",
+   "name": "Swat the Heat",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/D3C27KX0UH0Y/1792348690280-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-f322b225-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-0126b6d2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/D3C27KX0UH0Y-db8d7461-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 93,
+   "playCount": 876,
+   "globalRank": 16,
+   "creator": {
+    "publicId": "9zwfzx9p",
+    "brandId": "metinucar",
+    "displayName": "Metin Uçar",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/776db27275384502f12044d4b7435f122391217d.jpg"
+   }
+  },
+  {
+   "gameId": "70CQWELOJYAB",
+   "name": "Roll City",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/70CQWELOJYAB/1788355278534-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-510ab5a1-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-510ab5a1-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-510ab5a1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-510ab5a1-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-52763863-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-52763863-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-1bfd531c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/70CQWELOJYAB-1bfd531c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 1054,
+   "playCount": 5657,
+   "globalRank": 17,
+   "creator": {
+    "publicId": "8aexs92j",
+    "brandId": "ilmari",
+    "displayName": "Ilmari",
+    "avatarUrl": "https://bitmagic.ai/creators/8aexs92j/avatar.png"
+   }
+  },
+  {
+   "gameId": "DKB83C924A9A",
+   "name": "Last Aid Station",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/DKB83C924A9A/1787583832605-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-64982f7f-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-64982f7f-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-64982f7f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-64982f7f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-d219d391-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-d219d391-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-f67583d7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/DKB83C924A9A-f67583d7-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 173,
+   "playCount": 1485,
+   "globalRank": 18,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "C5GU308YDPZB",
+   "name": "Sandtris",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/C5GU308YDPZB/1787823699889-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-4ac76a3d-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-4ac76a3d-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-4ac76a3d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-4ac76a3d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-37f3af21-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-37f3af21-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-0a0ee49e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/C5GU308YDPZB-0a0ee49e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 499,
+   "playCount": 3124,
+   "globalRank": 19,
+   "creator": {
+    "publicId": "8aexs92j",
+    "brandId": "ilmari",
+    "displayName": "Ilmari",
+    "avatarUrl": "https://bitmagic.ai/creators/8aexs92j/avatar.png"
+   }
+  },
+  {
+   "gameId": "KGHW00CT3P6P",
+   "name": "Skyline Golf",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/KGHW00CT3P6P/1789712854680-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-47ff2b18-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-63d78ee5-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-63d78ee5-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-93cf8af9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/KGHW00CT3P6P-93cf8af9-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 130,
+   "playCount": 986,
+   "globalRank": 20,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "VPCT0XSS4E64",
+   "name": "Party Boat",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/VPCT0XSS4E64/1791554277289-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-1029af7e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-f8d3457a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-f8d3457a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-da904dcf-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/VPCT0XSS4E64-da904dcf-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 12,
+   "playCount": 281,
+   "globalRank": 21,
+   "creator": {
+    "publicId": "67fca7q8",
+    "brandId": "mennytmies",
+    "displayName": "Markus Hjort",
+    "avatarUrl": "https://bitmagic.ai/creators/67fca7q8/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "AWHP40BD3DD7",
+   "name": "Alien Trash Bash",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/AWHP40BD3DD7/imported/0-1781826911162-Gemini_Generated_Image_gi9auqgi9auqgi9a.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-e5e0c411-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-e5e0c411-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-e5e0c411-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1092,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-e5e0c411-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-e5e0c411-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-d19afdbe-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-d19afdbe-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-92de9f99-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-92de9f99-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-485d9a33-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AWHP40BD3DD7-485d9a33-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1.1188524590163935,
+     "text": {
+      "x0": 0.27,
+      "y0": 0.07,
+      "x1": 0.73,
+      "y1": 0.28
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.33,
+      "y0": 0.09,
+      "x1": 0.73,
+      "y1": 0.29
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.3713319672131148,
+      "y0": 0.07,
+      "x1": 0.6286680327868852,
+      "y1": 0.28
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.27,
+      "y0": 0.11567765567765571,
+      "x1": 0.73,
+      "y1": 0.3033699633699634
+     }
+    }
+   },
+   "likeCount": 256,
+   "playCount": 4966,
+   "globalRank": 22,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "AAFRXNPZQXGR",
+   "name": "Idle Factory",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1784589380954-Idle Factory.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-6aac7e8e-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-6aac7e8e-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-6aac7e8e-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-226d29f0-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-226d29f0-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-b9aeb381-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AAFRXNPZQXGR-b9aeb381-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.08,
+      "y0": 0.06,
+      "x1": 0.94,
+      "y1": 0.36
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.11,
+      "y0": 0.07,
+      "x1": 0.91,
+      "y1": 0.32
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.29,
+      "y0": 0.06,
+      "x1": 0.72,
+      "y1": 0.36
+     }
+    }
+   },
+   "likeCount": 122,
+   "playCount": 1588,
+   "globalRank": 23,
+   "creator": {
+    "publicId": "3z9e99rw",
+    "brandId": "rosko",
+    "displayName": "Rosko",
+    "avatarUrl": "https://bitmagic.ai/creators/3z9e99rw/avatar.png"
+   }
+  },
+  {
+   "gameId": "SNR5RZD26LQX",
+   "name": "Breakle",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/SNR5RZD26LQX/1792442490261-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-2fc709c9-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-2fc709c9-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-2fc709c9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-2fc709c9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-ea9faed6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-ea9faed6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-54f445f1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/SNR5RZD26LQX-54f445f1-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 6,
+   "playCount": 116,
+   "globalRank": 24,
+   "creator": {
+    "publicId": "24d85p3y",
+    "brandId": null,
+    "displayName": "GreenHorn Games",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/ca69e04062756e35a9a303c7ab4ef1d0482837db.jpg"
+   }
+  },
+  {
+   "gameId": "5T5RUIGPX2Z3",
+   "name": "Kölsch Taxi",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/5T5RUIGPX2Z3/1790166342471-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-ba85e853-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-606966dd-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-606966dd-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-70db344c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5T5RUIGPX2Z3-70db344c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 373,
+   "playCount": 3919,
+   "globalRank": 25,
+   "creator": {
+    "publicId": "67fca7q8",
+    "brandId": "mennytmies",
+    "displayName": "Markus Hjort",
+    "avatarUrl": "https://bitmagic.ai/creators/67fca7q8/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "5W3S7IZWZZOY",
+   "name": "How to Shoot",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/510f9dd5-c64b-44bd-a6ac-c7c825c506f6/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1344,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-31986b1e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-b95df99f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-b95df99f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-a0ab30b8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-a0ab30b8-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-9958a834-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/5W3S7IZWZZOY-9958a834-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 6,
+   "playCount": 79,
+   "globalRank": 26,
+   "creator": {
+    "publicId": "2dm6nmkq",
+    "brandId": null,
+    "displayName": "Jorge Martinez",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "7DJEK1E7BL8L",
+   "name": "Dust Walkers",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/7DJEK1E7BL8L/1791293835400-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1672,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-12145ce1-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-2c218792-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-2c218792-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-bd4845e9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-bd4845e9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-c9d4c1b9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/7DJEK1E7BL8L-c9d4c1b9-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 28,
+   "playCount": 415,
+   "globalRank": 27,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "PEIKQ80ISD3Y",
+   "name": "Hop ° hop",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/PEIKQ80ISD3Y/1786361860464-screenshot-PEIKQ80ISD3Y.jpg",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-61793889-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-61793889-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-61793889-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 2166,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-61793889-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-61793889-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-954a1883-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-954a1883-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-a1390a1d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-a1390a1d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-c54c4dfb-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/PEIKQ80ISD3Y-c54c4dfb-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 269,
+   "playCount": 2211,
+   "globalRank": 28,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "QT20DAECXU36",
+   "name": "The Pub",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1788293327279-KeyArt.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-55d17788-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-55d17788-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 600,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-55d17788-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-188672bd-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-188672bd-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-7261cc6b-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QT20DAECXU36-7261cc6b-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.14,
+      "y0": 0.07,
+      "x1": 0.88,
+      "y1": 0.22
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.25,
+      "y0": 0.07,
+      "x1": 0.73,
+      "y1": 0.22
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.32,
+      "y0": 0.07,
+      "x1": 0.69,
+      "y1": 0.22
+     }
+    }
+   },
+   "likeCount": 125,
+   "playCount": 963,
+   "globalRank": 29,
+   "creator": {
+    "publicId": "2byv2jdg",
+    "brandId": "rpb",
+    "displayName": "Ricardo",
+    "avatarUrl": "https://bitmagic.ai/creators/2byv2jdg/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "U3OOZHEA1LII",
+   "name": "Runway🚀",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/3c48f673-c992-4b59-9bbb-21296cb35f39/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-194aafd4-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-3a929181-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-3a929181-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-4fc71f64-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U3OOZHEA1LII-4fc71f64-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 4,
+   "playCount": 99,
+   "globalRank": 30,
+   "creator": {
+    "publicId": "8dvfywqc",
+    "brandId": null,
+    "displayName": "Filip Landin",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "S691S3C0Q4WY",
+   "name": "Bounce 3D",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/S691S3C0Q4WY/1790833196172-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-dc8c41ee-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-6b5c65a3-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-6b5c65a3-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-40fe70c7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/S691S3C0Q4WY-40fe70c7-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 0,
+   "playCount": 61,
+   "globalRank": 31,
+   "creator": {
+    "publicId": "4jtj67sx",
+    "brandId": "akkireddy",
+    "displayName": "Akkireddy Challa",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/e7d2d6b531d5f4370d8f961c76e52270cc856560.jpg"
+   }
+  },
+  {
+   "gameId": "73LK829X3V4E",
+   "name": "Tide",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/73LK829X3V4E/1787229618965-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-73168048-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-73168048-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-73168048-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-73168048-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-22f859e3-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-22f859e3-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-a119a9a7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/73LK829X3V4E-a119a9a7-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 78,
+   "playCount": 496,
+   "globalRank": 32,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "OFLUNOOPWAT3",
+   "name": "Rage Room",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/OFLUNOOPWAT3/1792498243502-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-84cc979d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-55d3d82a-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-55d3d82a-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-7715d151-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/OFLUNOOPWAT3-7715d151-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 1,
+   "playCount": 31,
+   "globalRank": 33,
+   "creator": {
+    "publicId": "9zwfzx9p",
+    "brandId": "metinucar",
+    "displayName": "Metin Uçar",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/776db27275384502f12044d4b7435f122391217d.jpg"
+   }
+  },
+  {
+   "gameId": "3UHN95IVEW5C",
+   "name": "REF!!!",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/a464f23e-c48d-49f4-b31f-ee91d3571e3f/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-0d435189-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-eff5a3c7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-eff5a3c7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-dd8446da-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/3UHN95IVEW5C-dd8446da-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 4,
+   "playCount": 127,
+   "globalRank": 34,
+   "creator": {
+    "publicId": "2yeuztsw",
+    "brandId": null,
+    "displayName": "Mohamid Alfarraj",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "AYP56B34W3QR",
+   "name": "Mist Assassin",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/7cf65b14-0b48-4a73-a27e-b2d538ceff4b/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-c0b63d99-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-c0b63d99-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-c0b63d99-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-c0b63d99-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-b5978371-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-b5978371-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-fb8c4e16-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/AYP56B34W3QR-fb8c4e16-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 248,
+   "playCount": 1533,
+   "globalRank": 35,
+   "creator": {
+    "publicId": "8mwk6gym",
+    "brandId": null,
+    "displayName": "James Sypherd",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "86BA35ENKOQL",
+   "name": "Idle Civ",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/86BA35ENKOQL/1785247906543-screenshot-86BA35ENKOQL.jpg",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-0e0b6548-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-0e0b6548-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-0e0b6548-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 2166,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-0e0b6548-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-0e0b6548-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-d9d3e1b9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-d9d3e1b9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-533e72d1-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-533e72d1-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-fe929d1d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/86BA35ENKOQL-fe929d1d-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 410,
+   "playCount": 3778,
+   "globalRank": 36,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "HJHR7N6VB1D6",
+   "name": "Warden of the Vale: Emerald March",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/HJHR7N6VB1D6/1788940122374-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1672,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-4fba79fc-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5576a914-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5576a914-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-d57d5619-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-d57d5619-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5e5ca50e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HJHR7N6VB1D6-5e5ca50e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 119,
+   "playCount": 878,
+   "globalRank": 37,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "GTBYUH5QC46S",
+   "name": "Dragon: Defend Your Lair",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/GTBYUH5QC46S/1789648457219-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-f19d4985-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-f19d4985-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-f19d4985-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-f19d4985-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-81b3c298-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-81b3c298-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-24b0a501-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/GTBYUH5QC46S-24b0a501-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 21,
+   "playCount": 299,
+   "globalRank": 38,
+   "creator": {
+    "publicId": "3w9s2a4d",
+    "brandId": "kiukku",
+    "displayName": "markusk",
+    "avatarUrl": "https://bitmagic.ai/creators/3w9s2a4d/avatar.png"
+   }
+  },
+  {
+   "gameId": "HNC4K7CX55XK",
+   "name": "Safecrack Sudoku (v0.9)",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1782093919442-SafeCrackKeySquare.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-c93ccdb2-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-c93ccdb2-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-c93ccdb2-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-c93ccdb2-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-a2ecd8c9-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-a2ecd8c9-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-8b3ab7da-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HNC4K7CX55XK-8b3ab7da-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.03,
+      "y0": 0.05,
+      "x1": 0.97,
+      "y1": 0.28
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.11,
+      "y0": 0.07,
+      "x1": 0.9,
+      "y1": 0.32
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.265,
+      "y0": 0.05,
+      "x1": 0.735,
+      "y1": 0.28
+     }
+    }
+   },
+   "likeCount": 78,
+   "playCount": 1104,
+   "globalRank": 39,
+   "creator": {
+    "publicId": "5ukpg5g7",
+    "brandId": "fidgitgames",
+    "displayName": "Fidgit Games",
+    "avatarUrl": "https://bitmagic.ai/creators/5ukpg5g7/avatar.png"
+   }
+  },
+  {
+   "gameId": "2ZMGNZM5PMI6",
+   "name": "WorldWar of Tanks",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/406deea5-bbba-4120-92b6-c7d337c7737f/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1536,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-b9f76f36-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-f95b9045-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-f95b9045-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-800d97b7-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-800d97b7-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-d35ce02e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2ZMGNZM5PMI6-d35ce02e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.07,
+      "y0": 0.07,
+      "x1": 0.95,
+      "y1": 0.28
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.07,
+      "y0": 0.07,
+      "x1": 0.95,
+      "y1": 0.28
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.11777777777777781,
+      "y0": 0.07,
+      "x1": 0.8999999999999999,
+      "y1": 0.28
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.1,
+      "y0": 0.22,
+      "x1": 0.92,
+      "y1": 0.34
+     }
+    }
+   },
+   "likeCount": 0,
+   "playCount": 15,
+   "globalRank": 40,
+   "creator": {
+    "publicId": "2ykddfsu",
+    "brandId": null,
+    "displayName": "Jeremy evans",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "8RU0H9OJ8XA9",
+   "name": "Disco Fever",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/8RU0H9OJ8XA9/1790716267256-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-d2b64435-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-f0b2f875-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-f0b2f875-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-65b2125f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8RU0H9OJ8XA9-65b2125f-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 7,
+   "playCount": 80,
+   "globalRank": 41,
+   "creator": {
+    "publicId": "6av2zx3c",
+    "brandId": null,
+    "displayName": "(Phineas) Yunfei Yu",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/4202b611c2c2f4c08aa8fc2919b934703b2f6ad2.jpg"
+   }
+  },
+  {
+   "gameId": "QC0R0WAQB30U",
+   "name": "Cannon Clash",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/QC0R0WAQB30U/imported/1-1784239118561-ChatGPT_20Image_20Jul_2016__202026__2002_55_28_20PM.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-68ceed00-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-68ceed00-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1254,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-68ceed00-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-68ceed00-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-6d829818-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-6d829818-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-632558e6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/QC0R0WAQB30U-632558e6-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.1,
+      "y0": 0.07,
+      "x1": 0.92,
+      "y1": 0.33
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.25,
+      "y0": 0.07,
+      "x1": 0.76,
+      "y1": 0.35
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.3,
+      "y0": 0.07,
+      "x1": 0.71,
+      "y1": 0.33
+     }
+    }
+   },
+   "likeCount": 172,
+   "playCount": 3396,
+   "globalRank": 42,
+   "creator": {
+    "publicId": "3pwr6hmu",
+    "brandId": "jani",
+    "displayName": "Jani",
+    "avatarUrl": "https://bitmagic.ai/user-content/avatars/2206ccee37b9f37b7617d144164f2789696a0122.jpg"
+   }
+  },
+  {
+   "gameId": "ZDR7MHOFQQTD",
+   "name": "Candy King",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/f271478d-2ac2-464e-acb9-26a5f87d4d0c/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-8f78ea39-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-8f78ea39-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-8f78ea39-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 768,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-8f78ea39-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-f21cc4da-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-f21cc4da-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-0dd68bb6-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-0dd68bb6-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-7fad2b74-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/ZDR7MHOFQQTD-7fad2b74-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 0.75,
+     "text": {
+      "x0": 0.13,
+      "y0": 0.19,
+      "x1": 0.9,
+      "y1": 0.34
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.33,
+      "y0": 0.11,
+      "x1": 0.68,
+      "y1": 0.23
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.36125,
+      "y0": 0.19,
+      "x1": 0.65,
+      "y1": 0.34
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.2225,
+      "y0": 0.19,
+      "x1": 0.8,
+      "y1": 0.34
+     }
+    }
+   },
+   "likeCount": 246,
+   "playCount": 3931,
+   "globalRank": 43,
+   "creator": {
+    "publicId": "394c9k2k",
+    "brandId": "drax",
+    "displayName": "Drax",
+    "avatarUrl": "https://bitmagic.ai/creators/394c9k2k/avatar.webp"
+   }
+  },
+  {
+   "gameId": "A8L3Y7WRVWMZ",
+   "name": "Bitz Claw",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/A8L3Y7WRVWMZ/1776546993830-screenshot-A8L3Y7WRVWMZ.jpg",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-425efd5c-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-425efd5c-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-425efd5c-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1811,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-425efd5c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-425efd5c-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-ead638d8-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-ead638d8-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-d2e05e5f-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-d2e05e5f-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-bd808508-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/A8L3Y7WRVWMZ-bd808508-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 187,
+   "playCount": 4112,
+   "globalRank": 44,
+   "creator": {
+    "publicId": "394c9k2k",
+    "brandId": "drax",
+    "displayName": "Drax",
+    "avatarUrl": "https://bitmagic.ai/creators/394c9k2k/avatar.webp"
+   }
+  },
+  {
+   "gameId": "HQX8ZV2TVSMH",
+   "name": "Ice Time",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/9f67ff80-a0a0-4508-9436-d189af997fe2/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-812317dc-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-1ae07f3e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-1ae07f3e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-28d3c00c-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/HQX8ZV2TVSMH-28d3c00c-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 4,
+   "playCount": 64,
+   "globalRank": 45,
+   "creator": {
+    "publicId": "5dmvyvbv",
+    "brandId": null,
+    "displayName": "Gustav Hauri",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "4EE77LW5XYDZ",
+   "name": "KUBB & BLOOD",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/4EE77LW5XYDZ/1791158736718-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-22834382-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-22834382-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-22834382-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-22834382-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-f1041632-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-f1041632-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-80366c58-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/4EE77LW5XYDZ-80366c58-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.07,
+      "y0": 0.06,
+      "x1": 0.76,
+      "y1": 0.24
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.16,
+      "y0": 0.05,
+      "x1": 0.51,
+      "y1": 0.22
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.28500000000000003,
+      "y0": 0.06,
+      "x1": 0.63,
+      "y1": 0.24
+     }
+    }
+   },
+   "likeCount": 2,
+   "playCount": 88,
+   "globalRank": 46,
+   "creator": {
+    "publicId": "2xsjjkks",
+    "brandId": null,
+    "displayName": "Gustaf Garnow",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "I2HWSLSHKASH",
+   "name": "BANGER MASH SOLO",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/assets/1785339478601-BangerSolo.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 547,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-df383d0a-384w.webp",
+       "width": 384
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-43dea52d-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-43dea52d-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-fd512d88-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-fd512d88-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-35b1178e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/I2HWSLSHKASH-35b1178e-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": {
+    "cover": {
+     "aspect": 1.8542372881355933,
+     "text": {
+      "x0": 0.13,
+      "y0": 0.1,
+      "x1": 0.91,
+      "y1": 0.94
+     }
+    },
+    "16x9": {
+     "aspect": 1.7777777777777777,
+     "text": {
+      "x0": 0.15,
+      "y0": 0.29,
+      "x1": 0.97,
+      "y1": 0.85
+     }
+    },
+    "2x1": {
+     "aspect": 2,
+     "text": {
+      "x0": 0.15696610169491526,
+      "y0": 0.1,
+      "x1": 0.8801186440677966,
+      "y1": 0.94
+     }
+    },
+    "1x1": {
+     "aspect": 1,
+     "text": {
+      "x0": 0.08,
+      "y0": 0.27,
+      "x1": 0.94,
+      "y1": 0.68
+     }
+    }
+   },
+   "likeCount": 14,
+   "playCount": 433,
+   "globalRank": 47,
+   "creator": {
+    "publicId": "2byv2jdg",
+    "brandId": "rpb",
+    "displayName": "Ricardo",
+    "avatarUrl": "https://bitmagic.ai/creators/2byv2jdg/avatar.jpg"
+   }
+  },
+  {
+   "gameId": "2KHM4OEIQD6T",
+   "name": "Gemstone Vault",
+   "comingSoon": false,
+   "thumbnailUrl": "https://bitmagic.ai/worlds/v3/2KHM4OEIQD6T/1792746144708-thumbnail.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-ad685032-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-ad685032-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-ad685032-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-ad685032-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-dc6a9144-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-dc6a9144-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-cf91a117-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/2KHM4OEIQD6T-cf91a117-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 0,
+   "playCount": 8,
+   "globalRank": 48,
+   "creator": {
+    "publicId": "4b867z7x",
+    "brandId": null,
+    "displayName": "outi",
+    "avatarUrl": null
+   }
+  },
+  {
+   "gameId": "U84XU07XCUFF",
+   "name": "Voxel Space Program",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/69bd536c-4069-4406-b435-21f06d3d4b75/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fef71711-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fef71711-2x1.webp",
+    "1x1": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fef71711-1x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fef71711-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fef71711-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-6630ba65-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-6630ba65-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fe849014-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-fe849014-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "1x1": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-839f2b08-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/U84XU07XCUFF-839f2b08-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 168,
+   "playCount": 2588,
+   "globalRank": 49,
+   "creator": {
+    "publicId": "8aexs92j",
+    "brandId": "ilmari",
+    "displayName": "Ilmari",
+    "avatarUrl": "https://bitmagic.ai/creators/8aexs92j/avatar.png"
+   }
+  },
+  {
+   "gameId": "8ZYRI0W1OYBX",
+   "name": "Walk And Paint",
+   "comingSoon": false,
+   "thumbnailUrl": "https://forged-assets.bitmagic.ai/images/5e6e0e23-2029-45ab-bf8f-4a0763fea415/image.webp",
+   "thumbnailVariants": {
+    "16x9": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-4e69a99e-16x9.webp",
+    "2x1": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-4e69a99e-2x1.webp"
+   },
+   "thumbnailSizes": {
+    "cover": {
+     "width": 1024,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-4e69a99e-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-4e69a99e-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "16x9": {
+     "width": 1920,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-a81e56cf-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-a81e56cf-768w.webp",
+       "width": 768
+      }
+     ]
+    },
+    "2x1": {
+     "width": 2048,
+     "renditions": [
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-ad911955-384w.webp",
+       "width": 384
+      },
+      {
+       "url": "https://bitmagic.ai/worlds/v3/covers/8ZYRI0W1OYBX-ad911955-768w.webp",
+       "width": 768
+      }
+     ]
+    }
+   },
+   "thumbnailFocus": null,
+   "likeCount": 83,
+   "playCount": 1152,
+   "globalRank": 50,
+   "creator": {
+    "publicId": "67fca7q8",
+    "brandId": "mennytmies",
+    "displayName": "Markus Hjort",
+    "avatarUrl": "https://bitmagic.ai/creators/67fca7q8/avatar.jpg"
+   }
+  }
+ ],
+ "total": 155
+}

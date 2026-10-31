@@ -1,0 +1,29 @@
+[project]
+name = "vibe-tracker"
+version = "0.1.0"
+description = "Polls public usage counters of vibe-coded browser games across platforms and tracks them over time."
+requires-python = ">=3.11"
+dependencies = [
+    "httpx==0.28.1",
+    "psycopg[binary]==3.2.9",
+    "pydantic==2.11.7",
+    "PyYAML==6.0.2",
+    "python-dateutil==2.9.0.post0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==8.4.1", "pytest-timeout==2.4.0"]
+dashboard = ["streamlit==1.50.0", "plotly==6.3.0", "pandas==2.3.3", "psycopg[binary]==3.2.9"]
+browser = ["playwright==1.55.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tracker*", "dashboard*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["live: hits real platforms (run manually or from workflow_dispatch)"]
+addopts = "-m 'not live'"

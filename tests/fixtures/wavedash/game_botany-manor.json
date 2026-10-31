@@ -1,0 +1,99 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1774306788351.2493,
+  "_id": "j972q2fr3s330fems2nq4dv6m583fpvb",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1793127038259.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1793211567794.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Botany Manor is a first-person puzzle game set in a Victorian English manor.\n\nIt's 1890, and you play as botanist Arabella Greene, who is working to finish her botanical research book 'Forgotten Flora'.\n\nExplore a complete historical English manor and its grounds, researching how to grow rare plant specimens from seed.\n\nThere are many rooms and gardens to discover, all set inside a beautiful countryside surrounding.\n\nThe manor is filled with mysterious clues for you to discover, including books, posters, letters and fascinating Victorian contraptions.\n\nThe plants you grow are fantastical, but still inspired by real phenomena in nature, so some of them require you to think outside the box. Using what's available to you in the manor, you must create the ideal conditions for each plant.\n\nRoom by room, you learn more about the life and career of Arabella, and the challenges she faced as a woman navigating her scientific career.\n\nBotany Manor offers a relaxing and peaceful environment, feel free to stop and smell the roses."
+  },
+  "developers": [
+   "Balloon Studios"
+  ],
+  "donationsOptedInAt": 1793127038259.0,
+  "firstPaidContentAt": 1787867258129.8677,
+  "firstPublishedAt": 1793127038259.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "it",
+   "pt-BR",
+   "ja",
+   "ko",
+   "ru",
+   "zh-CN"
+  ],
+  "lastBuildUploadedAt": 1793210989733.0,
+  "lastUpdatedDate": "2026-10-28",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/media-1774307179905-e4105e94.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/media-1774307186304-a4a0d8b5.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/media-1774307186746-ea052768.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/media-1774307187128-3e221fcf.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/media-1774307187579-2f3b91c8.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1771093349295.971,
+   "_id": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+   "avatarUrl": "organizationAvatars/jd70jkwge4sqyd89c4sbpyq2k1815knt/1773350249879.jpg",
+   "description": "We’re an indie game publisher focusing on pleasant, easy-going games that can be played in pieces, that require no special skills or knowledge, and that anyone can pick up and play. We’re believers in accessibility, inclusion, and widening the audience that gets to play. We like to consider ourselves the defenders of easy games.",
+   "location": "Erie, Pennsylvania",
+   "name": "Whitethorn Games",
+   "slug": "whitethorn-games",
+   "timezone": "America/New_York",
+   "website": "https://whitethorngames.com/"
+  },
+  "organizationId": "jd70jkwge4sqyd89c4sbpyq2k1815knt",
+  "productionGameCloudId": "mx76m3q246m6vqg3s3tm95h7ms83emcv",
+  "publishers": [
+   "Whitethorn Games"
+  ],
+  "releaseDate": "2024-04-09",
+  "shareableBuildsEnabled": true,
+  "slug": "botany-manor",
+  "squareCover": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/squareCover-1774307176037-670e9258.jpeg",
+  "tags": [
+   "Puzzle",
+   "Exploration",
+   "Adventure",
+   "Relaxing",
+   "First-Person"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/thumbnailVideo-1793120282934-49cf2ed7.mp4"
+  },
+  "title": "Botany Manor",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd70jkwge4sqyd89c4sbpyq2k1815knt/j972q2fr3s330fems2nq4dv6m583fpvb/assets/wideCover-1787875574969-e325128f.webp"
+  }
+ }
+}

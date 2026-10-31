@@ -1,0 +1,90 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1774026033004.9622,
+  "_id": "j975p53ws0z0f7yne5nepg8tzx839w4m",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1781637529242.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Shadow Blade is an action-platformer set in a visually striking world where the ancient teachings of ninjas and samurai clash upon a modern landscape. Sprint through stages littered with traps, slaying enemies along your path without hesitation as Kuro, the blade of shadow!\n\nSTORY\nDarkness and chaos are once again creeping into the world of man. The covenant made in a time almost forgotten has failed, the three clans now in a violent struggle for dominance. The medallion is almost made whole again and it falls upon Kuro?s shoulders to restore balance. All his training has led up to this one moment, where the fate of the world will rest in his blood-stained hands.\n\nFEATURES\n\nEpic NINJA Platforming: \nTest your skills in fast-paced platforming, mastering the skills of the ninja to breeze through challenging levels.\n\nVicious NINJA Combat: \nKill your enemies with extreme prejudice through the mastery of the katana, shurikens and kusarigama!\n\nShadow Ninja: \nAttack the guards before they see you and alert all other mobs.\n\nStory Campaign: \nFully voiced motion comics tell the story of Kuro?s plight to restore balance!\n\nMore than 50 Challenging Levels: \nEnvironmental hazards, rifle-toting warriors and many more challenges await a hardened warrior.\n\nLevel Secrets: \nRaw speed doesn?t guarantee the highest rank. A true ninja is ever vigilant, aware of any possibly hidden areas.\n\nNinja = Hardcore: \nCleared the normal campaign? Prepare for the Hardcore variation and if you dare, the ultimate Master Class version awaiting only the foolhardy.\n\nChallenge Modes and Leaderboards: \nFeel the need to gloat? Challenge yourself in these specially crafted stages only for the masters. Compare your stats with friends and other players as you fight for the top of the leaderboards!\n\nLevel Editor and Workshop Integration: \nCreate and upload your own levels to Steam Workshop for your friends and other players to check out. Become the ultimate Dojo Builder!\n\nStylish 3D World: \nFeast your eyes on a world where ninja and samurai clash in a modern landscape.\n\nAchievements: \nUnlock a full list of achievements as you embark on your mission to restore balance.\n\nCloud Saving: All progress saved through Wavedash for pick-up-and-play on any device."
+  },
+  "developers": [
+   "Dead Mage"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1781123603190.9346,
+  "firstPublishedAt": 1776957356192.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en"
+  ],
+  "lastBuildUploadedAt": 1785396901647.0,
+  "lastUpdatedDate": "2026-06-16",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/media-1774302051088-abe76eba.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/media-1774302097318-8ed70155.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/media-1774302097787-3282e866.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/media-1774302098291-e5e845f3.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/media-1774302098784-ccaae845.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1774025867862.7905,
+   "_id": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11",
+   "avatarUrl": "organizationAvatars/jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/1774026025059.jpg",
+   "description": "A game development studio dedicated to crafting immersive worlds and meaningful experiences. With a focus on rich storytelling and engaging gameplay, Dead Mage explores diverse genres and themes, creating games that resonate with players on a deeper level.",
+   "name": "Dead Mage",
+   "slug": "dead-mage",
+   "timezone": "America/Los_Angeles",
+   "website": "https://deadmage.com/"
+  },
+  "organizationId": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11",
+  "productionGameCloudId": "mx7f0j624nd6n06gt4ndgz7bdx838nde",
+  "publishers": [
+   "Dead Mage"
+  ],
+  "releaseDate": "2015-08-10",
+  "shareableBuildsEnabled": false,
+  "slug": "shadow-blade-reload",
+  "squareCover": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/squareCover-1778182958291-ac40cf47.png",
+  "tags": [
+   "Action",
+   "Platformer",
+   "Ninja",
+   "Fast-Paced",
+   "Singleplayer"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": true,
+   "r2Key": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/thumbnailVideo-agent-1787034511740-180b9138.mp4"
+  },
+  "title": "Shadow Blade: Reload",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd7f8c8w5pkhrkm0j2hyf7hcc1839a11/j975p53ws0z0f7yne5nepg8tzx839w4m/assets/wideCover-1787180891913-400f4c96.webp"
+  }
+ }
+}

@@ -1,0 +1,101 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1773081013467.0266,
+  "_id": "j97e1zwy74vdxtnyx4y0ms1zrx82js06",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Keyboard + Mouse",
+   "Controller"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1781637380950.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Rogue Glitch Ultra is packed with unlockable items, characters, and cosmetics to make every run a worthwhile one.\n\nWorry less about aiming with auto-targeting and more about landing your jumps and building the best loadout - throwing sponges at your foes, using a minion pistol to summon little helpers, firing projectiles from another dimension, or any of the other 150+ weapon options to advance in this hostile universe! By using the currency known as Malbytes, you’ll be able to transform your existing characters into more powerful glitched evolutions as you proceed deeper into the unknown and meet an ominous being who wants to make a deal...\n\nFEATURES\n- Play solo or with up to 6 players online\n- Collect and evolve 150+ unique weapons and powerups that offer radically different playstyles\n- Embody 18 character variants, each with upgrading stats and skins\n- Auto-targeting lets you focus on platforming finesse and the perfect loadout\n- Complete events to unlock a narrative about a video game world that is starting to glitch\n- Experience the ultimate version of Rogue Glitch with Rogue Glitch Ultra, which features reworked graphics, all-new content, items, and boss fights"
+  },
+  "developers": [
+   "Lino Slahuschek",
+   "Rarebyte"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1781123473312.1936,
+  "firstPublishedAt": 1777921887544.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "fr",
+   "de",
+   "es",
+   "ja",
+   "pt-BR",
+   "ru",
+   "zh-CN",
+   "tr",
+   "uk"
+  ],
+  "lastBuildUploadedAt": 1781197314544.0,
+  "lastUpdatedDate": "2026-06-16",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/media-1774305268181-5bd480c0.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/media-1774305280470-8be2b27c.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/media-1774305280863-504a94c1.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/media-1774305281305-45bed580.jpg"
+   },
+   {
+    "type": "IMAGE",
+    "url": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/media-1774305281697-17d29dc3.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1773081008558.1958,
+   "_id": "jd7dqfdkpzjwxa8zabayp733bn82khc0",
+   "avatarUrl": "organizationAvatars/jd7dqfdkpzjwxa8zabayp733bn82khc0/1773341876191.png",
+   "description": "We are an Austrian independent game studio with 19+ years’ experience in Unity-based games and a track record of 25+ published titles.",
+   "location": "Austria",
+   "name": "Rarebyte",
+   "slug": "rarebyte",
+   "timezone": "America/Los_Angeles",
+   "website": "https://www.rarebyte.com/"
+  },
+  "organizationId": "jd7dqfdkpzjwxa8zabayp733bn82khc0",
+  "productionGameCloudId": "mx7f5n1d4nw38ssxhnkbrk1q6n82jf9g",
+  "publishers": [
+   "Rarebyte"
+  ],
+  "releaseDate": "2023-11-14",
+  "shareableBuildsEnabled": false,
+  "slug": "rogue-glitch-ultra",
+  "squareCover": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/squareCover-1778692817838-99f778b6.png",
+  "tags": [
+   "Action",
+   "Roguelite",
+   "Platformer",
+   "2D",
+   "Co-op"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/thumbnailVideo-1787724613251-4f39d97c.mp4"
+  },
+  "title": "Rogue Glitch Ultra",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd7dqfdkpzjwxa8zabayp733bn82khc0/j97e1zwy74vdxtnyx4y0ms1zrx82js06/assets/wideCover-1787177724642-cbc1124c.webp"
+  }
+ }
+}

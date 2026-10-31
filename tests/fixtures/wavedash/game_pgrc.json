@@ -1,0 +1,101 @@
+{
+ "status": "success",
+ "value": {
+  "_creationTime": 1762827727617.1738,
+  "_id": "j9739evnydp9nkbzpfb68yptjx7v6rsn",
+  "autoReleaseDate": false,
+  "controllerOptions": [
+   "Controller",
+   "Keyboard + Mouse"
+  ],
+  "creatorFundOptedInAt": 1785812020611.0,
+  "currency": "usd",
+  "currentReleasePublishedAt": 1782167467610.0,
+  "description": {
+   "agentGenerated": false,
+   "text": "Experience the adrenaline-pumping thrill of rally racing in the most unlikely venues imaginable. Parking Garage Rally Circuit transforms parking structures across North America and Europe into heart-stopping, high-speed racing circuits that will push your reflexes and nerve to the absolute limit. Navigate tight corners, dodge concrete pillars, and master multiple levels of architectural chaos as you battle for the fastest lap times. With its distinctive Sega Saturn-inspired retro arcade aesthetic, pulse-pounding gameplay, and iconic ska soundtrack, this is rally racing like you've never experienced before.\n\nSeamless Leaderboards\nAfter beating the gold trophy for a course, ghosts from other players just barely ahead of you on the leaderboard are automatically downloaded to race against, getting you into that \"just one more\" flow as you chase down rivals. \n\nRealtime Multiplayer\nCreate or join a lobby of up to 8 players for realtime peer-to-peer non-contact racing!\n\nSplit-screen Multiplayer\nConnect multiple controllers and relive the glory days of split-screen multiplayer for 2-4 players with contact and non-contact options.\n\nRetro Style\nDesigned to look and feel like a long lost Sega Saturn game that could have been released in ~1998. This includes low-resolution, low-poly, chunky textures of course, but also extends to the audio, simple interface, and streamlined game scope.  Oh, and CHEAT CODES too!\n\nThis special \"DX\" version of Parking Garage Rally Circuit includes all 8 original US tracks + 8 brand new tracks set in Europe all in one package."
+  },
+  "developers": [
+   "Walaber Entertainment LLC"
+  ],
+  "donationsOptedInAt": 1785812020611.0,
+  "firstPaidContentAt": 1781737578995.9214,
+  "firstPublishedAt": 1765004000184.0,
+  "hasLiveRelease": true,
+  "isHighMemoryConsumer": true,
+  "languagesSupported": [
+   "en",
+   "ja",
+   "fr",
+   "it",
+   "de",
+   "es",
+   "nl",
+   "ru",
+   "ko",
+   "pt",
+   "zh-CN"
+  ],
+  "lastBuildUploadedAt": 1782167243366.0,
+  "lastUpdatedDate": "2026-06-22",
+  "media": [
+   {
+    "type": "VIDEO",
+    "url": "walaber-entertainment/pgrc/assets/media-1765042196748-fdb5e865.mp4"
+   },
+   {
+    "type": "IMAGE",
+    "url": "walaber-entertainment/pgrc/assets/media-1765042177615-6d7ec791.png"
+   },
+   {
+    "type": "IMAGE",
+    "url": "walaber-entertainment/pgrc/assets/media-1765042164499-1a6b3965.png"
+   },
+   {
+    "type": "IMAGE",
+    "url": "walaber-entertainment/pgrc/assets/media-1765042147818-62697bc0.png"
+   },
+   {
+    "type": "IMAGE",
+    "url": "walaber-entertainment/pgrc/assets/media-1765001295301-7628c774.jpg"
+   }
+  ],
+  "mobileLayout": "wide",
+  "organization": {
+   "_creationTime": 1762827595317.004,
+   "_id": "jd72x24z5w3tadb8was9d2pjks7v7n1d",
+   "avatarUrl": "organizationAvatars/jd72x24z5w3tadb8was9d2pjks7v7n1d/1773340783934.jpg",
+   "description": "\"Walaber\" is the online name for me (Tim), a solo game developer.  I've been making games since high school, mostly simple freeware games over the years.",
+   "location": "Los Angeles, California",
+   "name": "Walaber Entertainment",
+   "slug": "walaber-entertainment",
+   "timezone": "America/Los_Angeles",
+   "website": "https://www.walaber.com/"
+  },
+  "organizationId": "jd72x24z5w3tadb8was9d2pjks7v7n1d",
+  "productionGameCloudId": "mx7fm2bha0rzx8ndwtgj3ny8qd7v6es2",
+  "publishers": [
+   "Walaber Entertainment LLC"
+  ],
+  "releaseDate": "2025-12-15",
+  "shareableBuildsEnabled": false,
+  "slug": "pgrc",
+  "squareCover": "walaber-entertainment/pgrc/assets/squareCover-1772760353510-0f77470c.webp",
+  "tags": [
+   "Racing",
+   "Arcade",
+   "Retro",
+   "Driving",
+   "3D"
+  ],
+  "thumbnailVideo": {
+   "agentGenerated": false,
+   "r2Key": "jd72x24z5w3tadb8was9d2pjks7v7n1d/j9739evnydp9nkbzpfb68yptjx7v6rsn/assets/thumbnailVideo-1787242011945-95c0efb5.mp4"
+  },
+  "title": "Parking Garage Rally Circuit DX",
+  "wideCover": {
+   "agentGenerated": false,
+   "r2Key": "jd72x24z5w3tadb8was9d2pjks7v7n1d/j9739evnydp9nkbzpfb68yptjx7v6rsn/assets/wideCover-1787177575044-c6e32d1e.webp"
+  }
+ }
+}
