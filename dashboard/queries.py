@@ -1,6 +1,8 @@
-"""All SQL used by the dashboard, in one place, cached. The dashboard only reads (plus notes and
-creator_merges, written from the creator page). No platform-specific code anywhere: platforms,
-segments and metric labels come from the sources table."""
+"""All SQL used by the dashboard, in one place, cached (st.cache_data, ttl 600 s).
+
+The dashboard only reads, plus two small tables it writes: notes and creator_merges.
+No platform-specific code anywhere: platforms, segments and metric labels come from the sources table.
+"""
 
 from __future__ import annotations
 
@@ -33,12 +35,13 @@ def _write(sql: str, params=None) -> None:
         conn.commit()
 
 
+# ====================================================================== sources
 @st.cache_data(ttl=TTL)
 def sources() -> pd.DataFrame:
     return _read("select name, display_name, base_url, segment, metric_map, poll_every_hours, enabled, added_at from sources order by added_at, name")
 
 
-# ---------------------------------------------------------------- health
+# ====================================================================== health
 @st.cache_data(ttl=120)
 def last_runs() -> pd.DataFrame:
     return _read(
@@ -76,7 +79,6 @@ def health_stats() -> dict:
 
 @st.cache_data(ttl=120)
 def row_drop_warnings() -> pd.DataFrame:
-    """Sources whose latest row count is <50% of their trailing-7-day median."""
     return _read(
         """with med as (
              select source, percentile_cont(0.5) within group (order by rows_snapshotted) as median
@@ -88,61 +90,187 @@ def row_drop_warnings() -> pd.DataFrame:
     )
 
 
-# ---------------------------------------------------------------- platforms / games / creators (milestone 3)
+# ====================================================================== platforms
 @st.cache_data(ttl=TTL)
-def platform_daily(start: date) -> pd.DataFrame:
+def platform_daily() -> pd.DataFrame:
+    """Full platform_daily history joined with source metadata (small table: one row per platform per day)."""
     return _read(
-        """select p.*, s.display_name, s.segment, s.metric_map from platform_daily p join sources s on s.name = p.source
-            where p.day >= %s order by p.day""",
-        (start,),
+        """select p.*, s.display_name, s.segment, s.metric_map
+             from platform_daily p join sources s on s.name = p.source order by p.day"""
     )
 
 
 @st.cache_data(ttl=TTL)
+def platform_now() -> pd.DataFrame:
+    """Latest poll per platform: games tracked, creators, players now (sum over tracked games)."""
+    return _read(
+        """with last as (select distinct on (g.source) g.source, s.run_ts
+                          from snapshots s join games g on g.id = s.game_id order by g.source, s.run_ts desc)
+           select g.source, count(distinct g.id) as games_tracked, count(distinct g.creator_id) as creators,
+                  sum(s.players_now) as players_now, max(s.run_ts) as run_ts
+             from snapshots s join games g on g.id = s.game_id join last l on l.source = g.source and l.run_ts = s.run_ts
+            group by g.source"""
+    )
+
+
+# ====================================================================== games
+@st.cache_data(ttl=TTL)
 def games_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    """One row per game with window aggregates, latest derived metrics and latest raw counters."""
     return _read(
         """with w as (
-             select gd.game_id, sum(gd.plays_delta) as plays_window, max(gd.ccu_peak) as ccu_peak_window
+             select gd.game_id, sum(gd.plays_delta) as plays_window, max(gd.ccu_peak) as ccu_peak_window,
+                    sum(gd.likes_delta) as likes_window, sum(gd.remixes_delta) as remixes_window
                from game_daily gd where gd.day >= %s group by gd.game_id),
            latest as (
-             select distinct on (gd.game_id) gd.game_id, gd.growth_7d, gd.acceleration, gd.rank_in_source, gd.plays_7d
+             select distinct on (gd.game_id) gd.game_id, gd.day, gd.growth_7d, gd.acceleration, gd.rank_in_source, gd.plays_7d
                from game_daily gd order by gd.game_id, gd.day desc),
+           prior as (
+             select distinct on (gd.game_id) gd.game_id, gd.rank_in_source as rank_prior
+               from game_daily gd where gd.day < %s order by gd.game_id, gd.day desc),
            snap as (
-             select distinct on (s.game_id) s.game_id, s.players_now, s.likes, s.remixes, s.plays_total
+             select distinct on (s.game_id) s.game_id, s.captured_at, s.players_now, s.likes, s.remixes, s.plays_total, s.players_total, s.votes, s.comments
                from snapshots s order by s.game_id, s.captured_at desc)
-           select g.id, g.source, s.display_name, s.metric_map, g.title, g.url, g.thumbnail_url, g.published_at, g.first_seen, g.status,
-                  c.id as creator_id, c.name as creator_name, c.url as creator_url,
-                  w.plays_window, w.ccu_peak_window, l.growth_7d, l.acceleration, l.rank_in_source, l.plays_7d,
-                  sn.players_now, sn.likes, sn.remixes, sn.plays_total
+           select g.id, g.source, s.display_name, s.segment, s.metric_map, g.title, g.url, g.thumbnail_url, g.published_at, g.first_seen, g.status, g.ai_tool, g.engine, g.tags,
+                  c.id as creator_id, c.name as creator_name, c.url as creator_url, c.canonical_key,
+                  w.plays_window, w.ccu_peak_window, w.likes_window, w.remixes_window,
+                  l.growth_7d, l.acceleration, l.rank_in_source, l.plays_7d, pr.rank_prior,
+                  sn.players_now, sn.likes, sn.remixes, sn.plays_total, sn.players_total, sn.votes, sn.comments, sn.captured_at
              from games g
              join sources s on s.name = g.source
              left join creators c on c.id = g.creator_id
              left join w on w.game_id = g.id
              left join latest l on l.game_id = g.id
+             left join prior pr on pr.game_id = g.id
              left join snap sn on sn.game_id = g.id
-            where g.source = any(%s)""",
+            where g.source = any(%s) and g.status <> 'gone'""",
+        (start, start, list(sources_sel)),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def game(game_id: int) -> dict | None:
+    df = _read(
+        """select g.*, s.display_name, s.segment, s.metric_map, c.name as creator_name, c.url as creator_url, c.canonical_key
+             from games g join sources s on s.name = g.source left join creators c on c.id = g.creator_id where g.id = %s""",
+        (game_id,),
+    )
+    return None if df.empty else df.iloc[0].to_dict()
+
+
+@st.cache_data(ttl=TTL)
+def game_daily(game_id: int) -> pd.DataFrame:
+    return _read("select * from game_daily where game_id = %s order by day", (game_id,))
+
+
+@st.cache_data(ttl=TTL)
+def game_polls(game_id: int, days: int = 7) -> pd.DataFrame:
+    return _read(
+        "select captured_at, players_now, plays_total from snapshots where game_id = %s and captured_at > now() - make_interval(days => %s) order by captured_at",
+        (game_id, days),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def game_placements(game_id: int) -> pd.DataFrame:
+    return _read(
+        """select list_name, min(run_ts) as first_seen, max(run_ts) as last_seen, min(position) as best_position,
+                  count(*) as polls, (array_agg(position order by run_ts desc))[1] as latest_position
+             from list_placements where game_id = %s group by list_name order by best_position""",
+        (game_id,),
+    )
+
+
+# ====================================================================== creators
+@st.cache_data(ttl=TTL)
+def creators_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    """One row per creator (per platform) with window plays, latest creator_daily metrics, notes status."""
+    return _read(
+        """with w as (
+             select g.creator_id, sum(gd.plays_delta) as plays_window, max(gd.ccu_peak) as ccu_peak_window
+               from game_daily gd join games g on g.id = gd.game_id where gd.day >= %s and g.creator_id is not null group by g.creator_id),
+           latest as (
+             select distinct on (cd.creator_id) cd.creator_id, cd.day, cd.games_live, cd.hit_games, cd.share_of_source, cd.plays_7d, cd.growth_7d, cd.acceleration
+               from creator_daily cd order by cd.creator_id, cd.day desc),
+           gl as (
+             select creator_id, count(*) filter (where status <> 'gone') as games_live, min(first_seen) as first_game_seen
+               from games group by creator_id)
+           select c.id, c.source, s.display_name, s.segment, c.external_id, c.name, c.url, c.avatar_url, c.links, c.followers, c.bio, c.canonical_key, c.first_seen,
+                  gl.games_live, w.plays_window, w.ccu_peak_window,
+                  l.hit_games, l.share_of_source, l.plays_7d, l.growth_7d, l.acceleration,
+                  n.status as outreach_status, n.note
+             from creators c
+             join sources s on s.name = c.source
+             left join gl on gl.creator_id = c.id
+             left join w on w.creator_id = c.id
+             left join latest l on l.creator_id = c.id
+             left join notes n on n.canonical_key = c.canonical_key
+            where c.source = any(%s)""",
         (start, list(sources_sel)),
     )
 
 
 @st.cache_data(ttl=TTL)
-def notes() -> pd.DataFrame:
-    return _read("select canonical_key, status, note, updated_at from notes")
+def creator(creator_id: int) -> dict | None:
+    df = _read(
+        """select c.*, s.display_name, s.segment, s.metric_map, n.status as outreach_status, n.note
+             from creators c join sources s on s.name = c.source left join notes n on n.canonical_key = c.canonical_key
+            where c.id = %s""",
+        (creator_id,),
+    )
+    return None if df.empty else df.iloc[0].to_dict()
 
 
+@st.cache_data(ttl=TTL)
+def creator_family(canonical_key: str) -> pd.DataFrame:
+    """All creator rows (across platforms) sharing a canonical_key — the manual cross-platform identity."""
+    return _read(
+        "select c.id, c.source, s.display_name, c.name, c.url, c.followers, c.links from creators c join sources s on s.name = c.source where c.canonical_key = %s",
+        (canonical_key,),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def creator_daily(creator_ids: tuple[int, ...]) -> pd.DataFrame:
+    return _read(
+        """select cd.*, c.source from creator_daily cd join creators c on c.id = cd.creator_id
+            where cd.creator_id = any(%s) order by cd.day""",
+        (list(creator_ids),),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def creator_games(creator_ids: tuple[int, ...], start: date) -> pd.DataFrame:
+    return _read(
+        """with w as (select game_id, sum(plays_delta) as plays_window from game_daily where day >= %s group by game_id),
+                snap as (select distinct on (game_id) game_id, players_now, plays_total, likes from snapshots order by game_id, captured_at desc)
+           select g.id, g.source, s.display_name, g.title, g.url, g.thumbnail_url, g.published_at, g.first_seen, g.status,
+                  c.name as creator_name, w.plays_window, sn.players_now, sn.plays_total, sn.likes
+             from games g join sources s on s.name = g.source left join creators c on c.id = g.creator_id
+             left join w on w.game_id = g.id left join snap sn on sn.game_id = g.id
+            where g.creator_id = any(%s) and g.status <> 'gone' order by w.plays_window desc nulls last, sn.plays_total desc nulls last""",
+        (start, list(creator_ids)),
+    )
+
+
+# ====================================================================== writes (notes, merges)
 def upsert_note(canonical_key: str, status: str, note: str) -> None:
     _write(
         """insert into notes (canonical_key, status, note, updated_at) values (%s, %s, %s, now())
            on conflict (canonical_key) do update set status = excluded.status, note = excluded.note, updated_at = now()""",
         (canonical_key, status, note),
     )
-    notes.clear()
+    creators_window.clear()
+    creator.clear()
 
 
 def merge_creator(creator_id: int, canonical_key: str, note: str | None) -> None:
     _write(
         """insert into creator_merges (canonical_key, creator_id, note, updated_at) values (%s, %s, %s, now())
-           on conflict (creator_id) do update set canonical_key = excluded.canonical_key, note = excluded.note, updated_at = now();
-           update creators set canonical_key = %s where id = %s""",
-        (canonical_key, creator_id, note, canonical_key, creator_id),
+           on conflict (creator_id) do update set canonical_key = excluded.canonical_key, note = excluded.note, updated_at = now()""",
+        (canonical_key, creator_id, note),
     )
+    _write("update creators set canonical_key = %s where id = %s", (canonical_key, creator_id))
+    creators_window.clear()
+    creator.clear()
+    creator_family.clear()

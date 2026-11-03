@@ -50,6 +50,8 @@ def abbrev(n) -> str:
         n = float(n)
     except (TypeError, ValueError):
         return str(n)
+    if n != n:  # NaN
+        return "—"
     sign = "-" if n < 0 else ""
     n = abs(n)
     for unit, div in (("B", 1e9), ("M", 1e6), ("k", 1e3)):
@@ -60,4 +62,7 @@ def abbrev(n) -> str:
 
 
 def pct(x) -> str:
-    return "—" if x is None else f"{float(x) * 100:+.1f}%"
+    if x is None:
+        return "—"
+    x = float(x)
+    return "—" if x != x else f"{x * 100:+.1f}%"

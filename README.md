@@ -10,7 +10,7 @@ Three free parts: a Python poller on a GitHub Actions cron → Supabase Postgres
 |---|---|
 | 1. Research + collect (Tesana, Rosebud, Bitmagic) | ✅ |
 | 2. Breadth (Astrocade, Spawn, Remix, Wavedash, Playgama, Playgama AI) + Health page | ✅ code done, 175 tests green, full 9-source run verified against a local Postgres (~15 min); needs secrets + repo to run on the schedule |
-| 3. Dashboard | ⏳ |
+| 3. Dashboard (Platforms, Platform, Games, Creators, Creator with notes + merges, Game) | ✅ code done; deployed at the Streamlit app once pushed |
 | 4. External signals, keep-alive, docs | keep-alive done; rest ⏳ |
 
 Research findings per platform: [docs/SOURCES.md](docs/SOURCES.md). The build brief: [docs/BUILD_PROMPT.md](docs/BUILD_PROMPT.md).

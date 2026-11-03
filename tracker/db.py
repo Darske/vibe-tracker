@@ -116,6 +116,90 @@ def upsert_game_ref(conn, source: str, external_id: str, url: str, now: datetime
     return row["id"]
 
 
+# ------------------------------------------------------------------ bulk variants (one round trip per batch)
+# psycopg's executemany runs in pipeline mode, so a batch of N upserts costs ~1 round trip instead of N.
+# From a GitHub runner to Supabase a round trip is ~100 ms, which made per-row writes the slowest part of a run.
+
+def upsert_game_refs_bulk(conn, source: str, refs: list[tuple[str, str]], now: datetime) -> dict[str, int]:
+    """refs = [(external_id, url)]. Returns {external_id: game_id}."""
+    if not refs:
+        return {}
+    with conn.cursor() as cur:
+        cur.executemany(
+            """insert into games (source, external_id, url, first_seen, last_seen) values (%s, %s, %s, %s, %s)
+               on conflict (source, external_id) do update set last_seen = excluded.last_seen,
+                 status = case when games.status = 'gone' then 'live' else games.status end""",
+            [(source, eid, url, now, now) for eid, url in refs],
+        )
+    return _ids(conn, "games", source, [eid for eid, _ in refs])
+
+
+def upsert_creators_bulk(conn, source: str, creators: dict[str, tuple[str | None, str | None]], now: datetime) -> dict[str, int]:
+    """creators = {external_id: (name, url)}. Returns {external_id: creator_id}."""
+    if not creators:
+        return {}
+    with conn.cursor() as cur:
+        cur.executemany(
+            """insert into creators (source, external_id, name, url, canonical_key, first_seen, last_seen)
+               values (%s, %s, %s, %s, %s, %s, %s)
+               on conflict (source, external_id) do update set
+                 name = coalesce(excluded.name, creators.name), url = coalesce(excluded.url, creators.url),
+                 last_seen = excluded.last_seen""",
+            [(source, eid, name, url, canonical_key(name or eid), now, now) for eid, (name, url) in creators.items()],
+        )
+    return _ids(conn, "creators", source, list(creators))
+
+
+def upsert_games_bulk(conn, snaps: list[GameSnapshot], creator_ids: dict[str, int], now: datetime) -> dict[str, int]:
+    if not snaps:
+        return {}
+    source = snaps[0].source
+    with conn.cursor() as cur:
+        cur.executemany(
+            """insert into games (source, external_id, url, title, thumbnail_url, creator_id, ai_tool, engine, tags, published_at, first_seen, last_seen, status)
+               values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+               on conflict (source, external_id) do update set
+                 url = excluded.url,
+                 title = coalesce(excluded.title, games.title),
+                 thumbnail_url = coalesce(excluded.thumbnail_url, games.thumbnail_url),
+                 creator_id = coalesce(excluded.creator_id, games.creator_id),
+                 ai_tool = coalesce(excluded.ai_tool, games.ai_tool),
+                 engine = coalesce(excluded.engine, games.engine),
+                 tags = case when excluded.tags = '[]'::jsonb then games.tags else excluded.tags end,
+                 published_at = coalesce(excluded.published_at, games.published_at),
+                 last_seen = excluded.last_seen,
+                 status = case when excluded.status = 'gone' then 'gone'
+                               when games.status = 'gone' then 'gone' else 'live' end""",
+            [(s.source, s.external_id, s.url, s.title, s.thumbnail_url,
+              creator_ids.get(s.creator_external_id) if s.creator_external_id else None,
+              s.ai_tool, s.engine, Jsonb(s.tags or []), s.published_at, now, now,
+              "gone" if s.status == "gone" else "live") for s in snaps],
+        )
+    return _ids(conn, "games", source, [s.external_id for s in snaps])
+
+
+def insert_snapshots_bulk(conn, rows: list[tuple[int, GameSnapshot]], run_ts: datetime) -> None:
+    if not rows:
+        return
+    with conn.cursor() as cur:
+        cur.executemany(
+            """insert into snapshots (game_id, run_ts, captured_at, plays_total, plays_24h, players_now, players_total, likes, remixes, comments, votes)
+               values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+               on conflict (game_id, run_ts) do update set captured_at = excluded.captured_at, plays_total = excluded.plays_total,
+                 plays_24h = excluded.plays_24h, players_now = excluded.players_now, players_total = excluded.players_total,
+                 likes = excluded.likes, remixes = excluded.remixes, comments = excluded.comments, votes = excluded.votes""",
+            [(gid, run_ts, s.captured_at, s.plays_total, s.plays_24h, s.players_now, s.players_total, s.likes, s.remixes, s.comments, s.votes)
+             for gid, s in rows],
+        )
+
+
+def _ids(conn, table: str, source: str, external_ids: list[str]) -> dict[str, int]:
+    rows = conn.execute(
+        f"select id, external_id from {table} where source = %s and external_id = any(%s)", (source, external_ids)
+    ).fetchall()
+    return {r["external_id"]: r["id"] for r in rows}
+
+
 def mark_status(conn, game_id: int, status: str) -> None:
     conn.execute("update games set status = %s where id = %s", (status, game_id))
 

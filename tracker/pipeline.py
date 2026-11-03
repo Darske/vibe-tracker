@@ -22,6 +22,7 @@ from tracker.registry import ROOT, adapter_class, load_sources
 
 log = logging.getLogger("tracker")
 FIXTURES = ROOT / "tests" / "fixtures"
+BATCH_SIZE = 250  # snapshots per DB write batch
 
 
 def utcnow() -> datetime:
@@ -54,17 +55,18 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
 
         # 1. discover ------------------------------------------------------
         discovered: dict[str, GameRef] = {}
-        placements: list[tuple[ListPlacement, int]] = []
+        pending: list[ListPlacement] = []
         for ref, placement in adapter.discover(list(cfg["lists"]), int(cfg["top_n"])):
             discovered.setdefault(ref.external_id, ref)
-            gid = conn._id(("g", name, ref.external_id)) if dry else db.upsert_game_ref(conn, name, ref.external_id, ref.url, run_ts)
-            placements.append((placement, gid))
+            pending.append(placement)
         counts["discovered"] = len(discovered)
         if not dry:
-            db.insert_placements(conn, placements, run_ts)
+            ids = db.upsert_game_refs_bulk(conn, name, [(r.external_id, r.url) for r in discovered.values()], run_ts)
+            db.insert_placements(conn, [(p, ids[p.external_id]) for p in pending if p.external_id in ids], run_ts)
             conn.commit()
         else:
-            conn.writes["placements"] += len(placements)
+            conn.writes["placements"] += len(pending)
+        placements = pending
         log.info("%s: discovered %d games across %d placements", name, len(discovered), len(placements))
 
         # 2. watchlist ----------------------------------------------------
@@ -77,28 +79,31 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
             ref_list = ref_list[:limit]
 
         # 3. fetch --------------------------------------------------------
-        creators_seen: dict[str, int] = {}
-        for snap in adapter.fetch(ref_list):
-            if dry:
-                conn.writes["snapshots"] += 1
-                if snap.status == "gone":
-                    counts["gone"] += 1
-                else:
-                    counts["snapshotted"] += 1
-                continue
-            creator_id = None
-            if snap.creator_external_id:
-                creator_id = db.upsert_creator(conn, name, snap.creator_external_id, snap.creator_name, snap.creator_url, run_ts)
-                creators_seen[snap.creator_external_id] = creator_id
-            gid = db.upsert_game(conn, snap, creator_id, run_ts)
-            if snap.status == "gone":
-                db.mark_status(conn, gid, "gone")
-                counts["gone"] += 1
+        batch: list[GameSnapshot] = []
+
+        def flush() -> None:
+            """Write a batch of snapshots in ~4 round trips (creators, games, ids, snapshots)."""
+            if not batch:
+                return
+            if not dry:
+                creators = {s.creator_external_id: (s.creator_name, s.creator_url) for s in batch if s.creator_external_id}
+                cids = db.upsert_creators_bulk(conn, name, creators, run_ts)
+                gids = db.upsert_games_bulk(conn, batch, cids, run_ts)
+                db.insert_snapshots_bulk(conn, [(gids[s.external_id], s) for s in batch if s.status == "ok" and s.external_id in gids], run_ts)
+                conn.commit()
             else:
-                db.insert_snapshot(conn, gid, snap, run_ts)
-                counts["snapshotted"] += 1
-        if not dry:
-            conn.commit()
+                conn.writes["snapshots"] += len(batch)
+            counts["gone"] += sum(1 for s in batch if s.status == "gone")
+            counts["snapshotted"] += sum(1 for s in batch if s.status == "ok")
+            batch.clear()
+
+        try:
+            for snap in adapter.fetch(ref_list):
+                batch.append(snap)
+                if len(batch) >= BATCH_SIZE:
+                    flush()
+        finally:
+            flush()  # keep whatever was fetched if the time budget or the platform cut the loop short
 
         # 4. creator profiles: first run after 00:00 UTC only --------------
         if not dry and run_ts.hour < int(cfg["poll_every_hours"]):
