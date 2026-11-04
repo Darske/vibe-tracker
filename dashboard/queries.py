@@ -120,6 +120,76 @@ def platform_now() -> pd.DataFrame:
     )
 
 
+# ====================================================================== concurrent players (rotrends-style hero)
+@st.cache_data(ttl=120)
+def ccu_total_series(days: int, sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    """Sum of players_now over all tracked games per poll (run_ts) — 'players right now' over time."""
+    return _read(
+        """select s.run_ts, sum(s.players_now) as players
+             from snapshots s join games g on g.id = s.game_id
+            where s.players_now is not null and g.source = any(%s) and s.run_ts > now() - make_interval(days => %s)
+            group by s.run_ts order by s.run_ts""",
+        (list(sources_sel), days),
+    )
+
+
+@st.cache_data(ttl=120)
+def ccu_platform_series(days: int, sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    return _read(
+        """select s.run_ts, g.source, sum(s.players_now) as players
+             from snapshots s join games g on g.id = s.game_id
+            where s.players_now is not null and g.source = any(%s) and s.run_ts > now() - make_interval(days => %s)
+            group by s.run_ts, g.source order by s.run_ts""",
+        (list(sources_sel), days),
+    )
+
+
+@st.cache_data(ttl=120)
+def ccu_now(sources_sel: tuple[str, ...] | None = None) -> dict:
+    """Latest total + all-time peak of players_now summed per poll (run_ts) over the given platforms —
+    the same per-run sums the CCU charts draw, so hero number, peak and chart agree."""
+    df = _read(
+        """with per_run as (
+             select s.run_ts, sum(s.players_now) as players
+               from snapshots s join games g on g.id = s.game_id
+              where s.players_now is not null and (%s::text[] is null or g.source = any(%s::text[]))
+              group by s.run_ts)
+           select (select players from per_run order by run_ts desc limit 1) as players_now,
+                  (select run_ts from per_run order by run_ts desc limit 1) as updated_at,
+                  (select players from per_run order by players desc limit 1) as peak,
+                  (select run_ts from per_run order by players desc limit 1) as peak_at""",
+        (list(sources_sel) if sources_sel is not None else None,) * 2,
+    )
+    return df.iloc[0].to_dict() if not df.empty else {}
+
+
+@st.cache_data(ttl=120)
+def top_games_now(sources_sel: tuple[str, ...], n: int = 5) -> pd.DataFrame:
+    """Games with the most players online at their latest poll (platforms that publish live counts only)."""
+    return _read(
+        """with last as (select distinct on (game_id) game_id, players_now, captured_at from snapshots
+                          where players_now is not null order by game_id, captured_at desc),
+                peak as (select game_id, max(players_now) as peak from snapshots group by game_id)
+           select g.id, g.source, s.display_name, g.title, g.url, g.thumbnail_url, c.name as creator_name,
+                  l.players_now, p.peak, l.captured_at
+             from last l join games g on g.id = l.game_id join sources s on s.name = g.source
+             left join creators c on c.id = g.creator_id left join peak p on p.game_id = g.id
+            where g.source = any(%s) and l.captured_at > now() - interval '6 hours'
+            order by l.players_now desc nulls last limit %s""",
+        (list(sources_sel), n),
+    )
+
+
+@st.cache_data(ttl=120)
+def game_ccu_series(game_ids: tuple[int, ...], days: int) -> pd.DataFrame:
+    return _read(
+        """select game_id, captured_at, players_now from snapshots
+            where game_id = any(%s) and players_now is not null and captured_at > now() - make_interval(days => %s)
+            order by captured_at""",
+        (list(game_ids), days),
+    )
+
+
 # ====================================================================== games
 @st.cache_data(ttl=TTL)
 def games_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:

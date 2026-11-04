@@ -2,13 +2,15 @@
 title vibe-tracker - push
 set "PATH=%PATH%;C:\Program Files\Git\cmd;C:\Program Files\GitHub CLI"
 cd /d "%USERPROFILE%\Documents\vibe-tracker"
-if exist workflows_new\*.yml (
-  move /y workflows_new\*.yml .github\workflows\
+git config pull.rebase false
+if exist workflows_new (
+  if not exist .github\workflows mkdir .github\workflows
+  move /y workflows_new\*.yml .github\workflows\ >nul
   rmdir /s /q workflows_new
 )
-git config pull.rebase false
+if exist dashboard\pages rmdir /s /q dashboard\pages
 git add -A
-git commit -m "ccu poll + likes per 1k plays"
+git commit -m "ccu poll, likes per 1k plays, rotrends-style dashboard redesign"
 echo === Merging what is already on GitHub ===
 git pull --no-edit -X ours origin main
 echo === Pushing ===

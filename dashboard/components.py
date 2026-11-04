@@ -9,13 +9,18 @@ Plus a few small helpers (platform badges, link buttons, sortable table with the
 
 from __future__ import annotations
 
-from datetime import date, datetime, timezone
+from datetime import date
 
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from dashboard.theme import CATEGORICAL, INK, OTHER, abbrev, pct
+from dashboard.theme import CATEGORICAL, INK, OTHER, SURFACE, abbrev, pct
+
+
+def _eyebrow(text: str) -> None:
+    from html import escape
+    st.markdown(f"<div class='vt-eyebrow'>{escape(text)}</div>", unsafe_allow_html=True)
 
 
 # ---------------------------------------------------------------------------- metric card
@@ -26,10 +31,10 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
     (concurrent players). For cumulative the headline is the latest total and Δ = latest − value at anchor.
     For daily-peak the headline is today's peak and Δ compares to the peak on the anchor day."""
     with st.container(border=True):
-        st.markdown(f"**{title}**")
+        _eyebrow(title)
         if series is None or series.empty or series["value"].dropna().empty:
-            st.markdown("<span style='font-size:2rem'>—</span>", unsafe_allow_html=True)
-            st.caption(note or "no data yet")
+            st.markdown("<p class='vt-big'>—</p>", unsafe_allow_html=True)
+            st.markdown(f"<div class='vt-sub'>{note or 'no data yet'}</div>", unsafe_allow_html=True)
             return
         s = series.dropna(subset=["value"]).sort_values("day")
         s["day"] = pd.to_datetime(s["day"]).dt.date
@@ -45,8 +50,8 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
             delta_txt = f"no change since {anchor.strftime('%b %-d')}"
         else:
             delta_txt = f"first seen {s['day'].iloc[0].strftime('%b %-d')}"
-        st.markdown(f"<span style='font-size:2rem;font-weight:600'>{abbrev(latest)}</span>", unsafe_allow_html=True)
-        st.caption(delta_txt + (f" · {note}" if note else ""))
+        st.markdown(f"<p class='vt-big'>{abbrev(latest)}</p>", unsafe_allow_html=True)
+        st.markdown(f"<div class='vt-sub'>{delta_txt}{(' · ' + note) if note else ''}</div>", unsafe_allow_html=True)
 
         plot = s[s["day"] >= anchor] if (s["day"] >= anchor).sum() >= 2 else s.tail(14)
         fig = go.Figure()
@@ -60,8 +65,9 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
             fig.add_trace(go.Scatter(x=s2["day"], y=s2["value"], mode="lines", name=second_label,
                                      line=dict(width=2, color=color, dash="dot"),
                                      hovertemplate="%{x|%b %-d}: %{y:,.1f}<extra>" + second_label + "</extra>"))
+        span = max(1, (pd.Timestamp(plot["day"].max()) - pd.Timestamp(plot["day"].min())).days)
         fig.update_layout(height=160, margin=dict(l=0, r=0, t=4, b=0), showlegend=second is not None,
-                          xaxis=dict(showticklabels=True, tickformat="%b %-d", nticks=4), yaxis=dict(nticks=3))
+                          xaxis=dict(showticklabels=True, tickformat="%b %-d", dtick=86400000 * max(1, round(span / 3))), yaxis=dict(nticks=3))
         st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
 
 
@@ -69,7 +75,7 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
 def share_donut(title: str, breakdown: dict[str, float], colors: dict[str, str] | None = None, note: str | None = None) -> None:
     """breakdown: {label: value}. Slices beyond the 8th fold into 'Other' (fixed categorical order)."""
     with st.container(border=True):
-        st.markdown(f"**{title}**")
+        _eyebrow(title)
         items = [(k, float(v)) for k, v in breakdown.items() if v is not None and float(v) > 0]
         if not items:
             st.caption(note or "no data yet")
@@ -83,7 +89,7 @@ def share_donut(title: str, breakdown: dict[str, float], colors: dict[str, str] 
         values = [v for _, v in items]
         cols = [(colors or {}).get(k, CATEGORICAL[i] if i < 8 else OTHER) if k != "Other" else OTHER for i, k in enumerate(labels)]
         fig = go.Figure(go.Pie(labels=labels, values=values, hole=0.62, sort=False, direction="clockwise",
-                               marker=dict(colors=cols, line=dict(color="white", width=2)), textinfo="none",
+                               marker=dict(colors=cols, line=dict(color=SURFACE, width=2)), textinfo="none",
                                hovertemplate="%{label}: %{value:,.0f} (%{percent})<extra></extra>"))
         fig.update_layout(height=200, margin=dict(l=0, r=0, t=0, b=0), showlegend=False,
                           annotations=[dict(text=abbrev(total), x=0.5, y=0.5, showarrow=False, font=dict(size=18, color=INK["primary"]))])
@@ -94,7 +100,7 @@ def share_donut(title: str, breakdown: dict[str, float], colors: dict[str, str] 
             rows = "".join(
                 f"<div style='display:flex;align-items:center;gap:6px;font-size:0.85rem;margin:2px 0'>"
                 f"<span style='width:10px;height:10px;border-radius:2px;background:{c};display:inline-block'></span>"
-                f"<span style='flex:1'>{l}</span><span style='color:{INK['secondary']}'>{v / total * 100:.0f}% · {abbrev(v)}</span></div>"
+                f"<span style='flex:1'>{l}</span><span style='color:{INK['secondary']}'>{('<1' if v / total < 0.005 else f'{v / total * 100:.0f}')}% · {abbrev(v)}</span></div>"
                 for l, v, c in zip(labels, values, cols)
             )
             st.markdown(rows, unsafe_allow_html=True)
@@ -104,31 +110,22 @@ def share_donut(title: str, breakdown: dict[str, float], colors: dict[str, str] 
 
 # ---------------------------------------------------------------------------- game grid
 def game_grid(games: pd.DataFrame, names: dict[str, str], window_label: str, per_row: int = 3, limit: int = 30) -> None:
-    """Cards with thumbnail, title, platform badge, creator, published date, plays in window, players now.
-    On a phone Streamlit stacks columns, so one card per row."""
+    """A creator's games as rotrends-style ranked rows: thumb · title / platform · plays in window · lifetime plays."""
+    from dashboard import ui
     if games is None or games.empty:
         st.info("No games in this selection yet.")
         return
-    rows = games.head(limit).to_dict("records")
-    for i in range(0, len(rows), per_row):
-        cols = st.columns(per_row)
-        for col, g in zip(cols, rows[i:i + per_row]):
-            with col, st.container(border=True):
-                if g.get("thumbnail_url"):
-                    st.image(g["thumbnail_url"], use_container_width=True)
-                title = (g.get("title") or g.get("url") or "untitled")[:60]
-                st.markdown(f"**[{title}]({g.get('url')})**")
-                st.caption(f"{badge(names.get(g['source'], g['source']))} · {g.get('creator_name') or '—'}", unsafe_allow_html=True)
-                pub = g.get("published_at") or g.get("first_seen")
-                when = pd.to_datetime(pub).strftime("%b %-d, %Y") if pub is not None and not pd.isna(pub) else "—"
-                pn = g.get("players_now")
-                a, b = st.columns(2)
-                a.metric(f"Plays {window_label}", abbrev(g.get("plays_window")))
-                b.metric("Players now", abbrev(pn) if pn is not None and not pd.isna(pn) else "—")
-                st.caption(f"Published {when} · {abbrev(g.get('plays_total'))} plays total")
-                if st.button("Open", key=f"open_{g['id']}", use_container_width=True):
-                    from dashboard.filters import go as _go
-                    _go("game", game=g["id"])
+    g = games.sort_values("plays_window", ascending=False, na_position="last").head(limit)
+    rows = []
+    for _, r in g.iterrows():
+        pn = r.get("players_now")
+        sub = names.get(r["source"], r["source"]) + (f" · {abbrev(pn)} playing now" if pn is not None and not pd.isna(pn) else "") + \
+              f" · {abbrev(r.get('plays_total'))} lifetime plays"
+        rows.append({"title": r.get("title") or r.get("url"), "sub": sub, "thumb": r.get("thumbnail_url"),
+                     "href": ui._href("game", "game", r["id"]), "value": r.get("plays_window"), "rank": None})
+    with st.container(border=True):
+        ui.eyebrow(f"Plays, {window_label}", "🎮")
+        ui.ranked_list(rows, "value", "plain", rank_key=None)
 
 
 # ---------------------------------------------------------------------------- helpers
@@ -153,7 +150,7 @@ def phone_table(df: pd.DataFrame, phone_cols: list[str], key: str, column_config
     show_all = st.toggle("All columns", value=False, key=f"allcols_{key}")
     cols = list(df.columns) if show_all else [c for c in phone_cols if c in df.columns]
     kwargs = {"height": height} if height is not None else {}
-    return st.dataframe(df[cols], hide_index=True, use_container_width=True, column_config=column_config,
+    return st.dataframe(df[cols], hide_index=True, width='stretch', column_config=column_config,
                         on_select="rerun", selection_mode="single-row", key=f"tbl_{key}", **kwargs)
 
 
