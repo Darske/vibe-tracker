@@ -164,6 +164,28 @@ class Tesana(SourceAdapter):
             pos = _int_or_none(row.get("rank")) or i
             yield pos, game
 
+    def _catalog(self, top_n: int) -> Iterable[tuple[int, dict]]:
+        """The whole marketplace, most-played first: /api/marketplace/search/?q=&sort=plays (60 per page,
+        ~60 pages for ~3,600 games). Every row carries the full counter set, so fetch() needs no extra requests."""
+        pos = 0
+        page = 1
+        while pos < top_n:
+            data = self.http.get_json(f"{API}/api/marketplace/search/?q=&sort=plays&page_size=60&page={page}")
+            if not data:
+                break
+            rows = data.get("results") or []
+            if not rows:
+                break
+            for game in rows:
+                if pos >= top_n:
+                    break
+                if isinstance(game, dict):
+                    pos += 1
+                    yield pos, game
+            if not data.get("next"):
+                break
+            page += 1
+
     def _section(self, key: str, top_n: int) -> Iterable[tuple[int, dict]]:
         pos = 0
         page = 1
@@ -203,6 +225,8 @@ class Tesana(SourceAdapter):
                 walker = self._section("popular", top_n)
             elif list_name == "playing_now":
                 walker = self._playing_now_top(top_n)
+            elif list_name == "catalog":
+                walker = self._catalog(top_n)
             else:
                 log.warning("tesana: unknown list %r, skipping", list_name)
                 continue

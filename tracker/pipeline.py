@@ -56,9 +56,15 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
         # 1. discover ------------------------------------------------------
         discovered: dict[str, GameRef] = {}
         pending: list[ListPlacement] = []
-        for ref, placement in adapter.discover(list(cfg["lists"]), int(cfg["top_n"])):
-            discovered.setdefault(ref.external_id, ref)
-            pending.append(placement)
+        overrides = {k: int(v) for k, v in (cfg.get("list_top_n") or {}).items()}  # per-list depth, e.g. rosebud top: 1000
+        groups = [([l for l in cfg["lists"] if l not in overrides], int(cfg["top_n"]))]
+        groups += [([l], n) for l, n in overrides.items() if l in cfg["lists"]]
+        for lists, depth in groups:
+            if not lists:
+                continue
+            for ref, placement in adapter.discover(list(lists), depth):
+                discovered.setdefault(ref.external_id, ref)
+                pending.append(placement)
         counts["discovered"] = len(discovered)
         if not dry:
             ids = db.upsert_game_refs_bulk(conn, name, [(r.external_id, r.url) for r in discovered.values()], run_ts)

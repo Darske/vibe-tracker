@@ -39,10 +39,13 @@ daily = q.game_daily(int(gid))
 polls = q.game_polls(int(gid), 7)
 
 # ---------------------------------------------------------------- cards
-c1, c2, c3 = st.columns(3)
+c1, c1b, c2, c3 = st.columns(4)
 with c1:
-    metric_card("Plays (cumulative)", daily[["day", "plays_total_eod"]].rename(columns={"plays_total_eod": "value"}), f.anchor,
+    metric_card("Lifetime plays", daily[["day", "plays_total_eod"]].rename(columns={"plays_total_eod": "value"}), f.anchor,
                 "cumulative", color, note=labels.get("plays", ""))
+with c1b:
+    metric_card("Daily plays (measured)", daily[["day", "plays_delta"]].rename(columns={"plays_delta": "value"}), f.anchor,
+                "daily-peak", color, note="day-over-day increase of the lifetime counter")
 with c2:
     metric_card("Concurrent players (daily peak)", daily[["day", "ccu_peak"]].rename(columns={"ccu_peak": "value"}), f.anchor, "daily-peak", color,
                 note=labels.get("players_now", "no players-online counter on this platform"),

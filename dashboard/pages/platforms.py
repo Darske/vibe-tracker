@@ -47,7 +47,11 @@ for src, g in pdaily.groupby("source"):
     p7, pp7 = last7["plays_delta_top100"].sum(min_count=1), prev7["plays_delta_top100"].sum(min_count=1)
     growth = (p7 / pp7 - 1) if (pd.notna(p7) and pd.notna(pp7) and pp7 >= 100) else None
     latest = g.iloc[-1]
+    nrow = now[now["source"] == src]
+    days_in_win = max(1, gw["plays_delta_top100"].notna().sum())
     rows.append({
+        "plays_lifetime": float(nrow["plays_lifetime"].iloc[0]) if not nrow.empty and pd.notna(nrow["plays_lifetime"].iloc[0]) else None,
+        "plays_per_day": (gw["plays_delta_top100"].sum(min_count=1) / days_in_win) if pd.notna(gw["plays_delta_top100"].sum(min_count=1)) else None,
         "source": src, "Platform": names.get(src, src), "Segment": latest["segment"],
         "plays_delta_top100": gw["plays_delta_top100"].sum(min_count=1),
         "ccu_peak_top100": gw["ccu_peak_top100"].max(), "ccu_avg_top100": gw["ccu_avg_top100"].mean(),
@@ -62,21 +66,25 @@ if table.empty:
 table = table.sort_values(col, ascending=False, na_position="last").reset_index(drop=True)
 table.insert(0, "#", range(1, len(table) + 1))
 disp = table.rename(columns={
+    "plays_lifetime": "Lifetime plays", "plays_per_day": "Plays / day",
     "plays_delta_top100": f"Plays {f.window}", "ccu_peak_top100": f"Peak players {f.window}", "ccu_avg_top100": "Avg players",
     "games_new": "New games/day", "creators_active": "Active creators", "growth_7d": "Growth 7d",
 })
 disp[f"Plays {f.window}"] = disp[f"Plays {f.window}"].map(abbrev)
+disp["Lifetime plays"] = disp["Lifetime plays"].map(abbrev)
+disp["Plays / day"] = disp["Plays / day"].map(abbrev)
 disp[f"Peak players {f.window}"] = disp[f"Peak players {f.window}"].map(abbrev)
 disp["Avg players"] = disp["Avg players"].map(lambda v: "—" if pd.isna(v) else f"{v:.0f}")
 disp["New games/day"] = disp["New games/day"].map(lambda v: "—" if pd.isna(v) else f"{v:.0f}")
 disp["Growth 7d"] = disp["Growth 7d"].map(pct)
 disp["Top-10 share"] = disp["Top-10 share"].map(lambda v: "—" if pd.isna(v) else f"{float(v) * 100:.0f}%")
-phone_cols = ["#", "Platform", {"plays_delta_top100": f"Plays {f.window}", "ccu_peak_top100": f"Peak players {f.window}", "ccu_avg_top100": "Avg players", "games_new": "New games/day", "creators_active": "Active creators", "growth_7d": "Growth 7d"}[col], "Games tracked", "Label"]
+phone_cols = ["#", "Platform", "Lifetime plays", "Plays / day", {"plays_delta_top100": f"Plays {f.window}", "ccu_peak_top100": f"Peak players {f.window}", "ccu_avg_top100": "Avg players", "games_new": "New games/day", "creators_active": "Active creators", "growth_7d": "Growth 7d"}[col], "Games tracked", "Label"]
 ev = phone_table(disp.drop(columns=["source"]), phone_cols, key="platforms")
 sel = selected_row(ev, table)
 if sel is not None:
     nav("platform", platform=sel["source"])
-st.caption("Tap a row to open the platform. 'Label' is what that platform's counter actually means (from its metric_map); a players counter is never mixed into a plays column.")
+st.caption("Lifetime plays = the platform's own cumulative counter summed over the games we track; Plays / day = our measured daily increase "
+           "(average over the window). Tap a row to open the platform. 'Label' is what that platform's counter actually means.")
 
 # ---------------------------------------------------------------- time series
 st.subheader("Over time")

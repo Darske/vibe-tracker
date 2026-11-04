@@ -6,13 +6,16 @@ tesana:
   display_name: Tesana
   segment: creation
   enabled: true
-  lists: [played, trending, new, rising, popular, playing_now]
+  # catalog = the whole marketplace most-played first (~60 requests); the charts stay as ranked lists.
+  lists: [played, trending, new, rising, popular, playing_now, catalog]
   top_n: 100
+  list_top_n:
+    catalog: 5000
   poll_every_hours: 2
   rate_limit_rps: 1
   needs_browser: false
   stale_after_days: 30
-  max_watchlist: 400
+  max_watchlist: 5000
   metric_map:
     plays: "plays = play sessions started (Tesana play_count)"
     players: "players = unique players in the trailing 7 days (Tesana players_7d)"
@@ -23,13 +26,17 @@ rosebud:
   display_name: Rosebud AI
   segment: creation
   enabled: true
+  # top 1,000 by all-time plays (10 list pages; the list is also the batch counters endpoint, so no extra requests).
+  # Coverage check Nov 3: top 100 = 42% of top-10k plays, top 1,000 = 80%.
   lists: [top, new]
   top_n: 100
+  list_top_n:
+    top: 1000
   poll_every_hours: 2
   rate_limit_rps: 1
   needs_browser: false
   stale_after_days: 30
-  max_watchlist: 400
+  max_watchlist: 1500
   metric_map:
     plays: "plays = game-page loads / sessions started, not unique (Rosebud plays_count)"
     remixes: "remixes = clones incl. unpublished (Rosebud clones_count)"
@@ -56,13 +63,13 @@ astrocade:
   segment: creation
   enabled: true
   # top_picks ("Players' Choice") and trending are the ranked lists (~30 each); genre rows cap at 100.
-  lists: [top_picks, trending, action, puzzle, platformer, adventure, simulation, horror, arcade, incremental]
+  lists: [top_picks, trending, beta, tactics, meme, creative, zen, farm, puzzle, platformer, adventure, simulation, educational, action, merge, chat, cooking, horror, survival, sports, arcade, incremental, toys]
   top_n: 100
   poll_every_hours: 2
   rate_limit_rps: 1
   needs_browser: false
   stale_after_days: 30
-  max_watchlist: 400
+  max_watchlist: 2500
   metric_map:
     plays: "plays = session starts, each time a user starts the game (Astrocade plays)"
     remixes: "remixes = child remixes (Astrocade remixCount)"

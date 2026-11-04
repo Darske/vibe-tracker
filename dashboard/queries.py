@@ -107,7 +107,7 @@ def platform_now() -> pd.DataFrame:
         """with last as (select distinct on (g.source) g.source, s.run_ts
                           from snapshots s join games g on g.id = s.game_id order by g.source, s.run_ts desc)
            select g.source, count(distinct g.id) as games_tracked, count(distinct g.creator_id) as creators,
-                  sum(s.players_now) as players_now, max(s.run_ts) as run_ts
+                  sum(s.players_now) as players_now, sum(s.plays_total) as plays_lifetime, max(s.run_ts) as run_ts
              from snapshots s join games g on g.id = s.game_id join last l on l.source = g.source and l.run_ts = s.run_ts
             group by g.source"""
     )
@@ -193,10 +193,12 @@ def creators_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
              select distinct on (cd.creator_id) cd.creator_id, cd.day, cd.games_live, cd.hit_games, cd.share_of_source, cd.plays_7d, cd.growth_7d, cd.acceleration
                from creator_daily cd order by cd.creator_id, cd.day desc),
            gl as (
-             select creator_id, count(*) filter (where status <> 'gone') as games_live, min(first_seen) as first_game_seen
-               from games group by creator_id)
+             select g.creator_id, count(*) filter (where g.status <> 'gone') as games_live, min(g.first_seen) as first_game_seen,
+                    sum(sn.plays_total) as plays_lifetime
+               from games g left join lateral (select plays_total from snapshots s where s.game_id = g.id order by captured_at desc limit 1) sn on true
+              group by g.creator_id)
            select c.id, c.source, s.display_name, s.segment, c.external_id, c.name, c.url, c.avatar_url, c.links, c.followers, c.bio, c.canonical_key, c.first_seen,
-                  gl.games_live, w.plays_window, w.ccu_peak_window,
+                  gl.games_live, gl.plays_lifetime, w.plays_window, w.ccu_peak_window,
                   l.hit_games, l.share_of_source, l.plays_7d, l.growth_7d, l.acceleration,
                   n.status as outreach_status, n.note
              from creators c

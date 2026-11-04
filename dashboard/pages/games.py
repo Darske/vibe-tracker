@@ -20,7 +20,7 @@ if games.empty:
     st.stop()
 
 c1, c2 = st.columns([2, 3])
-by = c1.radio("Rank by", [f"Plays in {f.window}", "Peak concurrent players"], horizontal=True, label_visibility="collapsed")
+by = c1.radio("Rank by", [f"Plays in {f.window}", "Lifetime plays", "Peak concurrent players"], horizontal=True, label_visibility="collapsed")
 mode = c2.radio("Show", ["All", "Movers", "New entrants (7 days)"], horizontal=True, label_visibility="collapsed")
 search = st.text_input("Search title or creator", "")
 
@@ -33,7 +33,7 @@ if mode == "Movers":
     g = g.dropna(subset=["rank_change"]).sort_values("rank_change", ascending=False)
 elif mode.startswith("New"):
     g = g[pd.to_datetime(g["first_seen"]).dt.date >= today_utc() - pd.Timedelta(days=7)]
-sort_col = "plays_window" if by.startswith("Plays") else "ccu_peak_window"
+sort_col = {"P": "plays_window", "L": "plays_total"}.get(by[0], "ccu_peak_window")
 if mode != "Movers":
     g = g.sort_values(sort_col, ascending=False, na_position="last")
 g = g.head(200).reset_index(drop=True)
@@ -44,7 +44,9 @@ disp = pd.DataFrame({
     "Title": g["title"].fillna(g["url"]),
     "Creator": g["creator_name"].fillna("—"),
     "Platform": g["display_name"],
+    "Lifetime plays": g["plays_total"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     f"Plays {f.window}": g["plays_window"].map(abbrev),
+    "Plays / day": (g["plays_window"] / f.window_days).map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Growth 7d": g["growth_7d"].map(pct),
     "Peak players": g["ccu_peak_window"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Players now": g["players_now"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
@@ -54,7 +56,7 @@ disp = pd.DataFrame({
     "First seen": g["first_seen"].map(fmt_dt),
     "Label": g["metric_map"].map(lambda m: (m or {}).get("plays", "")),
 })
-phone = ["#", "Title", "Platform", f"Plays {f.window}", "Growth 7d", "Players now"] if by.startswith("Plays") else ["#", "Title", "Platform", "Peak players", "Players now", "Growth 7d"]
+phone = ["#", "Title", "Platform", "Lifetime plays", f"Plays {f.window}", "Plays / day"] if by.startswith("Plays") else ["#", "Title", "Platform", "Peak players", "Players now", "Growth 7d"]
 ev = phone_table(disp, phone, key=f"games_{by}_{mode}")
 sel = selected_row(ev, g)
 if sel is not None:

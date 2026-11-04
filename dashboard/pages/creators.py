@@ -45,7 +45,9 @@ disp = pd.DataFrame({
     "Creator": g["name"].fillna(g["external_id"]),
     "Platform": g["display_name"],
     "Games": g["games_live"].map(lambda v: "—" if pd.isna(v) else int(v)),
+    "Lifetime plays": g["plays_lifetime"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     f"Plays {f.window}": g["plays_window"].map(abbrev),
+    "Plays / day": (g["plays_window"] / f.window_days).map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Share of platform": g["share_of_source"].map(lambda v: "—" if pd.isna(v) else f"{float(v) * 100:.1f}%"),
     "Growth 7d": g["growth_7d"].map(pct),
     "Accel.": g["acceleration"].map(lambda v: "—" if pd.isna(v) else f"{float(v):+.2f}"),
@@ -55,7 +57,7 @@ disp = pd.DataFrame({
     "Status": g["outreach_status"],
     "Links": g["links"].map(links_txt),
 })
-ev = phone_table(disp, ["#", "Creator", "Platform", f"Plays {f.window}", "Growth 7d", "Status"], key=f"creators_{rising}")
+ev = phone_table(disp, ["#", "Creator", "Platform", "Lifetime plays", f"Plays {f.window}", "Plays / day"], key=f"creators_{rising}")
 sel = selected_row(ev, g)
 if sel is not None:
     nav("creator", creator=int(sel["id"]))

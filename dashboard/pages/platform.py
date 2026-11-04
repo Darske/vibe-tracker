@@ -39,12 +39,16 @@ st.markdown(
 st.caption(" · ".join(labels.values()) or "metric labels: none recorded")
 
 # ---------------------------------------------------------------- cards
-c1, c2, c3 = st.columns(3)
+lifetime = float(now["plays_lifetime"].iloc[0]) if not now.empty and pd.notna(now["plays_lifetime"].iloc[0]) else None
+c0, c1, c2, c3 = st.columns(4)
+with c0:
+    with st.container(border=True):
+        st.markdown("**Lifetime plays (tracked games)**")
+        st.markdown(f"<span style='font-size:2rem;font-weight:600'>{abbrev(lifetime)}</span>", unsafe_allow_html=True)
+        st.caption("the platform's own cumulative counters, summed over the games we track · " + labels.get("plays", "plays not public"))
 with c1:
-    cum = pdaily[["day", "plays_delta_top100"]].rename(columns={"plays_delta_top100": "value"}).copy()
-    cum["value"] = cum["value"].fillna(0).cumsum()
-    metric_card("Plays (cumulative, tracked)", cum if pdaily["plays_delta_top100"].notna().any() else pd.DataFrame(),
-                f.anchor, "cumulative", color, note=labels.get("plays", "plays not public on this platform"))
+    metric_card("Daily plays (tracked top 100)", pdaily[["day", "plays_delta_top100"]].rename(columns={"plays_delta_top100": "value"}),
+                f.anchor, "daily-peak", color, note="our measured day-over-day increase")
 with c2:
     metric_card("Concurrent players (daily peak)", pdaily[["day", "ccu_peak_top100"]].rename(columns={"ccu_peak_top100": "value"}),
                 f.anchor, "daily-peak", color, note=labels.get("players_now", "no players-online counter"),
@@ -71,15 +75,16 @@ disp = pd.DataFrame({
     "Δ": g["rank_change"].map(lambda v: "—" if pd.isna(v) else f"{int(v):+d}"),
     "Title": g["title"].fillna(g["url"]),
     "Creator": g["creator_name"].fillna("—"),
+    "Lifetime plays": g["plays_total"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     f"Plays {f.window}": g["plays_window"].map(abbrev),
+    "Plays / day": (g["plays_window"] / f.window_days).map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Growth 7d": g["growth_7d"].map(pct),
     "Players now": g["players_now"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Likes": g["likes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Remixes": g["remixes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "First seen": g["first_seen"].map(fmt_dt),
-    "Plays total": g["plays_total"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
 })
-ev = phone_table(disp, ["Rank", "Δ", "Title", f"Plays {f.window}", "Growth 7d", "Players now"], key=f"platform_{src}_{mode}")
+ev = phone_table(disp, ["Rank", "Title", "Lifetime plays", f"Plays {f.window}", "Plays / day", "Players now"], key=f"platform_{src}_{mode}")
 sel = selected_row(ev, g)
 if sel is not None:
     nav("game", game=int(sel["id"]))

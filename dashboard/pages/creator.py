@@ -48,10 +48,15 @@ st.markdown(f"**{len(games)}** games · **{abbrev(total_plays)}** plays · **{ab
 daily = cdaily.groupby("day", as_index=False)["plays_delta"].sum(min_count=1).rename(columns={"plays_delta": "value"})
 cum = daily.copy()
 cum["value"] = cum["value"].fillna(0).cumsum()
-c1, c2, c3 = st.columns(3)
+c0, c1, c2, c3 = st.columns(4)
+with c0:
+    with st.container(border=True):
+        st.markdown("**Lifetime plays**")
+        st.markdown(f"<span style='font-size:2rem;font-weight:600'>{abbrev(total_plays)}</span>", unsafe_allow_html=True)
+        st.caption("platform counters summed over the creator's tracked games")
 with c1:
-    metric_card("Plays (cumulative, tracked)", cum if not daily.empty and daily["value"].notna().any() else pd.DataFrame(), f.anchor,
-                "cumulative", colors.get(c["source"]), note="sum of daily plays across the creator's tracked games")
+    metric_card("Daily plays (measured)", daily, f.anchor, "daily-peak", colors.get(c["source"]),
+                note="day-over-day increase, summed across the creator's games")
 with c2:
     if followers is not None and not pd.isna(followers):
         metric_card("Followers", pd.DataFrame({"day": [pd.Timestamp.utcnow().date()], "value": [float(followers)]}), f.anchor, "cumulative",

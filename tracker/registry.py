@@ -23,6 +23,7 @@ DEFAULTS = {
     "stale_after_days": 30,
     "max_watchlist": 400,
     "metric_map": {},
+    "list_top_n": {},
 }
 
 
