@@ -2,7 +2,7 @@ name: scrape
 
 on:
   schedule:
-    - cron: "23 */2 * * *"   # every 2 hours at :23 UTC (off-minute avoids the congested top of the hour)
+    - cron: "23 * * * *"   # hourly trigger; the poller skips platforms polled <2 h ago, so the real cadence stays 2 h (GitHub fires schedules late under load)
   workflow_dispatch:
     inputs:
       source:
