@@ -111,9 +111,14 @@ with c3:
 g = games.copy()
 g["rank_change"] = g["rank_prior"] - g["rank_in_source"]
 g["likes_per_k"] = [likes_per_k(l, p_) for l, p_ in zip(g["likes"], g["plays_total"])]
-MODES = ["Top 100", "Movers", "New (7 days)", "Best liked"]
-mode = ui.pills("Show", MODES, f"p_mode_{src}", "Top 100")
-if mode == "Movers":
+MODES = ["Total plays", "Top 100", "Movers", "New (7 days)", "Best liked"]
+mode = ui.pills("Show", MODES, f"p_mode_{src}", "Total plays")
+if mode == "Total plays":
+    if g["plays_total"].notna().any():
+        g = g.dropna(subset=["plays_total"]).sort_values(["plays_total", "plays_window"], ascending=False, na_position="last"); vk, kind, sfx = "plays_total", "plain", ""
+    else:  # no play counter on this platform: fall back to players online
+        g = g.dropna(subset=["players_now"]).sort_values(["players_now", "ccu_peak_window"], ascending=False, na_position="last"); vk, kind, sfx = "players_now", "plain", " playing"
+elif mode == "Movers":
     g = g.dropna(subset=["rank_change"]).sort_values("rank_change", ascending=False); vk, kind, sfx = "rank_change", "rank", ""
 elif mode.startswith("New"):
     g = g[pd.to_datetime(g["first_seen"]).dt.date >= today_utc() - timedelta(days=7)].sort_values("plays_window", ascending=False, na_position="last")
@@ -126,17 +131,20 @@ else:  # platform without a play counter (Wavedash): rank by players online
     g = g.sort_values(["players_now", "ccu_peak_window"], ascending=False, na_position="last").dropna(subset=["players_now"]); vk, kind, sfx = "players_now", "plain", " playing"
 g = g.head(100).reset_index(drop=True)
 g["pos"] = range(1, len(g) + 1)
+positional = mode in ("Total plays", "Top 100")
 
 with st.container(border=True):
-    ui.eyebrow("Leaderboard" if mode in ("Top 100", "Best liked") else "Trending today", "🏆" if mode in ("Top 100", "Best liked") else "🔥")
-    ui.title({"Top 100": f"Top games on {row['display_name']}", "Movers": "Top moving games", "New (7 days)": "New and rising",
-              "Best liked": "Best liked (≥1k plays)"}[mode])
-    ui.ranked_list(ui.game_rows(g.head(25), vk, rank_key="pos" if mode == "Top 100" else "rank_in_source"), "value", kind, value_suffix=sfx)
-    what = {"Top 100": f"value = plays in {f.window}" if vk == "plays_window" else "value = players online now · #rank = position in this list",
+    lead = mode in ("Total plays", "Top 100", "Best liked")
+    ui.eyebrow("Leaderboard" if lead else "Trending today", "🏆" if lead else "🔥")
+    ui.title({"Total plays": f"Top games on {row['display_name']} by total plays", "Top 100": f"Top games on {row['display_name']}, {f.window}",
+              "Movers": "Top moving games", "New (7 days)": "New and rising", "Best liked": "Best liked (≥1k plays)"}[mode])
+    ui.ranked_list(ui.game_rows(g.head(25), vk, rank_key="pos" if positional else "rank_in_source"), "value", kind, value_suffix=sfx)
+    what = {"Total plays": "value = lifetime plays, the platform's own counter" if vk == "plays_total" else "value = players online now (this platform publishes no play counter)",
+            "Top 100": f"value = plays in {f.window}" if vk == "plays_window" else "value = players online now · #rank = position in this list",
             "Movers": "value = places gained in the platform ranking since before the window",
             "New (7 days)": f"first seen within 7 days · value = plays in {f.window}",
             "Best liked": "value = likes per 1,000 lifetime plays (≥1,000 plays)"}[mode]
-    tail = "" if (mode == "Top 100" and vk != "plays_window") else " · #rank = position by 7-day plays within the platform"
+    tail = " · #rank = position in this list" if positional else " · #rank = position by 7-day plays within the platform"
     st.markdown(f"<div class='vt-sub'>{what}{tail} · {label_for(f, src, 'plays', 'plays')}</div>", unsafe_allow_html=True)
 
 with st.expander(f"Full table ({len(g)} games)"):

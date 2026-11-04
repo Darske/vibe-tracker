@@ -28,80 +28,176 @@ now = q.platform_now()
 pdaily = pdaily[pdaily["source"].isin(f.selected)]
 nowf = now[now["source"].isin(f.selected)]
 
-# ================================================================== hero: players right now
-ccu = q.ccu_now(f.selected)
-series = q.ccu_total_series(days, f.selected)
-with st.container(border=True):
-    c1, c2 = st.columns(2)
-    with c1:
-        ui.eyebrow("Players right now", "🔥")
-        ui.hero(full(ccu.get("players_now")), ui.ago(ccu.get("updated_at")))
-    with c2:
-        ui.eyebrow("All-time peak", "🏆")
-        pk_at = pd.Timestamp(ccu["peak_at"]).strftime("%b %-d at %-I:%M%p UTC").replace("AM", "am").replace("PM", "pm") if ccu.get("peak_at") is not None else ""
-        ui.hero(full(ccu.get("peak")), pk_at, white=True)
-    if len(series) < 2:
-        st.caption("Not enough players-online readings in this range yet (polled every 30 minutes).")
-    else:
-        fig = go.Figure(go.Scatter(x=series["run_ts"], y=series["players"], mode=line_mode(len(series)), line=dict(width=2.5, color=ACCENT), marker=dict(size=4),
-                                   hovertemplate="%{x|%b %-d %H:%M}: %{y:,.0f} players<extra></extra>"))
-        fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
-        st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
-    st.caption("Sum of players online across the tracked games of platforms that publish a live count "
-               "(Tesana, Spawn, Bitmagic, Wavedash's trending set). Polled every 30 minutes.")
+# ================================================================== metric toggle: daily plays (default) | players online
+mcol, _ = st.columns([2, 3])
+with mcol:
+    metric = ui.pills("Metric", ["Daily plays", "Players online"], "home_metric", "Daily plays")
+daily_mode = metric == "Daily plays"
+win = pdaily[pdaily["day"] >= f.window_start]
+latest_day = q.latest_play_day(f.selected)
+if latest_day is not None and latest_day >= today_utc():  # today is partial: prefer the last closed day when it exists
+    closed = pdaily[(pdaily["day"] < today_utc()) & pdaily["plays_delta_top100"].notna()]["day"]
+    if not closed.empty:
+        latest_day = closed.max()
 
-# ================================================================== top right now
-top_games = q.top_games_now(f.selected, 5)
+
+def plat_link(src: str) -> str:
+    return f"<a class='vt-link' href='platform?platform={src}' target='_self'>{names.get(src, src)}</a>"
+
+
+# ================================================================== hero
+if daily_mode:
+    per_day = win.groupby("day")["plays_delta_top100"].sum(min_count=1).dropna().sort_index()
+    all_days = pdaily.groupby("day")["plays_delta_top100"].sum(min_count=1).dropna()
+    with st.container(border=True):
+        c1, c2 = st.columns(2)
+        with c1:
+            ui.eyebrow("Daily plays", "🔥")
+            if latest_day is not None and latest_day in per_day.index:
+                ui.hero(full(per_day.loc[latest_day]), f"on {pd.Timestamp(latest_day):%b %-d} (UTC) · tracked top lists of the selected platforms")
+            else:
+                ui.hero("—", "no measured day yet")
+        with c2:
+            ui.eyebrow("Best day", "🏆")
+            if not all_days.empty:
+                ui.hero(full(all_days.max()), f"{pd.Timestamp(all_days.idxmax()):%b %-d}", white=True)
+            else:
+                ui.hero("—", None, white=True)
+        if len(per_day) < 2:
+            st.caption("Not enough days of history in this range yet.")
+        else:
+            fig = go.Figure(go.Scatter(x=per_day.index, y=per_day.values, mode="lines+markers", line=dict(width=2.5, color=ACCENT), marker=dict(size=5),
+                                       hovertemplate="%{x|%b %-d}: %{y:,.0f} plays<extra></extra>"))
+            fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+        st.caption("Daily plays = the day-over-day increase of each platform's own play counter, summed over the tracked top 100 per platform. "
+                   "Figures are for the last closed UTC day.")
+else:
+    ccu = q.ccu_now(f.selected)
+    series = q.ccu_total_series(days, f.selected)
+    with st.container(border=True):
+        c1, c2 = st.columns(2)
+        with c1:
+            ui.eyebrow("Players right now", "🔥")
+            ui.hero(full(ccu.get("players_now")), ui.ago(ccu.get("updated_at")))
+        with c2:
+            ui.eyebrow("All-time peak", "🏆")
+            pk_at = pd.Timestamp(ccu["peak_at"]).strftime("%b %-d at %-I:%M%p UTC").replace("AM", "am").replace("PM", "pm") if ccu.get("peak_at") is not None else ""
+            ui.hero(full(ccu.get("peak")), pk_at, white=True)
+        if len(series) < 2:
+            st.caption("Not enough players-online readings in this range yet (polled every 30 minutes).")
+        else:
+            fig = go.Figure(go.Scatter(x=series["run_ts"], y=series["players"], mode=line_mode(len(series)), line=dict(width=2.5, color=ACCENT), marker=dict(size=4),
+                                       hovertemplate="%{x|%b %-d %H:%M}: %{y:,.0f} players<extra></extra>"))
+            fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+        st.caption("Sum of players online across the tracked games of platforms that publish a live count "
+                   "(Tesana, Spawn, Bitmagic, Wavedash's trending set). Polled every 30 minutes.")
+
+# ================================================================== top game / top platform
 c1, c2 = st.columns(2)
 with c1, st.container(border=True):
-    ui.eyebrow("Top game right now", "🏆")
-    if top_games.empty:
-        st.caption("No live counts yet.")
-    else:
-        g0 = top_games.iloc[0]
-        ui.hero(str(g0["title"] or g0["url"]), f"{full(g0['players_now'])} players ({abbrev(g0['peak'])} peak) · {g0['display_name']}")
-        ids = tuple(int(i) for i in top_games["id"])
-        gs = q.game_ccu_series(ids, max(days, 1))
-        if gs["captured_at"].nunique() < 2:
-            st.caption("Not enough readings in this range to draw a line yet.")
-            gs = gs.iloc[0:0]
-        palette = GAME_TONES
-        ui.legend_dots([(str(t)[:22], palette[i]) for i, t in enumerate(top_games["title"])])
-        fig = go.Figure()
-        for i, (_, row) in enumerate(top_games.iterrows() if not gs.empty else []):
-            s = gs[gs["game_id"] == row["id"]]
-            fig.add_trace(go.Scatter(x=s["captured_at"], y=s["players_now"], mode=line_mode(len(s)), name=str(row["title"])[:30],
-                                     line=dict(width=2.4 if i == 0 else 1.6, color=palette[i]), marker=dict(size=4),
-                                     hovertemplate="%{y:,.0f}<extra>%{fullData.name}</extra>"))
-        if not gs.empty:
-            fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
-            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
-        if st.button("Top games →", key="to_games", type="tertiary"):
-            nav("games", by="Players")
-with c2, st.container(border=True):
-    ui.eyebrow("Top platform right now", "🏆")
-    ps = q.ccu_platform_series(days, f.selected)
-    if ps.empty:
-        st.caption("No live counts yet.")
-    else:
-        latest_run = ps[ps["run_ts"] == ps["run_ts"].max()].sort_values("players", ascending=False).iloc[0]
-        ui.hero(names.get(latest_run["source"], latest_run["source"]), f"{full(latest_run['players'])} players online across its tracked games")
-        order = [s for s in f.sources["name"] if s in set(ps["source"])]
-        ui.legend_dots([(names.get(s, s), colors[s]) for s in order])
-        fig = go.Figure()
-        for s_ in (order if ps["run_ts"].nunique() >= 2 else []):
-            d = ps[ps["source"] == s_]
-            fig.add_trace(go.Scatter(x=d["run_ts"], y=d["players"], mode=line_mode(len(d)), name=names.get(s_, s_),
-                                     line=dict(width=2, color=colors[s_]), marker=dict(size=4), hovertemplate="%{y:,.0f}<extra>%{fullData.name}</extra>"))
-        if ps["run_ts"].nunique() >= 2:
-            fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
-            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    palette = GAME_TONES
+    if daily_mode:
+        ui.eyebrow("Top game by daily plays", "🏆")
+        top_games = q.top_games_day(f.selected, latest_day, 5) if latest_day is not None else pd.DataFrame()
+        if top_games.empty:
+            st.caption("No measured day yet.")
         else:
-            st.caption("Not enough readings in this range to draw a line yet.")
-        st.caption("Platforms without a public live-player count (Astrocade, Rosebud, Remix, Playgama) can't appear here; compare them on daily plays below.")
+            g0 = top_games.iloc[0]
+            ui.hero(str(g0["title"] or g0["url"]), f"{full(g0['plays_delta'])} plays on {pd.Timestamp(latest_day):%b %-d} · {g0['display_name']}")
+            ids = tuple(int(i) for i in top_games["id"])
+            gs = q.game_daily_series(ids, f.window_start)
+            ui.legend_dots([(str(t)[:22], palette[i]) for i, t in enumerate(top_games["title"])])
+            if gs["day"].nunique() < 2:
+                st.caption("Not enough days in this range to draw a line yet.")
+            else:
+                fig = go.Figure()
+                for i, (_, row) in enumerate(top_games.iterrows()):
+                    s_ = gs[gs["game_id"] == row["id"]].dropna(subset=["plays_delta"])
+                    fig.add_trace(go.Scatter(x=s_["day"], y=s_["plays_delta"], mode="lines+markers", name=str(row["title"])[:30],
+                                             line=dict(width=2.4 if i == 0 else 1.6, color=palette[i]), marker=dict(size=4),
+                                             hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra>%{fullData.name}</extra>"))
+                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+            if st.button("Top games →", key="to_games", type="tertiary"):
+                nav("games", by="Plays")
+    else:
+        ui.eyebrow("Top game right now", "🏆")
+        top_games = q.top_games_now(f.selected, 5)
+        if top_games.empty:
+            st.caption("No live counts yet.")
+        else:
+            g0 = top_games.iloc[0]
+            ui.hero(str(g0["title"] or g0["url"]), f"{full(g0['players_now'])} players ({abbrev(g0['peak'])} peak) · {g0['display_name']}")
+            ids = tuple(int(i) for i in top_games["id"])
+            gs = q.game_ccu_series(ids, max(days, 1))
+            ui.legend_dots([(str(t)[:22], palette[i]) for i, t in enumerate(top_games["title"])])
+            if gs["captured_at"].nunique() < 2:
+                st.caption("Not enough readings in this range to draw a line yet.")
+            else:
+                fig = go.Figure()
+                for i, (_, row) in enumerate(top_games.iterrows()):
+                    s_ = gs[gs["game_id"] == row["id"]]
+                    fig.add_trace(go.Scatter(x=s_["captured_at"], y=s_["players_now"], mode=line_mode(len(s_)), name=str(row["title"])[:30],
+                                             line=dict(width=2.4 if i == 0 else 1.6, color=palette[i]), marker=dict(size=4),
+                                             hovertemplate="%{y:,.0f}<extra>%{fullData.name}</extra>"))
+                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+            if st.button("Top games →", key="to_games", type="tertiary"):
+                nav("games", by="Players")
+
+with c2, st.container(border=True):
+    if daily_mode:
+        ui.eyebrow("Top platform by daily plays", "🏆")
+        today_rows = pdaily[pdaily["day"] == latest_day].dropna(subset=["plays_delta_top100"]).sort_values("plays_delta_top100", ascending=False) if latest_day is not None else pd.DataFrame()
+        if today_rows.empty:
+            st.caption("No measured day yet.")
+        else:
+            p0 = today_rows.iloc[0]
+            st.markdown(f"<p class='vt-hero'>{plat_link(p0['source'])}</p><div class='vt-sub'>{full(p0['plays_delta_top100'])} plays on {pd.Timestamp(latest_day):%b %-d} across its tracked top 100</div>", unsafe_allow_html=True)
+            order = [s_ for s_ in f.sources["name"] if s_ in set(win.dropna(subset=["plays_delta_top100"])["source"])]
+            ui.legend_dots([(names.get(s_, s_), colors[s_]) for s_ in order])
+            if win["day"].nunique() < 2:
+                st.caption("Not enough days in this range to draw a line yet.")
+            else:
+                fig = go.Figure()
+                for s_ in order:
+                    d = win[win["source"] == s_].dropna(subset=["plays_delta_top100"]).sort_values("day")
+                    fig.add_trace(go.Scatter(x=d["day"], y=d["plays_delta_top100"], mode="lines+markers", name=names.get(s_, s_),
+                                             line=dict(width=2, color=colors[s_]), marker=dict(size=4), hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra>%{fullData.name}</extra>"))
+                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+            ui.ranked_list([{"title": names.get(r["source"], r["source"]), "href": f"platform?platform={r['source']}", "value": r["plays_delta_top100"],
+                             "sub": f"{int(r['games_tracked'] or 0)} games tracked", "rank": i + 1} for i, (_, r) in enumerate(today_rows.iterrows())],
+                            "value", "plain", show_thumb=False)
+            st.caption("Tap a platform to see its top games by total plays. Playgama and Wavedash publish no play counter.")
+    else:
+        ui.eyebrow("Top platform right now", "🏆")
+        ps = q.ccu_platform_series(days, f.selected)
+        if ps.empty:
+            st.caption("No live counts yet.")
+        else:
+            latest = ps[ps["run_ts"] == ps["run_ts"].max()].sort_values("players", ascending=False)
+            p0 = latest.iloc[0]
+            st.markdown(f"<p class='vt-hero'>{plat_link(p0['source'])}</p><div class='vt-sub'>{full(p0['players'])} players online across its tracked games</div>", unsafe_allow_html=True)
+            order = [s_ for s_ in f.sources["name"] if s_ in set(ps["source"])]
+            ui.legend_dots([(names.get(s_, s_), colors[s_]) for s_ in order])
+            if ps["run_ts"].nunique() >= 2:
+                fig = go.Figure()
+                for s_ in order:
+                    d = ps[ps["source"] == s_]
+                    fig.add_trace(go.Scatter(x=d["run_ts"], y=d["players"], mode=line_mode(len(d)), name=names.get(s_, s_),
+                                             line=dict(width=2, color=colors[s_]), marker=dict(size=4), hovertemplate="%{y:,.0f}<extra>%{fullData.name}</extra>"))
+                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+            else:
+                st.caption("Not enough readings in this range to draw a line yet.")
+            ui.ranked_list([{"title": names.get(r["source"], r["source"]), "href": f"platform?platform={r['source']}", "value": r["players"],
+                             "sub": "players online now", "rank": i + 1} for i, (_, r) in enumerate(latest.iterrows())], "value", "plain", show_thumb=False)
+            st.caption("Tap a platform to see its top games by total plays. Platforms without a public live-player count (Astrocade, Rosebud, Remix, Playgama) can't appear here.")
 
 # ================================================================== stat tiles
-win = pdaily[pdaily["day"] >= f.window_start]
 games = q.games_window(f.window_start, f.selected)
 lk = nowf["likes_lifetime"].sum(min_count=1); pk = nowf["plays_with_likes"].sum(min_count=1)
 t1, t2, t3, t4 = st.columns(4)

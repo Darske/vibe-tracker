@@ -192,6 +192,31 @@ def game_ccu_series(game_ids: tuple[int, ...], days: int) -> pd.DataFrame:
 
 # ====================================================================== games
 @st.cache_data(ttl=TTL)
+def latest_play_day(sources_sel: tuple[str, ...]):
+    """Most recent day with a measured plays_delta for the selected platforms (today is usually partial)."""
+    df = _read("select max(gd.day) as d from game_daily gd join games g on g.id = gd.game_id where gd.plays_delta is not null and g.source = any(%s)",
+               (list(sources_sel),))
+    return None if df.empty or pd.isna(df.iloc[0]["d"]) else df.iloc[0]["d"]
+
+
+@st.cache_data(ttl=TTL)
+def top_games_day(sources_sel: tuple[str, ...], day, n: int = 5) -> pd.DataFrame:
+    """Top games by measured daily plays on one day."""
+    return _read(
+        """select g.id, g.source, s.display_name, g.title, g.url, g.thumbnail_url, c.name as creator_name, gd.plays_delta, gd.rank_in_source
+             from game_daily gd join games g on g.id = gd.game_id join sources s on s.name = g.source left join creators c on c.id = g.creator_id
+            where gd.day = %s and gd.plays_delta is not null and g.source = any(%s) and g.status <> 'gone'
+            order by gd.plays_delta desc limit %s""",
+        (day, list(sources_sel), n),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def game_daily_series(game_ids: tuple[int, ...], start: date) -> pd.DataFrame:
+    return _read("select game_id, day, plays_delta from game_daily where game_id = any(%s) and day >= %s order by day", (list(game_ids), start))
+
+
+@st.cache_data(ttl=TTL)
 def games_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
     """One row per game with window aggregates, latest derived metrics and latest raw counters."""
     return _read(
