@@ -9,7 +9,7 @@ import streamlit as st
 from dashboard import queries as q
 from dashboard.components import phone_table, selected_row, share_donut
 from dashboard.filters import go as nav, label_for, sidebar, today_utc
-from dashboard.theme import INK, abbrev, color_map, pct
+from dashboard.theme import INK, abbrev, color_map, pct, ratio_fmt
 
 f = sidebar()
 st.title("Platforms")
@@ -32,6 +32,8 @@ METRICS = {
     "New games / day": "games_new",
     "Active creators": "creators_active",
     "7-day growth": "growth_7d",
+    "Likes per 1,000 plays (pooled)": "likes_per_k",
+    "Likes per 1,000 plays (median game)": "median_likes_per_k",
 }
 metric = st.selectbox("Rank platforms by", list(METRICS), index=0)
 col = METRICS[metric]
@@ -49,7 +51,12 @@ for src, g in pdaily.groupby("source"):
     latest = g.iloc[-1]
     nrow = now[now["source"] == src]
     days_in_win = max(1, gw["plays_delta_top100"].notna().sum())
+    lk = float(nrow["likes_lifetime"].iloc[0]) if not nrow.empty and pd.notna(nrow["likes_lifetime"].iloc[0]) else None
+    pk = float(nrow["plays_with_likes"].iloc[0]) if not nrow.empty and pd.notna(nrow["plays_with_likes"].iloc[0]) else None
     rows.append({
+        "likes_per_k": (lk * 1000.0 / pk) if lk is not None and pk else None,
+        "median_likes_per_k": float(nrow["median_likes_per_k"].iloc[0]) if not nrow.empty and pd.notna(nrow["median_likes_per_k"].iloc[0]) else None,
+        "games_with_ratio": int(nrow["games_with_ratio"].iloc[0]) if not nrow.empty and pd.notna(nrow["games_with_ratio"].iloc[0]) else 0,
         "plays_lifetime": float(nrow["plays_lifetime"].iloc[0]) if not nrow.empty and pd.notna(nrow["plays_lifetime"].iloc[0]) else None,
         "plays_per_day": (gw["plays_delta_top100"].sum(min_count=1) / days_in_win) if pd.notna(gw["plays_delta_top100"].sum(min_count=1)) else None,
         "source": src, "Platform": names.get(src, src), "Segment": latest["segment"],
@@ -67,24 +74,31 @@ table = table.sort_values(col, ascending=False, na_position="last").reset_index(
 table.insert(0, "#", range(1, len(table) + 1))
 disp = table.rename(columns={
     "plays_lifetime": "Lifetime plays", "plays_per_day": "Plays / day",
+    "likes_per_k": "Likes / 1k plays", "median_likes_per_k": "Median likes / 1k", "games_with_ratio": "Games ≥1k plays",
     "plays_delta_top100": f"Plays {f.window}", "ccu_peak_top100": f"Peak players {f.window}", "ccu_avg_top100": "Avg players",
     "games_new": "New games/day", "creators_active": "Active creators", "growth_7d": "Growth 7d",
 })
 disp[f"Plays {f.window}"] = disp[f"Plays {f.window}"].map(abbrev)
 disp["Lifetime plays"] = disp["Lifetime plays"].map(abbrev)
+disp["Likes / 1k plays"] = disp["Likes / 1k plays"].map(ratio_fmt)
+disp["Median likes / 1k"] = disp["Median likes / 1k"].map(ratio_fmt)
 disp["Plays / day"] = disp["Plays / day"].map(abbrev)
 disp[f"Peak players {f.window}"] = disp[f"Peak players {f.window}"].map(abbrev)
 disp["Avg players"] = disp["Avg players"].map(lambda v: "—" if pd.isna(v) else f"{v:.0f}")
 disp["New games/day"] = disp["New games/day"].map(lambda v: "—" if pd.isna(v) else f"{v:.0f}")
 disp["Growth 7d"] = disp["Growth 7d"].map(pct)
 disp["Top-10 share"] = disp["Top-10 share"].map(lambda v: "—" if pd.isna(v) else f"{float(v) * 100:.0f}%")
-phone_cols = ["#", "Platform", "Lifetime plays", "Plays / day", {"plays_delta_top100": f"Plays {f.window}", "ccu_peak_top100": f"Peak players {f.window}", "ccu_avg_top100": "Avg players", "games_new": "New games/day", "creators_active": "Active creators", "growth_7d": "Growth 7d"}[col], "Games tracked", "Label"]
+_mcol = {"likes_per_k": "Likes / 1k plays", "median_likes_per_k": "Median likes / 1k"}
+phone_cols = ["#", "Platform", "Lifetime plays", "Plays / day", "Likes / 1k plays", {"plays_delta_top100": f"Plays {f.window}", "ccu_peak_top100": f"Peak players {f.window}", "ccu_avg_top100": "Avg players", "games_new": "New games/day", "creators_active": "Active creators", "growth_7d": "Growth 7d", **_mcol}[col], "Games tracked", "Label"]
+phone_cols = list(dict.fromkeys(phone_cols))
 ev = phone_table(disp.drop(columns=["source"]), phone_cols, key="platforms")
 sel = selected_row(ev, table)
 if sel is not None:
     nav("platform", platform=sel["source"])
 st.caption("Lifetime plays = the platform's own cumulative counter summed over the games we track; Plays / day = our measured daily increase "
-           "(average over the window). Tap a row to open the platform. 'Label' is what that platform's counter actually means.")
+           "(average over the window). Likes / 1k plays = all likes ÷ all lifetime plays × 1000 over tracked games (pooled, so big games weigh more); "
+           "the median version is the typical game with ≥1,000 plays. Each platform's 'like' is its own button (favorites, thumbs-up, hearts, ratings) — "
+           "compare trends and ranks, not absolute values. Tap a row to open the platform.")
 
 # ---------------------------------------------------------------- time series
 st.subheader("Over time")

@@ -1,0 +1,37 @@
+name: ccu
+
+# Lightweight concurrent-players poll: only the lists that carry a live player count (Tesana, Spawn,
+# Bitmagic, Wavedash), ~35 requests, under a minute. Gives 48 readings/day so daily CCU peak/average
+# are real instead of "the best of 12". The full 2-hourly scrape still runs separately.
+
+on:
+  schedule:
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ccu
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ccu:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+      RUN_TIME_BUDGET_SECONDS: "400"
+      LOG_LEVEL: INFO
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: pip install -e .
+      - name: Poll players online
+        run: python -m tracker.pipeline run --mode ccu

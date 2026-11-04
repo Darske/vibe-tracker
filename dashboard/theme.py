@@ -66,3 +66,18 @@ def pct(x) -> str:
         return "—"
     x = float(x)
     return "—" if x != x else f"{x * 100:+.1f}%"
+
+
+def likes_per_k(likes, plays, min_plays: int = 1000) -> float | None:
+    """Likes per 1,000 lifetime plays; None below min_plays (too noisy to compare)."""
+    try:
+        likes = float(likes); plays = float(plays)
+    except (TypeError, ValueError):
+        return None
+    if likes != likes or plays != plays or plays < min_plays:
+        return None
+    return likes * 1000.0 / plays
+
+
+def ratio_fmt(v) -> str:
+    return "—" if v is None or v != v else f"{v:.1f}"

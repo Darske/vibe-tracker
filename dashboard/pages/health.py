@@ -48,6 +48,12 @@ if avg_run > 360:
 else:
     st.caption(f"7-day average run time: {avg_run / 60:.1f} min per run (warn above 6).")
 
+last_ccu = stats.get("last_ccu_reading")
+if last_ccu is not None and not pd.isna(last_ccu):
+    age_min = (now - pd.Timestamp(last_ccu).to_pydatetime().astimezone(timezone.utc)).total_seconds() / 60
+    st.caption(f"Players-online poll: last reading {age_min:.0f} min ago · {int(stats.get('ccu_polls_24h') or 0)} readings in the last 24 h "
+               f"(target 48: the ccu workflow runs every 30 min for Tesana, Spawn, Bitmagic, Wavedash).")
+
 # ---------------------------------------------------------------- last run per platform
 st.subheader("Last run per platform")
 if last.empty:

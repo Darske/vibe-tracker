@@ -9,7 +9,7 @@ import streamlit as st
 from dashboard import queries as q
 from dashboard.components import badge, fmt_dt, metric_card
 from dashboard.filters import go as nav, sidebar
-from dashboard.theme import INK, abbrev, color_map
+from dashboard.theme import INK, abbrev, color_map, likes_per_k, ratio_fmt
 
 f = sidebar()
 gid = st.query_params.get("game")
@@ -37,6 +37,15 @@ if g.get("ai_tool") or g.get("engine") or g.get("tags"):
 
 daily = q.game_daily(int(gid))
 polls = q.game_polls(int(gid), 7)
+last = q.game_latest(int(gid)) or {}
+lpk = likes_per_k(last.get("likes"), last.get("plays_total"))
+bits = [f"**{abbrev(last.get('likes'))}** likes" if last.get("likes") is not None else None,
+        f"**{ratio_fmt(lpk)}** likes per 1k plays" if lpk is not None else None,
+        f"**{abbrev(last.get('remixes'))}** remixes" if last.get("remixes") is not None else None,
+        f"**{abbrev(last.get('comments'))}** comments" if last.get("comments") is not None else None,
+        f"**{abbrev(last.get('players_total'))}** players ({labels.get('players', 'unique players')})" if last.get("players_total") is not None else None]
+if any(bits):
+    st.markdown(" · ".join(b for b in bits if b))
 
 # ---------------------------------------------------------------- cards
 c1, c1b, c2, c3 = st.columns(4)

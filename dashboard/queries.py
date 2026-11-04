@@ -72,7 +72,9 @@ def health_stats() -> dict:
                   (select pg_database_size(current_database())) as db_bytes,
                   (select count(distinct run_ts) from runs where run_ts >= date_trunc('month', now())) as runs_this_month,
                   (select coalesce(sum(seconds), 0) from runs where run_ts >= date_trunc('month', now())) as seconds_this_month,
-                  (select avg(total) from (select run_ts, sum(seconds) as total from runs where run_ts > now() - interval '7 days' group by run_ts) t) as avg_run_seconds_7d"""
+                  (select avg(total) from (select run_ts, sum(seconds) as total from runs where run_ts > now() - interval '7 days' group by run_ts) t) as avg_run_seconds_7d,
+                  (select max(captured_at) from snapshots where players_now is not null) as last_ccu_reading,
+                  (select count(distinct run_ts) from snapshots where players_now is not null and captured_at > now() - interval '24 hours') as ccu_polls_24h"""
     ).iloc[0]
     return row.to_dict()
 
@@ -107,7 +109,12 @@ def platform_now() -> pd.DataFrame:
         """with last as (select distinct on (g.source) g.source, s.run_ts
                           from snapshots s join games g on g.id = s.game_id order by g.source, s.run_ts desc)
            select g.source, count(distinct g.id) as games_tracked, count(distinct g.creator_id) as creators,
-                  sum(s.players_now) as players_now, sum(s.plays_total) as plays_lifetime, max(s.run_ts) as run_ts
+                  sum(s.players_now) as players_now, sum(s.plays_total) as plays_lifetime, max(s.run_ts) as run_ts,
+                  sum(s.likes) filter (where s.plays_total is not null) as likes_lifetime,
+                  sum(s.plays_total) filter (where s.likes is not null) as plays_with_likes,
+                  percentile_cont(0.5) within group (order by s.likes * 1000.0 / s.plays_total)
+                    filter (where s.likes is not null and s.plays_total >= 1000) as median_likes_per_k,
+                  count(*) filter (where s.likes is not null and s.plays_total >= 1000) as games_with_ratio
              from snapshots s join games g on g.id = s.game_id join last l on l.source = g.source and l.run_ts = s.run_ts
             group by g.source"""
     )
@@ -169,6 +176,12 @@ def game_polls(game_id: int, days: int = 7) -> pd.DataFrame:
         "select captured_at, players_now, plays_total from snapshots where game_id = %s and captured_at > now() - make_interval(days => %s) order by captured_at",
         (game_id, days),
     )
+
+
+@st.cache_data(ttl=TTL)
+def game_latest(game_id: int) -> dict | None:
+    df = _read("select * from snapshots where game_id = %s order by captured_at desc limit 1", (game_id,))
+    return None if df.empty else df.iloc[0].to_dict()
 
 
 @st.cache_data(ttl=TTL)

@@ -8,6 +8,7 @@ tesana:
   enabled: true
   # catalog = the whole marketplace most-played first (~60 requests); the charts stay as ranked lists.
   lists: [played, trending, new, rising, popular, playing_now, catalog]
+  ccu_lists: [playing_now, played]  # polled every 30 min by the ccu workflow (3 requests): live rooms + the weekly top 100 (rows carry playing_now)
   top_n: 100
   list_top_n:
     catalog: 5000
@@ -47,6 +48,7 @@ bitmagic:
   segment: creation
   enabled: true
   lists: [trending, popular, new]
+  ccu_lists: [popular]              # browse (3 req) + batch + live counts
   top_n: 100
   poll_every_hours: 2
   rate_limit_rps: 1
@@ -83,6 +85,7 @@ spawn:
   # else = /?genre=<name>; each list is its first page (23-24 cards, 63 on multiplayer — ?offset= paging
   # returns the same page). multiplayer is sorted by concurrent players and is the CCU source.
   lists: [top, multiplayer, new, action, shooter, rpg, strategy, horror, cozy, puzzle]
+  ccu_lists: [multiplayer]          # the one page that carries players-online for ~60 games (1 request)
   top_n: 100
   poll_every_hours: 2
   rate_limit_rps: 1
@@ -103,6 +106,7 @@ wavedash:
   # 1 r/s) so every one of the ~1,270 games gets a first-seen date (new games/day). There is no `new`
   # list: the feed carries no publish dates and resolving them costs one request per game.
   lists: [trending, featured]
+  ccu_lists: [trending]             # the only games with a public concurrent-player count
   top_n: 100
   poll_every_hours: 2
   rate_limit_rps: 1

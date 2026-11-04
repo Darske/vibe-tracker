@@ -40,7 +40,9 @@ class DryConn:
         return self._ids.setdefault(key, len(self._ids) + 1)
 
 
-def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget, *, limit: int | None, dry: bool) -> dict:
+def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget, *, limit: int | None, dry: bool, ccu: bool = False) -> dict:
+    """One platform. ccu=True is the lightweight concurrent-players poll: only the lists in cfg["ccu_lists"],
+    no watchlist carry-over, no creator profiles, no runs row (so Health's row-count medians stay meaningful)."""
     cls = adapter_class(cfg)
     started = utcnow()
     t0 = time.monotonic()
@@ -77,7 +79,7 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
 
         # 2. watchlist ----------------------------------------------------
         refs = dict(discovered)
-        if not dry:
+        if not dry and not ccu:
             for row in db.watchlist(conn, name, int(cfg["stale_after_days"]), int(cfg["max_watchlist"])):
                 refs.setdefault(row["external_id"], GameRef(source=name, external_id=row["external_id"], url=row["url"]))
         ref_list = list(refs.values())
@@ -112,7 +114,7 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
             flush()  # keep whatever was fetched if the time budget or the platform cut the loop short
 
         # 4. creator profiles: first run after 00:00 UTC only --------------
-        if not dry and run_ts.hour < int(cfg["poll_every_hours"]):
+        if not dry and not ccu and run_ts.hour < int(cfg["poll_every_hours"]):
             todo = db.creators_needing_profile(conn, name, run_ts.date())
             for row in todo:
                 try:
@@ -149,7 +151,7 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
     finally:
         seconds = time.monotonic() - t0
         http.close()
-        if not dry:
+        if not dry and not ccu:
             try:
                 db.log_run(conn, name, run_ts, started, status, counts, errors, seconds, http.requests_made)
                 conn.commit()
@@ -162,6 +164,12 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
 
 def cmd_run(args) -> int:
     sources = load_sources()
+    ccu = getattr(args, "mode", "full") == "ccu"
+    if ccu:  # lightweight concurrent-players poll: only platforms that publish live player counts
+        sources = {
+            k: {**v, "lists": list(v["ccu_lists"]), "list_top_n": {}, "top_n": int(v.get("ccu_top_n", v["top_n"]))}
+            for k, v in sources.items() if v.get("ccu_lists")
+        }
     selected = {k: v for k, v in sources.items() if v["enabled"] or args.source}
     if args.source:
         if args.source not in sources:
@@ -182,7 +190,7 @@ def cmd_run(args) -> int:
             if cfg.get("needs_browser") and not args.allow_browser:
                 log.warning("%s: needs_browser is set but browser adapters are not installed in this run; skipping", name)
                 continue
-            if not dry and not args.force and not args.source:
+            if not dry and not args.force and not args.source and not ccu:
                 last = db.last_successful_run(conn, name)
                 if last and run_ts - last < timedelta(hours=float(cfg["poll_every_hours"])) - timedelta(minutes=10):
                     log.info("%s: last run %s is fresher than poll_every_hours=%s; skipping", name, last, cfg["poll_every_hours"])
@@ -191,12 +199,12 @@ def cmd_run(args) -> int:
                 log.warning("time budget exhausted before %s; skipping remaining platforms", name)
                 results.append({"source": name, "status": "skipped", "errors": ["budget"]})
                 continue
-            results.append(run_source(conn, name, cfg, run_ts, budget, limit=args.limit, dry=dry))
+            results.append(run_source(conn, name, cfg, run_ts, budget, limit=args.limit, dry=dry, ccu=ccu))
 
         if not dry:
             today = run_ts.date()
             db.derive(conn, [today - timedelta(days=1), today], list(selected))
-            if run_ts.hour < 2 or args.force:
+            if not ccu and (run_ts.hour < 2 or args.force):
                 last = db.get_maintenance(conn, "rollup_day")
                 if last != str(today):
                     n = db.rollup(conn)
@@ -248,6 +256,7 @@ def main(argv=None) -> int:
     r.add_argument("--dry-run", action="store_true")
     r.add_argument("--limit", type=int)
     r.add_argument("--force", action="store_true")
+    r.add_argument("--mode", choices=["full", "ccu"], default="full", help="ccu = players-online-only poll of the ccu_lists (fast; runs every 30 min)")
     r.add_argument("--allow-browser", action="store_true", help=argparse.SUPPRESS)
     r.set_defaults(fn=cmd_run)
     rec = sub.add_parser("record")

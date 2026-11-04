@@ -24,6 +24,7 @@ DEFAULTS = {
     "max_watchlist": 400,
     "metric_map": {},
     "list_top_n": {},
+    "ccu_lists": [],
 }
 
 

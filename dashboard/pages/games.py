@@ -8,7 +8,7 @@ import streamlit as st
 from dashboard import queries as q
 from dashboard.components import fmt_dt, phone_table, selected_row
 from dashboard.filters import go as nav, sidebar, today_utc
-from dashboard.theme import abbrev, pct
+from dashboard.theme import abbrev, likes_per_k, pct, ratio_fmt
 
 f = sidebar()
 st.title("Games")
@@ -20,7 +20,7 @@ if games.empty:
     st.stop()
 
 c1, c2 = st.columns([2, 3])
-by = c1.radio("Rank by", [f"Plays in {f.window}", "Lifetime plays", "Peak concurrent players"], horizontal=True, label_visibility="collapsed")
+by = c1.radio("Rank by", [f"Plays in {f.window}", "Lifetime plays", "Peak concurrent players", "Likes per 1k plays (≥1k plays)"], horizontal=True, label_visibility="collapsed")
 mode = c2.radio("Show", ["All", "Movers", "New entrants (7 days)"], horizontal=True, label_visibility="collapsed")
 search = st.text_input("Search title or creator", "")
 
@@ -33,7 +33,10 @@ if mode == "Movers":
     g = g.dropna(subset=["rank_change"]).sort_values("rank_change", ascending=False)
 elif mode.startswith("New"):
     g = g[pd.to_datetime(g["first_seen"]).dt.date >= today_utc() - pd.Timedelta(days=7)]
-sort_col = {"P": "plays_window", "L": "plays_total"}.get(by[0], "ccu_peak_window")
+g["likes_per_k"] = [likes_per_k(l, p_) for l, p_ in zip(g["likes"], g["plays_total"])]
+sort_col = {"Plays": "plays_window", "Lifet": "plays_total", "Likes": "likes_per_k"}.get(by[:5], "ccu_peak_window")
+if sort_col == "likes_per_k":
+    g = g.dropna(subset=["likes_per_k"])
 if mode != "Movers":
     g = g.sort_values(sort_col, ascending=False, na_position="last")
 g = g.head(200).reset_index(drop=True)
@@ -51,12 +54,18 @@ disp = pd.DataFrame({
     "Peak players": g["ccu_peak_window"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Players now": g["players_now"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Likes": g["likes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
+    "Likes / 1k plays": g["likes_per_k"].map(ratio_fmt),
     "Remixes": g["remixes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Rank in platform": g["rank_in_source"].map(lambda v: "—" if pd.isna(v) else int(v)),
     "First seen": g["first_seen"].map(fmt_dt),
     "Label": g["metric_map"].map(lambda m: (m or {}).get("plays", "")),
 })
-phone = ["#", "Title", "Platform", "Lifetime plays", f"Plays {f.window}", "Plays / day"] if by.startswith("Plays") else ["#", "Title", "Platform", "Peak players", "Players now", "Growth 7d"]
+if by.startswith("Likes"):
+    phone = ["#", "Title", "Platform", "Likes / 1k plays", "Likes", "Lifetime plays"]
+elif by.startswith("Peak"):
+    phone = ["#", "Title", "Platform", "Peak players", "Players now", "Growth 7d"]
+else:
+    phone = ["#", "Title", "Platform", "Lifetime plays", f"Plays {f.window}", "Likes / 1k plays"]
 ev = phone_table(disp, phone, key=f"games_{by}_{mode}")
 sel = selected_row(ev, g)
 if sel is not None:

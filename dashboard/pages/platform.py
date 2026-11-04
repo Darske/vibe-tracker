@@ -8,7 +8,7 @@ import streamlit as st
 from dashboard import queries as q
 from dashboard.components import badge, fmt_dt, metric_card, phone_table, selected_row
 from dashboard.filters import go as nav, label_for, sidebar, today_utc
-from dashboard.theme import abbrev, color_map, pct
+from dashboard.theme import abbrev, color_map, likes_per_k, pct, ratio_fmt
 
 f = sidebar()
 src = st.query_params.get("platform")
@@ -59,13 +59,15 @@ with c3:
 
 # ---------------------------------------------------------------- top 100 table
 st.subheader(f"Top games on {row['display_name']}")
-mode = st.radio("Show", ["Top 100", "Movers", "New entrants (7 days)"], horizontal=True, label_visibility="collapsed")
+mode = st.radio("Show", ["Top 100", "Movers", "New entrants (7 days)", "Best liked (≥1k plays)"], horizontal=True, label_visibility="collapsed")
 g = games.copy()
 g["rank_change"] = g["rank_prior"] - g["rank_in_source"]
 if mode == "Movers":
     g = g.dropna(subset=["rank_change"]).sort_values("rank_change", ascending=False)
 elif mode.startswith("New"):
     g = g[pd.to_datetime(g["first_seen"]).dt.date >= today_utc() - pd.Timedelta(days=7)].sort_values("plays_window", ascending=False, na_position="last")
+elif mode.startswith("Best liked"):
+    g = g.assign(_lpk=[likes_per_k(l, p_) for l, p_ in zip(g["likes"], g["plays_total"])]).dropna(subset=["_lpk"]).sort_values("_lpk", ascending=False)
 else:
     g = g.sort_values(["rank_in_source", "plays_window"], ascending=[True, False], na_position="last")
 g = g.head(100).reset_index(drop=True)
@@ -81,10 +83,11 @@ disp = pd.DataFrame({
     "Growth 7d": g["growth_7d"].map(pct),
     "Players now": g["players_now"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "Likes": g["likes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
+    "Likes / 1k plays": [ratio_fmt(likes_per_k(l, p_)) for l, p_ in zip(g["likes"], g["plays_total"])],
     "Remixes": g["remixes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
     "First seen": g["first_seen"].map(fmt_dt),
 })
-ev = phone_table(disp, ["Rank", "Title", "Lifetime plays", f"Plays {f.window}", "Plays / day", "Players now"], key=f"platform_{src}_{mode}")
+ev = phone_table(disp, ["Rank", "Title", "Lifetime plays", f"Plays {f.window}", "Plays / day", "Likes / 1k plays"], key=f"platform_{src}_{mode}")
 sel = selected_row(ev, g)
 if sel is not None:
     nav("game", game=int(sel["id"]))
