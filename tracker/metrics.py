@@ -43,6 +43,7 @@ class Capture:
     remixes: int | None = None
     votes: int | None = None
     players_now: int | None = None
+    weight: int = 1  # polls this reading stands for: 1 + identical readings folded into it (snapshots.repeats)
 
     @property
     def day(self) -> date:
@@ -92,11 +93,11 @@ def daily_rows(captures: list[Capture]) -> dict[date, DailyRow]:
     for day in sorted(by_day):
         todays = by_day[day]
         last = todays[-1]
-        row = DailyRow(day=day, captures=len(todays), plays_total_eod=last.plays_total)
-        ccu = [c.players_now for c in todays if c.players_now is not None]
+        row = DailyRow(day=day, captures=sum(c.weight for c in todays), plays_total_eod=last.plays_total)
+        ccu = [(c.players_now, c.weight) for c in todays if c.players_now is not None]
         if ccu:
-            row.ccu_peak = max(ccu)
-            row.ccu_avg = round(sum(ccu) / len(ccu), 2)
+            row.ccu_peak = max(v for v, _ in ccu)
+            row.ccu_avg = round(sum(v * w for v, w in ccu) / sum(w for _, w in ccu), 2)
 
         if prev_last is not None:
             k = (day - prev_day).days

@@ -5,7 +5,6 @@ Secrets come from environment variables only (DATABASE_URL = Supabase *session p
 
 from __future__ import annotations
 
-import json
 import logging
 import os
 import sys
@@ -33,9 +32,37 @@ def connect() -> psycopg.Connection:
     return conn
 
 
+# One-off data migrations, each run once (recorded in `maintenance`). Order matters within a migration.
+MIGRATIONS: list[tuple[str, list[str]]] = [
+    ("placements_top100_v1", [
+        # 1. remember when each game was last in a list, before the rows that prove it are deleted
+        """update games g set last_listed = x.m
+             from (select game_id, max(run_ts) as m from list_placements group by game_id) x
+            where g.id = x.game_id and (g.last_listed is null or g.last_listed < x.m)""",
+        # 2. positions beyond 100 only came from the deep discovery lists (Tesana catalog, Rosebud top 1000)
+        "delete from list_placements where position > 100",
+    ]),
+]
+
+
 def init(conn: psycopg.Connection) -> None:
     conn.execute(SCHEMA.read_text())
     conn.commit()
+    migrate(conn)
+
+
+def migrate(conn) -> list[str]:
+    done = []
+    for key, statements in MIGRATIONS:
+        if get_maintenance(conn, f"migration:{key}") is not None:
+            continue
+        for sql in statements:
+            conn.execute(sql)
+        set_maintenance(conn, f"migration:{key}", datetime.now(timezone.utc).isoformat())
+        conn.commit()
+        log.info("migration %s applied", key)
+        done.append(key)
+    return done
 
 
 # ------------------------------------------------------------------ sources
@@ -126,10 +153,10 @@ def upsert_game_refs_bulk(conn, source: str, refs: list[tuple[str, str]], now: d
         return {}
     with conn.cursor() as cur:
         cur.executemany(
-            """insert into games (source, external_id, url, first_seen, last_seen) values (%s, %s, %s, %s, %s)
-               on conflict (source, external_id) do update set last_seen = excluded.last_seen,
+            """insert into games (source, external_id, url, first_seen, last_seen, last_listed) values (%s, %s, %s, %s, %s, %s)
+               on conflict (source, external_id) do update set last_seen = excluded.last_seen, last_listed = excluded.last_listed,
                  status = case when games.status = 'gone' then 'live' else games.status end""",
-            [(source, eid, url, now, now) for eid, url in refs],
+            [(source, eid, url, now, now, now) for eid, url in refs],
         )
     return _ids(conn, "games", source, [eid for eid, _ in refs])
 
@@ -178,19 +205,50 @@ def upsert_games_bulk(conn, snaps: list[GameSnapshot], creator_ids: dict[str, in
     return _ids(conn, "games", source, [s.external_id for s in snaps])
 
 
-def insert_snapshots_bulk(conn, rows: list[tuple[int, GameSnapshot]], run_ts: datetime) -> None:
+COUNTERS = ("plays_total", "plays_24h", "players_now", "players_total", "likes", "remixes", "comments", "votes")
+
+
+def _utc_day(ts: datetime):
+    return ts.astimezone(timezone.utc).date()
+
+
+def split_repeats(prev: dict[int, dict], rows: list[tuple[int, GameSnapshot]], run_ts: datetime):
+    """-> (to_insert, to_fold). A reading is folded into the game's last stored row when every counter is equal and
+    both are from the same UTC day (the first reading of each day is always stored, so daily end-of-day values,
+    gaps and rollups keep working). Pure, so it is unit-tested."""
+    insert, fold = [], []
+    for gid, s in rows:
+        p = prev.get(gid)
+        if (p is not None and p["run_ts"] != run_ts and _utc_day(p["captured_at"]) == _utc_day(s.captured_at)
+                and all(p[c] == getattr(s, c) for c in COUNTERS)):
+            fold.append((s.captured_at, gid, p["run_ts"]))
+        else:
+            insert.append((gid, s))
+    return insert, fold
+
+
+def insert_snapshots_bulk(conn, rows: list[tuple[int, GameSnapshot]], run_ts: datetime) -> dict:
     if not rows:
-        return
+        return {"inserted": 0, "folded": 0}
+    prev = {r["game_id"]: r for r in conn.execute(
+        f"""select distinct on (game_id) game_id, run_ts, captured_at, {", ".join(COUNTERS)}
+              from snapshots where game_id = any(%s) order by game_id, run_ts desc""",
+        ([gid for gid, _ in rows],)).fetchall()}
+    insert, fold = split_repeats(prev, rows, run_ts)
     with conn.cursor() as cur:
-        cur.executemany(
-            """insert into snapshots (game_id, run_ts, captured_at, plays_total, plays_24h, players_now, players_total, likes, remixes, comments, votes)
-               values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-               on conflict (game_id, run_ts) do update set captured_at = excluded.captured_at, plays_total = excluded.plays_total,
-                 plays_24h = excluded.plays_24h, players_now = excluded.players_now, players_total = excluded.players_total,
-                 likes = excluded.likes, remixes = excluded.remixes, comments = excluded.comments, votes = excluded.votes""",
-            [(gid, run_ts, s.captured_at, s.plays_total, s.plays_24h, s.players_now, s.players_total, s.likes, s.remixes, s.comments, s.votes)
-             for gid, s in rows],
-        )
+        if insert:
+            cur.executemany(
+                """insert into snapshots (game_id, run_ts, captured_at, plays_total, plays_24h, players_now, players_total, likes, remixes, comments, votes)
+                   values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                   on conflict (game_id, run_ts) do update set captured_at = excluded.captured_at, plays_total = excluded.plays_total,
+                     plays_24h = excluded.plays_24h, players_now = excluded.players_now, players_total = excluded.players_total,
+                     likes = excluded.likes, remixes = excluded.remixes, comments = excluded.comments, votes = excluded.votes""",
+                [(gid, run_ts, s.captured_at, s.plays_total, s.plays_24h, s.players_now, s.players_total, s.likes, s.remixes, s.comments, s.votes)
+                 for gid, s in insert],
+            )
+        if fold:
+            cur.executemany("update snapshots set repeats = repeats + 1, last_seen_at = %s where game_id = %s and run_ts = %s", fold)
+    return {"inserted": len(insert), "folded": len(fold)}
 
 
 def _ids(conn, table: str, source: str, external_ids: list[str]) -> dict[str, int]:
@@ -227,14 +285,14 @@ def insert_snapshot(conn, game_id: int, s: GameSnapshot, run_ts: datetime) -> No
 
 
 def watchlist(conn, source: str, stale_after_days: int, max_watchlist: int) -> list[dict]:
-    """Games seen in any of this platform's lists in the last stale_after_days, prioritised by
+    """Games seen in any of this platform's lists (games.last_listed) in the last stale_after_days, prioritised by
     most recent last_seen then highest plays_7d, capped at max_watchlist."""
     return conn.execute(
         """select g.id, g.external_id, g.url
              from games g
              left join lateral (select plays_7d from game_daily gd where gd.game_id = g.id order by day desc limit 1) d on true
             where g.source = %s and g.status <> 'gone'
-              and exists (select 1 from list_placements lp where lp.game_id = g.id and lp.run_ts > now() - make_interval(days => %s))
+              and g.last_listed > now() - make_interval(days => %s)
             order by g.last_seen desc, d.plays_7d desc nulls last
             limit %s""",
         (source, stale_after_days, max_watchlist),
@@ -282,7 +340,7 @@ def derive(conn, days: list[date], sources: list[str] | None = None) -> None:
     # last capture per game per day for the lookback window (small), plus all captures on target days (for CCU)
     rows = conn.execute(
         f"""with win as (
-               select s.game_id, s.captured_at, s.plays_total, s.likes, s.remixes, s.votes, s.players_now
+               select s.game_id, s.captured_at, s.plays_total, s.likes, s.remixes, s.votes, s.players_now, s.repeats
                  from snapshots s join games g on g.id = s.game_id
                 where s.captured_at >= %(start)s and s.captured_at < %(end)s {where_src}
              ),
@@ -300,7 +358,7 @@ def derive(conn, days: list[date], sources: list[str] | None = None) -> None:
     by_game: dict[int, list[metrics.Capture]] = {}
     for r in rows:
         by_game.setdefault(r["game_id"], []).append(
-            metrics.Capture(r["captured_at"], r["plays_total"], r["likes"], r["remixes"], r["votes"], r["players_now"])
+            metrics.Capture(r["captured_at"], r["plays_total"], r["likes"], r["remixes"], r["votes"], r["players_now"], 1 + (r["repeats"] or 0))
         )
 
     upserts = []

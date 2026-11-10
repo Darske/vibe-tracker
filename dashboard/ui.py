@@ -245,7 +245,7 @@ def pills_value(key: str, default: str) -> str:
 
 def topnav(active: str) -> None:
     """rotrends-style top navigation (the sidebar only holds filters)."""
-    items = [("platforms", "Platforms", "🏁"), ("games", "Games", "🎮"), ("creators", "Creators", "🧑‍🎨"), ("health", "Health", "🩺")]
+    items = [("platforms", "Platforms", "🏁"), ("games", "Games", "🎮"), ("creators", "Creators", "🧑‍🎨"), ("releases", "Releases", "🚀"), ("health", "Health", "🩺")]
     with st.container(horizontal=True, gap="small"):  # stays one row on phones (st.columns would stack)
         for slug, label, icon in items:
             st.page_link(f"views/{slug}.py", label=label, icon=icon, width="content")

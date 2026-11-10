@@ -384,3 +384,29 @@ def merge_creator(creator_id: int, canonical_key: str, note: str | None) -> None
     creators_window.clear()
     creator.clear()
     creator_family.clear()
+
+
+# ====================================================================== releases (Steam-style release counts)
+@st.cache_data(ttl=TTL)
+def release_counts(period: str, since: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    """Games released per platform per week/month (see tracker/release_queries.py for how a release is dated)."""
+    from tracker.release_queries import FROM_GAMES, NET_FROM_TOTALS, RELEASE_COUNTS_SQL
+    return _read(RELEASE_COUNTS_SQL, {"period": period, "since": since, "sources": list(sources_sel),
+                                      "from_games": list(FROM_GAMES), "net": list(NET_FROM_TOTALS)})
+
+
+@st.cache_data(ttl=TTL)
+def release_coverage() -> pd.DataFrame:
+    from tracker.release_queries import RELEASE_COVERAGE_SQL
+    try:
+        return _read(RELEASE_COVERAGE_SQL)
+    except Exception:  # noqa: BLE001 — table not created yet (releases job has not run)
+        return pd.DataFrame(columns=["source", "games", "dated", "seen_new", "since", "dates_pending"])
+
+
+@st.cache_data(ttl=TTL)
+def catalog_totals() -> pd.DataFrame:
+    try:
+        return _read("select source, day, games_total from catalog_daily order by day")
+    except Exception:  # noqa: BLE001
+        return pd.DataFrame(columns=["source", "day", "games_total"])

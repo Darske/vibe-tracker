@@ -127,7 +127,7 @@ with c3:
 ui.title("List placements")
 pl = q.game_placements(int(gid))
 if pl.empty:
-    st.caption("Not seen in any tracked list yet.")
+    st.caption("Not in the top 100 of any tracked list yet.")
 else:
     st.dataframe(pd.DataFrame({
         "List": pl["list_name"], "Best position": pl["best_position"], "Latest position": pl["latest_position"],

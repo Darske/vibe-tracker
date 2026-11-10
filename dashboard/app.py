@@ -21,6 +21,7 @@ nav = st.navigation(
             st.Page("views/platforms.py", title="Platforms", icon="🏁", default=True),
             st.Page("views/games.py", title="Games", icon="🎮"),
             st.Page("views/creators.py", title="Creators", icon="🧑‍🎨"),
+            st.Page("views/releases.py", title="Releases", icon="🚀"),
         ],
         "Detail": [
             st.Page("views/platform.py", title="Platform", icon="📊", url_path="platform"),

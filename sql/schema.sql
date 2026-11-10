@@ -84,7 +84,7 @@ create table if not exists list_placements (
   primary key (source, list_name, game_id, run_ts)
 );
 create index if not exists list_placements_game_idx on list_placements (game_id, run_ts);
-create index if not exists list_placements_run_idx on list_placements (source, run_ts);
+drop index if exists list_placements_run_idx;  -- no query used it (Nov 10 storage review)
 
 create table if not exists game_daily (
   game_id         bigint not null references games(id) on delete cascade,
@@ -169,3 +169,38 @@ create table if not exists maintenance (
   value      jsonb not null,
   updated_at timestamptz not null default now()
 );
+
+-- Game releases: every game a platform has published, from its newest-first feed or sitemap (not just the
+-- tracked top lists). Keyed by canonical game URL, which every platform exposes and which matches games.url.
+-- Release date = published_at (the platform's own publish date) when known, otherwise first_seen, except for
+-- rows from a platform's first sweep (baseline), whose first_seen is only "already existed when we started".
+create table if not exists releases (
+  source        text not null references sources(name),
+  url           text not null,
+  published_at  timestamptz,
+  first_seen    timestamptz not null,
+  baseline      boolean not null default false,
+  date_checked  boolean not null default false,  -- publish-date lookup attempted (backfill does each game once)
+  primary key (source, url)
+);
+create index if not exists releases_source_pub_idx on releases (source, published_at);
+create index if not exists releases_undated_idx on releases (source) where published_at is null and not date_checked;
+
+-- Catalogue size per platform per day (sitemap / API totals). Its day-over-day change is the release count
+-- for platforms that publish a total but no per-game list (Playgama AI), and a cross-check for the others.
+create table if not exists catalog_daily (
+  source       text not null references sources(name),
+  day          date not null,
+  games_total  int not null,
+  primary key (source, day)
+);
+
+-- Storage changes (Nov 10, 2026; see docs/STORAGE.md):
+-- A reading identical to the game's last stored reading from the same UTC day is not inserted; the stored row
+-- counts it in `repeats` instead, so polls per day and the CCU average are unchanged (each row weighs 1 + repeats).
+alter table snapshots add column if not exists repeats int not null default 0;
+alter table snapshots add column if not exists last_seen_at timestamptz;  -- last poll that confirmed this reading
+-- When the game last appeared in one of the platform's lists (discovery only; last_seen also moves on watchlist
+-- polls). The watchlist uses this instead of list_placements, which now keeps positions 1-100 only.
+alter table games add column if not exists last_listed timestamptz;
+create index if not exists games_source_listed_idx on games (source, last_listed);

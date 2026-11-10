@@ -33,5 +33,7 @@ jobs:
           cache: pip
           cache-dependency-path: pyproject.toml
       - run: pip install -e .
+      - name: Apply schema (idempotent; the poll writes games.last_listed)
+        run: python -m tracker.db init
       - name: Poll players online
         run: python -m tracker.pipeline run --mode ccu

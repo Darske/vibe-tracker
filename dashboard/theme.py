@@ -114,7 +114,8 @@ def line_mode(n_points: int) -> str:
     return "lines" if n_points > 24 else "lines+markers"
 
 
-def add_daily(fig, days, values, color: str, name: str = "", width: float = 2.5, unit: str = "plays", marker: int = 5):
+def add_daily(fig, days, values, color: str, name: str = "", width: float = 2.5, unit: str = "plays", marker: int = 5,
+              partial_from=None, x_fmt: str = "%b %-d"):
     """Add a daily series to `fig` the way release charts show an unfinished month: closed UTC days as a solid
     line, today's still-running day as a dotted segment with a hollow marker, so a half-day total never reads
     as a crash. Hover on the dotted point says it is partial."""
@@ -122,18 +123,18 @@ def add_daily(fig, days, values, color: str, name: str = "", width: float = 2.5,
 
     import pandas as pd
 
-    today = datetime.now(timezone.utc).date()
+    today = partial_from or datetime.now(timezone.utc).date()  # first day of the unfinished period
     s = pd.DataFrame({"day": pd.to_datetime(pd.Series(list(days))).dt.date, "v": list(values)}).dropna(subset=["v"]).sort_values("day")
     closed, part = s[s["day"] < today], s[s["day"] >= today]
     fig.add_trace(go.Scatter(x=closed["day"], y=closed["v"], mode="lines+markers", name=name, legendgroup=name or None, showlegend=bool(name),
                              line=dict(width=width, color=color), marker=dict(size=marker),
-                             hovertemplate="%{x|%b %-d}: %{y:,.0f} " + unit + ("<extra>" + name + "</extra>" if name else "<extra></extra>")))
+                             hovertemplate="%{x|" + x_fmt + "}: %{y:,.0f} " + unit + ("<extra>" + name + "</extra>" if name else "<extra></extra>")))
     if not part.empty:
         bridge = pd.concat([closed.tail(1), part])
         fig.add_trace(go.Scatter(x=bridge["day"], y=bridge["v"], mode="lines+markers", name=(name + " (today, partial)") if name else "today, partial",
                                  legendgroup=name or None, showlegend=False, line=dict(width=max(1.5, width - 0.5), color=color, dash="dot"),
                                  marker=dict(size=marker + 1, color="rgba(0,0,0,0)", line=dict(color=color, width=1.5)),
-                                 hovertemplate="%{x|%b %-d}: %{y:,.0f} " + unit + " so far (day not finished)" + ("<extra>" + name + "</extra>" if name else "<extra></extra>")))
+                                 hovertemplate="%{x|" + x_fmt + "}: %{y:,.0f} " + unit + " so far (not finished)" + ("<extra>" + name + "</extra>" if name else "<extra></extra>")))
     return fig
 
 

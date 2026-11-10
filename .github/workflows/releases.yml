@@ -1,0 +1,59 @@
+name: releases
+
+# Daily sweep of every platform's full catalogue (newest feed or sitemap) for the Releases page: new game URLs =
+# new releases, plus a few hundred publish-date lookups per platform to fill in history. One job per platform so a
+# slow backfill never starves the others. Reads public pages only, at each platform's rate limit.
+
+on:
+  schedule:
+    - cron: "41 3 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: releases
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+  LOG_LEVEL: INFO
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: pip install -e .
+      - name: Apply schema (idempotent)
+        run: python -m tracker.db init
+
+  releases:
+    needs: schema
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        source: [tesana, bitmagic, spawn, remix, wavedash, rosebud, playgama, playgama_ai]
+    env:
+      RUN_TIME_BUDGET_SECONDS: "1500"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+      - run: pip install -e .
+      - name: Sweep releases
+        run: python -m tracker.releases run --source ${{ matrix.source }}

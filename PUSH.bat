@@ -10,7 +10,7 @@ if exist workflows_new (
 )
 if exist dashboard\pages rmdir /s /q dashboard\pages
 git add -A
-git commit -m "per-platform scrape jobs, partial-day display, storage report"
+git commit -m "releases page + storage reductions"
 echo === Merging what is already on GitHub ===
 git pull --no-edit -X ours origin main
 echo === Pushing ===

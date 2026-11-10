@@ -1,7 +1,6 @@
 """Contract test: every adapter in sources.yaml loads, subclasses SourceAdapter, declares the
 required attributes, has a fixture folder, and matches its yaml key."""
 
-from pathlib import Path
 
 import pytest
 

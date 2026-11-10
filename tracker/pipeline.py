@@ -12,13 +12,17 @@ import logging
 import os
 import sys
 import time
-from datetime import date, datetime, timedelta, timezone
-from pathlib import Path
+from datetime import datetime, timedelta, timezone
 
 from tracker import db
 from tracker.http import Blocked, BudgetExceeded, Http, RobotsDisallowed, TimeBudget
 from tracker.models import GameRef, GameSnapshot, ListPlacement
 from tracker.registry import ROOT, adapter_class, load_sources
+
+# List positions are stored for the top 100 only. Deeper lists (Tesana's whole catalogue, Rosebud's top 1,000)
+# exist to find games to poll; a game's position there is just its plays rank, and storing it was ~45% of the
+# list_placements growth. Membership for the watchlist is kept in games.last_listed instead.
+PLACEMENT_MAX_POSITION = 100
 
 log = logging.getLogger("tracker")
 FIXTURES = ROOT / "tests" / "fixtures"
@@ -70,7 +74,8 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
         counts["discovered"] = len(discovered)
         if not dry:
             ids = db.upsert_game_refs_bulk(conn, name, [(r.external_id, r.url) for r in discovered.values()], run_ts)
-            db.insert_placements(conn, [(p, ids[p.external_id]) for p in pending if p.external_id in ids], run_ts)
+            db.insert_placements(conn, [(p, ids[p.external_id]) for p in pending
+                                        if p.external_id in ids and p.position <= PLACEMENT_MAX_POSITION], run_ts)
             conn.commit()
         else:
             conn.writes["placements"] += len(pending)
@@ -97,8 +102,10 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
                 creators = {s.creator_external_id: (s.creator_name, s.creator_url) for s in batch if s.creator_external_id}
                 cids = db.upsert_creators_bulk(conn, name, creators, run_ts)
                 gids = db.upsert_games_bulk(conn, batch, cids, run_ts)
-                db.insert_snapshots_bulk(conn, [(gids[s.external_id], s) for s in batch if s.status == "ok" and s.external_id in gids], run_ts)
+                w = db.insert_snapshots_bulk(conn, [(gids[s.external_id], s) for s in batch if s.status == "ok" and s.external_id in gids], run_ts)
                 conn.commit()
+                counts["stored"] = counts.get("stored", 0) + w["inserted"]
+                counts["unchanged"] = counts.get("unchanged", 0) + w["folded"]
             else:
                 conn.writes["snapshots"] += len(batch)
             counts["gone"] += sum(1 for s in batch if s.status == "gone")
