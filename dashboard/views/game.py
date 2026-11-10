@@ -9,7 +9,7 @@ import streamlit as st
 from dashboard import queries as q, ui
 from dashboard.components import badge, fmt_dt, metric_card
 from dashboard.filters import go as nav, param, range_bar, sidebar
-from dashboard.theme import abbrev, color_map, full, likes_per_k, line_mode, ratio_fmt, time_axis
+from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, line_mode, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("games")
@@ -66,7 +66,7 @@ with st.container(border=True):
         else:
             ui.eyebrow(f"Plays, {f.window}", "🔥")
             w = daily[pd.to_datetime(daily["day"]).dt.date >= f.window_start]
-            ui.hero(full(w["plays_delta"].sum(min_count=1)), f"{abbrev(w['plays_delta'].mean())} per day on average")
+            ui.hero(full(w["plays_delta"].sum(min_count=1)), f"{abbrev(closed_days(w)['plays_delta'].mean())} per day on average")
     with b:
         if has_ccu:
             ui.eyebrow("All-time peak", "🏆")
@@ -90,8 +90,7 @@ with st.container(border=True):
     elif not has_ccu:
         w = daily[pd.to_datetime(daily["day"]).dt.date >= f.window_start]
         if len(w) >= 2:
-            fig = go.Figure(go.Scatter(x=w["day"], y=w["plays_delta"], mode="lines+markers", line=dict(width=2.5, color=color), marker=dict(size=5),
-                                       hovertemplate="%{x|%b %-d}: %{y:,.0f} plays<extra></extra>"))
+            fig = add_daily(go.Figure(), w["day"], w["plays_delta"], color)
             fig.update_layout(height=220, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         st.markdown("<div class='vt-sub'>Daily plays = day-over-day increase of the lifetime counter · this platform publishes no live player count</div>", unsafe_allow_html=True)

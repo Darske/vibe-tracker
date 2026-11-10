@@ -12,7 +12,7 @@ import streamlit as st
 from dashboard import queries as q, ui
 from dashboard.components import badge, fmt_dt, metric_card, phone_table, selected_row
 from dashboard.filters import go as nav, label_for, param, range_bar, sidebar, today_utc
-from dashboard.theme import abbrev, color_map, full, likes_per_k, line_mode, pct, ratio_fmt, time_axis
+from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, line_mode, pct, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("platforms")
@@ -64,14 +64,13 @@ with st.container(border=True):
     else:
         with h1:
             ui.eyebrow(f"Plays, {f.window}", "🔥")
-            ui.hero(full(games["plays_window"].sum(min_count=1)), f"{abbrev(win['plays_delta_top100'].mean())} per day on average")
+            ui.hero(full(games["plays_window"].sum(min_count=1)), f"{abbrev(closed_days(win)['plays_delta_top100'].mean())} per day on average")
         with h2:
             ui.eyebrow("Lifetime plays", "🏆")
             lifetime = now["plays_lifetime"].iloc[0] if not now.empty else None
             ui.hero(full(lifetime), "the platform's own counters, summed over tracked games", white=True)
         if win["plays_delta_top100"].notna().sum() >= 2:
-            fig = go.Figure(go.Scatter(x=win["day"], y=win["plays_delta_top100"], mode="lines+markers", line=dict(width=2.5, color=color), marker=dict(size=5),
-                                       hovertemplate="%{x|%b %-d}: %{y:,.0f} plays<extra></extra>"))
+            fig = add_daily(go.Figure(), win["day"], win["plays_delta_top100"], color)
             fig.update_layout(height=240, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         else:
@@ -87,9 +86,9 @@ t1, t2, t3, t4 = st.columns(4)
 with t1:
     ui.tile("Games tracked", f"{len(games):,}", f"{games['creator_id'].nunique():,} creators")
 with t2:
-    ui.tile("Plays / day", abbrev(win["plays_delta_top100"].mean()) if not win.empty else "—", f"average over {f.window}")
+    ui.tile("Plays / day", abbrev(closed_days(win)["plays_delta_top100"].mean()) if not win.empty else "—", f"average over {f.window}, finished days")
 with t3:
-    ui.tile("New games / day", abbrev(win["games_new"].mean()) if not win.empty else "—", "first seen in a tracked list")
+    ui.tile("New games / day", abbrev(closed_days(win)["games_new"].mean()) if not win.empty else "—", "first seen in a tracked list, finished days")
 with t4:
     ui.tile("Likes per 1k plays", ratio_fmt(lk * 1000 / pk_) if lk is not None and pk_ else "—",
             f"median game {ratio_fmt(now['median_likes_per_k'].iloc[0])}" if not now.empty and pd.notna(now["median_likes_per_k"].iloc[0]) else "pooled over tracked games")

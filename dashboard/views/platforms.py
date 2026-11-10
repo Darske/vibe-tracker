@@ -13,7 +13,7 @@ from dashboard import queries as q
 from dashboard import ui
 from dashboard.components import phone_table, selected_row, share_donut
 from dashboard.filters import go as nav, label_for, range_bar, sidebar, today_utc
-from dashboard.theme import ACCENT, GAME_TONES, INK, abbrev, color_map, full, line_mode, pct, ratio_fmt, time_axis
+from dashboard.theme import ACCENT, GAME_TONES, INK, abbrev, add_daily, closed_days, color_map, full, line_mode, pct, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("platforms")
@@ -66,12 +66,11 @@ if daily_mode:
         if len(per_day) < 2:
             st.caption("Not enough days of history in this range yet.")
         else:
-            fig = go.Figure(go.Scatter(x=per_day.index, y=per_day.values, mode="lines+markers", line=dict(width=2.5, color=ACCENT), marker=dict(size=5),
-                                       hovertemplate="%{x|%b %-d}: %{y:,.0f} plays<extra></extra>"))
+            fig = add_daily(go.Figure(), per_day.index, per_day.values, ACCENT)
             fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         st.caption("Daily plays = the day-over-day increase of each platform's own play counter, summed over the tracked top 100 per platform. "
-                   "Figures are for the last closed UTC day.")
+                   "Headline figures use the last finished UTC day; the dotted end of each line is today so far.")
 else:
     ccu = q.ccu_now(f.selected)
     series = q.ccu_total_series(days, f.selected)
@@ -115,9 +114,7 @@ with c1, st.container(border=True):
                 fig = go.Figure()
                 for i, (_, row) in enumerate(top_games.iterrows()):
                     s_ = gs[gs["game_id"] == row["id"]].dropna(subset=["plays_delta"])
-                    fig.add_trace(go.Scatter(x=s_["day"], y=s_["plays_delta"], mode="lines+markers", name=str(row["title"])[:30],
-                                             line=dict(width=2.4 if i == 0 else 1.6, color=palette[i]), marker=dict(size=4),
-                                             hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra>%{fullData.name}</extra>"))
+                    add_daily(fig, s_["day"], s_["plays_delta"], palette[i], str(row["title"])[:30], width=2.4 if i == 0 else 1.6, marker=4)
                 fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
             if st.button("Top games →", key="to_games", type="tertiary"):
@@ -164,8 +161,7 @@ with c2, st.container(border=True):
                 fig = go.Figure()
                 for s_ in order:
                     d = win[win["source"] == s_].dropna(subset=["plays_delta_top100"]).sort_values("day")
-                    fig.add_trace(go.Scatter(x=d["day"], y=d["plays_delta_top100"], mode="lines+markers", name=names.get(s_, s_),
-                                             line=dict(width=2, color=colors[s_]), marker=dict(size=4), hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra>%{fullData.name}</extra>"))
+                    add_daily(fig, d["day"], d["plays_delta_top100"], colors[s_], names.get(s_, s_), width=2, marker=4)
                 fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
             ui.ranked_list([{"title": names.get(r["source"], r["source"]), "href": f"platform?platform={r['source']}", "value": r["plays_delta_top100"],
@@ -204,10 +200,10 @@ t1, t2, t3, t4 = st.columns(4)
 with t1:
     ui.tile("Games tracked", full(nowf["games_tracked"].sum()) if not nowf.empty else "—", f"{int(nowf['creators'].sum()) if not nowf.empty else 0:,} creators")
 with t2:
-    per_day = win.groupby("day")["plays_delta_top100"].sum(min_count=1).mean()
+    per_day = closed_days(win).groupby("day")["plays_delta_top100"].sum(min_count=1).mean()
     ui.tile("Plays / day (tracked top 100)", abbrev(per_day), f"average over {f.window}")
 with t3:
-    ui.tile("New games / day", abbrev(win.groupby("day")["games_new"].sum(min_count=1).mean()), "first seen in a tracked list")
+    ui.tile("New games / day", abbrev(closed_days(win).groupby("day")["games_new"].sum(min_count=1).mean()), "first seen in a tracked list, finished days")
 with t4:
     ui.tile("Likes per 1k plays", ratio_fmt(lk * 1000 / pk) if pk else "—", "pooled over tracked games")
 
@@ -266,7 +262,7 @@ metric = st.selectbox("Rank platforms by", list(METRICS), index=0)
 col = METRICS[metric]
 rows = []
 for src, g in pdaily.groupby("source"):
-    g = g.sort_values("day"); gw = win[win["source"] == src]
+    g = g.sort_values("day"); gw = win[win["source"] == src]; gw_closed = closed_days(gw)
     last7 = g[g["day"] > today_utc() - timedelta(days=7)]
     prev7 = g[(g["day"] <= today_utc() - timedelta(days=7)) & (g["day"] > today_utc() - timedelta(days=14))]
     p7, pp7 = last7["plays_delta_top100"].sum(min_count=1), prev7["plays_delta_top100"].sum(min_count=1)
@@ -274,14 +270,14 @@ for src, g in pdaily.groupby("source"):
     latest = g.iloc[-1]; nrow = now[now["source"] == src]
     lk_ = float(nrow["likes_lifetime"].iloc[0]) if not nrow.empty and pd.notna(nrow["likes_lifetime"].iloc[0]) else None
     pk_ = float(nrow["plays_with_likes"].iloc[0]) if not nrow.empty and pd.notna(nrow["plays_with_likes"].iloc[0]) else None
-    days_in_win = max(1, gw["plays_delta_top100"].notna().sum())
+    days_in_win = max(1, gw_closed["plays_delta_top100"].notna().sum())
     rows.append({
         "source": src, "Platform": names.get(src, src), "Segment": latest["segment"],
         "plays_lifetime": float(nrow["plays_lifetime"].iloc[0]) if not nrow.empty and pd.notna(nrow["plays_lifetime"].iloc[0]) else None,
-        "plays_per_day": (gw["plays_delta_top100"].sum(min_count=1) / days_in_win) if pd.notna(gw["plays_delta_top100"].sum(min_count=1)) else None,
+        "plays_per_day": (gw_closed["plays_delta_top100"].sum(min_count=1) / days_in_win) if pd.notna(gw_closed["plays_delta_top100"].sum(min_count=1)) else None,
         "plays_delta_top100": gw["plays_delta_top100"].sum(min_count=1),
         "ccu_peak_top100": gw["ccu_peak_top100"].max(), "ccu_avg_top100": gw["ccu_avg_top100"].mean(),
-        "games_new": gw["games_new"].mean(), "creators_active": latest["creators_active"], "growth_7d": growth,
+        "games_new": gw_closed["games_new"].mean(), "creators_active": latest["creators_active"], "growth_7d": growth,
         "likes_per_k": (lk_ * 1000.0 / pk_) if lk_ is not None and pk_ else None,
         "median_likes_per_k": float(nrow["median_likes_per_k"].iloc[0]) if not nrow.empty and pd.notna(nrow["median_likes_per_k"].iloc[0]) else None,
         "Games tracked": latest["games_tracked"], "Top-10 share": latest["top10_share"],
@@ -333,9 +329,7 @@ def line_chart(column: str, title: str):
             if not base:
                 continue
             y = y / base * 100
-        fig.add_trace(go.Scatter(x=g["day"], y=y, mode="lines+markers", name=names.get(src, src),
-                                 line=dict(width=2, color=colors.get(src, INK["muted"])), marker=dict(size=5),
-                                 hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra>%{fullData.name}</extra>"))
+        add_daily(fig, g["day"], y, colors.get(src, INK["muted"]), names.get(src, src), width=2, unit="")
     fig.update_layout(height=320, margin=dict(t=28), yaxis=dict(tickformat="~s" if not indexed else ",.0f", rangemode="tozero"))
     ui.eyebrow(title)
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})

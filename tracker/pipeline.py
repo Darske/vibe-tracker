@@ -162,6 +162,13 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
     return {"source": name, "status": status, "seconds": round(seconds, 1), "requests": http.requests_made, **counts, "errors": errors}
 
 
+def order_by_staleness(names: list[str], last_ok: dict[str, datetime | None]) -> list[str]:
+    """Platforms whose last successful run is oldest go first (never-run first of all), so when the shared
+    time budget runs out it is always the most recently covered platforms that wait, never the same ones."""
+    floor = datetime.min.replace(tzinfo=timezone.utc)
+    return sorted(names, key=lambda n: (last_ok.get(n) or floor, names.index(n)))
+
+
 def cmd_run(args) -> int:
     sources = load_sources()
     ccu = getattr(args, "mode", "full") == "ccu"
@@ -171,6 +178,14 @@ def cmd_run(args) -> int:
             for k, v in sources.items() if v.get("ccu_lists")
         }
     selected = {k: v for k, v in sources.items() if v["enabled"] or args.source}
+    if getattr(args, "only", None):  # one platform, but unlike --source keep the enabled + freshness checks (matrix jobs)
+        if args.only not in sources:
+            print(f"unknown source {args.only}; known: {', '.join(sources)}", file=sys.stderr)
+            return 2
+        selected = {k: v for k, v in selected.items() if k == args.only}
+        if not selected:
+            print(f"{args.only} is disabled; nothing to do")
+            return 0
     if args.source:
         if args.source not in sources:
             print(f"unknown source {args.source}; known: {', '.join(sources)}", file=sys.stderr)
@@ -186,6 +201,10 @@ def cmd_run(args) -> int:
     conn = DryConn() if dry else db.connect()
     results = []
     try:
+        if not dry and not ccu and len(selected) > 1:
+            order = order_by_staleness(list(selected), {n: db.last_successful_run(conn, n) for n in selected})
+            selected = {n: selected[n] for n in order}
+            log.info("run order (stalest first): %s", ", ".join(order))
         for name, cfg in selected.items():
             if cfg.get("needs_browser") and not args.allow_browser:
                 log.warning("%s: needs_browser is set but browser adapters are not installed in this run; skipping", name)
@@ -252,7 +271,8 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(prog="python -m tracker.pipeline")
     sub = ap.add_subparsers(dest="cmd", required=True)
     r = sub.add_parser("run")
-    r.add_argument("--source")
+    r.add_argument("--source", help="run exactly this platform, ignoring enabled and freshness checks")
+    r.add_argument("--only", help="run only this platform, keeping the enabled and freshness checks (used by the per-platform jobs)")
     r.add_argument("--dry-run", action="store_true")
     r.add_argument("--limit", type=int)
     r.add_argument("--force", action="store_true")

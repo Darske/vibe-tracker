@@ -9,13 +9,13 @@ Plus a few small helpers (platform badges, link buttons, sortable table with the
 
 from __future__ import annotations
 
-from datetime import date
+from datetime import date, datetime, timezone
 
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
-from dashboard.theme import CATEGORICAL, INK, OTHER, SURFACE, abbrev, pct
+from dashboard.theme import CATEGORICAL, INK, OTHER, SURFACE, abbrev, add_daily, pct
 
 
 def _eyebrow(text: str) -> None:
@@ -29,7 +29,8 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
                 second_label: str = "average") -> None:
     """series: DataFrame with columns [day, value]; kind 'cumulative' (plays, followers) or 'daily-peak'
     (concurrent players). For cumulative the headline is the latest total and Δ = latest − value at anchor.
-    For daily-peak the headline is today's peak and Δ compares to the peak on the anchor day."""
+    For daily-peak the headline is the last finished UTC day (today's running value is shown as "today so far"
+    and drawn dotted) and Δ compares it to the value on the anchor day."""
     with st.container(border=True):
         _eyebrow(title)
         if series is None or series.empty or series["value"].dropna().empty:
@@ -38,7 +39,14 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
             return
         s = series.dropna(subset=["value"]).sort_values("day")
         s["day"] = pd.to_datetime(s["day"]).dt.date
-        latest = float(s["value"].iloc[-1])
+        today = datetime.now(timezone.utc).date()
+        so_far = ""
+        if kind == "daily-peak" and s["day"].iloc[-1] >= today and (s["day"] < today).any():
+            so_far = f" · today so far {abbrev(float(s['value'].iloc[-1]))}"
+            head = s[s["day"] < today]
+        else:
+            head = s
+        latest = float(head["value"].iloc[-1])
         at_anchor = s[s["day"] <= anchor]
         base = float(at_anchor["value"].iloc[-1]) if not at_anchor.empty else None
         delta_txt = ""
@@ -51,21 +59,28 @@ def metric_card(title: str, series: pd.DataFrame, anchor: date, kind: str = "cum
         else:
             delta_txt = f"first seen {s['day'].iloc[0].strftime('%b %-d')}"
         st.markdown(f"<p class='vt-big'>{abbrev(latest)}</p>", unsafe_allow_html=True)
-        st.markdown(f"<div class='vt-sub'>{delta_txt}{(' · ' + note) if note else ''}</div>", unsafe_allow_html=True)
+        st.markdown(f"<div class='vt-sub'>{delta_txt}{so_far}{(' · ' + note) if note else ''}</div>", unsafe_allow_html=True)
 
         plot = s[s["day"] >= anchor] if (s["day"] >= anchor).sum() >= 2 else s.tail(14)
         fig = go.Figure()
-        fig.add_trace(go.Scatter(x=plot["day"], y=plot["value"], mode="lines+markers", name=title,
-                                 line=dict(width=2, color=color), marker=dict(size=5),
-                                 hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra></extra>"))
+        if kind == "daily-peak":
+            add_daily(fig, plot["day"], plot["value"], color, title, width=2, unit="")
+        else:
+            fig.add_trace(go.Scatter(x=plot["day"], y=plot["value"], mode="lines+markers", name=title,
+                                     line=dict(width=2, color=color), marker=dict(size=5),
+                                     hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra></extra>"))
         if second is not None and not second.empty:
             s2 = second.dropna(subset=["value"]).copy()
             s2["day"] = pd.to_datetime(s2["day"]).dt.date
             s2 = s2[s2["day"] >= plot["day"].min()]
             fig.add_trace(go.Scatter(x=s2["day"], y=s2["value"], mode="lines", name=second_label,
-                                     line=dict(width=2, color=color, dash="dot"),
+                                     line=dict(width=1.5, color=color, dash="dash"),
                                      hovertemplate="%{x|%b %-d}: %{y:,.1f}<extra>" + second_label + "</extra>"))
         span = max(1, (pd.Timestamp(plot["day"].max()) - pd.Timestamp(plot["day"].min())).days)
+        if second is not None:  # the partial-day trace would otherwise appear as its own legend entry
+            for tr in fig.data:
+                if "partial" in (tr.name or ""):
+                    tr.showlegend = False
         fig.update_layout(height=160, margin=dict(l=0, r=0, t=4, b=0), showlegend=second is not None,
                           xaxis=dict(showticklabels=True, tickformat="%b %-d", dtick=86400000 * max(1, round(span / 3))), yaxis=dict(nticks=3))
         st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})

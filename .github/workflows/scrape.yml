@@ -1,8 +1,14 @@
 name: scrape
 
+# One job per platform, each with its own time budget. Before Nov 9 a single job ran the platforms in a fixed
+# order on one shared 25-minute budget; after coverage widened (Astrocade ~14 min, Rosebud ~7 min) the budget
+# ran out before Wavedash, Remix, Playgama and Playgama AI, which went unpolled for five days.
+# Hourly trigger; each job still skips its platform if it ran in the last ~2 h (poll_every_hours), so the
+# real cadence per platform is 2 h, and a late or dropped GitHub schedule only delays it by an hour.
+
 on:
   schedule:
-    - cron: "23 * * * *"   # hourly trigger; the poller skips platforms polled <2 h ago, so the real cadence stays 2 h (GitHub fires schedules late under load)
+    - cron: "23 * * * *"
   workflow_dispatch:
     inputs:
       source:
@@ -25,43 +31,71 @@ concurrency:
 permissions:
   contents: read
 
+env:
+  DATABASE_URL: ${{ secrets.DATABASE_URL }}
+  CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+  LOG_LEVEL: INFO
+
 jobs:
-  scrape:
+  schema:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-    env:
-      DATABASE_URL: ${{ secrets.DATABASE_URL }}
-      CONTACT_EMAIL: ${{ secrets.CONTACT_EMAIL }}
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-      RUN_TIME_BUDGET_SECONDS: "1500"
-      LOG_LEVEL: INFO
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
           cache: pip
           cache-dependency-path: pyproject.toml
-
-      - name: Install
-        run: pip install -e .
-
-      - name: Install Playwright Chromium (only if an enabled source needs a browser)
-        run: |
-          if python -c "import sys, yaml; s=yaml.safe_load(open('sources.yaml')); sys.exit(0 if any((v or {}).get('enabled') and (v or {}).get('needs_browser') for v in s.values()) else 1)"; then
-            pip install -e .[browser] && python -m playwright install --with-deps chromium
-          else
-            echo "no browser sources enabled; skipping"
-          fi
-
+      - run: pip install -e .
       - name: Apply schema (idempotent)
         run: python -m tracker.db init
 
-      - name: Run pipeline
+  scrape:
+    needs: schema
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false      # one broken platform must not cancel the others
+      max-parallel: 3       # keeps Supabase pooler connections low (Streamlit also connects)
+      matrix:
+        source: [tesana, rosebud, bitmagic, astrocade, spawn, wavedash, remix, playgama, playgama_ai]
+    env:
+      RUN_TIME_BUDGET_SECONDS: "1500"
+    steps:
+      - name: Skip platforms not asked for
+        id: want
         run: |
-          ARGS=""
-          [ -n "${{ inputs.source }}" ] && ARGS="$ARGS --source ${{ inputs.source }}"
+          if [ -z "${{ inputs.source }}" ] || [ "${{ inputs.source }}" = "${{ matrix.source }}" ]; then echo "run=1" >> "$GITHUB_OUTPUT"; fi
+
+      - if: steps.want.outputs.run == '1'
+        uses: actions/checkout@v4
+
+      - if: steps.want.outputs.run == '1'
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: pyproject.toml
+
+      - if: steps.want.outputs.run == '1'
+        name: Install
+        run: pip install -e .
+
+      - if: steps.want.outputs.run == '1'
+        name: Install Playwright Chromium (only if this platform needs a browser)
+        run: |
+          if python -c "import sys, yaml; s=yaml.safe_load(open('sources.yaml')); v=s.get('${{ matrix.source }}') or {}; sys.exit(0 if v.get('enabled') and v.get('needs_browser') else 1)"; then
+            pip install -e .[browser] && python -m playwright install --with-deps chromium
+          else
+            echo "no browser needed"
+          fi
+
+      - if: steps.want.outputs.run == '1'
+        name: Run pipeline
+        run: |
+          ARGS="--only ${{ matrix.source }}"
           [ "${{ inputs.force }}" = "true" ] && ARGS="$ARGS --force"
           [ -n "${{ inputs.limit }}" ] && ARGS="$ARGS --limit ${{ inputs.limit }}"
           python -m tracker.pipeline run $ARGS 2>&1 | tee run.log
@@ -70,6 +104,6 @@ jobs:
         if: failure()
         uses: actions/upload-artifact@v4
         with:
-          name: run-log-${{ github.run_id }}
+          name: run-log-${{ matrix.source }}-${{ github.run_id }}
           path: run.log
           retention-days: 14
