@@ -12,7 +12,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-dev = ["pytest==8.4.1", "pytest-timeout==2.4.0"]
+dev = ["pytest==8.4.1", "pytest-timeout==2.4.0", "pandas==2.3.3"]  # pandas: dashboard calculation tests
 dashboard = ["streamlit==1.50.0", "plotly==6.3.0", "pandas==2.3.3", "psycopg[binary]==3.2.13"]
 browser = ["playwright==1.55.0"]
 
