@@ -127,7 +127,7 @@ def test_reset_and_rollup(conn):
     for h in (2, 8, 14, 20):
         snap(conn, g["a2"], -60, h, h)
     conn.commit()
-    removed = db.rollup(conn, keep_days=30)
+    removed = db.thin_history(conn)
     assert removed == 3
     left = conn.execute("select count(*) as n from snapshots where game_id = %s", (g["a2"],)).fetchone()["n"]
     assert left == 1

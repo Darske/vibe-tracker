@@ -120,6 +120,19 @@ class Bitmagic(SourceAdapter):
             headers = {"X-API-Token": self.token(refresh=True)}
             return self.http.get_json(url, params=params or None, headers=headers)
 
+    def platform_totals(self) -> dict | None:
+        """GET /api/catalog/stats: platform-wide plays, games, creators and players online (one request)."""
+        data = self._api("/api/catalog/stats") or {}
+        st = data.get("stats") if isinstance(data.get("stats"), dict) else data
+        if not isinstance(st, dict) or st.get("totalPlays") is None:
+            return None
+        def i(k):
+            v = st.get(k)
+            return int(v) if isinstance(v, (int, float)) else None
+        return {"plays_total": i("totalPlays"), "games": i("totalGames"), "creators": i("totalCreators"),
+                "players_now": i("playingNow"),
+                "extra": {k: st[k] for k in ("newGamesThisWeek", "creatorsShippingThisWeek") if k in st}}
+
     # --------------------------------------------------------------- discover
     def _url_for(self, game_id: str) -> str:
         return f"{self.base_url}/play/{game_id}/"

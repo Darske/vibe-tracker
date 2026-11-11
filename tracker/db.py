@@ -34,6 +34,10 @@ def connect() -> psycopg.Connection:
 
 # One-off data migrations, each run once (recorded in `maintenance`). Order matters within a migration.
 MIGRATIONS: list[tuple[str, list[str]]] = [
+    ("thin_history_v1", [
+        "SELECT 'thin'",            # placeholder: the thinning itself runs in migrate() via thin_history()
+        "VACUUM FULL snapshots",    # give the freed space back so the database size actually drops
+    ]),
     ("placements_top100_v1", [
         # 1. remember when each game was last in a list, before the rows that prove it are deleted
         """update games g set last_listed = x.m
@@ -57,7 +61,17 @@ def migrate(conn) -> list[str]:
         if get_maintenance(conn, f"migration:{key}") is not None:
             continue
         for sql in statements:
-            conn.execute(sql)
+            if sql == "SELECT 'thin'":
+                thin_history(conn)
+            elif sql.upper().startswith("VACUUM"):
+                conn.commit()
+                conn.autocommit = True  # VACUUM cannot run inside a transaction
+                try:
+                    conn.execute(sql)
+                finally:
+                    conn.autocommit = False
+            else:
+                conn.execute(sql)
         set_maintenance(conn, f"migration:{key}", datetime.now(timezone.utc).isoformat())
         conn.commit()
         log.info("migration %s applied", key)
@@ -68,12 +82,13 @@ def migrate(conn) -> list[str]:
 # ------------------------------------------------------------------ sources
 def upsert_source(conn, cfg: dict, display_name: str, base_url: str, segment: str) -> None:
     conn.execute(
-        """insert into sources (name, display_name, base_url, segment, metric_map, poll_every_hours, enabled)
-           values (%s, %s, %s, %s, %s, %s, %s)
+        """insert into sources (name, display_name, base_url, segment, metric_map, poll_every_hours, enabled, cohort)
+           values (%s, %s, %s, %s, %s, %s, %s, %s)
            on conflict (name) do update set display_name = excluded.display_name, base_url = excluded.base_url,
-             segment = excluded.segment, metric_map = excluded.metric_map,
+             segment = excluded.segment, metric_map = excluded.metric_map, cohort = excluded.cohort,
              poll_every_hours = excluded.poll_every_hours, enabled = excluded.enabled""",
-        (cfg["name"], display_name, base_url, segment, Jsonb(cfg.get("metric_map") or {}), cfg["poll_every_hours"], cfg["enabled"]),
+        (cfg["name"], display_name, base_url, segment, Jsonb(cfg.get("metric_map") or {}), cfg["poll_every_hours"], cfg["enabled"],
+         cfg.get("cohort", "new_entrant")),
     )
 
 
@@ -183,9 +198,10 @@ def upsert_games_bulk(conn, snaps: list[GameSnapshot], creator_ids: dict[str, in
     source = snaps[0].source
     with conn.cursor() as cur:
         cur.executemany(
-            """insert into games (source, external_id, url, title, thumbnail_url, creator_id, ai_tool, engine, tags, published_at, first_seen, last_seen, status)
-               values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+            """insert into games (source, external_id, url, title, thumbnail_url, creator_id, ai_tool, engine, tags, published_at, first_seen, last_seen, status, ai_disclosure)
+               values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                on conflict (source, external_id) do update set
+                 ai_disclosure = coalesce(excluded.ai_disclosure, games.ai_disclosure),
                  url = excluded.url,
                  title = coalesce(excluded.title, games.title),
                  thumbnail_url = coalesce(excluded.thumbnail_url, games.thumbnail_url),
@@ -200,27 +216,36 @@ def upsert_games_bulk(conn, snaps: list[GameSnapshot], creator_ids: dict[str, in
             [(s.source, s.external_id, s.url, s.title, s.thumbnail_url,
               creator_ids.get(s.creator_external_id) if s.creator_external_id else None,
               s.ai_tool, s.engine, Jsonb(s.tags or []), s.published_at, now, now,
-              "gone" if s.status == "gone" else "live") for s in snaps],
+              "gone" if s.status == "gone" else "live", s.ai_disclosure) for s in snaps],
         )
     return _ids(conn, "games", source, [s.external_id for s in snaps])
 
 
-COUNTERS = ("plays_total", "plays_24h", "players_now", "players_total", "likes", "remixes", "comments", "votes")
+COUNTERS = ("plays_total", "plays_24h", "players_now", "players_total", "likes", "remixes", "comments", "votes", "rating")
 
 
 def _utc_day(ts: datetime):
     return ts.astimezone(timezone.utc).date()
 
 
+def _same(a, b) -> bool:
+    """Counter equality; floats (rating, stored as real) compared at 2 decimals so 4.61 == 4.6100001."""
+    if isinstance(a, float) or isinstance(b, float):
+        return a is not None and b is not None and round(float(a), 2) == round(float(b), 2)
+    return a == b
+
+
 def split_repeats(prev: dict[int, dict], rows: list[tuple[int, GameSnapshot]], run_ts: datetime):
     """-> (to_insert, to_fold). A reading is folded into the game's last stored row when every counter is equal and
     both are from the same UTC day (the first reading of each day is always stored, so daily end-of-day values,
-    gaps and rollups keep working). Pure, so it is unit-tested."""
+    gaps and rollups keep working), and nobody is playing (players_now > 0 is always stored, because the dashboard
+    sums live players per run; a missing zero does not change a sum). Pure, so it is unit-tested."""
     insert, fold = [], []
     for gid, s in rows:
         p = prev.get(gid)
         if (p is not None and p["run_ts"] != run_ts and _utc_day(p["captured_at"]) == _utc_day(s.captured_at)
-                and all(p[c] == getattr(s, c) for c in COUNTERS)):
+                and not (s.players_now or 0) > 0  # live players are summed per run on the dashboard: never fold them
+                and all(_same(p.get(c), getattr(s, c)) for c in COUNTERS)):
             fold.append((s.captured_at, gid, p["run_ts"]))
         else:
             insert.append((gid, s))
@@ -238,12 +263,12 @@ def insert_snapshots_bulk(conn, rows: list[tuple[int, GameSnapshot]], run_ts: da
     with conn.cursor() as cur:
         if insert:
             cur.executemany(
-                """insert into snapshots (game_id, run_ts, captured_at, plays_total, plays_24h, players_now, players_total, likes, remixes, comments, votes)
-                   values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+                """insert into snapshots (game_id, run_ts, captured_at, plays_total, plays_24h, players_now, players_total, likes, remixes, comments, votes, rating)
+                   values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
                    on conflict (game_id, run_ts) do update set captured_at = excluded.captured_at, plays_total = excluded.plays_total,
                      plays_24h = excluded.plays_24h, players_now = excluded.players_now, players_total = excluded.players_total,
-                     likes = excluded.likes, remixes = excluded.remixes, comments = excluded.comments, votes = excluded.votes""",
-                [(gid, run_ts, s.captured_at, s.plays_total, s.plays_24h, s.players_now, s.players_total, s.likes, s.remixes, s.comments, s.votes)
+                     likes = excluded.likes, remixes = excluded.remixes, comments = excluded.comments, votes = excluded.votes, rating = excluded.rating""",
+                [(gid, run_ts, s.captured_at, s.plays_total, s.plays_24h, s.players_now, s.players_total, s.likes, s.remixes, s.comments, s.votes, s.rating)
                  for gid, s in insert],
             )
         if fold:
@@ -361,14 +386,27 @@ def derive(conn, days: list[date], sources: list[str] | None = None) -> None:
             metrics.Capture(r["captured_at"], r["plays_total"], r["likes"], r["remixes"], r["votes"], r["players_now"], 1 + (r["repeats"] or 0))
         )
 
-    upserts = []
+    upserts, gap_fills = [], []
     target = set(days)
     for game_id, caps in by_game.items():
         for day, row in metrics.daily_rows(caps).items():
-            if day in target or (row.gap_days and day >= lookback_start):
-                upserts.append((game_id, day, row.captures, row.plays_delta, row.likes_delta, row.remixes_delta, row.votes_delta,
-                                row.plays_total_eod, row.ccu_peak, row.ccu_avg, row.gap_days, row.reset_flag))
+            vals = (game_id, day, row.captures, row.plays_delta, row.likes_delta, row.remixes_delta, row.votes_delta,
+                    row.plays_total_eod, row.ccu_peak, row.ccu_avg, row.gap_days, row.reset_flag)
+            if day in target:
+                upserts.append(vals)
+            elif row.gap_days and day >= lookback_start:
+                gap_fills.append(vals)
     with conn.cursor() as cur:
+        # Older days re-touched only to spread a gap's plays: their intraday readings may already be thinned
+        # (thin_history), so keep the stored poll count and players-online peak/average and update the plays only.
+        cur.executemany(
+            """insert into game_daily (game_id, day, captures, plays_delta, likes_delta, remixes_delta, votes_delta, plays_total_eod, ccu_peak, ccu_avg, gap_days, reset_flag)
+               values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+               on conflict (game_id, day) do update set plays_delta = excluded.plays_delta,
+                 likes_delta = excluded.likes_delta, remixes_delta = excluded.remixes_delta, votes_delta = excluded.votes_delta,
+                 plays_total_eod = excluded.plays_total_eod, gap_days = excluded.gap_days, reset_flag = excluded.reset_flag""",
+            gap_fills,
+        )
         cur.executemany(
             """insert into game_daily (game_id, day, captures, plays_delta, likes_delta, remixes_delta, votes_delta, plays_total_eod, ccu_peak, ccu_avg, gap_days, reset_flag)
                values (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
@@ -390,18 +428,46 @@ def derive(conn, days: list[date], sources: list[str] | None = None) -> None:
 
 
 # ------------------------------------------------------------------ rollup
-def rollup(conn, keep_days: int = 30) -> int:
-    """Reduce snapshots older than keep_days to one row per game per day (the day's last capture)."""
-    cutoff = datetime.now(timezone.utc) - timedelta(days=keep_days)
+def upsert_platform_totals(conn, source: str, now: datetime, t: dict) -> None:
+    """One row per platform per UTC day: latest reading wins, peaks keep the day's maximum."""
+    conn.execute(
+        """insert into platform_totals (source, day, captured_at, plays_total, games, creators, players_now, players_now_peak,
+                                        people_recent, people_recent_peak, extra)
+           values (%(s)s, %(d)s, %(t)s, %(plays)s, %(games)s, %(creators)s, %(pn)s, %(pn)s, %(pr)s, %(pr)s, %(extra)s)
+           on conflict (source, day) do update set
+             captured_at = excluded.captured_at,
+             plays_total = coalesce(excluded.plays_total, platform_totals.plays_total),
+             games = coalesce(excluded.games, platform_totals.games),
+             creators = coalesce(excluded.creators, platform_totals.creators),
+             players_now = coalesce(excluded.players_now, platform_totals.players_now),
+             players_now_peak = greatest(excluded.players_now_peak, platform_totals.players_now_peak),
+             people_recent = coalesce(excluded.people_recent, platform_totals.people_recent),
+             people_recent_peak = greatest(excluded.people_recent_peak, platform_totals.people_recent_peak),
+             extra = platform_totals.extra || excluded.extra""",
+        {"s": source, "d": now.astimezone(timezone.utc).date(), "t": now, "plays": t.get("plays_total"), "games": t.get("games"),
+         "creators": t.get("creators"), "pn": t.get("players_now"), "pr": t.get("people_recent"), "extra": Jsonb(t.get("extra") or {})},
+    )
+
+
+def thin_history(conn, today: date | None = None) -> int:
+    """Keep only one reading per game per day for every day before yesterday: the day's last reading, which carries
+    the end-of-day counters daily plays are computed from. Intraday readings (every 30 min / 2 h) are deleted; the
+    day's players-online peak and average are already stored in game_daily / platform_daily. Today and yesterday stay
+    in full because derive() still recomputes yesterday."""
+    today = today or datetime.now(timezone.utc).date()
+    cutoff = datetime.combine(today - timedelta(days=1), datetime.min.time(), tzinfo=timezone.utc)
     cur = conn.execute(
         """delete from snapshots s using (
-             select game_id, captured_at::date as d, max(captured_at) as keep
-               from snapshots where captured_at < %s group by game_id, captured_at::date) k
-           where s.game_id = k.game_id and s.captured_at::date = k.d and s.captured_at < k.keep""",
+             select game_id, (captured_at at time zone 'UTC')::date as d, max(captured_at) as keep
+               from snapshots where captured_at < %s group by 1, 2) k
+           where s.game_id = k.game_id and (s.captured_at at time zone 'UTC')::date = k.d and s.captured_at < k.keep""",
         (cutoff,),
     )
     conn.commit()
     return cur.rowcount
+
+
+rollup = thin_history  # old name
 
 
 def set_maintenance(conn, key: str, value) -> None:

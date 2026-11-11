@@ -204,3 +204,41 @@ alter table snapshots add column if not exists last_seen_at timestamptz;  -- las
 -- polls). The watchlist uses this instead of list_placements, which now keeps positions 1-100 only.
 alter table games add column if not exists last_listed timestamptz;
 create index if not exists games_source_listed_idx on games (source, last_listed);
+
+-- Cohorts (Nov 10, 2026): the AI-native platforms tracked from the start are "new entrants"; established web game
+-- portals (CrazyGames, Poki, itch.io, Kongregate) are "legacy". segment (aggregator / creation) stays as the type.
+alter table sources add column if not exists cohort text not null default 'new_entrant';
+do $$ begin
+  alter table sources add constraint sources_cohort_check check (cohort in ('new_entrant', 'legacy'));
+exception when duplicate_object then null; end $$;
+-- Whether a game says it was made with AI, where the platform exposes that: 'ai' (declared/disclosed AI use),
+-- 'no_ai' (declared none), NULL = unknown or not applicable (games on new-entrant platforms are AI-made by design).
+alter table games add column if not exists ai_disclosure text;
+do $$ begin
+  alter table games add constraint games_ai_disclosure_check check (ai_disclosure in ('ai', 'no_ai'));
+exception when duplicate_object then null; end $$;
+-- Catalogue-level AI share where a platform publishes it (itch.io's AI-assisted browse total).
+alter table catalog_daily add column if not exists ai_total int;
+
+-- Whole-platform figures published by the platforms themselves (not just the tracked lists), one row per platform
+-- per UTC day: the day's latest reading, plus the day's peak for the live figures. Daily platform plays =
+-- day-over-day change in plays_total. Sources: Bitmagic /api/catalog/stats, Playgama AI index (launches, AI tool
+-- shares), Spawn peopleNow (people on Spawn in the last hour), Tesana and CrazyGames full-catalogue sums.
+create table if not exists platform_totals (
+  source              text not null references sources(name),
+  day                 date not null,
+  captured_at         timestamptz not null,
+  plays_total         bigint,
+  games               int,
+  creators            int,
+  players_now         int,
+  players_now_peak    int,
+  people_recent       int,
+  people_recent_peak  int,
+  extra               jsonb not null default '{}'::jsonb,
+  primary key (source, day)
+);
+
+-- Average star rating (Nov 11, 2026): Kongregate metrics.json and itch.io top-rated cells. Feeds the AI vs non-AI
+-- rating comparison on the platform page. NULL elsewhere (costs nothing for other platforms).
+alter table snapshots add column if not exists rating real;

@@ -33,6 +33,11 @@ with c4:
     with_partial = st.toggle("Include partial platforms", value=False, key="rel_partial",
                              help="Astrocade and Playgama counts cover only games that reached a tracked list, so they are left out of the totals unless you switch them on.")
 
+if f.cohort == "Legacy":
+    st.info("Release counts cover the new-entrant platforms so far. Legacy platforms (CrazyGames, Poki, itch.io, Kongregate) "
+            "are tracked on the other pages; their release counts are a next step.")
+    st.stop()
+
 period = "month" if per == "Monthly" else "week"
 today = today_utc()
 cur_start = today.replace(day=1) if period == "month" else today - timedelta(days=today.weekday())

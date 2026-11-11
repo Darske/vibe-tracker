@@ -9,7 +9,7 @@ import streamlit as st
 from dashboard import queries as q, ui
 from dashboard.components import badge, fmt_dt, metric_card
 from dashboard.filters import go as nav, param, range_bar, sidebar
-from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, line_mode, ratio_fmt, time_axis
+from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("games")
@@ -51,12 +51,11 @@ with hc2:
         st.caption(" · ".join(x for x in [g.get("ai_tool"), g.get("engine"), ", ".join((g.get("tags") or [])[:6])] if x))
     if g.get("creator_id") and st.button("Open creator page →", type="tertiary"):
         nav("creator", creator=int(g["creator_id"]))
-f = range_bar(f)
-polls = q.game_polls(int(gid), f.window_days)
+f = range_bar(f, show_cohort=False)
 
 # ---------------------------------------------------------------- hero
 rk = daily[["day", "rank_in_source"]].rename(columns={"rank_in_source": "value"})
-has_ccu = daily["ccu_peak"].notna().any() or (not polls.empty and polls["players_now"].notna().any())
+has_ccu = daily["ccu_peak"].notna().any()
 with st.container(border=True):
     a, b = st.columns(2)
     with a:
@@ -69,22 +68,22 @@ with st.container(border=True):
             ui.hero(full(w["plays_delta"].sum(min_count=1)), f"{abbrev(closed_days(w)['plays_delta'].mean())} per day on average")
     with b:
         if has_ccu:
-            ui.eyebrow("All-time peak", "🏆")
+            ui.eyebrow("Best day (peak players)", "🏆")
             pk = daily.dropna(subset=["ccu_peak"]).sort_values("ccu_peak").tail(1)
-            ui.hero(full(pk["ccu_peak"].iloc[0]) if not pk.empty else "—", pd.Timestamp(pk["day"].iloc[0]).strftime("%b %-d") + " (daily peak)" if not pk.empty else None, white=True)
+            ui.hero(full(pk["ccu_peak"].iloc[0]) if not pk.empty else "—", pd.Timestamp(pk["day"].iloc[0]).strftime("%b %-d") if not pk.empty else None, white=True)
         else:
             ui.eyebrow("Lifetime plays", "🏆")
             ui.hero(full(last.get("plays_total")), labels.get("plays", "the platform's own counter"), white=True)
-    if has_ccu and not polls.empty and polls["players_now"].notna().any():
-        pp = polls.dropna(subset=["players_now"])
-        if len(pp) >= 2:
-            fig = go.Figure(go.Scatter(x=pp["captured_at"], y=pp["players_now"], mode=line_mode(len(pp)), line=dict(width=2.5, color=color), marker=dict(size=4),
-                                       hovertemplate="%{x|%b %-d %H:%M}: %{y}<extra></extra>"))
+    if has_ccu:
+        pk = daily[pd.to_datetime(daily["day"]).dt.date >= f.window_start].dropna(subset=["ccu_peak"])
+        if len(pk) >= 2:
+            fig = add_daily(go.Figure(), pk["day"], pk["ccu_peak"], color, unit="players (daily peak)")
             fig.update_layout(height=240, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         else:
-            st.caption("Not enough players-online readings in this range yet.")
-        st.markdown(f"<div class='vt-sub'>Players online, every poll, last {f.window}</div>", unsafe_allow_html=True)
+            st.caption("Not enough days in this range yet.")
+        st.markdown("<div class='vt-sub'>One point per day: the peak number of players online at once. The dotted end is today so far.</div>",
+                    unsafe_allow_html=True)
         if labels.get("players_now"):
             st.caption(f"Definition on {g['display_name']}: {labels['players_now']}")
     elif not has_ccu:

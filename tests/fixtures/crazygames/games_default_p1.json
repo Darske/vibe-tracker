@@ -1,0 +1,2623 @@
+{
+ "games": {
+  "pagination": {
+   "page": 1,
+   "size": 100
+  },
+  "total": 4684,
+  "items": [
+   {
+    "id": "18993",
+    "name": "Bloxd.io",
+    "slug": "bloxdhop-io",
+    "cover": "bloxdhop-io_16x9/20261027023447/bloxdhop-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2021,
+    "totalLikes": 6812695,
+    "totalPlays": 496785352,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 19,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "64178",
+    "name": "Openfront",
+    "slug": "openfront-gsw",
+    "cover": "openfront-gsw_16x9/20260515051210/openfront-gsw_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 202238,
+    "totalPlays": 15490958,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 150,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "17007",
+    "name": "Mahjongg Solitaire",
+    "slug": "mahjongg-solitaire",
+    "cover": "games/mahjongg-solitaire/cover_16x9-1707829450935.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2019,
+    "totalLikes": 153768,
+    "totalPlays": 44605071,
+    "hasIap": false,
+    "userProgressionSaveMessage": "disabled"
+   },
+   {
+    "id": "23796",
+    "name": "Piece of Cake: Merge and Bake",
+    "slug": "piece-of-cake-merge-and-bake",
+    "cover": "piece-of-cake-merge-and-bake_16x9/20260812042932/piece-of-cake-merge-and-bake_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 283204,
+    "totalPlays": 48759316,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "114033",
+    "name": "Boxity.io",
+    "slug": "bloxity-io",
+    "cover": "bloxity-io_16x9/20261019060604/bloxity-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 46106,
+    "totalPlays": 3531019,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 20,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "22052",
+    "name": "Ragdoll Archers",
+    "slug": "ragdoll-archers",
+    "cover": "ragdoll-archers_16x9/20250926080758/ragdoll-archers_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2023,
+    "totalLikes": 2528960,
+    "totalPlays": 173540628,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "23270",
+    "name": "Piles of Mahjong",
+    "slug": "piles-of-mahjong-jhb",
+    "cover": "piles-of-mahjong-jhb_16x9/20250203080756/piles-of-mahjong-jhb_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 34280,
+    "totalPlays": 16403133,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "22685",
+    "name": "Hidden Objects",
+    "slug": "hidden-objects",
+    "cover": "hidden-objects_16x9/20250505042911/hidden-objects_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 29648,
+    "totalPlays": 3761825,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "22188",
+    "name": "Color Tap: Coloring by Numbers",
+    "slug": "color-tap-coloring-by-numbers",
+    "cover": "color-tap-coloring-by-numbers_16x9/20261102040506/color-tap-coloring-by-numbers_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2023,
+    "totalLikes": 38720,
+    "totalPlays": 4458237,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "21760",
+    "name": "Words of Wonders",
+    "slug": "words-of-wonders",
+    "cover": "words-of-wonders_16x9/20231019163757/words-of-wonders_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Word",
+    "releaseYear": 2023,
+    "totalLikes": 439281,
+    "totalPlays": 38359243,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "19341",
+    "name": "Mergest Kingdom",
+    "slug": "mergest-kingdom",
+    "cover": "mergest-kingdom_16x9/20251124121228/mergest-kingdom_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2021,
+    "totalLikes": 135475,
+    "totalPlays": 23728532,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "23410",
+    "name": "8 Ball Pool Billiards Multiplayer",
+    "slug": "8-ball-pool-billiards-multiplayer",
+    "cover": "8-ball-pool-billiards-multiplayer_16x9/20260722044342/8-ball-pool-billiards-multiplayer_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2024,
+    "totalLikes": 256532,
+    "totalPlays": 27014416,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "45513",
+    "name": "Screw Out: Bolts and Nuts",
+    "slug": "screw-out-bolts-and-nuts",
+    "cover": "screw-out-bolts-and-nuts_16x9/20250711094331/screw-out-bolts-and-nuts_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2025,
+    "totalLikes": 71797,
+    "totalPlays": 14312258,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "56583",
+    "name": "Mage Castle Idle Defense",
+    "slug": "mage-tower-idle-defense",
+    "cover": "mage-tower-idle-defense_16x9/20261102113303/mage-tower-idle-defense_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile"
+    ],
+    "categoryName": "Strategy",
+    "releaseYear": 2025,
+    "totalLikes": 60836,
+    "totalPlays": 4903068,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22039",
+    "name": "Farm Merge Valley",
+    "slug": "farm-merge-valley",
+    "cover": "farm-merge-valley_16x9/20260909072453/farm-merge-valley_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2023,
+    "totalLikes": 126501,
+    "totalPlays": 27920875,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "13348",
+    "name": "Four Colors",
+    "slug": "uno-online",
+    "cover": "games/uno-online/cover-1679068977831.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "originals"
+    ],
+    "categoryName": "Card",
+    "releaseYear": 2019,
+    "totalLikes": 487063,
+    "totalPlays": 79547733,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 4,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "58654",
+    "name": "Spider Solitaire",
+    "slug": "spider-solitaire-fuw",
+    "cover": "spider-solitaire-fuw_16x9/20251008073941/spider-solitaire-fuw_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Card",
+    "releaseYear": 2025,
+    "totalLikes": 13917,
+    "totalPlays": 4237494,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "109203",
+    "name": "Real War: Not Fake",
+    "slug": "real-war-not-fake-sno",
+    "cover": "real-war-not-fake-sno_16x9/20260813072730/real-war-not-fake-sno_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 37861,
+    "totalPlays": 3024411,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "17174",
+    "name": "Word Wipe",
+    "slug": "word-wipe",
+    "cover": "games/word-wipe/cover_16x9-1707829913887.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Word",
+    "releaseYear": 2019,
+    "totalLikes": 39182,
+    "totalPlays": 14831791,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "22513",
+    "name": "Hazmob FPS: Online Shooter",
+    "slug": "hazmob-fps-online-shooter",
+    "cover": "hazmob-fps-online-shooter_16x9/20260302022643/hazmob-fps-online-shooter_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2024,
+    "totalLikes": 2184065,
+    "totalPlays": 53168686,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 10,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "62098",
+    "name": "Veck.io",
+    "slug": "veck-io",
+    "cover": "veck-io_16x9/20261005034508/veck-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2025,
+    "totalLikes": 1206480,
+    "totalPlays": 70930710,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 20,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": false
+    }
+   },
+   {
+    "id": "22893",
+    "name": "Designville: Merge & Design",
+    "slug": "designville-merge-design",
+    "cover": "designville-merge-design_16x9/20260827034042/designville-merge-design_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 190884,
+    "totalPlays": 21245829,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "15347",
+    "name": "8 Ball Billiards Classic",
+    "slug": "8-ball-billiards-classic",
+    "cover": "8-ball-billiards-classic_16x9/20231108025958/8-ball-billiards-classic_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Sports",
+    "releaseYear": 2018,
+    "totalLikes": 609587,
+    "totalPlays": 64647294,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "115815",
+    "name": "Dear Travellers",
+    "slug": "dear-travellers---airline-chaos",
+    "cover": "dear-travellers---airline-chaos_16x9/20260910025106/dear-travellers---airline-chaos_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated",
+     "originals"
+    ],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 24183,
+    "totalPlays": 1538609,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 4,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "126354",
+    "name": "Airplane Flight Pilot Simulator",
+    "slug": "airplane-flight-pilot-simulator",
+    "cover": "airplane-flight-pilot-simulator_16x9/20260929062817/airplane-flight-pilot-simulator_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 14226,
+    "totalPlays": 992604,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "19307",
+    "name": "Tower Swap",
+    "slug": "tower-swap",
+    "cover": "tower-swap_16x9/20250711093920/tower-swap_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated",
+     "originals"
+    ],
+    "categoryName": "Strategy",
+    "releaseYear": 2021,
+    "totalLikes": 72768,
+    "totalPlays": 22458939,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "57173",
+    "name": "FrontWars.io",
+    "slug": "frontwars-io",
+    "cover": "frontwars-io_16x9/20261026051115/frontwars-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2025,
+    "totalLikes": 321610,
+    "totalPlays": 11704205,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 143,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "76182",
+    "name": "Numicolor",
+    "slug": "numicolor",
+    "cover": "numicolor_16x9/20260918124733/numicolor_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 26697,
+    "totalPlays": 2806090,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "90725",
+    "name": "Hexa Stack",
+    "slug": "hexa-stack",
+    "cover": "hexa-stack_16x9/20261027022923/hexa-stack_16x9-cover.jpg",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 8163,
+    "totalPlays": 1189406,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "11888",
+    "name": "Bullet Force",
+    "slug": "bullet-force-multiplayer",
+    "cover": "bullet-force-multiplayer_16x9/20261007125152/bullet-force-multiplayer_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Shooting",
+    "releaseYear": 2016,
+    "totalLikes": 763661,
+    "totalPlays": 63542134,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 26,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "18304",
+    "name": "Wordmeister",
+    "slug": "wordmeister",
+    "cover": "games/wordmeister/cover_16x9-1750345072824.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile"
+    ],
+    "categoryName": "Word",
+    "releaseYear": 2020,
+    "totalLikes": 16012,
+    "totalPlays": 3447614,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "23074",
+    "name": "PolyTrack",
+    "slug": "polytrack",
+    "cover": "polytrack_16x9/20260310095956/polytrack_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2024,
+    "totalLikes": 484685,
+    "totalPlays": 47132529,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 16,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "22682",
+    "name": "Space Waves",
+    "slug": "space-waves",
+    "cover": "space-waves_16x9/20260805094726/space-waves_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2024,
+    "totalLikes": 5143960,
+    "totalPlays": 244074802,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "19611",
+    "name": "BuildNow GG",
+    "slug": "buildnow-gg",
+    "cover": "buildnow-gg_16x9/20251229084241/buildnow-gg_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Shooting",
+    "releaseYear": 2021,
+    "totalLikes": 2163021,
+    "totalPlays": 88721555,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 16,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "20602",
+    "name": "Mahjong Connect (Legacy)",
+    "slug": "mahjong-connect-1",
+    "cover": "games/mahjong-connect-1/cover-1653404969294.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": false,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2022,
+    "totalLikes": 8610,
+    "totalPlays": 4007531,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "24048",
+    "name": "Country Life Meadows",
+    "slug": "country-life-meadows",
+    "cover": "country-life-meadows_16x9/20261030032910/country-life-meadows_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2024,
+    "totalLikes": 14879,
+    "totalPlays": 2872819,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "68858",
+    "name": "Goods Triple Match 3D",
+    "slug": "goods-triple-match-3d",
+    "cover": "goods-triple-match-3d_16x9/20261106094921/goods-triple-match-3d_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 9183,
+    "totalPlays": 2249387,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "105599",
+    "name": "Blombo.io",
+    "slug": "blombo-io",
+    "cover": "blombo-io_16x9/20261109111610/blombo-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 28435,
+    "totalPlays": 2922763,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 5,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "65720",
+    "name": "Mansion Tale: Merge Secrets",
+    "slug": "mansion-tale-merge-secrets",
+    "cover": "mansion-tale-merge-secrets_16x9/20261009081529/mansion-tale-merge-secrets_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 40708,
+    "totalPlays": 5888634,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "45300",
+    "name": "Traffic Rider",
+    "slug": "traffic-rider-vvq",
+    "cover": "traffic-rider-vvq_16x9/20250526021507/traffic-rider-vvq_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2025,
+    "totalLikes": 1453901,
+    "totalPlays": 71248568,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "676",
+    "name": "Bloons Tower Defense 4",
+    "slug": "bloons-tower-defense-4",
+    "cover": "games/bloons-tower-defense-4/cover-1688039016364.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Strategy",
+    "releaseYear": 2021,
+    "totalLikes": 109872,
+    "totalPlays": 6051546,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "23753",
+    "name": "SkillWarz",
+    "slug": "skillwarz",
+    "cover": "skillwarz_16x9/20260318145302/skillwarz_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Shooting",
+    "releaseYear": 2024,
+    "totalLikes": 691012,
+    "totalPlays": 37449542,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 10,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "18088",
+    "name": "Smash Karts",
+    "slug": "smash-karts",
+    "cover": "smash-karts_16x9/20261106171644/smash-karts_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": ".io",
+    "releaseYear": 2020,
+    "totalLikes": 1731156,
+    "totalPlays": 104633792,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 24,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "73780",
+    "name": "Gin Rummy Mania",
+    "slug": "gin-rummy-zal",
+    "cover": "gin-rummy-zal_16x9/20261012023857/gin-rummy-zal_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile"
+    ],
+    "categoryName": "Card",
+    "releaseYear": 2026,
+    "totalLikes": 9162,
+    "totalPlays": 1626432,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "75681",
+    "name": "Arrows",
+    "slug": "arrows-bmj",
+    "cover": "arrows-bmj_16x9/20261002031008/arrows-bmj_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 2706,
+    "totalPlays": 428178,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "15747",
+    "name": "Mahjong Online",
+    "slug": "mahjong-classic-webgl",
+    "cover": "mahjongclassicwebgl.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2018,
+    "totalLikes": 8839,
+    "totalPlays": 3756303,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "20035",
+    "name": "Tropical Merge",
+    "slug": "tropical-merge",
+    "cover": "tropical-merge_16x9/20250203022436/tropical-merge_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2021,
+    "totalLikes": 56353,
+    "totalPlays": 11051339,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "87894",
+    "name": "All Out",
+    "slug": "all-out-nju",
+    "cover": "all-out-nju_16x9/20261026044430/all-out-nju_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 23365,
+    "totalPlays": 1249604,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 24,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "128693",
+    "name": "Grand Vegas Police Simulator",
+    "slug": "grand-vegas-police-simulator",
+    "cover": "grand-vegas-police-simulator_16x9/20261020075400/grand-vegas-police-simulator_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 7194,
+    "totalPlays": 441693,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "24660",
+    "name": "Castle Craft",
+    "slug": "castle-craft",
+    "cover": "castle-craft_16x9/20250203045450/castle-craft_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 31904,
+    "totalPlays": 5643359,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "50924",
+    "name": "Open House",
+    "slug": "open-house",
+    "cover": "open-house_16x9/20260220024829/open-house_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2025,
+    "totalLikes": 129689,
+    "totalPlays": 10199568,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "46971",
+    "name": "Stone Grass: Mowing Simulator",
+    "slug": "stone-grass-mowing-simulator",
+    "cover": "stone-grass-mowing-simulator_16x9/20260318150935/stone-grass-mowing-simulator_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2025,
+    "totalLikes": 418719,
+    "totalPlays": 17015797,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "53718",
+    "name": "War the Knights",
+    "slug": "war-the-knights",
+    "cover": "war-the-knights_16x9/20261027041903/war-the-knights_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2025,
+    "totalLikes": 294178,
+    "totalPlays": 16515218,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22556",
+    "name": "Miniblox",
+    "slug": "miniblox",
+    "cover": "miniblox_16x9/20240617083401/miniblox_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": ".io",
+    "releaseYear": 2024,
+    "totalLikes": 932398,
+    "totalPlays": 43484539,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 48,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "21155",
+    "name": "Fairyland Merge & Magic",
+    "slug": "fairyland-merge-and-magic",
+    "cover": "fairyland-merge-and-magic_16x9/20251124121235/fairyland-merge-and-magic_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2022,
+    "totalLikes": 58122,
+    "totalPlays": 9285343,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "22415",
+    "name": "Nuts Puzzle: Sort By Color",
+    "slug": "nuts-puzzle-sort-by-color",
+    "cover": "nuts-puzzle-sort-by-color_16x9/20250602100233/nuts-puzzle-sort-by-color_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 45930,
+    "totalPlays": 7024140,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "22174",
+    "name": "Leek Factory Tycoon",
+    "slug": "leek-factory-tycoon",
+    "cover": "leek-factory-tycoon_16x9/20260330040926/leek-factory-tycoon_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Clicker",
+    "releaseYear": 2023,
+    "totalLikes": 221863,
+    "totalPlays": 9221202,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "62175",
+    "name": "Meeland.io",
+    "slug": "meeland-io",
+    "cover": "meeland-io_16x9/20261110083256/meeland-io_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated",
+     "originals"
+    ],
+    "categoryName": ".io",
+    "releaseYear": 2025,
+    "totalLikes": 226707,
+    "totalPlays": 16856089,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 8,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "22275",
+    "name": "Racing Limits",
+    "slug": "racing-limits",
+    "cover": "racing-limits_16x9/20250711091800/racing-limits_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2023,
+    "totalLikes": 2953173,
+    "totalPlays": 119612199,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "107621",
+    "name": "Arrow Slide Puzzle",
+    "slug": "arrow-slide-puzzle",
+    "cover": "arrow-slide-puzzle_16x9/20260811081420/arrow-slide-puzzle_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 1697,
+    "totalPlays": 246714,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22590",
+    "name": "AOD - Art Of Defense",
+    "slug": "aod---art-of-defense",
+    "cover": "aod---art-of-defense_16x9/20260714061301/aod---art-of-defense_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile"
+    ],
+    "categoryName": "Strategy",
+    "releaseYear": 2024,
+    "totalLikes": 45998,
+    "totalPlays": 6004055,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "124461",
+    "name": "Tiny Tribes",
+    "slug": "tiny-tribes",
+    "cover": "tiny-tribes_16x9/20261027065756/tiny-tribes_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 2714,
+    "totalPlays": 174249,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "48361",
+    "name": "Idle Zombie Wave: Survivors",
+    "slug": "idle-zombie-wave",
+    "cover": "idle-zombie-wave_16x9/20261110050553/idle-zombie-wave_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Strategy",
+    "releaseYear": 2025,
+    "totalLikes": 39803,
+    "totalPlays": 3518677,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "54805",
+    "name": "8 Ball Pool",
+    "slug": "8-ball-pool-wyr",
+    "cover": "8-ball-pool-wyr_16x9/20251027031134/8-ball-pool-wyr_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "totalLikes": 239016,
+    "totalPlays": 20626207,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "20408",
+    "name": "Hexanaut.io",
+    "slug": "hexanaut-io",
+    "cover": "hexanaut-io_16x9/20260703024240/hexanaut-io_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2022,
+    "totalLikes": 67734,
+    "totalPlays": 5828927,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 10,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "101126",
+    "name": "Claw Master",
+    "slug": "claw-master",
+    "cover": "claw-master_16x9/20261106094054/claw-master_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 7556,
+    "totalPlays": 655840,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "19818",
+    "name": "Mini Golf Club",
+    "slug": "mini-golf-club",
+    "cover": "mini-golf-club_16x9/20260609101725/mini-golf-club_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "updated"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2021,
+    "totalLikes": 244833,
+    "totalPlays": 20452951,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 10,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "21315",
+    "name": "Cubes 2048.io",
+    "slug": "cubes-2048-io",
+    "cover": "games/cubes-2048-io/cover_16x9-1693298929425.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": ".io",
+    "releaseYear": 2022,
+    "totalLikes": 1528766,
+    "totalPlays": 54820564,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "18356",
+    "name": "Firestone – Idle Clicker Online RPG",
+    "slug": "firestone-idle-rpg",
+    "cover": "firestone-idle-rpg_16x9/20261103132837/firestone-idle-rpg_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Adventure",
+    "releaseYear": 2020,
+    "totalLikes": 21539,
+    "totalPlays": 2684361,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 5,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "20836",
+    "name": "Arkadium's Bubble Shooter",
+    "slug": "arkadium-s-bubble-shooter",
+    "cover": "games/arkadium-s-bubble-shooter/cover_16x9-1722870856323.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2022,
+    "totalLikes": 16939,
+    "totalPlays": 10358210,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "21850",
+    "name": "Sky Riders",
+    "slug": "sky-riders-buk",
+    "cover": "sky-riders-buk_16x9/20240206045724/sky-riders-buk_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "originals"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2023,
+    "totalLikes": 1212462,
+    "totalPlays": 47370137,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "77308",
+    "name": "The MachinEGG",
+    "slug": "the-machinegg",
+    "cover": "the-machinegg_16x9/20261026112603/the-machinegg_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 29311,
+    "totalPlays": 1572221,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22938",
+    "name": "Hexa Sort",
+    "slug": "hexa-sort",
+    "cover": "hexa-sort_16x9/20250219102231/hexa-sort_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 34982,
+    "totalPlays": 7376969,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22980",
+    "name": "What's The Difference?",
+    "slug": "what-s-the-difference-online",
+    "cover": "what-s-the-difference-online_16x9/20261109102141/what-s-the-difference-online_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "what-s-the-difference-online/b7351f65-a49a-4cfb-b237-070ad44916bc/what-s-the-difference-online-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "what-s-the-difference-online/70762a79-b019-4cf4-b73c-9c002f2dbacf/what-s-the-difference-online.mp4"
+     },
+     "covers": {
+      "1x1": "what-s-the-difference-online_1x1/20261109115126/what-s-the-difference-online_1x1-cover.png",
+      "2x3": "what-s-the-difference-online_2x3/20261109115126/what-s-the-difference-online_2x3-cover.png",
+      "16x9": "what-s-the-difference-online_16x9/20261109115126/what-s-the-difference-online_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-10",
+     "activeUntil": null,
+     "variantArtworkId": "5e46c2e5-f38c-43a1-af01-c540cc3a0bbd",
+     "baselineArtworkId": "3f6ea54b-1132-4806-85fa-ed6a9af2e229",
+     "artworkExperimentId": "785919ad-6d08-4d68-9752-c508f0d63cc8"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 63263,
+    "totalPlays": 7249823,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "22573",
+    "name": "Block Blaster",
+    "slug": "block-puzzle-master",
+    "cover": "block-puzzle-master_16x9/20250924025352/block-puzzle-master_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2024,
+    "totalLikes": 142191,
+    "totalPlays": 19734976,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "113198",
+    "name": "Cornerlet",
+    "slug": "cornerlet",
+    "cover": "cornerlet_16x9/20261007100945/cornerlet_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated",
+     "originals"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 10496,
+    "totalPlays": 675676,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "16611",
+    "name": "Backgammon Online",
+    "slug": "classic-backgammon",
+    "cover": "games/classic-backgammon/cover_16x9-1707829263148.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Board",
+    "releaseYear": 2019,
+    "totalLikes": 16891,
+    "totalPlays": 5449349,
+    "hasIap": false,
+    "userProgressionSaveMessage": "disabled"
+   },
+   {
+    "id": "14272",
+    "name": "Shell Shockers",
+    "slug": "shellshockersio",
+    "cover": "shellshockersio_16x9/20261109184759/shellshockersio_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2017,
+    "totalLikes": 1580750,
+    "totalPlays": 111691541,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 18,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "99811",
+    "name": "Paint to Hide!",
+    "slug": "paint-to-hide",
+    "cover": "paint-to-hide_16x9/20260903084057/paint-to-hide_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 80066,
+    "totalPlays": 8549522,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 5,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "80326",
+    "name": "Evil Tower",
+    "slug": "evil-tower-lli",
+    "cover": "evil-tower-lli_16x9/20260803073604/evil-tower-lli_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Strategy",
+    "releaseYear": 2026,
+    "totalLikes": 12325,
+    "totalPlays": 1206904,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "87421",
+    "name": "Nonogram Square",
+    "slug": "nonogram-square",
+    "cover": "nonogram-square_16x9/20260612054213/nonogram-square_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 1336,
+    "totalPlays": 423827,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "81141",
+    "name": "Find The Cow",
+    "slug": "find-the-cow-lqn",
+    "cover": "find-the-cow-lqn_16x9/20260416083431/find-the-cow-lqn_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 4316,
+    "totalPlays": 854415,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "116839",
+    "name": "Steal Eggs",
+    "slug": "steal-a-eggs",
+    "cover": "steal-a-eggs_16x9/20260904032016/steal-a-eggs_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 84492,
+    "totalPlays": 5187279,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "17464",
+    "name": "Spades",
+    "slug": "spades",
+    "cover": "games/spades/cover-1636534372712.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Card",
+    "releaseYear": 2019,
+    "totalLikes": 8122,
+    "totalPlays": 1930368,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "142861",
+    "name": "SaltySeas.io",
+    "slug": "saltyseas-io",
+    "cover": "saltyseas-io_16x9/20261019061451/saltyseas-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 2213,
+    "totalPlays": 153732,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 250,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "102460",
+    "name": "Forest Nothing",
+    "slug": "forest-nothing",
+    "cover": "forest-nothing_16x9/20260812064611/forest-nothing_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 5077,
+    "totalPlays": 480410,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "69891",
+    "name": "Farland",
+    "slug": "farland-farm-village",
+    "cover": "farland-farm-village_16x9/20261109052916/farland-farm-village_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 1352,
+    "totalPlays": 212222,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "15796",
+    "name": "Bubble Shooter",
+    "slug": "bubble-shooter-classic",
+    "cover": "games/bubble-shooter-classic/cover-1643212218101.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2018,
+    "totalLikes": 3969,
+    "totalPlays": 7333072,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "95629",
+    "name": "Unmatched Ego 2",
+    "slug": "unmatched-ego-2",
+    "cover": "unmatched-ego-2_16x9/20260721024839/unmatched-ego-2_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 47255,
+    "totalPlays": 3256311,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 10,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "16106",
+    "name": "Hearts: Classic",
+    "slug": "hearts-classic",
+    "cover": "games/hearts-classic/cover-1626935362814.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Card",
+    "releaseYear": 2018,
+    "totalLikes": 7621,
+    "totalPlays": 2679586,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "115653",
+    "name": "Rocket Fling",
+    "slug": "rocket-fling",
+    "cover": "rocket-fling_16x9/20261109052222/rocket-fling_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 14993,
+    "totalPlays": 1091198,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "123948",
+    "name": "Ant Miners",
+    "slug": "ant-miners",
+    "cover": "ant-miners_16x9/20261110082813/ant-miners_16x9-cover.png",
+    "isOriginal": true,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "ant-miners/33eb273c-c371-4e45-b4cf-bc45a104ad3d/ant-miners-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "ant-miners/73a11592-7680-4d5e-8588-fe724971057b/ant-miners.mp4"
+     },
+     "covers": {
+      "1x1": "ant-miners_1x1/20261110145257/ant-miners_1x1-cover.png",
+      "2x3": "ant-miners_2x3/20261110145257/ant-miners_2x3-cover.png",
+      "16x9": "ant-miners_16x9/20261110145257/ant-miners_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-11",
+     "activeUntil": null,
+     "variantArtworkId": "d21b1b85-292c-4084-ac02-16f8fb227ffb",
+     "baselineArtworkId": "dbc4243b-75c4-460a-9bc3-956a266df281",
+     "artworkExperimentId": "88209dc9-1c73-4856-92ad-066e0f26439e"
+    },
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 1809,
+    "totalPlays": 95794,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "65181",
+    "name": "Solitaire Home Story",
+    "slug": "solitaire-home-story",
+    "cover": "solitaire-home-story_16x9/20261021094902/solitaire-home-story_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Card",
+    "releaseYear": 2026,
+    "totalLikes": 12620,
+    "totalPlays": 1242197,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "3673",
+    "name": "Hex Empire",
+    "slug": "hex-empire",
+    "cover": "hexempireb.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Strategy",
+    "totalLikes": 15121,
+    "totalPlays": 3090334,
+    "hasIap": false,
+    "userProgressionSaveMessage": "disabled"
+   },
+   {
+    "id": "31492",
+    "name": "Stickman Clash",
+    "slug": "stickman-clash",
+    "cover": "games/stickman-clash/cover_16x9-1746127524433.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2024,
+    "totalLikes": 680676,
+    "totalPlays": 39125549,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "83255",
+    "name": "Screw Sorting",
+    "slug": "screw-sort---fix-match-puzzle",
+    "cover": "screw-sort---fix-match-puzzle_16x9/20260923052931/screw-sort---fix-match-puzzle_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 1295,
+    "totalPlays": 167118,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "47652",
+    "name": "Wood Screw: Bolts Puzzle",
+    "slug": "wood-screw-bolts-puzzle",
+    "cover": "wood-screw-bolts-puzzle_16x9/20250410095028/wood-screw-bolts-puzzle_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2025,
+    "totalLikes": 19440,
+    "totalPlays": 3332979,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "117310",
+    "name": "Lumber Hero: Idle Defense",
+    "slug": "lumber-hero-idle-defense",
+    "cover": "lumber-hero-idle-defense_16x9/20260930105638/lumber-hero-idle-defense_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Strategy",
+    "releaseYear": 2026,
+    "totalLikes": 2061,
+    "totalPlays": 143971,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "126476",
+    "name": "Hole.io",
+    "slug": "hole-io-uyt",
+    "cover": "hole-io-uyt_16x9/20260929080322/hole-io-uyt_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 28083,
+    "totalPlays": 1506640,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "6649",
+    "name": "Spider Solitaire 2 Suits",
+    "slug": "spider-solitaire-2-suits",
+    "cover": "games/spider-solitaire-2-suits/thumb-1580242511840.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Card",
+    "releaseYear": 2014,
+    "totalLikes": 4747,
+    "totalPlays": 3580638,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   }
+  ]
+ }
+}

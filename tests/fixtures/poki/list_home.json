@@ -1,0 +1,289 @@
+{
+ "id": "32_",
+ "content": [
+  {
+   "id": 32955,
+   "pokifordevs_game_id": "7809617f-3df5-4a47-8413-48e329dbc30a",
+   "mobile": true,
+   "slug": "find-the-needle-in-haystack",
+   "title": "Find The Needle in Haystack",
+   "video": "https://v.poki-cdn.com/1f38042f-6a88-4813-8814-7df4619c087f/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "1f38042f-6a88-4813-8814-7df4619c087f/thumbnail",
+   "developer": "sapling",
+   "image": {
+    "path": "518b52e6d3d4c0ab2c23c11061107afe/find-the-needle-in-haystack-logo.png"
+   },
+   "image_url": "518b52e6d3d4c0ab2c23c11061107afe/find-the-needle-in-haystack-logo.png"
+  },
+  {
+   "id": 30370,
+   "pokifordevs_game_id": "f9564e4e-ef25-4e4b-ba67-cb11a1576bbd",
+   "mobile": true,
+   "slug": "drive-mad",
+   "title": "Drive Mad",
+   "video": "https://v.poki-cdn.com/f8e2224f-9464-4552-88f2-6d7b3805557f/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "f8e2224f-9464-4552-88f2-6d7b3805557f/thumbnail",
+   "developer": "Fancade",
+   "image": {
+    "path": "591d984dcac4fb694f3f8195bb8f6118/drive-mad-logo.png"
+   },
+   "image_url": "591d984dcac4fb694f3f8195bb8f6118/drive-mad-logo.png"
+  },
+  {
+   "id": 32225,
+   "pokifordevs_game_id": "eec1b733-1f10-4df0-99f9-737b5cb7ebd5",
+   "mobile": true,
+   "slug": "robo-cleaner-simulator",
+   "title": "Robo Cleaner Simulator",
+   "video": "https://v.poki-cdn.com/07a326f9-4bfd-4712-8b66-47d3296102e0/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "07a326f9-4bfd-4712-8b66-47d3296102e0/thumbnail",
+   "developer": "Camu",
+   "image": {
+    "path": "fe0b6bc6daa62beb832450cd154852a6/robo-cleaner-simulator-logo.png"
+   },
+   "image_url": "fe0b6bc6daa62beb832450cd154852a6/robo-cleaner-simulator-logo.png"
+  },
+  {
+   "id": 33048,
+   "pokifordevs_game_id": "564e4ee7-c92e-44b0-a596-79090bd4c12c",
+   "mobile": true,
+   "slug": "chess-pro",
+   "title": "Chess Pro",
+   "video": "https://v.poki-cdn.com/2a23ca03-f393-4ff7-9f3f-a3b77eca1d50/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2a23ca03-f393-4ff7-9f3f-a3b77eca1d50/thumbnail",
+   "developer": "Classic Games",
+   "is_new": true,
+   "image": {
+    "path": "072af00946a0c4a7eb35daebe7c7e2bd/chess-pro-logo.png"
+   },
+   "image_url": "072af00946a0c4a7eb35daebe7c7e2bd/chess-pro-logo.png"
+  },
+  {
+   "id": 32331,
+   "pokifordevs_game_id": "c25742e1-d4a2-4519-81fe-a7d3812a8854",
+   "mobile": true,
+   "slug": "tnt-sandbox",
+   "title": "TNT Sandbox",
+   "video": "https://v.poki-cdn.com/fa74188e-deda-46cb-8d71-9b5f69d8724c/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "fa74188e-deda-46cb-8d71-9b5f69d8724c/thumbnail",
+   "developer": "Kachki Productions",
+   "image": {
+    "path": "41df644d532ab17ef6e8c4a87cd82ef4/tnt-sandbox-logo.png"
+   },
+   "image_url": "41df644d532ab17ef6e8c4a87cd82ef4/tnt-sandbox-logo.png"
+  },
+  {
+   "id": 32102,
+   "pokifordevs_game_id": "0dba5c31-fa37-4026-a0e1-8809bda155a1",
+   "mobile": true,
+   "slug": "kick-the-buddy",
+   "title": "Kick The Buddy",
+   "video": "https://v.poki-cdn.com/d81a6b47-2e60-4158-850e-3e2bc49612e5/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "d81a6b47-2e60-4158-850e-3e2bc49612e5/thumbnail",
+   "developer": "StoreRider",
+   "image": {
+    "path": "cccd5145e3ae9d7bb6b3be7154db731e/kick-the-buddy-logo.png"
+   },
+   "image_url": "cccd5145e3ae9d7bb6b3be7154db731e/kick-the-buddy-logo.png"
+  },
+  {
+   "id": 31654,
+   "pokifordevs_game_id": "e3419e7f-e2eb-4de6-8b7a-01c846e2210d",
+   "mobile": true,
+   "slug": "beauty-salon",
+   "title": "Beauty Salon",
+   "video": "https://v.poki-cdn.com/728594af-4e9e-44ae-841f-a9e93aa1bf2d/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "728594af-4e9e-44ae-841f-a9e93aa1bf2d/thumbnail",
+   "developer": "WeLoPlay",
+   "image": {
+    "path": "55d2f39e98675ee8220a86f964dfec74/beauty-salon-logo.webp"
+   },
+   "image_url": "55d2f39e98675ee8220a86f964dfec74/beauty-salon-logo.webp"
+  },
+  {
+   "id": 30668,
+   "pokifordevs_game_id": "13acae8c-ec6a-4823-b1a2-8ea20cea56e7",
+   "mobile": true,
+   "slug": "level-devil",
+   "title": "Level Devil",
+   "video": "https://v.poki-cdn.com/4362faa3-b5e4-42e7-ab0d-fbe42ceb0120/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "4362faa3-b5e4-42e7-ab0d-fbe42ceb0120/thumbnail",
+   "developer": "Unept",
+   "image": {
+    "path": "701e10b108ed7a0c68c738c46c9a705a/level-devil-logo.png"
+   },
+   "image_url": "701e10b108ed7a0c68c738c46c9a705a/level-devil-logo.png"
+  },
+  {
+   "id": 27703,
+   "pokifordevs_game_id": "5dd28e51-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": true,
+   "slug": "penalty-shooters-2",
+   "title": "Penalty Shooters 2",
+   "video": "https://v.poki-cdn.com/7a8e22ea-c779-487a-a9cd-28b2650aeeeb/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "7a8e22ea-c779-487a-a9cd-28b2650aeeeb/thumbnail",
+   "developer": "10x10games",
+   "image": {
+    "path": "9f6353ca87481b7f34db483fcf480ae5/penalty-shooters-2-logo.jfif"
+   },
+   "image_url": "9f6353ca87481b7f34db483fcf480ae5/penalty-shooters-2-logo.jfif"
+  },
+  {
+   "id": 33047,
+   "pokifordevs_game_id": "cc778328-1846-4549-97c7-276cced0e651",
+   "mobile": true,
+   "slug": "tic-tac-toe-ultimate",
+   "title": "Tic Tac Toe Ultimate",
+   "video": "https://v.poki-cdn.com/6cc22518-22a2-47e2-b74b-a42e1326edce/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "6cc22518-22a2-47e2-b74b-a42e1326edce/thumbnail",
+   "developer": "Classic Games",
+   "is_new": true,
+   "image": {
+    "path": "89e68dec92edf453452eb4338c43c8be/tic-tac-toe-ultimate-logo.jfif"
+   },
+   "image_url": "89e68dec92edf453452eb4338c43c8be/tic-tac-toe-ultimate-logo.jfif"
+  },
+  {
+   "id": 31914,
+   "pokifordevs_game_id": "0e9dcadf-1c75-4c53-a211-b93f4423212a",
+   "mobile": true,
+   "slug": "slice-master",
+   "title": "Slice Master",
+   "video": "https://v.poki-cdn.com/5718f944-f448-40c1-a1b1-65e55936f7bb/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "5718f944-f448-40c1-a1b1-65e55936f7bb/thumbnail",
+   "developer": "PlayCalm",
+   "image": {
+    "path": "743089b5c6b4dda8bd05d920ab00a0b3/slice-master-logo.png"
+   },
+   "image_url": "743089b5c6b4dda8bd05d920ab00a0b3/slice-master-logo.png"
+  },
+  {
+   "id": 31613,
+   "pokifordevs_game_id": "5c1cf3d9-8d9b-40bb-b718-b447237c1900",
+   "mobile": true,
+   "slug": "snapstyle-dress-up",
+   "title": "SnapStyle Dress Up",
+   "video": "https://v.poki-cdn.com/750b235c-a9a0-4135-86ae-183ec251a661/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "750b235c-a9a0-4135-86ae-183ec251a661/thumbnail",
+   "developer": "PlayCap",
+   "image": {
+    "path": "2c7137ddb60bc257375e910619c85f12/snapstyle-dress-up-logo.png"
+   },
+   "image_url": "2c7137ddb60bc257375e910619c85f12/snapstyle-dress-up-logo.png"
+  },
+  {
+   "id": 31834,
+   "pokifordevs_game_id": "b548f9a6-31d8-4d28-a6b0-c0ea9ef3587c",
+   "mobile": true,
+   "slug": "count-control-legends",
+   "title": "Count Control Legends",
+   "video": "https://v.poki-cdn.com/4a0d3561-0ccd-43f0-ad8e-f1e6e3d82965/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "4a0d3561-0ccd-43f0-ad8e-f1e6e3d82965/thumbnail",
+   "developer": "Jungle Tavern",
+   "image": {
+    "path": "e612cf6c7083881ffae58f633bcbc304/count-control-legends-logo.png"
+   },
+   "image_url": "e612cf6c7083881ffae58f633bcbc304/count-control-legends-logo.png"
+  },
+  {
+   "id": 31594,
+   "pokifordevs_game_id": "6f583624-63b4-4e3b-bd97-2b9307d38034",
+   "mobile": true,
+   "slug": "perfect-landing-plane-pilot",
+   "title": "Perfect Landing, Plane Pilot",
+   "video": "https://v.poki-cdn.com/46904b04-7da5-471b-b915-c9736d40dad6/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "46904b04-7da5-471b-b915-c9736d40dad6/thumbnail",
+   "developer": "GeniGames",
+   "image": {
+    "path": "6c699ddf455a5c29c97814c625bb2286/perfect-landing-plane-pilot-logo.png"
+   },
+   "image_url": "6c699ddf455a5c29c97814c625bb2286/perfect-landing-plane-pilot-logo.png"
+  },
+  {
+   "id": 30942,
+   "pokifordevs_game_id": "dec0e7c4-f6bd-4ae6-95f0-e8241d6ca304",
+   "mobile": true,
+   "slug": "my-perfect-hotel",
+   "title": "My Perfect Hotel",
+   "video": "https://v.poki-cdn.com/9233b66a-7c0d-4bb0-a714-26474faa7899/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "9233b66a-7c0d-4bb0-a714-26474faa7899/thumbnail",
+   "developer": "SayGames",
+   "image": {
+    "path": "f39e22538799cae88cf1a630492c2e7b/my-perfect-hotel-logo.png"
+   },
+   "image_url": "f39e22538799cae88cf1a630492c2e7b/my-perfect-hotel-logo.png"
+  },
+  {
+   "id": 30501,
+   "pokifordevs_game_id": "f07e7798-f56b-4fff-93ce-b0dcdd9e040c",
+   "mobile": true,
+   "slug": "ovo-classic",
+   "title": "OvO Classic",
+   "video": "https://v.poki-cdn.com/aae3e143-ebaf-4fcc-864b-24526a67d26c/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "aae3e143-ebaf-4fcc-864b-24526a67d26c/thumbnail",
+   "developer": "Dedra Games",
+   "image": {
+    "path": "85db6b2eb81ca64d881a950a43744389/ovo-classic-logo.png"
+   },
+   "image_url": "85db6b2eb81ca64d881a950a43744389/ovo-classic-logo.png"
+  },
+  {
+   "id": 31854,
+   "pokifordevs_game_id": "08eb0887-fbf8-424f-a47d-91fea99390da",
+   "mobile": true,
+   "slug": "blumgi-bounce",
+   "title": "Blumgi Bounce",
+   "video": "https://v.poki-cdn.com/426a7a57-9ec3-494d-8988-000b8f732537/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "426a7a57-9ec3-494d-8988-000b8f732537/thumbnail",
+   "developer": "Blumgi",
+   "image": {
+    "path": "0364717f000f41088d794db6036f6ed2/blumgi-bounce-logo.png"
+   },
+   "image_url": "0364717f000f41088d794db6036f6ed2/blumgi-bounce-logo.png"
+  },
+  {
+   "id": 30531,
+   "pokifordevs_game_id": "3425b714-84ce-48c3-a4ef-fb044af25c1c",
+   "mobile": true,
+   "slug": "blumgi-slime",
+   "title": "Blumgi Slime",
+   "video": "https://v.poki-cdn.com/9115d91e-989e-46a4-b0bd-e19cbe3714de/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "9115d91e-989e-46a4-b0bd-e19cbe3714de/thumbnail",
+   "developer": "Blumgi",
+   "image": {
+    "path": "9aa6000ed201eba3c8f878c489a7c3ce/blumgi-slime-logo.png"
+   },
+   "image_url": "9aa6000ed201eba3c8f878c489a7c3ce/blumgi-slime-logo.png"
+  },
+  {
+   "id": 31075,
+   "pokifordevs_game_id": "a04d8c0d-0a34-4649-b0ce-3ea5bd1618d9",
+   "mobile": true,
+   "slug": "nuts-and-bolts-screwing-puzzle",
+   "title": "Nuts and Bolts: Screwing Puzzle",
+   "video": "https://v.poki-cdn.com/2dfc3dfc-476d-4680-ba6c-88d3f0e89261/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2dfc3dfc-476d-4680-ba6c-88d3f0e89261/thumbnail",
+   "developer": "Unico Studio",
+   "image": {
+    "path": "c2d96a7d5b31a4fc74db460b1c0def53/nuts-and-bolts-screwing-puzzle-logo.png"
+   },
+   "image_url": "c2d96a7d5b31a4fc74db460b1c0def53/nuts-and-bolts-screwing-puzzle-logo.png"
+  },
+  {
+   "id": 29767,
+   "pokifordevs_game_id": "0322484b-7a58-4454-9667-f805afffded5",
+   "mobile": true,
+   "slug": "brain-test-tricky-puzzles",
+   "title": "Brain Test: Tricky Puzzles",
+   "video": "https://v.poki-cdn.com/6e58374e-d9d5-4bf5-a3f8-9bf656f5cf13/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "6e58374e-d9d5-4bf5-a3f8-9bf656f5cf13/thumbnail",
+   "developer": "Unico Studio",
+   "image": {
+    "path": "f262d83ee394fcf98b378674e1430bfd/brain-test-tricky-puzzles-logo.png"
+   },
+   "image_url": "f262d83ee394fcf98b378674e1430bfd/brain-test-tricky-puzzles-logo.png",
+   "content_updated_at": 1596067200
+  }
+ ],
+ "fallback": ""
+}

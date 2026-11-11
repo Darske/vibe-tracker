@@ -45,11 +45,13 @@ class GameSnapshot(BaseModel):
     comments: int | None = None
     votes: int | None = None
     followers: int | None = None
+    rating: float | None = None  # average star rating where the platform shows one (Kongregate, itch.io top-rated)
 
     ai_tool: str | None = None
     engine: str | None = None
     tags: list[str] = Field(default_factory=list)
     published_at: datetime | None = None
+    ai_disclosure: Literal["ai", "no_ai"] | None = None  # legacy platforms: the game's own AI declaration, None = unknown
     status: Literal["ok", "gone"] = "ok"
     captured_at: datetime
 

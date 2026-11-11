@@ -15,6 +15,7 @@ import streamlit as st
 from dashboard import queries as q
 
 WINDOWS = {"1d": 1, "7d": 7, "14d": 14, "28d": 28, "56d": 56, "90d": 90}
+COHORTS = {"New entrants": ("new_entrant",), "Legacy": ("legacy",), "All": ("new_entrant", "legacy")}
 
 
 @dataclass
@@ -22,6 +23,7 @@ class Filters:
     sources: pd.DataFrame          # full sources table (fixed colour order)
     selected: tuple[str, ...]      # platform slugs after platform + segment filters
     segment: str                   # "both" | "aggregator" | "creation"
+    cohort: str                    # "New entrants" | "Legacy" | "All" (COHORTS)
     anchor: date                   # anchor date for metric cards
     window: str                    # one of WINDOWS: "1d" … "90d"
 
@@ -54,34 +56,47 @@ def sidebar() -> Filters:
         st.session_state["f_range__value"] = r
         st.session_state["_r_applied"] = r
     srcs = q.sources()
+    if "cohort" not in srcs.columns:  # before the cohort column exists
+        srcs = srcs.assign(cohort="new_entrant")
     all_names = list(srcs["name"])
+    from dashboard.ui import pills_value
+    cohort = pills_value("f_cohort", "New entrants")
+    cohort = cohort if cohort in COHORTS else "New entrants"
     with st.sidebar:
         st.markdown("### Filters")
         seg = st.radio("Segment", ["both", "aggregator", "creation"], horizontal=True, key="f_segment")
-        pool = srcs if seg == "both" else srcs[srcs["segment"] == seg]
+        pool = srcs[srcs["cohort"].isin(COHORTS[cohort])]
+        pool = pool if seg == "both" else pool[pool["segment"] == seg]
         chosen = st.multiselect(
             "Platforms", options=list(pool["name"]), default=list(pool["name"]),
-            format_func=lambda n: srcs.set_index("name").loc[n, "display_name"], key=f"f_platforms_{seg}",
+            format_func=lambda n: srcs.set_index("name").loc[n, "display_name"], key=f"f_platforms_{cohort}_{seg}",
         )
         custom = st.toggle("Custom anchor date", value=False, key="f_custom", help="Cards show the change since this date; otherwise the range pills set it.")
         anchor = st.date_input("Anchor date", value=today_utc() - timedelta(days=7), max_value=today_utc(), key="f_anchor") if custom else None
         st.caption("Figures cover the tracked top lists of each platform, not the whole platform.")
     sel = tuple(n for n in all_names if n in chosen)
-    from dashboard.ui import pills_value
     window = pills_value("f_range", "7d")
     if window not in WINDOWS:
         window = "7d"
     if anchor is None:
         anchor = today_utc() - timedelta(days=WINDOWS[window])
-    return Filters(sources=srcs, selected=sel, segment=seg, anchor=anchor, window=window)
+    return Filters(sources=srcs, selected=sel, segment=seg, cohort=cohort, anchor=anchor, window=window)
 
 
-def range_bar(f: Filters, key: str = "f_range") -> Filters:
-    """rotrends' 1d · 7d · 14d · 28d · 56d · 90d pills, shared across pages via session_state."""
+def range_bar(f: Filters, key: str = "f_range", show_cohort: bool = True) -> Filters:
+    """Cohort pills (New entrants · Legacy · All) and rotrends' 1d · 7d · 14d · 28d · 56d · 90d range pills, both
+    shared across pages via session_state. Changing the cohort reruns the page, and sidebar() applies it."""
     from dashboard.ui import pills
-    window = pills("Range", list(WINDOWS), key, "7d")
+    if show_cohort:
+        c1, c2 = st.columns([1, 1.3])
+        with c1:
+            pills("Platforms", list(COHORTS), "f_cohort", "New entrants")
+        with c2:
+            window = pills("Range", list(WINDOWS), key, "7d")
+    else:
+        window = pills("Range", list(WINDOWS), key, "7d")
     anchor = f.anchor if st.session_state.get("f_custom") else today_utc() - timedelta(days=WINDOWS[window])
-    return Filters(sources=f.sources, selected=f.selected, segment=f.segment, anchor=anchor, window=window)
+    return Filters(sources=f.sources, selected=f.selected, segment=f.segment, cohort=f.cohort, anchor=anchor, window=window)
 
 
 def label_for(f: Filters, source: str, key: str, default: str) -> str:

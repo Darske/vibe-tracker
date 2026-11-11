@@ -81,6 +81,19 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
             conn.writes["placements"] += len(pending)
         placements = pending
         log.info("%s: discovered %d games across %d placements", name, len(discovered), len(placements))
+        if not ccu:  # whole-platform figures (where the platform publishes them); never fails the run
+            try:
+                totals = adapter.platform_totals()
+                if totals and not dry:
+                    db.upsert_platform_totals(conn, name, utcnow(), totals)
+                    conn.commit()
+                if totals:
+                    log.info("%s: platform totals %s", name, {k: v for k, v in totals.items() if k != "extra"})
+            except BudgetExceeded:
+                raise
+            except Exception as e:  # noqa: BLE001
+                conn.rollback() if not dry else None
+                log.warning("%s: platform totals unavailable: %s", name, e)
 
         # 2. watchlist ----------------------------------------------------
         refs = dict(discovered)
@@ -230,12 +243,13 @@ def cmd_run(args) -> int:
         if not dry:
             today = run_ts.date()
             db.derive(conn, [today - timedelta(days=1), today], list(selected))
-            if not ccu and (run_ts.hour < 2 or args.force):
+            if not ccu:  # once a UTC day (any hour: GitHub sometimes skips scheduled runs)
                 last = db.get_maintenance(conn, "rollup_day")
                 if last != str(today):
-                    n = db.rollup(conn)
+                    n = db.thin_history(conn, today)
                     db.set_maintenance(conn, "rollup_day", str(today))
-                    log.info("rollup removed %d snapshot rows", n)
+                    conn.commit()
+                    log.info("thin_history removed %d intraday snapshot rows older than yesterday", n)
         else:
             print(json.dumps({"dry_run": True, "run_ts": run_ts.isoformat(), "would_write": conn.writes, "results": results}, indent=2, default=str))
     finally:

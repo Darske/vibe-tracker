@@ -1,0 +1,650 @@
+{
+ "id": 1141,
+ "title": "New Games",
+ "english_title": "New Games",
+ "description": "<p>Be the first to play Poki's newest games right here. Explore a full list of <a href=\"https://poki.com/\">free online games</a> to find fresh releases, new challenges and something different every time you visit.</p><p><h2>FAQ</h2></p>",
+ "slug": "new",
+ "meta": {
+  "site_id": 3,
+  "title": "New Games 🆕 - Play Online for Free! | Poki",
+  "description": "Discover new games on Poki! Explore the latest online releases, from satisfying simulations to engaging puzzle challenges and action-packed adventures. Play free web games instantly in the new games collection!"
+ },
+ "breadcrumb": [
+  {
+   "id": 1141,
+   "mobile": true,
+   "slug": "new",
+   "title": "New Games",
+   "short_title": "New",
+   "image": {
+    "path": "f85d951da80e7b11a3f1d1517a794760/new-logo.png"
+   },
+   "image_url": "f85d951da80e7b11a3f1d1517a794760/new-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "sparkle",
+   "game_count": 138
+  }
+ ],
+ "alternate_sites": {
+  "ar": {
+   "slug": "جديدة",
+   "title": "ألعاب جديدة"
+  },
+  "bg": {
+   "slug": "нови",
+   "title": "Нови Игри"
+  },
+  "bn": {
+   "slug": "নতুন",
+   "title": "নতুন গেমস"
+  },
+  "cs": {
+   "slug": "nové",
+   "title": "Nové Hry"
+  },
+  "da": {
+   "slug": "nye",
+   "title": "Nye spil"
+  },
+  "de": {
+   "slug": "neu",
+   "title": "Neue Spiele"
+  },
+  "el": {
+   "slug": "νέα",
+   "title": "Νέα Παιχνίδια"
+  },
+  "en": {
+   "slug": "new",
+   "title": "New Games"
+  },
+  "es": {
+   "slug": "nuevos",
+   "title": "Nuevos Juegos"
+  },
+  "fi": {
+   "slug": "uudet",
+   "title": "Uudet pelit"
+  },
+  "fr": {
+   "slug": "nouveaux",
+   "title": "Nouveaux Jeux"
+  },
+  "he": {
+   "slug": "חדשים",
+   "title": "משחקים חדשים"
+  },
+  "hi": {
+   "slug": "नया",
+   "title": "नए खेल"
+  },
+  "hu": {
+   "slug": "új",
+   "title": "Új Játékok"
+  },
+  "id": {
+   "slug": "terbaru",
+   "title": "Game Terbaru"
+  },
+  "it": {
+   "slug": "nuovi",
+   "title": "Nuovi Giochi"
+  },
+  "ja": {
+   "slug": "新作",
+   "title": "新作ゲーム"
+  },
+  "ko": {
+   "slug": "새로운",
+   "title": "새로운 게임"
+  },
+  "ms": {
+   "slug": "baru",
+   "title": "Game Baru"
+  },
+  "nl": {
+   "slug": "nieuw",
+   "title": "Nieuwe Spelletjes"
+  },
+  "no": {
+   "slug": "nye",
+   "title": "Nye spill"
+  },
+  "pl": {
+   "slug": "nowe",
+   "title": "Nowe gry"
+  },
+  "pt-br": {
+   "slug": "novos",
+   "title": "Novos Jogos"
+  },
+  "ro": {
+   "slug": "noi",
+   "title": "Jocuri Noi"
+  },
+  "ru": {
+   "slug": "новые",
+   "title": "Новые игры"
+  },
+  "sk": {
+   "slug": "nové",
+   "title": "Nové hry"
+  },
+  "sr": {
+   "slug": "nove",
+   "title": "Nove igre"
+  },
+  "sv": {
+   "slug": "nya",
+   "title": "Nya spel"
+  },
+  "th": {
+   "slug": "ใหม่",
+   "title": "เกมใหม่"
+  },
+  "tl": {
+   "slug": "bagong",
+   "title": "Mga Bagong Laro"
+  },
+  "tr": {
+   "slug": "yeni",
+   "title": "Yeni Oyunlar"
+  },
+  "uk": {
+   "slug": "нові",
+   "title": "Нові ігри"
+  },
+  "uz": {
+   "slug": "yangi",
+   "title": "Yangi oʻyinlar"
+  }
+ },
+ "iab_categories": "IAB9,IAB9-30",
+ "emoji": "",
+ "icon": "sparkle",
+ "image_url": "f85d951da80e7b11a3f1d1517a794760/new-logo.png",
+ "json_blobs": [
+  {
+   "faq": [
+    {
+     "id": "63lxr6u",
+     "answer": "New titles are added to Poki's platform every week. There are always new titles to try out.",
+     "question": "How often are new games released?"
+    }
+   ],
+   "_jsonLd": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"How often are new games released?\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"New titles are added to Poki's platform every week. There are always new titles to try out.\"\n      }\n    }\n  ]\n}"
+  }
+ ],
+ "image": {
+  "path": "f85d951da80e7b11a3f1d1517a794760/new-logo.png"
+ },
+ "games": [
+  {
+   "id": 32483,
+   "pokifordevs_game_id": "e3b80b37-f5d4-4b1f-8c87-dd2645db8a64",
+   "mobile": true,
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War",
+   "video": "https://v.poki-cdn.com/013f47fd-b913-45d6-a65e-fd50ba62dfb3/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "013f47fd-b913-45d6-a65e-fd50ba62dfb3/thumbnail",
+   "developer": "Mad Pixel Games LTD",
+   "is_new": true,
+   "score": 1,
+   "image": {
+    "path": "daca950063d994045fdbc518943b1c13/country-balls-world-war-logo.png"
+   },
+   "image_url": "daca950063d994045fdbc518943b1c13/country-balls-world-war-logo.png"
+  },
+  {
+   "id": 32464,
+   "pokifordevs_game_id": "254bff8f-d509-4c08-a6fa-c4d9aec062e3",
+   "mobile": true,
+   "slug": "platypus-coffee",
+   "title": "Platypus Coffee",
+   "video": "https://v.poki-cdn.com/2bbac2c6-94e2-4751-85de-7a024bc4c065/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2bbac2c6-94e2-4751-85de-7a024bc4c065/thumbnail",
+   "developer": "Plampstudio",
+   "is_new": true,
+   "score": 0.95,
+   "image": {
+    "path": "1b781f7e11cd1afd3c13903a04f5da86/platypus-coffee-logo.png"
+   },
+   "image_url": "1b781f7e11cd1afd3c13903a04f5da86/platypus-coffee-logo.png"
+  },
+  {
+   "id": 32678,
+   "pokifordevs_game_id": "ff9402b8-9d37-4759-87f8-ad9ccb8b3003",
+   "mobile": true,
+   "slug": "crown-hunters",
+   "title": "CROWN HUNTERS",
+   "video": "https://v.poki-cdn.com/9a7a438b-1fec-4f72-9b4c-016fd6ab7464/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "9a7a438b-1fec-4f72-9b4c-016fd6ab7464/thumbnail",
+   "developer": "Docski",
+   "is_new": true,
+   "score": 0.9,
+   "image": {
+    "path": "99321b060f689bc5ebf0716ad8b2ae5d/crown-hunters-logo.png"
+   },
+   "image_url": "99321b060f689bc5ebf0716ad8b2ae5d/crown-hunters-logo.png"
+  },
+  {
+   "id": 32584,
+   "pokifordevs_game_id": "b676adbd-2c1a-4f29-9ad6-3421be32a12c",
+   "mobile": true,
+   "slug": "toy-repair-shop",
+   "title": "Toy Repair Shop",
+   "video": "https://v.poki-cdn.com/da9875dc-2a87-49f8-86ef-de49083b3fdd/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "da9875dc-2a87-49f8-86ef-de49083b3fdd/thumbnail",
+   "developer": "Clap Clap Games",
+   "is_new": true,
+   "score": 0.85,
+   "image": {
+    "path": "19613b3d2b80d411531c0d79905a29a1/toy-repair-shop-logo.png"
+   },
+   "image_url": "19613b3d2b80d411531c0d79905a29a1/toy-repair-shop-logo.png"
+  },
+  {
+   "id": 32270,
+   "pokifordevs_game_id": "d5a18ab2-a348-4ec8-a656-18ebba622da3",
+   "mobile": true,
+   "slug": "adopt-merge",
+   "title": "Adopt Merge",
+   "video": "https://v.poki-cdn.com/46cf2a5e-7b78-4387-838e-d1cdeb79ed19/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "46cf2a5e-7b78-4387-838e-d1cdeb79ed19/thumbnail",
+   "developer": "Adgard",
+   "is_new": true,
+   "score": 0.8,
+   "image": {
+    "path": "3f4452339fd4b7304e1b674c440cd403/adopt-merge-logo.png"
+   },
+   "image_url": "3f4452339fd4b7304e1b674c440cd403/adopt-merge-logo.png"
+  },
+  {
+   "id": 32598,
+   "pokifordevs_game_id": "c19abf38-fda5-4cda-85c1-a8006e02dc92",
+   "mobile": true,
+   "slug": "nuke-policy",
+   "title": "Nuke Policy",
+   "video": "https://v.poki-cdn.com/24eceb59-c6e2-497c-9d39-9e7a7668ea19/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "24eceb59-c6e2-497c-9d39-9e7a7668ea19/thumbnail",
+   "developer": "Kachki Productions",
+   "is_new": true,
+   "score": 0.75,
+   "image": {
+    "path": "cc000198bcd54ac260f54baa9ad72513/nuke-policy-logo.png"
+   },
+   "image_url": "cc000198bcd54ac260f54baa9ad72513/nuke-policy-logo.png"
+  },
+  {
+   "id": 32371,
+   "pokifordevs_game_id": "f380b799-a744-43bd-8336-cdadd2e7fe17",
+   "mobile": true,
+   "slug": "froogoo",
+   "title": "FROOGOO",
+   "video": "https://v.poki-cdn.com/f68b9668-3cca-4195-81b2-f3a5f1ae063f/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "f68b9668-3cca-4195-81b2-f3a5f1ae063f/thumbnail",
+   "developer": "Skal",
+   "is_new": true,
+   "score": 0.7,
+   "image": {
+    "path": "6cbb2904f9293b75a160d4689b0524c6/froogoo-logo.png"
+   },
+   "image_url": "6cbb2904f9293b75a160d4689b0524c6/froogoo-logo.png"
+  },
+  {
+   "id": 32554,
+   "pokifordevs_game_id": "623ce122-ad2f-4935-884c-7cd689cc2ce5",
+   "mobile": true,
+   "slug": "little-planet-lumberjack",
+   "title": "Little Planet Lumberjack",
+   "video": "https://v.poki-cdn.com/92a99db6-3dfa-4153-a786-321914552fd0/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "92a99db6-3dfa-4153-a786-321914552fd0/thumbnail",
+   "developer": "mtsai",
+   "is_new": true,
+   "score": 0.65,
+   "image": {
+    "path": "c1ba2f97795098d355b8c26a325567df/little-planet-lumberjack-logo.png"
+   },
+   "image_url": "c1ba2f97795098d355b8c26a325567df/little-planet-lumberjack-logo.png"
+  },
+  {
+   "id": 32265,
+   "pokifordevs_game_id": "243cb571-38f5-4381-9be2-9e4febbc25f8",
+   "mobile": true,
+   "slug": "dragon-the-dragon",
+   "title": "Dragon the Dragon",
+   "video": "https://v.poki-cdn.com/c4230321-3f7c-4207-a060-3de371312ec8/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "c4230321-3f7c-4207-a060-3de371312ec8/thumbnail",
+   "developer": "Mibbon",
+   "is_new": true,
+   "score": 0.6,
+   "image": {
+    "path": "cbf71f0344bafc96df37f5adebe09bbb/dragon-the-dragon-logo.png"
+   },
+   "image_url": "cbf71f0344bafc96df37f5adebe09bbb/dragon-the-dragon-logo.png"
+  },
+  {
+   "id": 33014,
+   "pokifordevs_game_id": "339b3809-7cfa-4057-8fa0-da1678a074b4",
+   "mobile": true,
+   "slug": "forgotten-hill-injustice-chapter-i",
+   "title": "Forgotten Hill Injustice: Chapter I",
+   "video": "https://v.poki-cdn.com/a6bab291-f549-4bf1-9d67-17fa1130a626/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "a6bab291-f549-4bf1-9d67-17fa1130a626/thumbnail",
+   "developer": "FM Studio",
+   "is_new": true,
+   "score": 0.55,
+   "image": {
+    "path": "b912d58fd7ed480d2cfd130a5bfc7e02/forgotten-hill-injustice-chapter-i-logo.png"
+   },
+   "image_url": "b912d58fd7ed480d2cfd130a5bfc7e02/forgotten-hill-injustice-chapter-i-logo.png"
+  },
+  {
+   "id": 32304,
+   "pokifordevs_game_id": "34640659-7961-4000-890f-ce47f4d17ab9",
+   "mobile": true,
+   "slug": "diy-world-fashion",
+   "title": "DIY World Fashion",
+   "video": "https://v.poki-cdn.com/104e5bc7-613e-453f-8e4e-29f3c7cbf344/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "104e5bc7-613e-453f-8e4e-29f3c7cbf344/thumbnail",
+   "developer": "Go Panda Games Studio",
+   "is_new": true,
+   "score": 0.5,
+   "image": {
+    "path": "7892eaa7c26aa2eacf42d82b4407ecd0/diy-world-fashion-logo.png"
+   },
+   "image_url": "7892eaa7c26aa2eacf42d82b4407ecd0/diy-world-fashion-logo.png"
+  },
+  {
+   "id": 32769,
+   "pokifordevs_game_id": "38bea640-7b3c-461e-a38a-26125392a882",
+   "mobile": true,
+   "slug": "cat-ghost-hunter",
+   "title": "Cat Ghost Hunter",
+   "video": "https://v.poki-cdn.com/05a5115b-dd31-4217-8340-a11730578199/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "05a5115b-dd31-4217-8340-a11730578199/thumbnail",
+   "developer": "Cosmonautic",
+   "is_new": true,
+   "score": 0.45,
+   "image": {
+    "path": "80cb473dc90d938c3d44bb435943a46e/cat-ghost-hunter-logo.png"
+   },
+   "image_url": "80cb473dc90d938c3d44bb435943a46e/cat-ghost-hunter-logo.png"
+  },
+  {
+   "id": 32513,
+   "pokifordevs_game_id": "66251425-c4be-48a7-a7da-55c4bda2fb2a",
+   "mobile": true,
+   "slug": "reroute",
+   "title": "Reroute",
+   "video": "https://v.poki-cdn.com/fb339423-215e-47ad-9da4-76907cc07b22/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "fb339423-215e-47ad-9da4-76907cc07b22/thumbnail",
+   "developer": "Yodco Media",
+   "is_new": true,
+   "score": 0.4,
+   "image": {
+    "path": "1b41a2754343c6bb1b4bcadaae6162a3/reroute-logo.png"
+   },
+   "image_url": "1b41a2754343c6bb1b4bcadaae6162a3/reroute-logo.png"
+  },
+  {
+   "id": 32600,
+   "pokifordevs_game_id": "38f0ec81-97fe-4b34-ace5-655ce5103153",
+   "mobile": true,
+   "slug": "jetpack-speed-obby",
+   "title": "Jetpack Speed Obby",
+   "video": "https://v.poki-cdn.com/5fdf71ad-27f1-4971-b8e3-83afdd599866/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "5fdf71ad-27f1-4971-b8e3-83afdd599866/thumbnail",
+   "developer": "skarb",
+   "is_new": true,
+   "score": 0.35,
+   "image": {
+    "path": "d65ff1d74519ca82f80ac4e8b30574d8/jetpack-speed-obby-logo.png"
+   },
+   "image_url": "d65ff1d74519ca82f80ac4e8b30574d8/jetpack-speed-obby-logo.png"
+  },
+  {
+   "id": 32310,
+   "pokifordevs_game_id": "9c491e30-28bc-443b-ad7e-8190935ac12c",
+   "mobile": true,
+   "slug": "emoji-factory",
+   "title": "Emoji Factory",
+   "video": "https://v.poki-cdn.com/ce2574c6-292e-4251-b668-8b786bc29d69/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "ce2574c6-292e-4251-b668-8b786bc29d69/thumbnail",
+   "developer": "Dinobros",
+   "is_new": true,
+   "score": 0.3,
+   "image": {
+    "path": "30c4560ba98a81fe17f1250486faecd6/emoji-factory-logo.png"
+   },
+   "image_url": "30c4560ba98a81fe17f1250486faecd6/emoji-factory-logo.png"
+  },
+  {
+   "id": 32462,
+   "pokifordevs_game_id": "1c8507c6-6c3e-4d19-ba26-2c776e0a777d",
+   "mobile": true,
+   "slug": "siegeward",
+   "title": "Siegeward",
+   "video": "https://v.poki-cdn.com/2e3cb258-043e-435c-b7f2-246abe0e12c3/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2e3cb258-043e-435c-b7f2-246abe0e12c3/thumbnail",
+   "developer": "Pinkfun Studio",
+   "is_new": true,
+   "score": 0.25,
+   "image": {
+    "path": "557b4c70e766ecaf0ba4e964452e77bc/siegeward-logo.png"
+   },
+   "image_url": "557b4c70e766ecaf0ba4e964452e77bc/siegeward-logo.png"
+  },
+  {
+   "id": 32519,
+   "pokifordevs_game_id": "cecafe05-5ec3-487f-bdd4-bb3f139cff13",
+   "mobile": true,
+   "slug": "anthill-wars",
+   "title": "Anthill Wars",
+   "video": "https://v.poki-cdn.com/ef7d241e-3803-4f37-8405-e0888eac11b7/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "ef7d241e-3803-4f37-8405-e0888eac11b7/thumbnail",
+   "developer": "Playrea",
+   "is_new": true,
+   "score": 0.2,
+   "image": {
+    "path": "fb8e5d4ae2dc256495d5845dda469b1b/anthill-wars-logo.png"
+   },
+   "image_url": "fb8e5d4ae2dc256495d5845dda469b1b/anthill-wars-logo.png"
+  },
+  {
+   "id": 32397,
+   "pokifordevs_game_id": "0c0eb451-bb16-488d-9eb4-75a40ebeaf69",
+   "mobile": true,
+   "slug": "my-snack-bar",
+   "title": "My Snack Bar",
+   "video": "https://v.poki-cdn.com/05418d3d-380f-4535-956b-6d822a52cfa3/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "05418d3d-380f-4535-956b-6d822a52cfa3/thumbnail",
+   "developer": "Camu",
+   "is_new": true,
+   "score": 0.15,
+   "image": {
+    "path": "3d901690878317708f362bfefd20e4ce/my-snack-bar-logo.png"
+   },
+   "image_url": "3d901690878317708f362bfefd20e4ce/my-snack-bar-logo.png"
+  },
+  {
+   "id": 32455,
+   "pokifordevs_game_id": "7790bf07-c062-4243-b1ea-519fd772ad1b",
+   "mobile": true,
+   "slug": "merge-blast",
+   "title": "Merge Blast",
+   "video": "https://v.poki-cdn.com/11476d6d-1ebe-497d-84ff-f5b0fd3786d0/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "11476d6d-1ebe-497d-84ff-f5b0fd3786d0/thumbnail",
+   "developer": "Kimchi Soup Studios",
+   "is_new": true,
+   "score": 0.1,
+   "image": {
+    "path": "d6075a38c97888182ebbcd632295a5e0/merge-blast-logo.png"
+   },
+   "image_url": "d6075a38c97888182ebbcd632295a5e0/merge-blast-logo.png"
+  },
+  {
+   "id": 33047,
+   "pokifordevs_game_id": "cc778328-1846-4549-97c7-276cced0e651",
+   "mobile": true,
+   "slug": "tic-tac-toe-ultimate",
+   "title": "Tic Tac Toe Ultimate",
+   "video": "https://v.poki-cdn.com/6cc22518-22a2-47e2-b74b-a42e1326edce/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "6cc22518-22a2-47e2-b74b-a42e1326edce/thumbnail",
+   "developer": "Classic Games",
+   "is_new": true,
+   "score": 0.05,
+   "image": {
+    "path": "89e68dec92edf453452eb4338c43c8be/tic-tac-toe-ultimate-logo.jfif"
+   },
+   "image_url": "89e68dec92edf453452eb4338c43c8be/tic-tac-toe-ultimate-logo.jfif"
+  }
+ ],
+ "related_categories": [
+  {
+   "id": 1190,
+   "mobile": true,
+   "slug": "mobile",
+   "title": "Mobile Games",
+   "short_title": "Mobile",
+   "image": {
+    "path": "98df7c61542c2bb2c3566a755a459aa8/mobile-logo.png"
+   },
+   "image_url": "98df7c61542c2bb2c3566a755a459aa8/mobile-logo.png",
+   "icon": "mobile-phone",
+   "game_count": 99
+  },
+  {
+   "id": 4,
+   "mobile": true,
+   "slug": "girls",
+   "title": "Games for Girls",
+   "short_title": "Girls",
+   "image": {
+    "path": "92ee01bd30e4ad4fa7b991637374ef48/girls-logo.png"
+   },
+   "image_url": "92ee01bd30e4ad4fa7b991637374ef48/girls-logo.png",
+   "iab_categories": "IAB9,IAB18,IAB9-30",
+   "category_type": "audience",
+   "game_count": 237
+  },
+  {
+   "id": 3,
+   "mobile": true,
+   "slug": "action",
+   "title": "Action Games",
+   "short_title": "Action",
+   "image": {
+    "path": "dbc7dd98491c7e43362d9ad7b5afbec2/action-logo.png"
+   },
+   "image_url": "dbc7dd98491c7e43362d9ad7b5afbec2/action-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "explosion",
+   "category_type": "genre",
+   "game_count": 655
+  },
+  {
+   "id": 6,
+   "mobile": true,
+   "slug": "adventure",
+   "title": "Adventure Games",
+   "short_title": "Adventure",
+   "image": {
+    "path": "94f0d123275fb73da13aaed4a2725184/adventure-logo.png"
+   },
+   "image_url": "94f0d123275fb73da13aaed4a2725184/adventure-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "sword",
+   "category_type": "genre",
+   "game_count": 382
+  },
+  {
+   "id": 37,
+   "mobile": true,
+   "slug": "mouse",
+   "title": "Mouse Games",
+   "short_title": "Mouse",
+   "image": {
+    "path": "b347a4526e232d2d6310d4f0be143efb/mouse-logo.png"
+   },
+   "image_url": "b347a4526e232d2d6310d4f0be143efb/mouse-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "mechanic",
+   "game_count": 432
+  },
+  {
+   "id": 93,
+   "mobile": true,
+   "slug": "3d",
+   "title": "3D Games",
+   "short_title": "3D",
+   "image": {
+    "path": "f71608f9a4ead92b0e67ae9811712046/3d-logo.png"
+   },
+   "image_url": "f71608f9a4ead92b0e67ae9811712046/3d-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "3d",
+   "category_type": "visual",
+   "game_count": 593
+  },
+  {
+   "id": 9,
+   "mobile": true,
+   "slug": "skill",
+   "title": "Skill Games",
+   "short_title": "Skill",
+   "image": {
+    "path": "3ef233cfb9ca304e6614a2a2705cc7aa/skill-logo.png"
+   },
+   "image_url": "3ef233cfb9ca304e6614a2a2705cc7aa/skill-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "darts",
+   "category_type": "genre",
+   "game_count": 582
+  },
+  {
+   "id": 1140,
+   "mobile": true,
+   "slug": "popular",
+   "title": "Popular Games",
+   "short_title": "Popular",
+   "image": {
+    "path": "8ca196a9c722e6268767f6cbcba1cdfe/popular-logo.png"
+   },
+   "image_url": "8ca196a9c722e6268767f6cbcba1cdfe/popular-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "fire",
+   "game_count": 99
+  },
+  {
+   "id": 91,
+   "mobile": true,
+   "slug": "simulation",
+   "title": "Simulation Games",
+   "short_title": "Simulation",
+   "image": {
+    "path": "4355066783aa4c6bd91b937a4f97118a/simulation-logo.png"
+   },
+   "image_url": "4355066783aa4c6bd91b937a4f97118a/simulation-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "vendor",
+   "category_type": "genre",
+   "game_count": 495
+  },
+  {
+   "id": 72,
+   "mobile": true,
+   "slug": "puzzle",
+   "title": "Puzzle Games",
+   "short_title": "Puzzle",
+   "image": {
+    "path": "1037143ff2ab7f3d72eeb4500a6ce55e/puzzle-logo.png"
+   },
+   "image_url": "1037143ff2ab7f3d72eeb4500a6ce55e/puzzle-logo.png",
+   "iab_categories": "IAB9,IAB9-8,IAB9-5,IAB9-30",
+   "icon": "puzzle",
+   "category_type": "genre",
+   "game_count": 653
+  }
+ ]
+}

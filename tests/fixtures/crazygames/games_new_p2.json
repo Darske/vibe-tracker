@@ -1,0 +1,3311 @@
+{
+ "games": {
+  "pagination": {
+   "page": 2,
+   "size": 100
+  },
+  "total": 4684,
+  "items": [
+   {
+    "id": "148771",
+    "name": "NightZ.io",
+    "slug": "nightz-io-jtj",
+    "cover": "nightz-io-jtj_16x9/20261102032705/nightz-io-jtj_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 110,
+    "totalPlays": 5966,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 40,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "139044",
+    "name": "London Black Cab Driver",
+    "slug": "london-black-cab-driver",
+    "cover": "london-black-cab-driver_16x9/20261110022734/london-black-cab-driver_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 2666,
+    "totalPlays": 186063,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "142202",
+    "name": "Runespire: Idle Tower Defense",
+    "slug": "runespire-idle-tower-defense",
+    "cover": "runespire-idle-tower-defense_16x9/20261102030139/runespire-idle-tower-defense_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 352,
+    "totalPlays": 18929,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "146033",
+    "name": "Stickman Death Fight",
+    "slug": "stickman-death-fight",
+    "cover": "stickman-death-fight_16x9/20261029095830/stickman-death-fight_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 372,
+    "totalPlays": 15074,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "139466",
+    "name": "SKYFANG: Dragon Hunters",
+    "slug": "skyfang-dragon-hunters",
+    "cover": "skyfang-dragon-hunters_16x9/20261029044320/skyfang-dragon-hunters_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 665,
+    "totalPlays": 44863,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "143561",
+    "name": "Miami Rideout",
+    "slug": "miami-rideout-edt",
+    "cover": "miami-rideout-edt_16x9/20261102101244/miami-rideout-edt_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 2467,
+    "totalPlays": 210363,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 20,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "136740",
+    "name": "Cooking Blast",
+    "slug": "cooking-blast",
+    "cover": "cooking-blast_16x9/20261013095118/cooking-blast_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 230,
+    "totalPlays": 13117,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "129074",
+    "name": "Clean Slate",
+    "slug": "clean-slate-pnn",
+    "cover": "clean-slate-pnn_16x9/20261026061703/clean-slate-pnn_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 808,
+    "totalPlays": 67263,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "139812",
+    "name": "Rising Star",
+    "slug": "rising-star",
+    "cover": "rising-star_16x9/20261103051952/rising-star_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile",
+     "updated"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 1483,
+    "totalPlays": 76582,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "143332",
+    "name": "Kaboom Town",
+    "slug": "kaboom-town",
+    "cover": "kaboom-town_16x9/20261016063641/kaboom-town_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 808,
+    "totalPlays": 66741,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "137059",
+    "name": "BLOCKSHOT",
+    "slug": "blockshot-dqv",
+    "cover": "blockshot-dqv_16x9/20261028025010/blockshot-dqv_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 131,
+    "totalPlays": 6135,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 8,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "111514",
+    "name": "Chicken Battle Simulator",
+    "slug": "chicken-battle-simulator",
+    "cover": "chicken-battle-simulator_16x9/20261028071840/chicken-battle-simulator_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 502,
+    "totalPlays": 21905,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133594",
+    "name": "London Street Football",
+    "slug": "london-street-football",
+    "cover": "london-street-football_16x9/20261109054123/london-street-football_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated",
+     "originals"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 1448,
+    "totalPlays": 108441,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "137235",
+    "name": "Driftwood Isles",
+    "slug": "driftwood-isles",
+    "cover": "driftwood-isles_16x9/20261010070704/driftwood-isles_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "driftwood-isles/e3416a31-f73c-449d-bd87-6baea514737d/driftwood-isles-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "driftwood-isles/25622def-c2d5-40ce-b10b-3f096349d609/driftwood-isles.mp4"
+     },
+     "covers": {
+      "1x1": "driftwood-isles_1x1/20261106125805/driftwood-isles_1x1-cover.png",
+      "2x3": "driftwood-isles_2x3/20261106125805/driftwood-isles_2x3-cover.png",
+      "16x9": "driftwood-isles_16x9/20261106125805/driftwood-isles_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-07",
+     "activeUntil": null,
+     "variantArtworkId": "6c7e3b4b-26ce-45bc-91a8-a00240f67f7d",
+     "baselineArtworkId": "70342538-5de8-47e4-b29b-d7601f8e9f84",
+     "artworkExperimentId": "42e2f983-aaf1-480c-93da-51ea3723cf2a"
+    },
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 1042,
+    "totalPlays": 48429,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "137403",
+    "name": "Velin World Puffy Morning",
+    "slug": "velin-world-puffy-morning",
+    "cover": "velin-world-puffy-morning_16x9/20261010100522/velin-world-puffy-morning_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Beauty",
+    "releaseYear": 2026,
+    "totalLikes": 343,
+    "totalPlays": 19780,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "136916",
+    "name": "Wingworks: Flight Lab",
+    "slug": "wingworks-flight-lab-dwm",
+    "cover": "wingworks-flight-lab-dwm_16x9/20261028090337/wingworks-flight-lab-dwm_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 789,
+    "totalPlays": 46189,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "122823",
+    "name": "Needle in a Haystack",
+    "slug": "needle-in-a-haystack",
+    "cover": "needle-in-a-haystack_16x9/20261030082753/needle-in-a-haystack_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 1372,
+    "totalPlays": 72894,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 8,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "109094",
+    "name": "Planet Defence",
+    "slug": "planet-defense",
+    "cover": "planet-defense_16x9/20261012063700/planet-defense_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "BOTH",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "planet-defense/cdba562f-b806-4fdd-a575-cb04060ff070/planet-defense-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "planet-defense/20f07019-2e6b-47f5-baf6-6f6984fb06b6/planet-defense.mp4"
+     },
+     "covers": {
+      "1x1": "planet-defense_1x1/20261102093429/planet-defense_1x1-cover.png",
+      "2x3": "planet-defense_2x3/20261102093430/planet-defense_2x3-cover.png",
+      "16x9": "planet-defense_16x9/20261102093430/planet-defense_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-03",
+     "activeUntil": null,
+     "variantArtworkId": "250f1dce-d189-47c8-b075-b48717a9c8a3",
+     "baselineArtworkId": "395cb976-515b-4d87-97b9-c9601c25bf7d",
+     "artworkExperimentId": "beacddda-a7ee-4df3-9cbc-86252a92c627"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Strategy",
+    "releaseYear": 2026,
+    "totalLikes": 345,
+    "totalPlays": 17983,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "134714",
+    "name": "Fashion Disaster Fix",
+    "slug": "fashion-disaster-fix",
+    "cover": "fashion-disaster-fix_16x9/20261008103336/fashion-disaster-fix_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Beauty",
+    "releaseYear": 2026,
+    "totalLikes": 314,
+    "totalPlays": 15425,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "138015",
+    "name": "Guess the Number",
+    "slug": "guess-the-number-gdx",
+    "cover": "guess-the-number-gdx_16x9/20261010223958/guess-the-number-gdx_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 863,
+    "totalPlays": 71923,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "137003",
+    "name": "Spin Rivals",
+    "slug": "spin-rivals-nrp",
+    "cover": "spin-rivals-nrp_16x9/20261027073508/spin-rivals-nrp_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 521,
+    "totalPlays": 30129,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "121566",
+    "name": "Doorman Story",
+    "slug": "doorman-story",
+    "cover": "doorman-story_16x9/20261029122341/doorman-story_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 252,
+    "totalPlays": 18547,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "139846",
+    "name": "Catch the Shark!",
+    "slug": "catch-the-shark",
+    "cover": "catch-the-shark_16x9/20261102095234/catch-the-shark_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 306,
+    "totalPlays": 22212,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "137384",
+    "name": "Hide & Shoot",
+    "slug": "hide-shoot",
+    "cover": "hide-shoot_16x9/20261010094140/hide-shoot_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 934,
+    "totalPlays": 70664,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "139084",
+    "name": "Silent Assassin",
+    "slug": "silent-assassin",
+    "cover": "silent-assassin_16x9/20261026090035/silent-assassin_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 1635,
+    "totalPlays": 108137,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "131112",
+    "name": "Blocky League",
+    "slug": "blocky-league",
+    "cover": "blocky-league_16x9/20261016051650/blocky-league_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 1115,
+    "totalPlays": 62176,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "121640",
+    "name": "Cryptograms",
+    "slug": "cryptograms",
+    "cover": "cryptograms_16x9/20260917083339/cryptograms_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Word",
+    "releaseYear": 2026,
+    "totalLikes": 142,
+    "totalPlays": 17052,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "147224",
+    "name": "Escape Master",
+    "slug": "escape-master",
+    "cover": "escape-master_16x9/20261029071135/escape-master_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 757,
+    "totalPlays": 36225,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "83100",
+    "name": "Pawn to Don",
+    "slug": "pawn-to-don-qbi",
+    "cover": "pawn-to-don-qbi_16x9/20261103050801/pawn-to-don-qbi_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 881,
+    "totalPlays": 26399,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "140086",
+    "name": "Bunker Empire",
+    "slug": "bunker-empire",
+    "cover": "bunker-empire_16x9/20261013024255/bunker-empire_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 721,
+    "totalPlays": 57890,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128720",
+    "name": "Fashion World Tour",
+    "slug": "fashion-world-tour",
+    "cover": "fashion-world-tour_16x9/20260930105758/fashion-world-tour_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Beauty",
+    "releaseYear": 2026,
+    "totalLikes": 374,
+    "totalPlays": 20347,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "126590",
+    "name": "River Crossing! Puzzle Adventure",
+    "slug": "river-crossing-puzzle-adventure",
+    "cover": "river-crossing-puzzle-adventure_16x9/20260928130759/river-crossing-puzzle-adventure_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 372,
+    "totalPlays": 21863,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "138020",
+    "name": "Dino Egg Factory",
+    "slug": "dino-egg-factory-jlu",
+    "cover": "dino-egg-factory-jlu_16x9/20261109040129/dino-egg-factory-jlu_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 265,
+    "totalPlays": 14995,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "134288",
+    "name": "Haystack Hunter",
+    "slug": "haystack-hunter",
+    "cover": "haystack-hunter_16x9/20261008101955/haystack-hunter_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 767,
+    "totalPlays": 52918,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "126354",
+    "name": "Airplane Flight Pilot Simulator",
+    "slug": "airplane-flight-pilot-simulator",
+    "cover": "airplane-flight-pilot-simulator_16x9/20260929062817/airplane-flight-pilot-simulator_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 14226,
+    "totalPlays": 992604,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "140298",
+    "name": "Farkle",
+    "slug": "farkle",
+    "cover": "farkle_16x9/20261016075752/farkle_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Board",
+    "releaseYear": 2026,
+    "totalLikes": 147,
+    "totalPlays": 16095,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 6,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "138526",
+    "name": "London Air Ambulance",
+    "slug": "london-air-ambulance",
+    "cover": "london-air-ambulance_16x9/20261017100448/london-air-ambulance_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 4452,
+    "totalPlays": 269571,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "118529",
+    "name": "+1 Jump Obby Escape Keyboard",
+    "slug": "1-jump---obby-escape-keyboard",
+    "cover": "1-jump---obby-escape-keyboard_16x9/20260908105236/1-jump---obby-escape-keyboard_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 2984,
+    "totalPlays": 148377,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "142861",
+    "name": "SaltySeas.io",
+    "slug": "saltyseas-io",
+    "cover": "saltyseas-io_16x9/20261019061451/saltyseas-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 2213,
+    "totalPlays": 153732,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 250,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "81092",
+    "name": "Mountain Car Climb : 4x4",
+    "slug": "mountain-car-climb-4x4",
+    "cover": "mountain-car-climb-4x4_16x9/20261029025531/mountain-car-climb-4x4_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 431,
+    "totalPlays": 31446,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "129390",
+    "name": "Power Wash Town",
+    "slug": "power-wash-town",
+    "cover": "power-wash-town_16x9/20261013095639/power-wash-town_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 580,
+    "totalPlays": 37985,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "136504",
+    "name": "Thousand Strikes",
+    "slug": "thousand-strikes",
+    "cover": "thousand-strikes_16x9/20261028030028/thousand-strikes_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 974,
+    "totalPlays": 42543,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "135704",
+    "name": "Crash Yard",
+    "slug": "crash-yard",
+    "cover": "crash-yard_16x9/20261009085718/crash-yard_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 615,
+    "totalPlays": 35486,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128519",
+    "name": "Ridgebound",
+    "slug": "ridgebound",
+    "cover": "ridgebound_16x9/20261016032114/ridgebound_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 1398,
+    "totalPlays": 72585,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "130014",
+    "name": "Swarm Sensei",
+    "slug": "swarm-sensei",
+    "cover": "swarm-sensei_16x9/20261016104830/swarm-sensei_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 253,
+    "totalPlays": 10285,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133198",
+    "name": "Euro Car Parking Simulator",
+    "slug": "euro-car-parking-simulator-ttf",
+    "cover": "euro-car-parking-simulator-ttf_16x9/20261007104450/euro-car-parking-simulator-ttf_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 982,
+    "totalPlays": 48929,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "132654",
+    "name": "Realistic Car Parking",
+    "slug": "realistic-car-parking",
+    "cover": "realistic-car-parking_16x9/20261006104306/realistic-car-parking_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 2156,
+    "totalPlays": 134995,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "132960",
+    "name": "Wish Fountain",
+    "slug": "wish-fountain",
+    "cover": "wish-fountain_16x9/20261007075330/wish-fountain_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 322,
+    "totalPlays": 11979,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "134318",
+    "name": "Swole Clicker",
+    "slug": "swole-clicker-ero",
+    "cover": "swole-clicker-ero_16x9/20261021073634/swole-clicker-ero_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 306,
+    "totalPlays": 16487,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "134909",
+    "name": "Hay Factory Tycoon",
+    "slug": "hay-factory-tycoon",
+    "cover": "hay-factory-tycoon_16x9/20261019113627/hay-factory-tycoon_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 710,
+    "totalPlays": 45351,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "140162",
+    "name": "Curve Kick: Free Kick Master",
+    "slug": "curve-kick-free-kick-master",
+    "cover": "curve-kick-free-kick-master_16x9/20261022093619/curve-kick-free-kick-master_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 533,
+    "totalPlays": 44465,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "130968",
+    "name": "First Touch",
+    "slug": "first-touch-tjz",
+    "cover": "first-touch-tjz_16x9/20261023030425/first-touch-tjz_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 744,
+    "totalPlays": 45304,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128794",
+    "name": "Laundromania",
+    "slug": "laundromania",
+    "cover": "laundromania_16x9/20261105102855/laundromania_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 284,
+    "totalPlays": 13324,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "137723",
+    "name": "Sitebreak",
+    "slug": "sitebreak",
+    "cover": "sitebreak_16x9/20261106033145/sitebreak_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 378,
+    "totalPlays": 18810,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133434",
+    "name": "Dragon Hoard",
+    "slug": "dragon-hoard",
+    "cover": "dragon-hoard_16x9/20261007083248/dragon-hoard_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 522,
+    "totalPlays": 21833,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "135052",
+    "name": "Ultimate Plane Upgrade",
+    "slug": "ultimate-plane-upgrade-ies",
+    "cover": "ultimate-plane-upgrade-ies_16x9/20261109045216/ultimate-plane-upgrade-ies_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-mobile",
+     "updated"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 2188,
+    "totalPlays": 159477,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "139197",
+    "name": "Alchemy Sparks",
+    "slug": "alchemy-sparks",
+    "cover": "alchemy-sparks_16x9/20261016182753/alchemy-sparks_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "BOTH",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "alchemy-sparks/d1e7409b-77b8-4717-82a9-1e8a8f539179/alchemy-sparks-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "alchemy-sparks/ecb4f77e-8952-41ea-8906-25c11d99dc6d/alchemy-sparks.mp4"
+     },
+     "covers": {
+      "1x1": "alchemy-sparks_1x1/20261106002910/alchemy-sparks_1x1-cover.png",
+      "2x3": "alchemy-sparks_2x3/20261106002910/alchemy-sparks_2x3-cover.png",
+      "16x9": "alchemy-sparks_16x9/20261106002911/alchemy-sparks_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-07",
+     "activeUntil": null,
+     "variantArtworkId": "898860df-d5ed-4de6-aaab-2386ca2f68a4",
+     "baselineArtworkId": "c247490a-c64e-448d-8d7a-df7eaf7513e0",
+     "artworkExperimentId": "bd3c8abf-1972-4ae6-97eb-ccded483fba8"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 164,
+    "totalPlays": 8194,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "134616",
+    "name": "ASMR Halloween Makeover",
+    "slug": "asmr-halloween-makeover",
+    "cover": "asmr-halloween-makeover_16x9/20261008093429/asmr-halloween-makeover_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Beauty",
+    "releaseYear": 2026,
+    "totalLikes": 266,
+    "totalPlays": 15382,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "131236",
+    "name": "Crust Crusher",
+    "slug": "crust-crusher",
+    "cover": "crust-crusher_16x9/20261029030300/crust-crusher_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "crust-crusher/c4710c50-e2b6-4ae2-8150-283a6a3f2bd0/crust-crusher-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "crust-crusher/959ad18b-af83-4fd4-8e50-4aba4e2d9097/crust-crusher.mp4"
+     },
+     "covers": {
+      "1x1": "crust-crusher_1x1/20261030153153/crust-crusher_1x1-cover.png",
+      "2x3": "crust-crusher_2x3/20261030153154/crust-crusher_2x3-cover.png",
+      "16x9": "crust-crusher_16x9/20261030153154/crust-crusher_16x9-cover.png"
+     },
+     "activeFrom": "2026-10-31",
+     "activeUntil": null,
+     "variantArtworkId": "b8f3ee6e-f9c5-4090-a0c9-fe959153f109",
+     "baselineArtworkId": "288a1088-af62-4e14-91fa-e2c4e582de88",
+     "artworkExperimentId": "28f65b36-ed7d-41ab-8c0c-3adffc90efc6"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 182,
+    "totalPlays": 11475,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128068",
+    "name": "Root to core",
+    "slug": "root-to-core",
+    "cover": "root-to-core_16x9/20261102054425/root-to-core_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 266,
+    "totalPlays": 22601,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "126429",
+    "name": "The Mafia City Gangster Game",
+    "slug": "the-mafia-city-gangster-game",
+    "cover": "the-mafia-city-gangster-game_16x9/20260928070322/the-mafia-city-gangster-game_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 1465,
+    "totalPlays": 76333,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "132430",
+    "name": "Sea Survivor",
+    "slug": "sea-survivor-lcj",
+    "cover": "sea-survivor-lcj_16x9/20261028115717/sea-survivor-lcj_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 405,
+    "totalPlays": 9205,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "101661",
+    "name": "Farm Squad",
+    "slug": "farm-squad",
+    "cover": "farm-squad_16x9/20260930170048/farm-squad_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 157,
+    "totalPlays": 6126,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null
+    }
+   },
+   {
+    "id": "131391",
+    "name": "Pizza Shop Rush",
+    "slug": "pizza-shop-rush",
+    "cover": "pizza-shop-rush_16x9/20261005070000/pizza-shop-rush_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 242,
+    "totalPlays": 15031,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "132988",
+    "name": "Busy Bites Tycoon",
+    "slug": "busy-bites-tycoon",
+    "cover": "busy-bites-tycoon_16x9/20261007054252/busy-bites-tycoon_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "busy-bites-tycoon/3eb6f0a4-04bb-41bd-b470-c0966a78b9d0/busy-bites-tycoon-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "busy-bites-tycoon/b07a7fbe-e255-4f11-a59e-23e317503a54/busy-bites-tycoon.mp4"
+     },
+     "covers": {
+      "1x1": "busy-bites-tycoon_1x1/20261027155510/busy-bites-tycoon_1x1-cover.png",
+      "2x3": "busy-bites-tycoon_2x3/20261027155510/busy-bites-tycoon_2x3-cover.png",
+      "16x9": "busy-bites-tycoon_16x9/20261027155510/busy-bites-tycoon_16x9-cover.png"
+     },
+     "activeFrom": "2026-10-28",
+     "activeUntil": "2026-11-05",
+     "variantArtworkId": "0907492e-f815-4c22-b63c-b14fd5a5a68f",
+     "baselineArtworkId": "6f25c13e-0344-4de8-91da-a22c92cd89e8",
+     "artworkExperimentId": "304f4e9a-f9c3-4e14-8877-49815d855ce9"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 221,
+    "totalPlays": 10383,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "120407",
+    "name": "HEX Dominion",
+    "slug": "hex-dominion",
+    "cover": "hex-dominion_16x9/20261012033120/hex-dominion_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Strategy",
+    "releaseYear": 2026,
+    "totalLikes": 312,
+    "totalPlays": 21116,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "123918",
+    "name": "Raftcraft",
+    "slug": "raftcraft",
+    "cover": "raftcraft_16x9/20261027132355/raftcraft_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 2308,
+    "totalPlays": 102877,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 16,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "124106",
+    "name": "Mecha War: Colony Battle Royale",
+    "slug": "mecha-war-colony-battle-royale",
+    "cover": "mecha-war-colony-battle-royale_16x9/20261105065102/mecha-war-colony-battle-royale_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 2866,
+    "totalPlays": 157575,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "134569",
+    "name": "Promotion Commotion",
+    "slug": "promotion-commotion",
+    "cover": "promotion-commotion_16x9/20261008065120/promotion-commotion_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 657,
+    "totalPlays": 22580,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "129932",
+    "name": "Trash Tycoon",
+    "slug": "trash-tycoon-syd",
+    "cover": "trash-tycoon-syd_16x9/20261109040230/trash-tycoon-syd_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 541,
+    "totalPlays": 26369,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133159",
+    "name": "Scrapfleet.io",
+    "slug": "flotsam-io",
+    "cover": "flotsam-io_16x9/20261020070626/flotsam-io_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 267,
+    "totalPlays": 18796,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "136157",
+    "name": "Superhero Simulator",
+    "slug": "superhero-simulator",
+    "cover": "superhero-simulator_16x9/20261009064514/superhero-simulator_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 514,
+    "totalPlays": 22264,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "115284",
+    "name": "+1 Speed - Monkey Parkour Obby",
+    "slug": "1-speed---monkey-parkour-obby",
+    "cover": "1-speed---monkey-parkour-obby_16x9/20260903025332/1-speed---monkey-parkour-obby_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 2955,
+    "totalPlays": 147055,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "140006",
+    "name": "Cyber Samurai",
+    "slug": "cyber-samurai-zfw",
+    "cover": "cyber-samurai-zfw_16x9/20261022070307/cyber-samurai-zfw_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 809,
+    "totalPlays": 25846,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "124866",
+    "name": "Crazy Combos",
+    "slug": "crazy-combos",
+    "cover": "crazy-combos_16x9/20261023105413/crazy-combos_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 459,
+    "totalPlays": 20929,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 6,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "139001",
+    "name": "Dalkom Café",
+    "slug": "dalkom-cafe-vzm",
+    "cover": "dalkom-cafe-vzm_16x9/20261030030052/dalkom-cafe-vzm_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 460,
+    "totalPlays": 20860,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "127331",
+    "name": "DEEP CAST",
+    "slug": "deep-cast",
+    "cover": "deep-cast_16x9/20261020052330/deep-cast_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 227,
+    "totalPlays": 17349,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "136072",
+    "name": "Gorilla Smash",
+    "slug": "gorilla-smash",
+    "cover": "gorilla-smash_16x9/20261008195355/gorilla-smash_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 820,
+    "totalPlays": 35911,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "130668",
+    "name": "Pixel Jam Bus Puzzle",
+    "slug": "pixel-jam-bus-puzzle",
+    "cover": "pixel-jam-bus-puzzle_16x9/20261002110358/pixel-jam-bus-puzzle_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 178,
+    "totalPlays": 20892,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "131377",
+    "name": "Dream Cake Designer",
+    "slug": "dream-cake-designer",
+    "cover": "dream-cake-designer_16x9/20261006071551/dream-cake-designer_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 317,
+    "totalPlays": 18598,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "135592",
+    "name": "Bid Boss",
+    "slug": "bid-boss",
+    "cover": "bid-boss_16x9/20261029040842/bid-boss_16x9-cover.png",
+    "isOriginal": true,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "bid-boss/c1db56cf-db8a-4f63-b8c6-b2bd378d45d7/bid-boss-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "bid-boss/6655ef0b-fe3c-4c85-9da6-4eccfc7de746/bid-boss.mp4"
+     },
+     "covers": {
+      "1x1": "bid-boss_1x1/20261103093607/bid-boss_1x1-cover.png",
+      "2x3": "bid-boss_2x3/20261103093607/bid-boss_2x3-cover.png",
+      "16x9": "bid-boss_16x9/20261103093607/bid-boss_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-04",
+     "activeUntil": "2026-11-10",
+     "variantArtworkId": "d47a74c9-6ea5-4811-a156-fc1a40af228d",
+     "baselineArtworkId": "18b17101-9ef5-41c5-a82a-954d8c0501eb",
+     "artworkExperimentId": "cc0e2e67-fab7-4aba-84f8-8a421ee11f6d"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 496,
+    "totalPlays": 25521,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": false,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133308",
+    "name": "Oops! Delivery",
+    "slug": "oops-delivery",
+    "cover": "oops-delivery_16x9/20261026094700/oops-delivery_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 212,
+    "totalPlays": 12569,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133250",
+    "name": "Beacon Bay",
+    "slug": "beacon-bay",
+    "cover": "beacon-bay_16x9/20261028132119/beacon-bay_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 188,
+    "totalPlays": 8235,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128714",
+    "name": "DIY Interior Consultant",
+    "slug": "diy-interior-consultant",
+    "cover": "diy-interior-consultant_16x9/20261026113833/diy-interior-consultant_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 187,
+    "totalPlays": 7837,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "133480",
+    "name": "Wave Flip",
+    "slug": "wave-flip",
+    "cover": "wave-flip_16x9/20261102091345/wave-flip_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 317,
+    "totalPlays": 20917,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128693",
+    "name": "Grand Vegas Police Simulator",
+    "slug": "grand-vegas-police-simulator",
+    "cover": "grand-vegas-police-simulator_16x9/20261020075400/grand-vegas-police-simulator_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 7194,
+    "totalPlays": 441693,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "132804",
+    "name": "Rob a Garden",
+    "slug": "rob-a-garden",
+    "cover": "rob-a-garden_16x9/20261106220958/rob-a-garden_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 2890,
+    "totalPlays": 152459,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "131512",
+    "name": "Last Train: Iron Horde",
+    "slug": "last-train-iron-horde",
+    "cover": "last-train-iron-horde_16x9/20261006065446/last-train-iron-horde_16x9-cover.png",
+    "isOriginal": true,
+    "activeArtworkExperiment": {
+     "type": "BOTH",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "last-train-iron-horde/4e1a0a90-522c-4bba-82f7-71bad65da139/last-train-iron-horde-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "last-train-iron-horde/2749736f-b8db-43aa-9e6f-abe17b406423/last-train-iron-horde.mp4"
+     },
+     "covers": {
+      "1x1": "last-train-iron-horde_1x1/20261110081550/last-train-iron-horde_1x1-cover.png",
+      "2x3": "last-train-iron-horde_2x3/20261110081550/last-train-iron-horde_2x3-cover.png",
+      "16x9": "last-train-iron-horde_16x9/20261110081550/last-train-iron-horde_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-11",
+     "activeUntil": null,
+     "variantArtworkId": "99bb8fb1-791f-4363-9f90-962f9cb2bbc0",
+     "baselineArtworkId": "9fa521ee-7917-49ca-b613-b85b86d3b90e",
+     "artworkExperimentId": "71fd2b5a-e131-4eea-99ee-730b01970aec"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated",
+     "originals"
+    ],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 996,
+    "totalPlays": 77595,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "140291",
+    "name": "Spot the Difference",
+    "slug": "spot-the-difference-myq",
+    "cover": "spot-the-difference-myq_16x9/20261015040905/spot-the-difference-myq_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 60,
+    "totalPlays": 7370,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 12,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "133449",
+    "name": "Last Lantern",
+    "slug": "last-lantern",
+    "cover": "last-lantern_16x9/20261102101335/last-lantern_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "originals"
+    ],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 291,
+    "totalPlays": 14203,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 4,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "134791",
+    "name": "Toximass",
+    "slug": "toximass",
+    "cover": "toximass_16x9/20261009083630/toximass_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 3294,
+    "totalPlays": 183342,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "126500",
+    "name": "Cooking Rage",
+    "slug": "cooking-rage-cno",
+    "cover": "cooking-rage-cno_16x9/20261013065726/cooking-rage-cno_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 3233,
+    "totalPlays": 91960,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128205",
+    "name": "Hit the Stack",
+    "slug": "hit-the-stack",
+    "cover": "hit-the-stack_16x9/20261029025251/hit-the-stack_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 558,
+    "totalPlays": 45810,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "113469",
+    "name": "Hero: Invasion of Hell",
+    "slug": "hero-invasion-of-hell",
+    "cover": "hero-invasion-of-hell_16x9/20260903025519/hero-invasion-of-hell_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 302,
+    "totalPlays": 12275,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "131947",
+    "name": "Drive Devil",
+    "slug": "drive-devil",
+    "cover": "drive-devil_16x9/20261007053937/drive-devil_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "drive-devil/b8cc3bac-aedc-45da-b534-8e6cb0bc7084/drive-devil-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "drive-devil/e0c5ac71-6b77-45ea-bd9d-e607168a2a54/drive-devil.mp4"
+     },
+     "covers": {
+      "1x1": "drive-devil_1x1/20261027135242/drive-devil_1x1-cover.png",
+      "2x3": "drive-devil_2x3/20261027135242/drive-devil_2x3-cover.png",
+      "16x9": "drive-devil_16x9/20261027135243/drive-devil_16x9-cover.png"
+     },
+     "activeFrom": "2026-10-28",
+     "activeUntil": "2026-10-29",
+     "variantArtworkId": "ea9b3e15-65f3-4cb0-9cb5-3525e442fb26",
+     "baselineArtworkId": "b08f9a4d-d00d-4f1c-88d1-76dc649bf301",
+     "artworkExperimentId": "934c771a-6bfa-4bb1-a4a8-eb8ab75e1aa1"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 560,
+    "totalPlays": 40798,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "130611",
+    "name": "Shoot Them Off!",
+    "slug": "shoot-them-off",
+    "cover": "shoot-them-off_16x9/20261019060602/shoot-them-off_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 2721,
+    "totalPlays": 169448,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "128544",
+    "name": "Wacky Flip",
+    "slug": "wacky-flip",
+    "cover": "wacky-flip_16x9/20261001064917/wacky-flip_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 1382,
+    "totalPlays": 60649,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "125778",
+    "name": "Matching Moments",
+    "slug": "matching-moments",
+    "cover": "matching-moments_16x9/20261102144807/matching-moments_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 252,
+    "totalPlays": 25000,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "130074",
+    "name": "MegMiner",
+    "slug": "megminer",
+    "cover": "megminer_16x9/20261102050935/megminer_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 1030,
+    "totalPlays": 59751,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "125304",
+    "name": "Can You Land?",
+    "slug": "can-you-land-zzm",
+    "cover": "can-you-land-zzm_16x9/20261009040536/can-you-land-zzm_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "updated"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 4963,
+    "totalPlays": 566106,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   }
+  ]
+ }
+}

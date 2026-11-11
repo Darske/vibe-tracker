@@ -53,7 +53,7 @@ with hc2:
         st.caption(c["bio"][:300])
     ui.stats_line([(f"{len(games)}", "games"), (abbrev(total_plays), "lifetime plays"),
                    (abbrev(followers) if followers is not None and not pd.isna(followers) else "—", "followers")])
-f = range_bar(f)
+f = range_bar(f, show_cohort=False)
 
 with st.container(border=True):
     a_, b_ = st.columns(2)

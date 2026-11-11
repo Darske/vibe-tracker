@@ -156,3 +156,14 @@ Coverage of the "expected metrics" column in the brief: plays are public on 6 of
 2. Never load a game page in a browser on any platform (inflates plays/views on Rosebud, Bitmagic, Wavedash; flags webdriver on Spawn). No adapter sets `needs_browser`.
 3. Milestone-1 adapters: **Tesana, Rosebud, Bitmagic** — documented-shape public JSON, no tokens or robots ambiguity. Astrocade is next (best data of the rest) pending the policy answer.
 4. Separate API hosts (`api.tesana.ai`, Rosebud's Cloud Run gateway, `astrocade-api-prod.com`, `convex-api.wavedash.com`) have no robots.txt; treated as allowed, polled at 1 r/s with the project UA.
+
+## Legacy web game platforms (cohort: legacy)
+
+Researched Nov 10, 2026; full write-up in `docs/SOURCES_LEGACY.md`.
+
+| Platform | Data | Counters | AI segmentation | Terms |
+|---|---|---|---|---|
+| CrazyGames | keyless JSON `api.crazygames.com/v4` | plays, likes (whole catalogue) | none | ToS 6.3.G forbids automated collection — tracked at owner's decision, daily |
+| Poki | keyless JSON `api.poki.com` | thumbs up/down (no plays) | none | ToS forbids bots without consent — tracked at owner's decision, ≤1 req/3 s |
+| itch.io | HTML browse pages + `format=json` | ratings count (top-rated list), placements | creator AI disclosure (AI-assisted / AI code / No AI) | no scraping clause; heavy 429 rate limiting |
+| Kongregate | HTML lists + `metrics.json` | plays, favourites, ratings | description declarations (regex) | broad anti-bot wording aimed at cheating |

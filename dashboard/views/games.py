@@ -41,8 +41,19 @@ with c2:
 by = next(k for k, v in BY.items() if v == by_label)
 mode = next(k for k, v in MODES.items() if v == mode_label)
 search = st.text_input("Search title or creator", "", placeholder="Search title or creator", label_visibility="collapsed")
+legacy_sel = set(f.sources.loc[f.sources["cohort"] == "legacy", "name"]) & set(f.selected)
+ai_pick = "Any"
+if legacy_sel:  # legacy platforms carry a per-game AI declaration (itch.io disclosure, Kongregate descriptions)
+    ai_pick = ui.pills("AI declaration", ["Any", "Declares AI", "Declares no AI", "Not declared"], "g_ai", "Any")
+    st.caption("AI declaration comes from the game itself: itch.io's AI disclosure and Kongregate descriptions. "
+               "CrazyGames and Poki have none, so their games show as not declared. "
+               "Games on the new-entrant platforms are AI-made by design.")
 
 g = games.copy()
+if ai_pick != "Any":
+    g = g[g["source"].isin(legacy_sel)]
+    g = g[{"Declares AI": g["ai_disclosure"] == "ai", "Declares no AI": g["ai_disclosure"] == "no_ai",
+           "Not declared": g["ai_disclosure"].isna()}[ai_pick]]
 g["rank_change"] = g["rank_prior"] - g["rank_in_source"]
 g["likes_per_k"] = [likes_per_k(l, p_) for l, p_ in zip(g["likes"], g["plays_total"])]
 if search:
@@ -99,6 +110,7 @@ with st.expander(f"Full table ({len(g)} games)"):
         "Remixes": g["remixes"].map(lambda v: "—" if pd.isna(v) else abbrev(v)),
         "Rank in platform": g["rank_in_source"].map(lambda v: "—" if pd.isna(v) else str(int(v))),
         "First seen": g["first_seen"].map(fmt_dt),
+        "AI declared": g["ai_disclosure"].map({"ai": "yes", "no_ai": "no"}).fillna("—"),
         "Label": g["metric_map"].map(lambda m: (m or {}).get("plays", "")),
     })
     if by == "Likes":

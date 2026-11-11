@@ -38,7 +38,7 @@ def _write(sql: str, params=None) -> None:
 # ====================================================================== sources
 @st.cache_data(ttl=TTL)
 def sources() -> pd.DataFrame:
-    return _read("select name, display_name, base_url, segment, metric_map, poll_every_hours, enabled, added_at from sources order by added_at, name")
+    return _read("select name, display_name, base_url, segment, cohort, metric_map, poll_every_hours, enabled, added_at from sources order by added_at, name")
 
 
 # ====================================================================== health
@@ -104,23 +104,34 @@ def platform_daily() -> pd.DataFrame:
 
 @st.cache_data(ttl=TTL)
 def platform_now() -> pd.DataFrame:
-    """Latest poll per platform: games tracked, creators, players now (sum over tracked games)."""
-    return _read(
-        """with last as (select distinct on (g.source) g.source, s.run_ts
-                          from snapshots s join games g on g.id = s.game_id order by g.source, s.run_ts desc)
-           select g.source, count(distinct g.id) as games_tracked, count(distinct g.creator_id) as creators,
-                  sum(s.players_now) as players_now, sum(s.plays_total) as plays_lifetime, max(s.run_ts) as run_ts,
-                  sum(s.likes) filter (where s.plays_total is not null) as likes_lifetime,
-                  sum(s.plays_total) filter (where s.likes is not null) as plays_with_likes,
-                  percentile_cont(0.5) within group (order by s.likes * 1000.0 / s.plays_total)
-                    filter (where s.likes is not null and s.plays_total >= 1000) as median_likes_per_k,
-                  count(*) filter (where s.likes is not null and s.plays_total >= 1000) as games_with_ratio
-             from snapshots s join games g on g.id = s.game_id join last l on l.source = g.source and l.run_ts = s.run_ts
-            group by g.source"""
-    )
+    """Per platform, from each game's most recent reading (last 3 days): games tracked, creators, lifetime plays and
+    likes, players online now. Uses latest-per-game rather than 'the last run' because identical readings are folded
+    into the earlier row (snapshots.repeats), so a later run does not carry a row for every game."""
+    return _read(PLATFORM_NOW_SQL)
 
 
-# ====================================================================== concurrent players (rotrends-style hero)
+PLATFORM_NOW_SQL = """
+with latest as (
+  select distinct on (s.game_id) s.game_id, s.run_ts, s.players_now, s.plays_total, s.likes,
+         greatest(s.captured_at, coalesce(s.last_seen_at, s.captured_at)) as seen
+    from snapshots s
+   where s.captured_at > now() - interval '3 days'
+   order by s.game_id, s.run_ts desc
+),
+per as (select g.source, l.*, g.creator_id, max(l.seen) over (partition by g.source) as source_seen
+          from latest l join games g on g.id = l.game_id)
+select source, count(*) as games_tracked, count(distinct creator_id) as creators,
+       sum(players_now) filter (where seen > source_seen - interval '90 minutes') as players_now,
+       sum(plays_total) as plays_lifetime, max(run_ts) as run_ts,
+       sum(likes) filter (where plays_total is not null) as likes_lifetime,
+       sum(plays_total) filter (where likes is not null) as plays_with_likes,
+       percentile_cont(0.5) within group (order by likes * 1000.0 / plays_total)
+         filter (where likes is not null and plays_total >= 1000) as median_likes_per_k,
+       count(*) filter (where likes is not null and plays_total >= 1000) as games_with_ratio
+  from per group by source
+"""
+
+
 @st.cache_data(ttl=120)
 def ccu_total_series(days: int, sources_sel: tuple[str, ...]) -> pd.DataFrame:
     """Sum of players_now over all tracked games per poll (run_ts) — 'players right now' over time."""
@@ -217,6 +228,14 @@ def game_daily_series(game_ids: tuple[int, ...], start: date) -> pd.DataFrame:
 
 
 @st.cache_data(ttl=TTL)
+def ai_disclosure_counts() -> pd.DataFrame:
+    """Per platform: tracked games that declare AI use, declare none, or say nothing (legacy platforms)."""
+    return _read("""select source, count(*) filter (where ai_disclosure = 'ai') as ai_games,
+                           count(*) filter (where ai_disclosure = 'no_ai') as no_ai_games, count(*) as games
+                      from games where status <> 'gone' group by source""")
+
+
+@st.cache_data(ttl=TTL)
 def games_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
     """One row per game with window aggregates, latest derived metrics and latest raw counters."""
     return _read(
@@ -233,7 +252,7 @@ def games_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
            snap as (
              select distinct on (s.game_id) s.game_id, s.captured_at, s.players_now, s.likes, s.remixes, s.plays_total, s.players_total, s.votes, s.comments
                from snapshots s order by s.game_id, s.captured_at desc)
-           select g.id, g.source, s.display_name, s.segment, s.metric_map, g.title, g.url, g.thumbnail_url, g.published_at, g.first_seen, g.status, g.ai_tool, g.engine, g.tags,
+           select g.id, g.source, s.display_name, s.segment, s.metric_map, g.title, g.url, g.thumbnail_url, g.published_at, g.first_seen, g.status, g.ai_tool, g.engine, g.tags, g.ai_disclosure,
                   c.id as creator_id, c.name as creator_name, c.url as creator_url, c.canonical_key,
                   w.plays_window, w.ccu_peak_window, w.likes_window, w.remixes_window,
                   l.growth_7d, l.acceleration, l.rank_in_source, l.plays_7d, pr.rank_prior,
@@ -245,7 +264,8 @@ def games_window(start: date, sources_sel: tuple[str, ...]) -> pd.DataFrame:
              left join latest l on l.game_id = g.id
              left join prior pr on pr.game_id = g.id
              left join snap sn on sn.game_id = g.id
-            where g.source = any(%s) and g.status <> 'gone'""",
+            where g.source = any(%s) and g.status <> 'gone'
+              and sn.game_id is not null  -- discovered but never snapshotted (e.g. CrazyGames catalogue beyond the cap): no title or numbers""",
         (start, start, list(sources_sel)),
     )
 
@@ -410,3 +430,152 @@ def catalog_totals() -> pd.DataFrame:
         return _read("select source, day, games_total from catalog_daily order by day")
     except Exception:  # noqa: BLE001
         return pd.DataFrame(columns=["source", "day", "games_total"])
+
+
+@st.cache_data(ttl=TTL)
+def game_daily_peaks(game_ids: tuple[int, ...], start: date) -> pd.DataFrame:
+    """Players-online daily peak per game (game_daily.ccu_peak)."""
+    return _read("select game_id, day, ccu_peak from game_daily where game_id = any(%s) and day >= %s and ccu_peak is not null order by day",
+                 (list(game_ids), start))
+
+
+@st.cache_data(ttl=120)
+def ccu_latest_by_platform(sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    """Players online at each platform's most recent poll (platforms are polled by separate jobs, so 'the last run'
+    differs per platform)."""
+    return _read(
+        """with per_run as (
+             select g.source, s.run_ts, sum(s.players_now) as players
+               from snapshots s join games g on g.id = s.game_id
+              where s.players_now is not null and g.source = any(%s) and s.run_ts > now() - interval '1 day'
+              group by 1, 2)
+           select distinct on (source) source, run_ts, players from per_run order by source, run_ts desc""",
+        (list(sources_sel),),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def platform_totals(sources_sel: tuple[str, ...]) -> pd.DataFrame:
+    """Whole-platform figures (platform_totals), one row per platform per day, with the day-over-day change of the
+    platform's all-time plays counter. Empty when the table does not exist yet."""
+    try:
+        return _read(
+            """select source, day, captured_at, plays_total, games, creators, players_now, players_now_peak,
+                      people_recent, people_recent_peak, extra,
+                      plays_total - lag(plays_total) over (partition by source order by day) as plays_day,
+                      day - lag(day) over (partition by source order by day) as gap_days
+                 from platform_totals where source = any(%s) order by source, day""",
+            (list(sources_sel),),
+        )
+    except Exception:  # noqa: BLE001
+        return pd.DataFrame(columns=["source", "day", "captured_at", "plays_total", "games", "creators", "players_now",
+                                     "players_now_peak", "people_recent", "people_recent_peak", "extra", "plays_day", "gap_days"])
+
+
+# ---------------------------------------------------------------- AI games on legacy platforms (platform page, "AI games")
+@st.cache_data(ttl=TTL)
+def ai_plays_daily(source: str, start: date) -> pd.DataFrame:
+    """Daily plays of a platform's tracked games split by the game's AI declaration (ai / no_ai / undeclared)."""
+    return _read(
+        """select gd.day, coalesce(g.ai_disclosure, 'undeclared') as ai, sum(gd.plays_delta) as plays,
+                  count(*) filter (where gd.plays_delta > 0) as games_played
+             from game_daily gd join games g on g.id = gd.game_id
+            where g.source = %s and gd.day >= %s and gd.plays_delta is not null
+            group by 1, 2 order by 1""",
+        (source, start),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def ai_list_share(source: str, start: date) -> pd.DataFrame:
+    """Per list per UTC day: AI-declared slots and all slots summed over the day's polls (share = ai / slots)."""
+    return _read(
+        """with per_run as (
+             select lp.list_name, lp.run_ts, count(*) as slots, count(*) filter (where g.ai_disclosure = 'ai') as ai,
+                    count(*) filter (where g.ai_disclosure = 'no_ai') as no_ai
+               from list_placements lp join games g on g.id = lp.game_id
+              where lp.source = %s and lp.run_ts >= %s
+              group by 1, 2)
+           select list_name, (run_ts at time zone 'utc')::date as day, sum(ai) as ai, sum(no_ai) as no_ai, sum(slots) as slots,
+                  count(*) as polls
+             from per_run group by 1, 2 order by 2""",
+        (source, start),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def ai_new_games(source: str, since: date) -> pd.DataFrame:
+    """New games per week by AI declaration, dated by the platform's publish date (first seen when it has none).
+    Games first seen on the platform's first tracking day without a publish date are the starting catalogue, not
+    new games, so they are left out."""
+    return _read(
+        """with first_day as (select min(first_seen)::date as d from games where source = %(s)s)
+           select date_trunc('week', coalesce(g.published_at, g.first_seen))::date as week,
+                  coalesce(g.ai_disclosure, 'undeclared') as ai, count(*) as games
+             from games g, first_day
+            where g.source = %(s)s and coalesce(g.published_at, g.first_seen) >= %(since)s
+              and (g.published_at is not null or g.first_seen::date > first_day.d)
+            group by 1, 2 order by 1""",
+        {"s": source, "since": since},
+    )
+
+
+@st.cache_data(ttl=TTL)
+def ai_top_listed(source: str, list_name: str, n: int = 10) -> pd.DataFrame:
+    """AI-declared games on a list at its latest poll, by position."""
+    return _read(
+        """with last as (select max(run_ts) as ts from list_placements where source = %s and list_name = %s)
+           select g.id, g.title, g.url, g.thumbnail_url, lp.position
+             from list_placements lp join last on lp.run_ts = last.ts join games g on g.id = lp.game_id
+            where lp.source = %s and lp.list_name = %s and g.ai_disclosure = 'ai'
+            order by lp.position limit %s""",
+        (source, list_name, source, list_name, n),
+    )
+
+
+@st.cache_data(ttl=TTL)
+def ai_ratings(source: str, start: date, min_votes: int = 10) -> pd.DataFrame:
+    """Per UTC day and AI declaration: average star rating over tracked games with at least `min_votes` ratings
+    (each game's last reading that day), plain (every game weighs the same) and weighted by number of ratings."""
+    return _read(
+        """with last as (
+             select distinct on (s.game_id, (s.captured_at at time zone 'utc')::date)
+                    s.game_id, (s.captured_at at time zone 'utc')::date as day, s.rating, s.votes
+               from snapshots s join games g on g.id = s.game_id
+              where g.source = %s and s.captured_at >= %s and s.rating is not null and s.votes >= %s
+              order by s.game_id, (s.captured_at at time zone 'utc')::date, s.captured_at desc)
+           select l.day, coalesce(g.ai_disclosure, 'undeclared') as ai, count(*) as games, avg(l.rating) as rating,
+                  sum(l.rating * l.votes) / nullif(sum(l.votes), 0) as rating_weighted, sum(l.votes) as votes
+             from last l join games g on g.id = l.game_id group by 1, 2 order by 1""",
+        (source, start, min_votes),
+    )
+
+
+# Creator names too generic to match across platforms by name alone
+GENERIC_CREATORS = ("games", "studio", "studios", "admin", "unknown", "anonymous", "team", "developer", "developers",
+                    "gamedev", "indie", "user", "test", "official", "none", "null")
+
+
+@st.cache_data(ttl=TTL)
+def creator_crossover(source: str, start: date) -> pd.DataFrame:
+    """Creators on `source` whose handle (canonical key, or a manual merge) also publishes on a new-entrant platform,
+    with their games and plays on `source`. Matching is by name, so it can include namesakes."""
+    return _read(
+        """with ck as (
+             select c.id, c.source, c.name, c.url, coalesce(m.canonical_key, c.canonical_key) as k
+               from creators c left join creator_merges m on m.creator_id = c.id),
+           ne as (
+             select ck.k, string_agg(distinct s.display_name, ', ') as platforms, count(distinct g.id) as ne_games
+               from ck join sources s on s.name = ck.source left join games g on g.creator_id = ck.id
+              where s.cohort = 'new_entrant' and length(ck.k) >= 4 and not (ck.k = any(%s))
+              group by ck.k),
+           w as (select game_id, sum(plays_delta) as plays from game_daily where day >= %s group by 1)
+           select c.id as creator_id, c.name, c.url, ne.platforms, ne.ne_games, count(g.id) as games,
+                  count(g.id) filter (where g.ai_disclosure = 'ai') as ai_games,
+                  sum(w.plays) as plays_window, min(g.first_seen) as first_seen,
+                  (array_agg(g.title order by w.plays desc nulls last))[1] as top_game
+             from ck c join ne on ne.k = c.k join games g on g.creator_id = c.id left join w on w.game_id = g.id
+            where c.source = %s and g.status <> 'gone'
+            group by 1, 2, 3, 4, 5 order by plays_window desc nulls last, games desc""",
+        (list(GENERIC_CREATORS), start, source),
+    )

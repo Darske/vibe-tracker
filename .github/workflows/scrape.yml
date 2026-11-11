@@ -60,7 +60,7 @@ jobs:
       fail-fast: false      # one broken platform must not cancel the others
       max-parallel: 3       # keeps Supabase pooler connections low (Streamlit also connects)
       matrix:
-        source: [tesana, rosebud, bitmagic, astrocade, spawn, wavedash, remix, playgama, playgama_ai]
+        source: [tesana, rosebud, bitmagic, astrocade, spawn, wavedash, remix, playgama, playgama_ai, crazygames, poki, itchio, kongregate]
     env:
       RUN_TIME_BUDGET_SECONDS: "1500"
     steps:

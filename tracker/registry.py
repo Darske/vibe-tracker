@@ -25,6 +25,7 @@ DEFAULTS = {
     "metric_map": {},
     "list_top_n": {},
     "ccu_lists": [],
+    "cohort": "new_entrant",  # new_entrant | legacy
 }
 
 

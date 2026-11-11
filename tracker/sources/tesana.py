@@ -169,22 +169,45 @@ class Tesana(SourceAdapter):
         ~60 pages for ~3,600 games). Every row carries the full counter set, so fetch() needs no extra requests."""
         pos = 0
         page = 1
+        self._catalog_slugs: set[str] = set()
+        self._catalog_count: int | None = None
+        self._catalog_done = False
         while pos < top_n:
             data = self.http.get_json(f"{API}/api/marketplace/search/?q=&sort=plays&page_size=60&page={page}")
             if not data:
                 break
+            self._catalog_count = data.get("count", self._catalog_count)
             rows = data.get("results") or []
             if not rows:
+                self._catalog_done = True
                 break
             for game in rows:
                 if pos >= top_n:
                     break
                 if isinstance(game, dict):
                     pos += 1
+                    if game.get("slug"):
+                        self._catalog_slugs.add(game["slug"])
                     yield pos, game
             if not data.get("next"):
+                self._catalog_done = True
                 break
             page += 1
+
+    def platform_totals(self) -> dict | None:
+        """Sum over the whole marketplace, available when this run walked the full catalogue list."""
+        if not getattr(self, "_catalog_done", False):
+            return None
+        rows = [self._games[s] for s in self._catalog_slugs if s in self._games]
+        if not rows:
+            return None
+        plays = [g.get("play_count") for g in rows if isinstance(g.get("play_count"), int)]
+        live = [g.get("playing_now") for g in rows if isinstance(g.get("playing_now"), int)]
+        users = {(g.get("user") or {}).get("username") if isinstance(g.get("user"), dict) else g.get("user") for g in rows}
+        users.discard(None)
+        return {"plays_total": sum(plays) if plays else None, "games": self._catalog_count or len(rows),
+                "creators": len(users) or None, "players_now": sum(live) if live else None,
+                "extra": {"players_today": sum(g.get("players_today") or 0 for g in rows)}}
 
     def _section(self, key: str, top_n: int) -> Iterable[tuple[int, dict]]:
         pos = 0

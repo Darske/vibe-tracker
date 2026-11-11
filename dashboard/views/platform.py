@@ -12,7 +12,7 @@ import streamlit as st
 from dashboard import queries as q, ui
 from dashboard.components import badge, fmt_dt, metric_card, phone_table, selected_row
 from dashboard.filters import go as nav, label_for, param, range_bar, sidebar, today_utc
-from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, line_mode, pct, ratio_fmt, time_axis
+from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, pct, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("platforms")
@@ -27,7 +27,15 @@ labels = row["metric_map"] or {}
 
 ui.page_header(row["display_name"], f"{badge(row['segment'])} &nbsp; <a class='vt-link' href='{row['base_url']}' target='_blank'>{row['base_url']}</a>",
                eyebrow_text="Platform", icon="📊")
-f = range_bar(f)
+f = range_bar(f, show_cohort=False)
+
+if row.get("cohort") == "legacy":  # legacy portals mix AI and non-AI games: separate view for how AI games are doing
+    view = ui.pills("View", ["Overview", "AI games"], f"pview_{src}", "Overview")
+    if view == "AI games":
+        from dashboard import ai_view
+
+        ai_view.render(src, row["display_name"], f, today_utc())
+        st.stop()
 
 pdaily = q.platform_daily()
 pdaily = pdaily[pdaily["source"] == src].sort_values("day")
@@ -45,20 +53,19 @@ with st.container(border=True):
         with h1:
             ui.eyebrow("Players right now", "🔥")
             ui.hero(full(ccu.get("players_now")), ui.ago(ccu.get("updated_at")))
+        pk_days = pdaily.dropna(subset=["ccu_peak_top100"]).set_index("day")["ccu_peak_top100"]
         with h2:
-            ui.eyebrow("All-time peak", "🏆")
-            pk_at = pd.Timestamp(ccu["peak_at"]).strftime("%b %-d at %-I:%M%p UTC").replace("AM", "am").replace("PM", "pm") if ccu.get("peak_at") is not None else None
-            ui.hero(full(ccu.get("peak")), pk_at, white=True)
-        series = q.ccu_platform_series(f.window_days, (src,))
-        series = series[series["source"] == src] if not series.empty else series
-        if len(series) < 2:
-            st.caption("Not enough players-online readings in this range yet (polled every 30 minutes).")
+            ui.eyebrow("Best day (peak players)", "🏆")
+            ui.hero(full(pk_days.max()) if len(pk_days) else "—", f"{pd.Timestamp(pk_days.idxmax()):%b %-d}" if len(pk_days) else None, white=True)
+        pw = win.dropna(subset=["ccu_peak_top100"])
+        if len(pw) < 2:
+            st.caption("Not enough days in this range yet.")
         else:
-            fig = go.Figure(go.Scatter(x=series["run_ts"], y=series["players"], mode=line_mode(len(series)), line=dict(width=2.5, color=color), marker=dict(size=4),
-                                       hovertemplate="%{x|%b %-d %H:%M}: %{y:,.0f} players<extra></extra>"))
+            fig = add_daily(go.Figure(), pw["day"], pw["ccu_peak_top100"], color, unit="players (daily peak)")
             fig.update_layout(height=260, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
-        st.markdown("<div class='vt-sub'>Players online, summed over the tracked games · polled every 30 minutes</div>", unsafe_allow_html=True)
+        st.markdown("<div class='vt-sub'>One point per day: the peak number of players online at once, summed over the tracked top 100. "
+                    "The dotted end is today so far.</div>", unsafe_allow_html=True)
         if labels.get("players_now"):
             st.caption(f"Definition on {row['display_name']}: {labels['players_now']}")
     else:

@@ -2,7 +2,7 @@
 watchlist membership from games.last_listed. Daily figures must come out exactly as before."""
 
 import os
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import psycopg
 import pytest
@@ -85,9 +85,85 @@ def test_migration_backfills_last_listed_then_trims_and_watchlist_uses_it(conn):
                  (g_deep, now - timedelta(hours=3), g_top, now - timedelta(hours=1)))
     conn.execute("delete from maintenance where key like 'migration:%%'")
     conn.commit()
-    assert db.migrate(conn) == ["placements_top100_v1"]
+    assert db.migrate(conn) == ["thin_history_v1", "placements_top100_v1"]
     assert conn.execute("select count(*) n from list_placements").fetchone()["n"] == 1
     listed = {r["external_id"]: r["last_listed"] for r in conn.execute("select external_id, last_listed from games").fetchall()}
     assert listed["deep"] is not None and listed["top"] is not None
     assert {r["external_id"] for r in db.watchlist(conn, "t", 7, 100)} == {"deep", "top"}  # the deep game is still polled
     assert db.migrate(conn) == []  # runs once
+
+
+def test_live_players_are_never_folded():
+    later = T + timedelta(hours=2)
+    ins, fold = db.split_repeats({1: prev_row(T, ccu=5)}, [(1, snap(later, ccu=5))], later)
+    assert len(ins) == 1 and fold == []          # 5 players again: kept, so per-run sums stay exact
+    ins, fold = db.split_repeats({1: prev_row(T, ccu=0)}, [(1, snap(later, ccu=0))], later)
+    assert ins == [] and len(fold) == 1          # zero again: folded (a missing zero does not change a sum)
+
+
+@needs_db
+def test_platform_totals_count_every_game_after_folding(conn):
+    from dashboard.queries import PLATFORM_NOW_SQL
+    now = datetime.now(timezone.utc).replace(microsecond=0)
+    t0 = now - timedelta(hours=3) if (now - timedelta(hours=3)).date() == now.date() else now - timedelta(minutes=30)
+    t1 = t0 + timedelta(minutes=20)
+    ids = []
+    for name in ("a", "b"):
+        ids.append(conn.execute("insert into games (source, external_id, url, first_seen) values ('t',%s,%s,%s) returning id",
+                                (name, f"https://t/{name}", t0)).fetchone()["id"])
+    # run 1: both games; run 2: game a unchanged (folded, no row), game b moved
+    db.insert_snapshots_bulk(conn, [(ids[0], snap(t0, plays=100)), (ids[1], snap(t0, plays=50))], t0)
+    db.insert_snapshots_bulk(conn, [(ids[0], snap(t1, plays=100)), (ids[1], snap(t1, plays=60))], t1)
+    conn.commit()
+    assert conn.execute("select count(*) n from snapshots where run_ts = %s", (t1,)).fetchone()["n"] == 1
+    row = conn.execute(PLATFORM_NOW_SQL).fetchone()
+    assert (row["games_tracked"], row["plays_lifetime"]) == (2, 160)  # not (1, 60) as 'last run only' would give
+
+
+@needs_db
+def test_thin_history_keeps_last_reading_per_day_and_today_yesterday_in_full(conn):
+    gid = conn.execute("insert into games (source, external_id, url, first_seen) values ('t','a','https://t/a',%s) returning id", (T,)).fetchone()["id"]
+    today = date(2026, 11, 12)
+    for day_off, hours in ((-3, (2, 10, 20)), (-2, (1, 23)), (-1, (5, 15)), (0, (3, 4))):
+        for h in hours:
+            ts = datetime(2026, 11, 12, h, tzinfo=timezone.utc) + timedelta(days=day_off)
+            conn.execute("insert into snapshots (game_id, run_ts, captured_at, plays_total, players_now) values (%s,%s,%s,%s,%s)",
+                         (gid, ts, ts, 100 + h, h))
+    conn.commit()
+    assert db.thin_history(conn, today) == 3  # Nov 9: 2 of 3 gone, Nov 10: 1 of 2 gone; Nov 11 (yesterday) and today kept
+    left = [(r["captured_at"].day, r["captured_at"].hour) for r in
+            conn.execute("select captured_at from snapshots order by captured_at").fetchall()]
+    assert left == [(9, 20), (10, 23), (11, 5), (11, 15), (12, 3), (12, 4)]
+
+
+@needs_db
+def test_gap_fill_does_not_overwrite_a_stored_players_peak(conn):
+    """A gap day (no readings left) that already has a stored row keeps its poll count and players peak/average;
+    only its share of the plays is rewritten."""
+    gid = conn.execute("insert into games (source, external_id, url, first_seen) values ('t','a','https://t/a',%s) returning id", (T,)).fetchone()["id"]
+    d_gap = date(2026, 11, 2)
+    conn.execute("insert into game_daily (game_id, day, captures, ccu_peak, ccu_avg, plays_total_eod) values (%s,%s,12,40,9.5,120)", (gid, d_gap))
+    for off, plays, ccu in ((0, 100, 2), (3, 160, 1)):  # readings Nov 1 and Nov 4: Nov 2-3 are gap days
+        ts = datetime(2026, 11, 1, 23, tzinfo=timezone.utc) + timedelta(days=off)
+        conn.execute("insert into snapshots (game_id, run_ts, captured_at, plays_total, players_now) values (%s,%s,%s,%s,%s)", (gid, ts, ts, plays, ccu))
+    conn.commit()
+    db.derive(conn, [date(2026, 11, 4)], ["t"])
+    r = conn.execute("select captures, ccu_peak, ccu_avg, gap_days from game_daily where game_id=%s and day=%s", (gid, d_gap)).fetchone()
+    assert r["gap_days"] == 3                                      # the gap fill did run on this day
+    assert (r["captures"], r["ccu_peak"], float(r["ccu_avg"])) == (12, 40, 9.5)
+
+
+def test_rating_read_back_as_float4_still_folds():
+    from datetime import datetime, timezone
+
+    from tracker.db import split_repeats
+    from tracker.models import GameSnapshot
+    t0 = datetime(2026, 11, 11, 1, tzinfo=timezone.utc); t1 = datetime(2026, 11, 11, 7, tzinfo=timezone.utc)
+    prev = {1: {"run_ts": t0, "captured_at": t0, "plays_total": 10, "plays_24h": None, "players_now": None, "players_total": None,
+                "likes": 2, "remixes": None, "comments": None, "votes": 5, "rating": 4.610000133514404}}
+    s = GameSnapshot(source="kongregate", external_id="a/b", url="u", plays_total=10, likes=2, votes=5, rating=4.61, captured_at=t1)
+    ins, fold = split_repeats(prev, [(1, s)], t1)
+    assert not ins and len(fold) == 1
+    s2 = s.model_copy(update={"rating": 4.58})
+    ins, fold = split_repeats(prev, [(1, s2)], t1)
+    assert len(ins) == 1

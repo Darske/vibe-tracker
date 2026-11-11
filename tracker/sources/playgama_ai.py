@@ -323,6 +323,17 @@ class PlaygamaAI(SourceAdapter):
                     source=self.name, list_name=list_name, position=pos, external_id=gid, captured_at=captured
                 )
 
+    def platform_totals(self) -> dict | None:
+        """playgama.com/ai-game-index/data.json (public, robots-allowed): all-time launches and games across the
+        whole vibe-coded catalogue, plus each AI tool's share of games (the index's own breakdown)."""
+        data = self.http.get_json(AI_INDEX_URL) or {}
+        tot = data.get("totals") or {}
+        if tot.get("launches") is None and tot.get("games") is None:
+            return None
+        agents = {c.get("key"): c.get("share") for c in ((data.get("agent") or {}).get("categories") or []) if c.get("key")}
+        return {"plays_total": tot.get("launches"), "games": tot.get("games"),
+                "extra": {"agent_share_pct": agents, "as_of": tot.get("asOf")}}
+
     def fetch(self, refs: list[GameRef]) -> Iterable[GameSnapshot]:
         for ref in refs:
             gid = ref.external_id

@@ -176,3 +176,85 @@ playgama_ai:
     plays: "plays = sessions of 30 s or more counted by Playgama Bridge (playgama.ai all-time plays)"
     plays_24h: "plays 24h = Playgama's own trailing-24h play count"
     likes: "likes = all-time likes shown on the Most Liked / Challenge cards only (rounded above 1k)"
+
+# ---------------------------------------------------------------------------------------------------------------
+# Legacy web game platforms (cohort: legacy) — established portals that also host vibe-coded games.
+# Research: docs/SOURCES_LEGACY.md. CrazyGames' and Poki's terms forbid automated collection; the owner chose to
+# track them anyway (Nov 10, 2026), so they run at minimal impact: CrazyGames once a day, Poki <=1 request / 3 s.
+# Set enabled: false to stop any of them.
+
+crazygames:
+  module: tracker.sources.crazygames
+  display_name: CrazyGames
+  segment: aggregator
+  cohort: legacy
+  enabled: true
+  lists: [hot, top, new, catalog]   # catalog = whole catalogue via sorting=new (~47 pages, shared with `new`)
+  top_n: 100
+  list_top_n: {catalog: 6000}
+  poll_every_hours: 24              # plays refresh about daily and the API is edge-cached 4 h
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 1500             # snapshot the 1,500 most-played (whole catalogue ~2 MB/day of storage)
+  metric_map:
+    plays: "plays = all-time game starts (CrazyGames totalPlays, refreshed about daily; new games read as unknown)"
+    likes: "likes = all-time likes (CrazyGames totalLikes)"
+
+poki:
+  module: tracker.sources.poki
+  display_name: Poki
+  segment: aggregator
+  cohort: legacy
+  enabled: true
+  # api.poki.com JSON only (poki.com disallows /*?), <=1 request / 3 s, no browser, no game pages.
+  lists: [home, popular, new]
+  top_n: 100
+  poll_every_hours: 6
+  rate_limit_rps: 0.33
+  needs_browser: false
+  live_players: false
+  stale_after_days: 30
+  max_watchlist: 400
+  metric_map:
+    likes: "likes = thumbs-up votes, all-time (Poki rating.up_count)"
+    votes: "votes = total thumbs up + down, all-time (Poki publishes no play counts; the change in votes is the usage proxy)"
+
+itchio:
+  module: tracker.sources.itchio
+  display_name: itch.io
+  segment: aggregator
+  cohort: legacy
+  enabled: true
+  lists: [popular, new_popular, top_rated, top_sellers, ai_popular, ai_code, no_ai, newest]
+  top_n: 100
+  poll_every_hours: 6
+  rate_limit_rps: 0.04              # ~1 request / 25 s: itch.io rate-limits hard (429)
+  needs_browser: false
+  stale_after_days: 14
+  max_watchlist: 800
+  metric_map:
+    votes: "votes = number of ratings (only recorded when the game is on the top-rated list)"
+    plays: "not published: itch.io shows plays, views and downloads only to the game's owner"
+    ai: "AI = the creator's own generative-AI disclosure (AI-assisted / AI code lists, or the No AI tag)"
+
+kongregate:
+  module: tracker.sources.kongregate
+  display_name: Kongregate
+  segment: aggregator
+  cohort: legacy
+  enabled: true
+  lists: [hot, new, action_top, puzzle_top, adventure-rpg_top, idle_top, multiplayer_top, strategy-defense_top]
+  top_n: 100
+  poll_every_hours: 6               # ~850-900 requests per poll (~15 min at 1 req/s)
+  rate_limit_rps: 1
+  needs_browser: false
+  stale_after_days: 30
+  max_watchlist: 900
+  max_game_pages_per_run: 60
+  game_page_every_hours: 168
+  metric_map:
+    plays: "plays = all-time gameplays (Kongregate gameplays_count)"
+    likes: "likes = users who added the game to their favourites"
+    votes: "votes = number of star ratings (empty while the game is 'under judgement')"
+    ai: "AI = the game's own declaration in its description: declared AI use / declared no AI / not declared"

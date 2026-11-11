@@ -1,0 +1,1568 @@
+{
+ "games": {
+  "pagination": {
+   "page": 1,
+   "size": 100
+  },
+  "total": 50,
+  "items": [
+   {
+    "id": "23410",
+    "name": "8 Ball Pool Billiards Multiplayer",
+    "slug": "8-ball-pool-billiards-multiplayer",
+    "cover": "8-ball-pool-billiards-multiplayer_16x9/20260722044342/8-ball-pool-billiards-multiplayer_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2024,
+    "totalLikes": 256532,
+    "totalPlays": 27014416,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "13348",
+    "name": "Four Colors",
+    "slug": "uno-online",
+    "cover": "games/uno-online/cover-1679068977831.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "originals"
+    ],
+    "categoryName": "Card",
+    "releaseYear": 2019,
+    "totalLikes": 487063,
+    "totalPlays": 79547733,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 4,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "23074",
+    "name": "PolyTrack",
+    "slug": "polytrack",
+    "cover": "polytrack_16x9/20260310095956/polytrack_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2024,
+    "totalLikes": 484685,
+    "totalPlays": 47132529,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 16,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "68858",
+    "name": "Goods Triple Match 3D",
+    "slug": "goods-triple-match-3d",
+    "cover": "goods-triple-match-3d_16x9/20261106094921/goods-triple-match-3d_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2026,
+    "totalLikes": 9183,
+    "totalPlays": 2249387,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "46971",
+    "name": "Stone Grass: Mowing Simulator",
+    "slug": "stone-grass-mowing-simulator",
+    "cover": "stone-grass-mowing-simulator_16x9/20260318150935/stone-grass-mowing-simulator_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2025,
+    "totalLikes": 418719,
+    "totalPlays": 17015797,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "54805",
+    "name": "8 Ball Pool",
+    "slug": "8-ball-pool-wyr",
+    "cover": "8-ball-pool-wyr_16x9/20251027031134/8-ball-pool-wyr_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "totalLikes": 239016,
+    "totalPlays": 20626207,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "19818",
+    "name": "Mini Golf Club",
+    "slug": "mini-golf-club",
+    "cover": "mini-golf-club_16x9/20260609101725/mini-golf-club_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "updated"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2021,
+    "totalLikes": 244833,
+    "totalPlays": 20452951,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 10,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "21850",
+    "name": "Sky Riders",
+    "slug": "sky-riders-buk",
+    "cover": "sky-riders-buk_16x9/20240206045724/sky-riders-buk_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "originals"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2023,
+    "totalLikes": 1212462,
+    "totalPlays": 47370137,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "115653",
+    "name": "Rocket Fling",
+    "slug": "rocket-fling",
+    "cover": "rocket-fling_16x9/20261109052222/rocket-fling_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 14993,
+    "totalPlays": 1091198,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "47652",
+    "name": "Wood Screw: Bolts Puzzle",
+    "slug": "wood-screw-bolts-puzzle",
+    "cover": "wood-screw-bolts-puzzle_16x9/20250410095028/wood-screw-bolts-puzzle_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2025,
+    "totalLikes": 19440,
+    "totalPlays": 3332979,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "65565",
+    "name": "RocketGoal.io",
+    "slug": "rocketgoal-io",
+    "cover": "rocketgoal-io_16x9/20260108075807/rocketgoal-io_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": ".io",
+    "releaseYear": 2026,
+    "totalLikes": 280087,
+    "totalPlays": 22094537,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 4,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "18587",
+    "name": "Yatzy",
+    "slug": "yatzy",
+    "cover": "games/yatzy/cover-1600355143918.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Board",
+    "releaseYear": 2020,
+    "totalLikes": 6561,
+    "totalPlays": 1908722,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "24079",
+    "name": "WorldGuessr Free GeoGuessr",
+    "slug": "worldguessr",
+    "cover": "worldguessr_16x9/20241018082520/worldguessr_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Trivia",
+    "releaseYear": 2024,
+    "totalLikes": 492348,
+    "totalPlays": 39173079,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 200,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "52271",
+    "name": "Lumber Harvest: Tree Cutting Game",
+    "slug": "lumber-harvest-tree-cutting-game",
+    "cover": "lumber-harvest-tree-cutting-game_16x9/20250619095414/lumber-harvest-tree-cutting-game_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2025,
+    "totalLikes": 94558,
+    "totalPlays": 5820021,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "18365",
+    "name": "Basket Random",
+    "slug": "basket-random",
+    "cover": "basket-random_16x9/20240617090207/basket-random_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2020,
+    "totalLikes": 547978,
+    "totalPlays": 41520474,
+    "hasIap": false,
+    "userProgressionSaveMessage": "disabled"
+   },
+   {
+    "id": "16914",
+    "name": "Basketball Stars",
+    "slug": "basketball-stars-2019",
+    "cover": "games/basketball-stars-2019/cover-1583231506155.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2019,
+    "totalLikes": 641514,
+    "totalPlays": 50898045,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "69551",
+    "name": "Daily Solitaire Challenge",
+    "slug": "daily-solitaire-challenge",
+    "cover": "daily-solitaire-challenge_16x9/20260218081802/daily-solitaire-challenge_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Card",
+    "releaseYear": 2026,
+    "totalLikes": 1343,
+    "totalPlays": 433569,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "125827",
+    "name": "Shred the Evidence",
+    "slug": "shred-the-evidence",
+    "cover": "shred-the-evidence_16x9/20261103110509/shred-the-evidence_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "shred-the-evidence/7c2645bc-6e4d-4404-98a8-c6a48b2cc8c9/shred-the-evidence-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "shred-the-evidence/1db9ea0c-b00e-413d-80ee-fe69a1d8fb7f/shred-the-evidence.mp4"
+     },
+     "covers": {
+      "1x1": "shred-the-evidence_1x1/20261103111429/shred-the-evidence_1x1-cover.png",
+      "2x3": "shred-the-evidence_2x3/20261103111429/shred-the-evidence_2x3-cover.png",
+      "16x9": "shred-the-evidence_16x9/20261103111429/shred-the-evidence_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-04",
+     "activeUntil": null,
+     "variantArtworkId": "4ef4e232-5f18-4945-8d69-63346dd5d46e",
+     "baselineArtworkId": "d02033cb-d8d8-4673-b5ff-c4efeed1a61d",
+     "artworkExperimentId": "78cdca76-925b-4803-b5e4-34a7e4298856"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "updated"
+    ],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 1701,
+    "totalPlays": 107644,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "115882",
+    "name": "The MOO Factory",
+    "slug": "the-moo-factory-dzw",
+    "cover": "the-moo-factory-dzw_16x9/20261101123249/the-moo-factory-dzw_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Clicker",
+    "releaseYear": 2026,
+    "totalLikes": 1735,
+    "totalPlays": 147523,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22864",
+    "name": "Golf Orbit",
+    "slug": "golf-orbit",
+    "cover": "golf-orbit_16x9/20240620070701/golf-orbit_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2024,
+    "totalLikes": 483675,
+    "totalPlays": 20862941,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "14173",
+    "name": "Table Tennis World Tour",
+    "slug": "table-tennis-world-tour",
+    "cover": "table-tennis-world-tour_16x9/20230908041108/table-tennis-world-tour_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2017,
+    "totalLikes": 299399,
+    "totalPlays": 32269712,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "63812",
+    "name": "Las Vegas Poker",
+    "slug": "las-vegas-poker",
+    "cover": "las-vegas-poker_16x9/20260105082743/las-vegas-poker_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Card",
+    "releaseYear": 2026,
+    "totalLikes": 6601,
+    "totalPlays": 636912,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "142202",
+    "name": "Runespire: Idle Tower Defense",
+    "slug": "runespire-idle-tower-defense",
+    "cover": "runespire-idle-tower-defense_16x9/20261102030139/runespire-idle-tower-defense_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 352,
+    "totalPlays": 18929,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "17776",
+    "name": "Drift Boss",
+    "slug": "drift-boss",
+    "cover": "drift-boss_16x9/20260209092420/drift-boss_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2019,
+    "totalLikes": 227039,
+    "totalPlays": 22668392,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "21915",
+    "name": "Find The Difference",
+    "slug": "find-the-difference",
+    "cover": "find-the-difference/20230711101336/find-the-difference-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2023,
+    "totalLikes": 30867,
+    "totalPlays": 3103092,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "15155",
+    "name": "Tap-Tap Shots",
+    "slug": "tap-tap-shots",
+    "cover": "games/tap-tap-shots/cover-1655202548222.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2019,
+    "totalLikes": 354416,
+    "totalPlays": 40579094,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "154014",
+    "name": "Coconut Tycoon",
+    "slug": "coconut-tycoon",
+    "cover": "coconut-tycoon_16x9/20261027084832/coconut-tycoon_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "new"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2026,
+    "totalLikes": 193,
+    "totalPlays": 6002,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "22565",
+    "name": "Daily Word Search",
+    "slug": "word-search-lyg",
+    "cover": "word-search-lyg_16x9/20240306053554/word-search-lyg_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Word",
+    "releaseYear": 2024,
+    "totalLikes": 17015,
+    "totalPlays": 2342653,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "21232",
+    "name": "Chess Online Multiplayer",
+    "slug": "chess-online-multiplayer-game",
+    "cover": "chess-online-multiplayer-game_16x9/20261106033112/chess-online-multiplayer-game_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "BOTH",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "chess-online-multiplayer-game/b05327b7-9e7e-4b7c-b788-0e261c0a26ac/chess-online-multiplayer-game-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "chess-online-multiplayer-game/ccbf02bd-d4d9-43db-b9b3-1653ebb98e86/chess-online-multiplayer-game.mp4"
+     },
+     "covers": {
+      "1x1": "chess-online-multiplayer-game_1x1/20261106114537/chess-online-multiplayer-game_1x1-cover.png",
+      "2x3": "chess-online-multiplayer-game_2x3/20261106114537/chess-online-multiplayer-game_2x3-cover.png",
+      "16x9": "chess-online-multiplayer-game_16x9/20261106114537/chess-online-multiplayer-game_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-07",
+     "activeUntil": null,
+     "variantArtworkId": "6cda76ee-ac9e-4922-9897-029136f670e7",
+     "baselineArtworkId": "39748cb2-2aaf-4fba-bd4d-32ab1b32b34a",
+     "artworkExperimentId": "a5c3ae31-bf46-4e4d-86ed-11579c1e2221"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Board",
+    "releaseYear": 2022,
+    "totalLikes": 92084,
+    "totalPlays": 6649235,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "22971",
+    "name": "Airline Tycoon Idle",
+    "slug": "airline-tycoon-idle",
+    "cover": "airline-tycoon-idle_16x9/20240729034608/airline-tycoon-idle_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Simulation",
+    "releaseYear": 2024,
+    "totalLikes": 36148,
+    "totalPlays": 2575973,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "66317",
+    "name": "Snooker",
+    "slug": "snooker",
+    "cover": "snooker_16x9/20260130080858/snooker_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 5338,
+    "totalPlays": 1036276,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": false,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "80081",
+    "name": "Bouncemasters",
+    "slug": "bouncemasters",
+    "cover": "bouncemasters_16x9/20260417073608/bouncemasters_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 48971,
+    "totalPlays": 2752371,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "125415",
+    "name": "BLEIHAGEL",
+    "slug": "bleihagel-ihe",
+    "cover": "bleihagel-ihe_16x9/20261102133326/bleihagel-ihe_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 1890,
+    "totalPlays": 92719,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "154887",
+    "name": "Overtake Challenge 3D",
+    "slug": "overtake-challenge-3d",
+    "cover": "overtake-challenge-3d_16x9/20261028070205/overtake-challenge-3d_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "new",
+     "originals"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 820,
+    "totalPlays": 40416,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "20802",
+    "name": "Connect 4 Online Multiplayer",
+    "slug": "4-in-a-row-connected-multiplayer-online",
+    "cover": "games/4-in-a-row-connected-multiplayer-online/cover_16x9-1739759253546.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Board",
+    "releaseYear": 2022,
+    "totalLikes": 49054,
+    "totalPlays": 5097973,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 2,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": true,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "56378",
+    "name": "Bridge Builder",
+    "slug": "bridge-builder-eoi",
+    "cover": "bridge-builder-eoi_16x9/20250909085919/bridge-builder-eoi_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Puzzle",
+    "releaseYear": 2025,
+    "totalLikes": 46455,
+    "totalPlays": 3270895,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "124938",
+    "name": "Battle Bots Arena",
+    "slug": "battle-bots-arena",
+    "cover": "battle-bots-arena_16x9/20261019015157/battle-bots-arena_16x9-cover.png",
+    "isOriginal": false,
+    "activeArtworkExperiment": {
+     "type": "COVERS",
+     "video": {
+      "sizes": [
+       {
+        "width": 205,
+        "height": 115,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-205x115_30fps.mp4"
+       },
+       {
+        "width": 249,
+        "height": 140,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-249x140_30fps.mp4"
+       },
+       {
+        "width": 364,
+        "height": 208,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-364x208_30fps.mp4"
+       },
+       {
+        "width": 494,
+        "height": 276,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-494x276_30fps.mp4"
+       },
+       {
+        "width": 611,
+        "height": 343,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-611x343_30fps.mp4"
+       },
+       {
+        "width": 1024,
+        "height": 576,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-1024x576_30fps.mp4"
+       },
+       {
+        "width": 1280,
+        "height": 720,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-1280x720_30fps.mp4"
+       },
+       {
+        "width": 1920,
+        "height": 1080,
+        "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-1920x1080_30fps.mp4"
+       }
+      ],
+      "original": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena.mp4",
+      "blurredVideo": {
+       "width": 922,
+       "height": 532,
+       "location": "battle-bots-arena/c2f9ab73-969d-4518-9eed-5457fbe52de7/battle-bots-arena-landscape-922x532_30fps_blurred.mp4"
+      },
+      "portraitSizes": [
+       {
+        "width": 185,
+        "height": 275,
+        "location": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena-portrait-185x275_30fps.mp4"
+       },
+       {
+        "width": 206,
+        "height": 304,
+        "location": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena-portrait-206x304_30fps.mp4"
+       },
+       {
+        "width": 216,
+        "height": 320,
+        "location": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena-portrait-216x320_30fps.mp4"
+       },
+       {
+        "width": 233,
+        "height": 350,
+        "location": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena-portrait-233x350_30fps.mp4"
+       },
+       {
+        "width": 283,
+        "height": 420,
+        "location": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena-portrait-283x420_30fps.mp4"
+       },
+       {
+        "width": 720,
+        "height": 1080,
+        "location": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena-portrait-720x1080_30fps.mp4"
+       }
+      ],
+      "portraitOriginal": "battle-bots-arena/3db9d5cc-f836-499c-8d0a-6daad92f004a/battle-bots-arena.mp4"
+     },
+     "covers": {
+      "1x1": "battle-bots-arena_1x1/20261109184950/battle-bots-arena_1x1-cover.png",
+      "2x3": "battle-bots-arena_2x3/20261109184950/battle-bots-arena_2x3-cover.png",
+      "16x9": "battle-bots-arena_16x9/20261109184950/battle-bots-arena_16x9-cover.png"
+     },
+     "activeFrom": "2026-11-10",
+     "activeUntil": null,
+     "variantArtworkId": "4d2becb0-4b92-4b39-ad5b-3fb4e9b9cfcb",
+     "baselineArtworkId": "4a26347a-dd8e-4d3f-a5cb-ffc2c3a65836",
+     "artworkExperimentId": "1a2365f3-caea-4568-9783-3921b8e29feb"
+    },
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Action",
+    "releaseYear": 2026,
+    "totalLikes": 644,
+    "totalPlays": 33267,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "59785",
+    "name": "Harvesting Season",
+    "slug": "harvesting-season",
+    "cover": "harvesting-season_16x9/20251024052242/harvesting-season_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2025,
+    "totalLikes": 10195,
+    "totalPlays": 800445,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "135085",
+    "name": "Ragdoll Racing: Extreme Downhill!",
+    "slug": "ragdoll-racing-extreme-downhill",
+    "cover": "ragdoll-racing-extreme-downhill_16x9/20261014070538/ragdoll-racing-extreme-downhill_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "new"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 348,
+    "totalPlays": 11267,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "634",
+    "name": "Bloxorz",
+    "slug": "bloxorz",
+    "cover": "games/bloxorz/cover-1669373098527.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Puzzle",
+    "totalLikes": 74607,
+    "totalPlays": 7553470,
+    "hasIap": false,
+    "userProgressionSaveMessage": "disabled"
+   },
+   {
+    "id": "68072",
+    "name": "Mad Pursuit",
+    "slug": "mad-pursuit-zhp",
+    "cover": "mad-pursuit-zhp_16x9/20260610111514/mad-pursuit-zhp_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Driving",
+    "releaseYear": 2026,
+    "totalLikes": 37176,
+    "totalPlays": 2345153,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "143881",
+    "name": "TNT Simulator",
+    "slug": "tnt-simulator-gtb",
+    "cover": "tnt-simulator-gtb_16x9/20261029162019/tnt-simulator-gtb_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile",
+     "new"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 445,
+    "totalPlays": 24874,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "107050",
+    "name": "Turbo Trail",
+    "slug": "turbo-trail-txl",
+    "cover": "turbo-trail-txl_16x9/20261030114036/turbo-trail-txl_16x9-cover.jpg",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 3250,
+    "totalPlays": 182604,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "14944",
+    "name": "Jet Rush",
+    "slug": "jet-rush",
+    "cover": "games/jet-rush/cover-1663772569110.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2019,
+    "totalLikes": 93102,
+    "totalPlays": 10391443,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud"
+   },
+   {
+    "id": "87991",
+    "name": "Pixel World",
+    "slug": "pixel-world-uyv",
+    "cover": "pixel-world-uyv_16x9/20260615075742/pixel-world-uyv_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "hot-mobile"
+    ],
+    "categoryName": "Shooting",
+    "releaseYear": 2026,
+    "totalLikes": 8160,
+    "totalPlays": 411987,
+    "hasIap": true,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": 20,
+     "minLobbySize": 2,
+     "isMultiplayer": true,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": true
+    }
+   },
+   {
+    "id": "65663",
+    "name": "Chicken Hell",
+    "slug": "chicken-hell",
+    "cover": "chicken-hell_16x9/20260623024937/chicken-hell_16x9-cover",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Arcade",
+    "releaseYear": 2026,
+    "totalLikes": 12129,
+    "totalPlays": 916404,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "10341",
+    "name": "World's Hardest Game",
+    "slug": "worlds-hardest-game",
+    "cover": "worlds-hardest-game_16x9/20260916085743/worlds-hardest-game_16x9-cover.png",
+    "isOriginal": false,
+    "mobileFriendly": false,
+    "androidFriendly": false,
+    "iosFriendly": false,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Arcade",
+    "totalLikes": 85823,
+    "totalPlays": 8573583,
+    "hasIap": false,
+    "userProgressionSaveMessage": "disabled"
+   },
+   {
+    "id": "19886",
+    "name": "Billiards",
+    "slug": "billiards",
+    "cover": "games/billiards/cover-1636047040066.png",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2021,
+    "totalLikes": 25742,
+    "totalPlays": 2871278,
+    "hasIap": false,
+    "userProgressionSaveMessage": "local"
+   },
+   {
+    "id": "70254",
+    "name": "Horror Clown - Scary Ghost",
+    "slug": "horror-clown--scary-ghost",
+    "cover": "horror-clown--scary-ghost_16x9/20260814044655/horror-clown--scary-ghost_16x9-cover",
+    "isOriginal": false,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop"
+    ],
+    "categoryName": "Adventure",
+    "releaseYear": 2026,
+    "totalLikes": 7723,
+    "totalPlays": 608308,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   },
+   {
+    "id": "125675",
+    "name": "London Padel Club",
+    "slug": "london-padel-club",
+    "cover": "london-padel-club_16x9/20261019040403/london-padel-club_16x9-cover.png",
+    "isOriginal": true,
+    "mobileFriendly": true,
+    "androidFriendly": true,
+    "iosFriendly": true,
+    "status": "PUBLISHED",
+    "gameThumbLabels": [
+     "hot-desktop",
+     "originals"
+    ],
+    "categoryName": "Sports",
+    "releaseYear": 2026,
+    "totalLikes": 1771,
+    "totalPlays": 150089,
+    "hasIap": false,
+    "userProgressionSaveMessage": "cloud",
+    "multiplayerOptions": {
+     "maxLobbySize": null,
+     "minLobbySize": null,
+     "isMultiplayer": null,
+     "hasModeratedChat": null,
+     "supportsInstantJoin": null
+    }
+   }
+  ]
+ }
+}

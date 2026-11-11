@@ -1,0 +1,1343 @@
+{
+ "id": 32483,
+ "developer": "Mad Pixel Games LTD",
+ "developers": [
+  "Mad Pixel Games LTD"
+ ],
+ "fullscreen": false,
+ "allow_smart_refresh": true,
+ "desktop_available": true,
+ "mobile_available": true,
+ "slug": "country-balls-world-war",
+ "title": "Country Balls World War",
+ "english_title": "Country Balls World War",
+ "intro": "Country Balls World War is a strategic war game where you pick a country and battle it out with your neighbors to take control of the entire globe! Upgrade your countries to perform better, and become number one!",
+ "description": "<h3>How to play Country Balls World War</h3>\n<p>Time to battle it out! In this strategy game, just your own land isn't good enough for you; you need the whole world in your possession! Luckily, you have a team of strong Country Balls to help you out with this. Pick a country you like to start in, fight with your neighbors, and capture their territory as well as their treasure! Spend this newfound treasure on upgrading your states or boosting the economy and earning even more.</p>\n<p>You can determine your own fighting style! Will you rush head-first into battle, or be tactical and max out your states and defenses near the border first? The choice is up to you! Be wise, use your logic and win the fight. Time to rule the world!</p>",
+ "controls": "Click/tap and drag the country balls across the screen to attack!",
+ "meta": {
+  "site_id": 3,
+  "title": "Country Balls World War - Play Online for Free! | Poki",
+  "description": "Play Country Balls World War on the most popular website for free online games! Poki works on your mobile, tablet, or computer. No downloads, no login. Play now!"
+ },
+ "file": {
+  "content": "https://games.poki.com/458768/e3b80b37-f5d4-4b1f-8c87-dd2645db8a64",
+  "orientation": "both",
+  "render_type": "unknown"
+ },
+ "mobile_file": {
+  "content": "https://games.poki.com/458768/e3b80b37-f5d4-4b1f-8c87-dd2645db8a64",
+  "orientation": "both",
+  "render_type": "unknown"
+ },
+ "content": "https://games.poki.com/458768/e3b80b37-f5d4-4b1f-8c87-dd2645db8a64",
+ "orientation": "both",
+ "render_type": "unknown",
+ "breadcrumb": [
+  {
+   "id": 1141,
+   "mobile": true,
+   "slug": "new",
+   "title": "New Games",
+   "short_title": "New",
+   "image": {
+    "path": "f85d951da80e7b11a3f1d1517a794760/new-logo.png"
+   },
+   "image_url": "f85d951da80e7b11a3f1d1517a794760/new-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "sparkle",
+   "game_count": 138
+  }
+ ],
+ "breadcrumbs": [
+  {
+   "id": 66,
+   "mobile": true,
+   "slug": "strategy",
+   "title": "Strategy Games",
+   "short_title": "Strategy",
+   "image": {
+    "path": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png"
+   },
+   "image_url": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "genre",
+   "game_count": 144
+  }
+ ],
+ "alternate_sites": {
+  "ar": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "bg": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "bn": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "cs": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "da": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "de": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "el": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "en": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "es": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "fi": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "fr": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "he": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "hi": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "hu": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "id": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "it": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "ja": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "ko": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "ms": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "nl": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "no": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "pl": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "pt-br": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "ro": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "ru": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "sk": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "sr": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "sv": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "th": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "tl": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "tr": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "uk": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "uz": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "xx": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  },
+  "zh": {
+   "slug": "country-balls-world-war",
+   "title": "Country Balls World War"
+  }
+ },
+ "categories": [
+  {
+   "id": 37,
+   "mobile": true,
+   "slug": "mouse",
+   "title": "Mouse Games",
+   "short_title": "Mouse",
+   "image": {
+    "path": "b347a4526e232d2d6310d4f0be143efb/mouse-logo.png"
+   },
+   "image_url": "b347a4526e232d2d6310d4f0be143efb/mouse-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "mechanic",
+   "game_count": 432
+  },
+  {
+   "id": 65,
+   "mobile": true,
+   "slug": "war",
+   "title": "War Games",
+   "short_title": "War",
+   "image": {
+    "path": "7045281c36883d9134d132fd64eee355/war-logo.png"
+   },
+   "image_url": "7045281c36883d9134d132fd64eee355/war-logo.png",
+   "iab_categories": "IAB4,IAB9,IAB19,IAB9-30",
+   "category_type": "theme",
+   "game_count": 80
+  },
+  {
+   "id": 66,
+   "mobile": true,
+   "slug": "strategy",
+   "title": "Strategy Games",
+   "short_title": "Strategy",
+   "image": {
+    "path": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png"
+   },
+   "image_url": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "genre",
+   "game_count": 144
+  },
+  {
+   "id": 775,
+   "mobile": true,
+   "slug": "ball",
+   "title": "Ball Games",
+   "short_title": "Ball",
+   "image": {
+    "path": "0803e0bdc08294273b429ef11f3a3506/ball-logo.png"
+   },
+   "image_url": "0803e0bdc08294273b429ef11f3a3506/ball-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "theme",
+   "game_count": 129
+  },
+  {
+   "id": 1141,
+   "mobile": true,
+   "slug": "new",
+   "title": "New Games",
+   "short_title": "New",
+   "image": {
+    "path": "f85d951da80e7b11a3f1d1517a794760/new-logo.png"
+   },
+   "image_url": "f85d951da80e7b11a3f1d1517a794760/new-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "sparkle",
+   "game_count": 138
+  }
+ ],
+ "related_categories": [
+  {
+   "id": 65,
+   "mobile": true,
+   "slug": "war",
+   "title": "War Games",
+   "short_title": "War",
+   "image": {
+    "path": "7045281c36883d9134d132fd64eee355/war-logo.png"
+   },
+   "image_url": "7045281c36883d9134d132fd64eee355/war-logo.png",
+   "iab_categories": "IAB4,IAB9,IAB19,IAB9-30",
+   "category_type": "theme",
+   "game_count": 80
+  },
+  {
+   "id": 32,
+   "mobile": true,
+   "slug": "boat",
+   "title": "Boat Games",
+   "short_title": "Boat",
+   "image": {
+    "path": "ee6464197c66ad21408694c1928e3078/boat-logo.png"
+   },
+   "image_url": "ee6464197c66ad21408694c1928e3078/boat-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "theme",
+   "game_count": 12
+  },
+  {
+   "id": 66,
+   "mobile": true,
+   "slug": "strategy",
+   "title": "Strategy Games",
+   "short_title": "Strategy",
+   "image": {
+    "path": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png"
+   },
+   "image_url": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "genre",
+   "game_count": 144
+  },
+  {
+   "id": 775,
+   "mobile": true,
+   "slug": "ball",
+   "title": "Ball Games",
+   "short_title": "Ball",
+   "image": {
+    "path": "0803e0bdc08294273b429ef11f3a3506/ball-logo.png"
+   },
+   "image_url": "0803e0bdc08294273b429ef11f3a3506/ball-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "theme",
+   "game_count": 129
+  },
+  {
+   "id": 37,
+   "mobile": true,
+   "slug": "mouse",
+   "title": "Mouse Games",
+   "short_title": "Mouse",
+   "image": {
+    "path": "b347a4526e232d2d6310d4f0be143efb/mouse-logo.png"
+   },
+   "image_url": "b347a4526e232d2d6310d4f0be143efb/mouse-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "mechanic",
+   "game_count": 432
+  },
+  {
+   "id": 77,
+   "mobile": true,
+   "slug": "shooting",
+   "title": "Shooting Games",
+   "short_title": "Shooting",
+   "image": {
+    "path": "fed61537010ea792ae7e5f104c2a8323/shooting-logo.png"
+   },
+   "image_url": "fed61537010ea792ae7e5f104c2a8323/shooting-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "shooting",
+   "category_type": "genre",
+   "game_count": 205
+  },
+  {
+   "id": 1140,
+   "mobile": true,
+   "slug": "popular",
+   "title": "Popular Games",
+   "short_title": "Popular",
+   "image": {
+    "path": "8ca196a9c722e6268767f6cbcba1cdfe/popular-logo.png"
+   },
+   "image_url": "8ca196a9c722e6268767f6cbcba1cdfe/popular-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "fire",
+   "game_count": 99
+  },
+  {
+   "id": 929,
+   "mobile": true,
+   "slug": "boy",
+   "title": "Games for Boys",
+   "short_title": "Boy",
+   "image": {
+    "path": "cf4817609650111002246cb338151d0f/boy-logo.png"
+   },
+   "image_url": "cf4817609650111002246cb338151d0f/boy-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "audience",
+   "game_count": 317
+  },
+  {
+   "id": 3,
+   "mobile": true,
+   "slug": "action",
+   "title": "Action Games",
+   "short_title": "Action",
+   "image": {
+    "path": "dbc7dd98491c7e43362d9ad7b5afbec2/action-logo.png"
+   },
+   "image_url": "dbc7dd98491c7e43362d9ad7b5afbec2/action-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "explosion",
+   "category_type": "genre",
+   "game_count": 655
+  },
+  {
+   "id": 9,
+   "mobile": true,
+   "slug": "skill",
+   "title": "Skill Games",
+   "short_title": "Skill",
+   "image": {
+    "path": "3ef233cfb9ca304e6614a2a2705cc7aa/skill-logo.png"
+   },
+   "image_url": "3ef233cfb9ca304e6614a2a2705cc7aa/skill-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "icon": "darts",
+   "category_type": "genre",
+   "game_count": 582
+  },
+  {
+   "id": 1014,
+   "mobile": true,
+   "slug": "idle",
+   "title": "Idle Games",
+   "short_title": "Idle",
+   "image": {
+    "path": "b85bc07563f6f653b47a4385955eeb5a/idle-logo.png"
+   },
+   "image_url": "b85bc07563f6f653b47a4385955eeb5a/idle-logo.png",
+   "iab_categories": "IAB9,IAB9-30",
+   "category_type": "genre",
+   "game_count": 222
+  },
+  {
+   "id": 1190,
+   "mobile": true,
+   "slug": "mobile",
+   "title": "Mobile Games",
+   "short_title": "Mobile",
+   "image": {
+    "path": "98df7c61542c2bb2c3566a755a459aa8/mobile-logo.png"
+   },
+   "image_url": "98df7c61542c2bb2c3566a755a459aa8/mobile-logo.png",
+   "icon": "mobile-phone",
+   "game_count": 99
+  }
+ ],
+ "related_games": [
+  {
+   "id": 32598,
+   "pokifordevs_game_id": "c19abf38-fda5-4cda-85c1-a8006e02dc92",
+   "mobile": true,
+   "slug": "nuke-policy",
+   "title": "Nuke Policy",
+   "video": "https://v.poki-cdn.com/24eceb59-c6e2-497c-9d39-9e7a7668ea19/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "24eceb59-c6e2-497c-9d39-9e7a7668ea19/thumbnail",
+   "developer": "Kachki Productions",
+   "is_new": true,
+   "image": {
+    "path": "cc000198bcd54ac260f54baa9ad72513/nuke-policy-logo.png"
+   },
+   "image_url": "cc000198bcd54ac260f54baa9ad72513/nuke-policy-logo.png"
+  },
+  {
+   "id": 30402,
+   "pokifordevs_game_id": "8f1a9e37-c870-4481-83ec-b8ace9743c17",
+   "mobile": true,
+   "slug": "day-of-meat-radiation",
+   "title": "Day of Meat: Radiation",
+   "video": "https://v.poki-cdn.com/d0f554f4-045a-4900-979a-3c99bc53c1f2/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "d0f554f4-045a-4900-979a-3c99bc53c1f2/thumbnail",
+   "developer": "Lampogolovii",
+   "image": {
+    "path": "4168b59031ba4e4785477aee6de18318/day-of-meat-radiation-logo.png"
+   },
+   "image_url": "4168b59031ba4e4785477aee6de18318/day-of-meat-radiation-logo.png"
+  },
+  {
+   "id": 30708,
+   "pokifordevs_game_id": "459a59f6-eb9f-451e-b6dd-fc741e5eb461",
+   "mobile": true,
+   "slug": "world-conquest",
+   "title": "World Conquest",
+   "video": "https://v.poki-cdn.com/8ecb84fd-23d4-455d-9609-58d96995b78a/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "8ecb84fd-23d4-455d-9609-58d96995b78a/thumbnail",
+   "developer": "Buldogo Games",
+   "image": {
+    "path": "6eeda030e0be0cc08bcf95d8e79e0d25/world-conquest-logo.png"
+   },
+   "image_url": "6eeda030e0be0cc08bcf95d8e79e0d25/world-conquest-logo.png"
+  },
+  {
+   "id": 30370,
+   "pokifordevs_game_id": "f9564e4e-ef25-4e4b-ba67-cb11a1576bbd",
+   "mobile": true,
+   "slug": "drive-mad",
+   "title": "Drive Mad",
+   "video": "https://v.poki-cdn.com/f8e2224f-9464-4552-88f2-6d7b3805557f/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "f8e2224f-9464-4552-88f2-6d7b3805557f/thumbnail",
+   "developer": "Fancade",
+   "image": {
+    "path": "591d984dcac4fb694f3f8195bb8f6118/drive-mad-logo.png"
+   },
+   "image_url": "591d984dcac4fb694f3f8195bb8f6118/drive-mad-logo.png"
+  },
+  {
+   "id": 31871,
+   "pokifordevs_game_id": "785b74a4-e22d-4d31-90ef-92b80679f7e6",
+   "mobile": true,
+   "slug": "tank-stars",
+   "title": "Tank Stars",
+   "video": "https://v.poki-cdn.com/1be8bc64-b7d9-46f8-94ea-66e70560a2bd/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "1be8bc64-b7d9-46f8-94ea-66e70560a2bd/thumbnail",
+   "developer": "StoreRider",
+   "image": {
+    "path": "16b55f8555672385fe26077067f75da6/tank-stars-logo.png"
+   },
+   "image_url": "16b55f8555672385fe26077067f75da6/tank-stars-logo.png"
+  },
+  {
+   "id": 32455,
+   "pokifordevs_game_id": "7790bf07-c062-4243-b1ea-519fd772ad1b",
+   "mobile": true,
+   "slug": "merge-blast",
+   "title": "Merge Blast",
+   "video": "https://v.poki-cdn.com/11476d6d-1ebe-497d-84ff-f5b0fd3786d0/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "11476d6d-1ebe-497d-84ff-f5b0fd3786d0/thumbnail",
+   "developer": "Kimchi Soup Studios",
+   "is_new": true,
+   "image": {
+    "path": "d6075a38c97888182ebbcd632295a5e0/merge-blast-logo.png"
+   },
+   "image_url": "d6075a38c97888182ebbcd632295a5e0/merge-blast-logo.png"
+  },
+  {
+   "id": 32955,
+   "pokifordevs_game_id": "7809617f-3df5-4a47-8413-48e329dbc30a",
+   "mobile": true,
+   "slug": "find-the-needle-in-haystack",
+   "title": "Find The Needle in Haystack",
+   "video": "https://v.poki-cdn.com/1f38042f-6a88-4813-8814-7df4619c087f/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "1f38042f-6a88-4813-8814-7df4619c087f/thumbnail",
+   "developer": "sapling",
+   "image": {
+    "path": "518b52e6d3d4c0ab2c23c11061107afe/find-the-needle-in-haystack-logo.png"
+   },
+   "image_url": "518b52e6d3d4c0ab2c23c11061107afe/find-the-needle-in-haystack-logo.png"
+  },
+  {
+   "id": 30628,
+   "pokifordevs_game_id": "652d7072-6191-4f75-a2a7-373889c8f0ca",
+   "mobile": true,
+   "slug": "hills-of-steel",
+   "title": "Hills of Steel",
+   "video": "https://v.poki-cdn.com/a2ba371f-4a57-48d2-85f8-2dfa34af1b57/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "a2ba371f-4a57-48d2-85f8-2dfa34af1b57/thumbnail",
+   "developer": "Supercharge Mobile Corp",
+   "image": {
+    "path": "e8a5f2eda2e5340e8ded263692835caa/hills-of-steel-logo.png"
+   },
+   "image_url": "e8a5f2eda2e5340e8ded263692835caa/hills-of-steel-logo.png"
+  },
+  {
+   "id": 30642,
+   "pokifordevs_game_id": "72e5ba00-c3c7-45d5-b68b-abd8c280716d",
+   "mobile": true,
+   "slug": "retro-bowl-college",
+   "title": "Retro Bowl College",
+   "video": "https://v.poki-cdn.com/63e4d4be-021b-4241-91a0-d33e6fe5bc74/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "63e4d4be-021b-4241-91a0-d33e6fe5bc74/thumbnail",
+   "developer": "New Star Games",
+   "image": {
+    "path": "d98547374c4129bf441b754d495e41aa/retro-bowl-college-logo.png"
+   },
+   "image_url": "d98547374c4129bf441b754d495e41aa/retro-bowl-college-logo.png"
+  },
+  {
+   "id": 31510,
+   "pokifordevs_game_id": "e5ba5dff-6567-4f5b-8db2-7ba6a7258275",
+   "mobile": true,
+   "slug": "sort-the-court",
+   "title": "Sort the Court!",
+   "video": "https://v.poki-cdn.com/26b04a3a-a513-4204-ac2e-5b75577a610b/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "26b04a3a-a513-4204-ac2e-5b75577a610b/thumbnail",
+   "developer": "graebor",
+   "image": {
+    "path": "4db98e10c6b684ae745734866bbe0800/sort-the-court-logo.png"
+   },
+   "image_url": "4db98e10c6b684ae745734866bbe0800/sort-the-court-logo.png"
+  },
+  {
+   "id": 30668,
+   "pokifordevs_game_id": "13acae8c-ec6a-4823-b1a2-8ea20cea56e7",
+   "mobile": true,
+   "slug": "level-devil",
+   "title": "Level Devil",
+   "video": "https://v.poki-cdn.com/4362faa3-b5e4-42e7-ab0d-fbe42ceb0120/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "4362faa3-b5e4-42e7-ab0d-fbe42ceb0120/thumbnail",
+   "developer": "Unept",
+   "image": {
+    "path": "701e10b108ed7a0c68c738c46c9a705a/level-devil-logo.png"
+   },
+   "image_url": "701e10b108ed7a0c68c738c46c9a705a/level-devil-logo.png"
+  },
+  {
+   "id": 27703,
+   "pokifordevs_game_id": "5dd28e51-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": true,
+   "slug": "penalty-shooters-2",
+   "title": "Penalty Shooters 2",
+   "video": "https://v.poki-cdn.com/7a8e22ea-c779-487a-a9cd-28b2650aeeeb/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "7a8e22ea-c779-487a-a9cd-28b2650aeeeb/thumbnail",
+   "developer": "10x10games",
+   "image": {
+    "path": "9f6353ca87481b7f34db483fcf480ae5/penalty-shooters-2-logo.jfif"
+   },
+   "image_url": "9f6353ca87481b7f34db483fcf480ae5/penalty-shooters-2-logo.jfif"
+  },
+  {
+   "id": 31562,
+   "pokifordevs_game_id": "316360c3-565c-45ff-9f1f-09470ef540b5",
+   "mobile": true,
+   "slug": "plane-wars",
+   "title": "Plane Wars",
+   "video": "https://v.poki-cdn.com/979a22e1-1657-4c40-8e5b-f6144f3fe4f2/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "979a22e1-1657-4c40-8e5b-f6144f3fe4f2/thumbnail",
+   "developer": "INTCH",
+   "image": {
+    "path": "a2dd3b2c08fcb88818093ec87ad73f58/plane-wars-logo.png"
+   },
+   "image_url": "a2dd3b2c08fcb88818093ec87ad73f58/plane-wars-logo.png"
+  },
+  {
+   "id": 31157,
+   "pokifordevs_game_id": "4e34921f-95bf-499e-9a6c-9dbc0e5aa44d",
+   "mobile": true,
+   "slug": "speed-stars",
+   "title": "Speed Stars",
+   "video": "https://v.poki-cdn.com/28d47a5c-5738-4695-b045-f6aa71898218/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "28d47a5c-5738-4695-b045-f6aa71898218/thumbnail",
+   "developer": "Luke",
+   "image": {
+    "path": "04f09e51e79fd1b6a5cc974b504d6379/speed-stars-logo.png"
+   },
+   "image_url": "04f09e51e79fd1b6a5cc974b504d6379/speed-stars-logo.png"
+  },
+  {
+   "id": 32243,
+   "pokifordevs_game_id": "e912c4ad-256a-495d-a190-a3b2c0073c81",
+   "mobile": true,
+   "slug": "family-sort",
+   "title": "Family Sort",
+   "video": "https://v.poki-cdn.com/ef98c436-6b85-42aa-a466-be0d6bfcfb8b/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "ef98c436-6b85-42aa-a466-be0d6bfcfb8b/thumbnail",
+   "developer": "Unico Studio",
+   "image": {
+    "path": "0ce18fb10967a36cd150b278163d1743/family-sort-logo.png"
+   },
+   "image_url": "0ce18fb10967a36cd150b278163d1743/family-sort-logo.png"
+  },
+  {
+   "id": 32331,
+   "pokifordevs_game_id": "c25742e1-d4a2-4519-81fe-a7d3812a8854",
+   "mobile": true,
+   "slug": "tnt-sandbox",
+   "title": "TNT Sandbox",
+   "video": "https://v.poki-cdn.com/fa74188e-deda-46cb-8d71-9b5f69d8724c/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "fa74188e-deda-46cb-8d71-9b5f69d8724c/thumbnail",
+   "developer": "Kachki Productions",
+   "image": {
+    "path": "41df644d532ab17ef6e8c4a87cd82ef4/tnt-sandbox-logo.png"
+   },
+   "image_url": "41df644d532ab17ef6e8c4a87cd82ef4/tnt-sandbox-logo.png"
+  },
+  {
+   "id": 32513,
+   "pokifordevs_game_id": "66251425-c4be-48a7-a7da-55c4bda2fb2a",
+   "mobile": true,
+   "slug": "reroute",
+   "title": "Reroute",
+   "video": "https://v.poki-cdn.com/fb339423-215e-47ad-9da4-76907cc07b22/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "fb339423-215e-47ad-9da4-76907cc07b22/thumbnail",
+   "developer": "Yodco Media",
+   "is_new": true,
+   "image": {
+    "path": "1b41a2754343c6bb1b4bcadaae6162a3/reroute-logo.png"
+   },
+   "image_url": "1b41a2754343c6bb1b4bcadaae6162a3/reroute-logo.png"
+  },
+  {
+   "id": 32623,
+   "pokifordevs_game_id": "1ca8312a-f3b1-4c7a-a634-0bce311eec14",
+   "mobile": true,
+   "slug": "hole-io",
+   "title": "Hole.io",
+   "video": "https://v.poki-cdn.com/9c270e1e-6069-4a6a-bb63-ee23e72420c2/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "9c270e1e-6069-4a6a-bb63-ee23e72420c2/thumbnail",
+   "developer": "Voodoo",
+   "image": {
+    "path": "6a2eb719b17f667cda6680a8bb2f4e40/hole-io-logo.jfif"
+   },
+   "image_url": "6a2eb719b17f667cda6680a8bb2f4e40/hole-io-logo.jfif"
+  },
+  {
+   "id": 32270,
+   "pokifordevs_game_id": "d5a18ab2-a348-4ec8-a656-18ebba622da3",
+   "mobile": true,
+   "slug": "adopt-merge",
+   "title": "Adopt Merge",
+   "video": "https://v.poki-cdn.com/46cf2a5e-7b78-4387-838e-d1cdeb79ed19/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "46cf2a5e-7b78-4387-838e-d1cdeb79ed19/thumbnail",
+   "developer": "Adgard",
+   "is_new": true,
+   "image": {
+    "path": "3f4452339fd4b7304e1b674c440cd403/adopt-merge-logo.png"
+   },
+   "image_url": "3f4452339fd4b7304e1b674c440cd403/adopt-merge-logo.png"
+  },
+  {
+   "id": 31384,
+   "pokifordevs_game_id": "bf0ed30c-a222-4583-bc9e-17c8623002c5",
+   "mobile": true,
+   "slug": "dogfight",
+   "title": "Dogfight",
+   "video": "https://v.poki-cdn.com/a6d5060c-4769-43c6-aba7-c4b2e6f98685/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "a6d5060c-4769-43c6-aba7-c4b2e6f98685/thumbnail",
+   "developer": "Devoting",
+   "image": {
+    "path": "4675654a50351c5e5d7776fcf5dc415e/dogfight-logo.png"
+   },
+   "image_url": "4675654a50351c5e5d7776fcf5dc415e/dogfight-logo.png"
+  },
+  {
+   "id": 30508,
+   "pokifordevs_game_id": "9ea740c9-ece6-49e4-b9d8-5066e8f74063",
+   "mobile": true,
+   "slug": "war-of-sticks",
+   "title": "War of Sticks",
+   "video": "https://v.poki-cdn.com/1485e9e9-ab6b-414a-a3e5-2be07b2457f5/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "1485e9e9-ab6b-414a-a3e5-2be07b2457f5/thumbnail",
+   "developer": "Shoom Games",
+   "image": {
+    "path": "3b580a021580bf9266fba837a8837039/war-of-sticks-logo.png"
+   },
+   "image_url": "3b580a021580bf9266fba837a8837039/war-of-sticks-logo.png"
+  },
+  {
+   "id": 33048,
+   "pokifordevs_game_id": "564e4ee7-c92e-44b0-a596-79090bd4c12c",
+   "mobile": true,
+   "slug": "chess-pro",
+   "title": "Chess Pro",
+   "video": "https://v.poki-cdn.com/2a23ca03-f393-4ff7-9f3f-a3b77eca1d50/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2a23ca03-f393-4ff7-9f3f-a3b77eca1d50/thumbnail",
+   "developer": "Classic Games",
+   "is_new": true,
+   "image": {
+    "path": "072af00946a0c4a7eb35daebe7c7e2bd/chess-pro-logo.png"
+   },
+   "image_url": "072af00946a0c4a7eb35daebe7c7e2bd/chess-pro-logo.png"
+  },
+  {
+   "id": 31142,
+   "pokifordevs_game_id": "d63637d1-b8d2-4c37-9ecb-a7177ecf678b",
+   "mobile": true,
+   "slug": "brain-test-allstar",
+   "title": "Brain Test All-Star",
+   "video": "https://v.poki-cdn.com/417ebe34-cd05-4a2d-b71f-af6d2efd6de2/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "417ebe34-cd05-4a2d-b71f-af6d2efd6de2/thumbnail",
+   "developer": "Unico Studio",
+   "image": {
+    "path": "8f22aff4d7cd46b6b09d6d37de67b9fd/brain-test-allstar-logo.png"
+   },
+   "image_url": "8f22aff4d7cd46b6b09d6d37de67b9fd/brain-test-allstar-logo.png"
+  },
+  {
+   "id": 29160,
+   "pokifordevs_game_id": "5dd312fa-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": true,
+   "slug": "subway-surfers",
+   "title": "Subway Surfers",
+   "video": "https://v.poki-cdn.com/833237aa-326d-4876-a7c7-5f3edad8119a/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "833237aa-326d-4876-a7c7-5f3edad8119a/thumbnail",
+   "developer": "SYBO",
+   "image": {
+    "path": "51546e43d8d4e544f5a4fa0341d958d3/subway-surfers-logo.png"
+   },
+   "image_url": "51546e43d8d4e544f5a4fa0341d958d3/subway-surfers-logo.png",
+   "content_updated_at": 1670457600
+  },
+  {
+   "id": 32139,
+   "pokifordevs_game_id": "3d6b29a7-66d7-4b70-adec-70f6b686d767",
+   "mobile": true,
+   "slug": "basketball-real",
+   "title": "Basketball REAL",
+   "video": "https://v.poki-cdn.com/a2fddbde-27ab-4315-a42f-9bd95f3114e8/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "a2fddbde-27ab-4315-a42f-9bd95f3114e8/thumbnail",
+   "developer": "splax.net",
+   "image": {
+    "path": "5b277ebe686a5a6ef8c40fc893f67f8e/basketball-real-logo.png"
+   },
+   "image_url": "5b277ebe686a5a6ef8c40fc893f67f8e/basketball-real-logo.png"
+  },
+  {
+   "id": 31383,
+   "pokifordevs_game_id": "18ac5400-9064-45fb-8f78-124d1bc4f2d4",
+   "mobile": true,
+   "slug": "american-football-real",
+   "title": "American Football REAL",
+   "video": "https://v.poki-cdn.com/f0910657-3788-485c-8a9b-649ebfe159e2/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "f0910657-3788-485c-8a9b-649ebfe159e2/thumbnail",
+   "developer": "Splax",
+   "image": {
+    "path": "b4fc2345218ec85d088427f5a162edc0/american-football-real-logo.png"
+   },
+   "image_url": "b4fc2345218ec85d088427f5a162edc0/american-football-real-logo.png"
+  },
+  {
+   "id": 31882,
+   "pokifordevs_game_id": "f8f24add-f54c-41d1-bf60-4eea38790aaa",
+   "mobile": true,
+   "slug": "flat-baseball",
+   "title": "Flat Baseball",
+   "video": "https://v.poki-cdn.com/cddc8a39-44ba-4ee1-a93e-a21bd60074bf/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "cddc8a39-44ba-4ee1-a93e-a21bd60074bf/thumbnail",
+   "developer": "10x10Games",
+   "image": {
+    "path": "ba1f466a3aa641d5bfd3dc2c72e1de46/flat-baseball-logo.png"
+   },
+   "image_url": "ba1f466a3aa641d5bfd3dc2c72e1de46/flat-baseball-logo.png"
+  },
+  {
+   "id": 30984,
+   "pokifordevs_game_id": "6caab5cb-54d2-4c8f-aefe-0b0847f7cec6",
+   "mobile": true,
+   "slug": "ping-pong-go",
+   "title": "Ping Pong Go!",
+   "video": "https://v.poki-cdn.com/4904a3cb-0f67-4924-bb1e-97e4d3f4640a/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "4904a3cb-0f67-4924-bb1e-97e4d3f4640a/thumbnail",
+   "developer": "Happylander Ltd",
+   "image": {
+    "path": "c02dcbba0cc309d178806541248df443/ping-pong-go-logo.png"
+   },
+   "image_url": "c02dcbba0cc309d178806541248df443/ping-pong-go-logo.png"
+  },
+  {
+   "id": 31515,
+   "pokifordevs_game_id": "e1a244dd-11bc-458f-b3a8-2f5d82cc6f7e",
+   "mobile": true,
+   "slug": "paperio-2",
+   "title": "Paper.io 2",
+   "video": "https://v.poki-cdn.com/e340086a-62ff-4d8d-9eba-2c0d6fae9752/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "e340086a-62ff-4d8d-9eba-2c0d6fae9752/thumbnail",
+   "developer": "Voodoo",
+   "image": {
+    "path": "69861c9dda948ceff1369492a9b0b522/paperio-2-logo.jfif"
+   },
+   "image_url": "69861c9dda948ceff1369492a9b0b522/paperio-2-logo.jfif"
+  },
+  {
+   "id": 32735,
+   "pokifordevs_game_id": "57a9164d-298f-44c5-ac81-1a0b895c082b",
+   "mobile": true,
+   "slug": "aquaparkio",
+   "title": "Aquapark.io",
+   "video": "https://v.poki-cdn.com/87db28eb-db50-46db-9bef-0b49601ee15d/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "87db28eb-db50-46db-9bef-0b49601ee15d/thumbnail",
+   "developer": "Voodoo",
+   "image": {
+    "path": "f7807dce7b12c7db10bee0e6f645732b/aquaparkio-logo.jfif"
+   },
+   "image_url": "f7807dce7b12c7db10bee0e6f645732b/aquaparkio-logo.jfif"
+  },
+  {
+   "id": 29316,
+   "pokifordevs_game_id": "5dd33196-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": true,
+   "slug": "basketball-stars",
+   "title": "Basketball Stars",
+   "video": "https://v.poki-cdn.com/470d0dc8-446b-44f4-a946-6f2cc0d30f8c/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "470d0dc8-446b-44f4-a946-6f2cc0d30f8c/thumbnail",
+   "developer": "Madpuffers",
+   "image": {
+    "path": "bc02c9cdfc5b424ddf343b01edf791ce/basketball-stars-logo.png"
+   },
+   "image_url": "bc02c9cdfc5b424ddf343b01edf791ce/basketball-stars-logo.png"
+  },
+  {
+   "id": 32041,
+   "pokifordevs_game_id": "73eedbff-e622-464a-bbd9-3311ffd343a9",
+   "mobile": true,
+   "slug": "draft-wars",
+   "title": "Draft Wars",
+   "video": "https://v.poki-cdn.com/e9208d01-7a41-439d-ac78-6af1ab18ba1e/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "e9208d01-7a41-439d-ac78-6af1ab18ba1e/thumbnail",
+   "developer": "redsnowdev",
+   "image": {
+    "path": "ee32224790d1c4d9e61033e12db294d9/draft-wars-logo.png"
+   },
+   "image_url": "ee32224790d1c4d9e61033e12db294d9/draft-wars-logo.png"
+  },
+  {
+   "id": 30837,
+   "pokifordevs_game_id": "c7cb42da-e6d3-4892-9ff8-b7455d8453b9",
+   "mobile": true,
+   "slug": "royal-card-clash",
+   "title": "Royal Card Clash",
+   "video": "https://v.poki-cdn.com/96bc2d96-5b83-4a29-b26d-36fb8dbc235d/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "96bc2d96-5b83-4a29-b26d-36fb8dbc235d/thumbnail",
+   "developer": "Gearhead Games",
+   "image": {
+    "path": "63476df8f39a5cfbf03ee6792b60af5f/royal-card-clash-logo.png"
+   },
+   "image_url": "63476df8f39a5cfbf03ee6792b60af5f/royal-card-clash-logo.png"
+  },
+  {
+   "id": 31750,
+   "pokifordevs_game_id": "944a0c3c-0907-4180-8130-862ca9e28a14",
+   "mobile": true,
+   "slug": "soccer-league",
+   "title": "Soccer League",
+   "video": "https://v.poki-cdn.com/9411e5f0-09e5-4935-9b78-51c0211522d7/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "9411e5f0-09e5-4935-9b78-51c0211522d7/thumbnail",
+   "developer": "OnRush Studio",
+   "image": {
+    "path": "e1ea40bded550e83382e48d8b28857c1/soccer-league-logo.png"
+   },
+   "image_url": "e1ea40bded550e83382e48d8b28857c1/soccer-league-logo.png"
+  },
+  {
+   "id": 31533,
+   "pokifordevs_game_id": "3006e2da-7fe8-46e5-80b8-5b32711ce30c",
+   "mobile": true,
+   "slug": "bounce-ball",
+   "title": "Bounce Ball",
+   "video": "https://v.poki-cdn.com/44ea176b-487b-4fb5-a151-f9c5062ebe50/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "44ea176b-487b-4fb5-a151-f9c5062ebe50/thumbnail",
+   "developer": "WeDoYouPlay",
+   "image": {
+    "path": "0a1ae9ccb078770a8091b4ac40b9a622/bounce-ball-logo.png"
+   },
+   "image_url": "0a1ae9ccb078770a8091b4ac40b9a622/bounce-ball-logo.png"
+  },
+  {
+   "id": 30421,
+   "pokifordevs_game_id": "7f1564ff-b034-44e2-9be3-ca1fd2ce4680",
+   "mobile": true,
+   "slug": "merge-arena",
+   "title": "Merge Arena",
+   "video": "https://v.poki-cdn.com/37273506-3ceb-4d3b-9dae-ea883a29ea87/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "37273506-3ceb-4d3b-9dae-ea883a29ea87/thumbnail",
+   "developer": "EasyCats",
+   "image": {
+    "path": "0cb8a59994a0c6ab5f488a876bf92b70/merge-arena-logo.png"
+   },
+   "image_url": "0cb8a59994a0c6ab5f488a876bf92b70/merge-arena-logo.png"
+  },
+  {
+   "id": 31834,
+   "pokifordevs_game_id": "b548f9a6-31d8-4d28-a6b0-c0ea9ef3587c",
+   "mobile": true,
+   "slug": "count-control-legends",
+   "title": "Count Control Legends",
+   "video": "https://v.poki-cdn.com/4a0d3561-0ccd-43f0-ad8e-f1e6e3d82965/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "4a0d3561-0ccd-43f0-ad8e-f1e6e3d82965/thumbnail",
+   "developer": "Jungle Tavern",
+   "image": {
+    "path": "e612cf6c7083881ffae58f633bcbc304/count-control-legends-logo.png"
+   },
+   "image_url": "e612cf6c7083881ffae58f633bcbc304/count-control-legends-logo.png"
+  },
+  {
+   "id": 30059,
+   "pokifordevs_game_id": "3a801763-f46b-434a-8e03-e96ca50b7e0b",
+   "mobile": false,
+   "slug": "call-of-tanks",
+   "title": "Call of Tanks",
+   "video": "https://v.poki-cdn.com/b532fb56-d055-4cce-b272-bb0be747fe79/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "b532fb56-d055-4cce-b272-bb0be747fe79/thumbnail",
+   "developer": "Beedo Games",
+   "image": {
+    "path": "d286c8607bde94ca319d790951fc2720/call-of-tanks-logo.png"
+   },
+   "image_url": "d286c8607bde94ca319d790951fc2720/call-of-tanks-logo.png"
+  },
+  {
+   "id": 23233,
+   "pokifordevs_game_id": "5dd25432-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": true,
+   "slug": "murder",
+   "title": "Murder",
+   "video": "https://v.poki-cdn.com/38868ac2-e824-48a5-94d5-8430c881ad54/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "38868ac2-e824-48a5-94d5-8430c881ad54/thumbnail",
+   "developer": "Studio Seufz",
+   "image": {
+    "path": "baccf9660bfb476fe2c8ae9f5a2ec4d2/murder-logo.png"
+   },
+   "image_url": "baccf9660bfb476fe2c8ae9f5a2ec4d2/murder-logo.png"
+  },
+  {
+   "id": 29724,
+   "pokifordevs_game_id": "806e2242-df99-4dcd-b6ac-2c20175159a8",
+   "mobile": true,
+   "slug": "retro-bowl",
+   "title": "Retro Bowl",
+   "video": "https://v.poki-cdn.com/be86cc01-e4d5-4bcf-a44b-59b8086bb0f2/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "be86cc01-e4d5-4bcf-a44b-59b8086bb0f2/thumbnail",
+   "developer": "New Star Games",
+   "image": {
+    "path": "ee9ca3764ef4289a48a1ebf457ef605441ed1f35a0f2eb12707a70d609e53686/retro-bowl-logo.png"
+   },
+   "image_url": "ee9ca3764ef4289a48a1ebf457ef605441ed1f35a0f2eb12707a70d609e53686/retro-bowl-logo.png",
+   "content_updated_at": 1612137600
+  },
+  {
+   "id": 31583,
+   "pokifordevs_game_id": "5dac3399-1c67-4e45-b826-245bc47d180d",
+   "mobile": true,
+   "slug": "elemental-master",
+   "title": "Elemental Master",
+   "video": "https://v.poki-cdn.com/d086ca70-c553-4bb2-922f-25e280e45e5d/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "d086ca70-c553-4bb2-922f-25e280e45e5d/thumbnail",
+   "developer": "CHEPERGame",
+   "image": {
+    "path": "fbb216ac59ca3834637ace57346e893f/elemental-master-logo.png"
+   },
+   "image_url": "fbb216ac59ca3834637ace57346e893f/elemental-master-logo.png"
+  },
+  {
+   "id": 29001,
+   "pokifordevs_game_id": "5dd2e0d9-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": false,
+   "slug": "warbrokers-io",
+   "title": "Warbrokers.io",
+   "video": "https://v.poki-cdn.com/f9c15366-ab8f-43ee-bed7-153426b48cab/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "f9c15366-ab8f-43ee-bed7-153426b48cab/thumbnail",
+   "developer": "Trebuchet Entertainment LLC",
+   "image": {
+    "path": "6828b797-8a4a-4640-937e-117834b1f50d/warbrokers-io-logo.jpg"
+   },
+   "image_url": "6828b797-8a4a-4640-937e-117834b1f50d/warbrokers-io-logo.jpg"
+  },
+  {
+   "id": 31938,
+   "pokifordevs_game_id": "331f8991-4aa0-47f8-b3ca-df20fc146d41",
+   "mobile": true,
+   "slug": "neon-challenge-legends",
+   "title": "Neon Challenge Legends",
+   "video": "https://v.poki-cdn.com/f6be6daa-c47a-4cd2-ab50-37accca69373/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "f6be6daa-c47a-4cd2-ab50-37accca69373/thumbnail",
+   "developer": "Jungle Tavern",
+   "image": {
+    "path": "63a82be82b3449c174af1720e55cec67/neon-challenge-legends-logo.png"
+   },
+   "image_url": "63a82be82b3449c174af1720e55cec67/neon-challenge-legends-logo.png"
+  },
+  {
+   "id": 32039,
+   "pokifordevs_game_id": "29001cd8-4cf4-4cdb-bdd8-78f993a43b50",
+   "mobile": true,
+   "slug": "4th-and-goal-2026",
+   "title": "4th and Goal 2026",
+   "developer": "Glowmonkey",
+   "image": {
+    "path": "c37d654b2b5a674084e9c8596c915d57/4th-and-goal-2026-logo.png"
+   },
+   "image_url": "c37d654b2b5a674084e9c8596c915d57/4th-and-goal-2026-logo.png"
+  },
+  {
+   "id": 31914,
+   "pokifordevs_game_id": "0e9dcadf-1c75-4c53-a211-b93f4423212a",
+   "mobile": true,
+   "slug": "slice-master",
+   "title": "Slice Master",
+   "video": "https://v.poki-cdn.com/5718f944-f448-40c1-a1b1-65e55936f7bb/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "5718f944-f448-40c1-a1b1-65e55936f7bb/thumbnail",
+   "developer": "PlayCalm",
+   "image": {
+    "path": "743089b5c6b4dda8bd05d920ab00a0b3/slice-master-logo.png"
+   },
+   "image_url": "743089b5c6b4dda8bd05d920ab00a0b3/slice-master-logo.png"
+  },
+  {
+   "id": 31113,
+   "pokifordevs_game_id": "c89f4abe-5041-497b-8705-986b6f3b748c",
+   "mobile": true,
+   "slug": "minefun-io",
+   "title": "MineFun.io",
+   "video": "https://v.poki-cdn.com/9485c56d-2a11-4026-a0de-a58597de2e02/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "9485c56d-2a11-4026-a0de-a58597de2e02/thumbnail",
+   "developer": "Vectaria",
+   "image": {
+    "path": "32d8c732177e212fce653cceeecfb5ac/minefun-io-logo.png"
+   },
+   "image_url": "32d8c732177e212fce653cceeecfb5ac/minefun-io-logo.png"
+  },
+  {
+   "id": 29145,
+   "pokifordevs_game_id": "5dd30ab4-015f-11ea-ad56-9cb6d0d995f7",
+   "mobile": true,
+   "slug": "stickman-hook",
+   "title": "Stickman Hook",
+   "video": "https://v.poki-cdn.com/c5bfe826-608c-4fa4-8ab2-82c07fe27c0d/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "c5bfe826-608c-4fa4-8ab2-82c07fe27c0d/thumbnail",
+   "developer": "Madbox",
+   "image": {
+    "path": "99e090d154caf30f3625df7e456d5984/stickman-hook-logo.png"
+   },
+   "image_url": "99e090d154caf30f3625df7e456d5984/stickman-hook-logo.png",
+   "content_updated_at": 1655942400
+  },
+  {
+   "id": 31151,
+   "pokifordevs_game_id": "a601b558-b49f-46c8-a13e-78b975209c89",
+   "mobile": true,
+   "slug": "vortellas-dress-up",
+   "title": "Vortella's Dress Up",
+   "video": "https://v.poki-cdn.com/59dcc324-a60f-429e-81b6-c4b53160093b/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "59dcc324-a60f-429e-81b6-c4b53160093b/thumbnail",
+   "developer": "Devortel",
+   "image": {
+    "path": "09f7b1069666fb0b08f698281a94ea81/vortellas-dress-up-logo.png"
+   },
+   "image_url": "09f7b1069666fb0b08f698281a94ea81/vortellas-dress-up-logo.png"
+  },
+  {
+   "id": 30620,
+   "pokifordevs_game_id": "785a4295-96c4-43e5-b237-fb07fc3ef44d",
+   "mobile": true,
+   "slug": "rainbow-obby",
+   "title": "Rainbow Obby",
+   "video": "https://v.poki-cdn.com/5fdc83f7-46b3-4a68-8778-7d00afa282c5/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "5fdc83f7-46b3-4a68-8778-7d00afa282c5/thumbnail",
+   "developer": "emolingo games",
+   "image": {
+    "path": "860de689098298602ae612bc2ca3fce1/rainbow-obby-logo.png"
+   },
+   "image_url": "860de689098298602ae612bc2ca3fce1/rainbow-obby-logo.png"
+  },
+  {
+   "id": 30755,
+   "pokifordevs_game_id": "68808795-016c-435b-a275-06b86a4c9353",
+   "mobile": true,
+   "slug": "blocky-blast-puzzle",
+   "title": "Blocky Blast Puzzle",
+   "video": "https://v.poki-cdn.com/2d80a3e1-88f3-43f9-8929-59e697789a01/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2d80a3e1-88f3-43f9-8929-59e697789a01/thumbnail",
+   "developer": "OPlay Games",
+   "image": {
+    "path": "291aaf2dcf5c1322558a9c038b3c5251/blocky-blast-puzzle-logo.png"
+   },
+   "image_url": "291aaf2dcf5c1322558a9c038b3c5251/blocky-blast-puzzle-logo.png"
+  },
+  {
+   "id": 30813,
+   "pokifordevs_game_id": "5c4828dc-d115-406f-b45e-378ff2736277",
+   "mobile": true,
+   "slug": "ragdoll-hit",
+   "title": "Ragdoll Hit",
+   "video": "https://v.poki-cdn.com/522f849f-b693-492a-aa5f-3325b8fe4c6b/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "522f849f-b693-492a-aa5f-3325b8fe4c6b/thumbnail",
+   "developer": "Ericetto",
+   "image": {
+    "path": "3c892779be9dabb3589586c83ad3eeed/ragdoll-hit-logo.png"
+   },
+   "image_url": "3c892779be9dabb3589586c83ad3eeed/ragdoll-hit-logo.png"
+  },
+  {
+   "id": 30735,
+   "pokifordevs_game_id": "a6460f86-1866-44c7-be9c-c4540d7cd083",
+   "mobile": true,
+   "slug": "sword-masters",
+   "title": "Sword Masters",
+   "video": "https://v.poki-cdn.com/2006ba8c-9d55-42fc-a35c-01c0d0d20b20/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "2006ba8c-9d55-42fc-a35c-01c0d0d20b20/thumbnail",
+   "developer": "emolingo games",
+   "image": {
+    "path": "87451be138d3f0073d16d4ba34494959/sword-masters-logo.png"
+   },
+   "image_url": "87451be138d3f0073d16d4ba34494959/sword-masters-logo.png"
+  },
+  {
+   "id": 32218,
+   "pokifordevs_game_id": "c6ca68ca-02ab-42cf-941c-a794205adae6",
+   "mobile": true,
+   "slug": "car-circle",
+   "title": "Car Circle",
+   "video": "https://v.poki-cdn.com/7771eb49-dfe5-4bdc-92ea-66d7686a30e4/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "7771eb49-dfe5-4bdc-92ea-66d7686a30e4/thumbnail",
+   "developer": "Shoom Games",
+   "image": {
+    "path": "d92e6cf5993bd3a7270b638c865d679a/car-circle-logo.png"
+   },
+   "image_url": "d92e6cf5993bd3a7270b638c865d679a/car-circle-logo.png"
+  },
+  {
+   "id": 32225,
+   "pokifordevs_game_id": "eec1b733-1f10-4df0-99f9-737b5cb7ebd5",
+   "mobile": true,
+   "slug": "robo-cleaner-simulator",
+   "title": "Robo Cleaner Simulator",
+   "video": "https://v.poki-cdn.com/07a326f9-4bfd-4712-8b66-47d3296102e0/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "07a326f9-4bfd-4712-8b66-47d3296102e0/thumbnail",
+   "developer": "Camu",
+   "image": {
+    "path": "fe0b6bc6daa62beb832450cd154852a6/robo-cleaner-simulator-logo.png"
+   },
+   "image_url": "fe0b6bc6daa62beb832450cd154852a6/robo-cleaner-simulator-logo.png"
+  },
+  {
+   "id": 32447,
+   "pokifordevs_game_id": "5515b0a5-cf28-4513-8a95-588b206fb79f",
+   "mobile": true,
+   "slug": "slime-keyboard-escape",
+   "title": "Slime Keyboard Escape",
+   "video": "https://v.poki-cdn.com/3af63d61-d94f-493a-aaed-2fd56b477cb9/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "3af63d61-d94f-493a-aaed-2fd56b477cb9/thumbnail",
+   "developer": "Blasters",
+   "image": {
+    "path": "f3a08cd5c134e61162e33ca61d17bd09/slime-keyboard-escape-logo.png"
+   },
+   "image_url": "f3a08cd5c134e61162e33ca61d17bd09/slime-keyboard-escape-logo.png"
+  },
+  {
+   "id": 31626,
+   "pokifordevs_game_id": "985f23e7-e73f-40f0-ba38-134a66989dcb",
+   "mobile": true,
+   "slug": "plonky",
+   "title": "Plonky",
+   "video": "https://v.poki-cdn.com/e6163cb8-b5b6-4bff-895c-083b8b8534bb/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "e6163cb8-b5b6-4bff-895c-083b8b8534bb/thumbnail",
+   "developer": "Gametornado",
+   "image": {
+    "path": "ed3adaca348ed9bf21694505317d402b/plonky-logo.png"
+   },
+   "image_url": "ed3adaca348ed9bf21694505317d402b/plonky-logo.png"
+  },
+  {
+   "id": 31836,
+   "pokifordevs_game_id": "97d4060b-757a-4759-9bdb-2c06e9915d6e",
+   "mobile": true,
+   "slug": "rail-in-the-air",
+   "title": "Rail in the Air",
+   "video": "https://v.poki-cdn.com/0a806dac-cf3d-45ef-a9df-9f15ad69bc1d/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "0a806dac-cf3d-45ef-a9df-9f15ad69bc1d/thumbnail",
+   "developer": "OPlay Games",
+   "image": {
+    "path": "ae68c9ae2d30f26d1802298e9e34c26c/rail-in-the-air-logo.png"
+   },
+   "image_url": "ae68c9ae2d30f26d1802298e9e34c26c/rail-in-the-air-logo.png"
+  }
+ ],
+ "rating": {
+  "up_count": 4964,
+  "down_count": 568,
+  "rating": 4.59
+ },
+ "config": {},
+ "store_urls": {},
+ "alternative_game_enabled": false,
+ "image": {
+  "path": "daca950063d994045fdbc518943b1c13/country-balls-world-war-logo.png"
+ },
+ "image_url": "daca950063d994045fdbc518943b1c13/country-balls-world-war-logo.png",
+ "pokifordevs_game_id": "e3b80b37-f5d4-4b1f-8c87-dd2645db8a64",
+ "pokifordevs_team_id": "e33d0e3a-6c21-48a2-a1ba-9b71907f3393",
+ "is_new": true,
+ "externally_hosted": false,
+ "explicit_orientation_message": false,
+ "animated_thumbnail": "013f47fd-b913-45d6-a65e-fd50ba62dfb3/thumbnail",
+ "video_upload_date": "2026-07-27T13:24:35Z",
+ "release_date": "2026-11-09T00:00:05Z",
+ "trending_rank": 21,
+ "developer_games": [
+  {
+   "id": 31658,
+   "pokifordevs_game_id": "944fe7b1-3921-443e-89a6-422dbe7c0c8e",
+   "mobile": true,
+   "slug": "alien-raid-monster-evolution",
+   "title": "Alien Raid Monster Evolution",
+   "video": "https://v.poki-cdn.com/73c71eab-89cf-482e-8f62-36b10bd0b173/thumbnail.3x3.h264.mp4",
+   "animated_thumbnail": "73c71eab-89cf-482e-8f62-36b10bd0b173/thumbnail",
+   "developer": "Mad Pixel Games LTD",
+   "image": {
+    "path": "733d8a72cf5e8b260c2bd91bb2b68c84/alien-raid-monster-evolution-logo.png"
+   },
+   "image_url": "733d8a72cf5e8b260c2bd91bb2b68c84/alien-raid-monster-evolution-logo.png"
+  }
+ ],
+ "genre": {
+  "id": 66,
+  "mobile": true,
+  "slug": "strategy",
+  "title": "Strategy Games",
+  "short_title": "Strategy",
+  "image": {
+   "path": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png"
+  },
+  "image_url": "39dfc00a85994be1a2e359da19c42359/strategy-logo.png",
+  "iab_categories": "IAB9,IAB9-30",
+  "category_type": "genre",
+  "game_count": 144
+ },
+ "version_last_updated": "2026-10-12T08:14:55Z",
+ "last_modified": "2026-11-09T00:00:05Z",
+ "ad_profiles": {
+  "desktop": {
+   "preroll": false,
+   "time_per_try": 7000,
+   "start_ads_after": 120000,
+   "time_between_ads": 180000,
+   "time_between_ads_fullscreen": 120000,
+   "display_refresh_interval": 30000,
+   "display_refresh_cooldown": 20000
+  },
+  "mobile": {
+   "preroll": false,
+   "time_per_try": 7000,
+   "start_ads_after": 360000,
+   "time_between_ads": 360000,
+   "time_between_ads_fullscreen": 360000,
+   "gamebar_ad_lifetime": 22000,
+   "gamebar_min_visible": 14000,
+   "gamebar_delay_before_next_ad": 4000
+  },
+  "tablet": {
+   "preroll": false,
+   "time_per_try": 7000,
+   "start_ads_after": 240000,
+   "time_between_ads": 240000,
+   "time_between_ads_fullscreen": 240000,
+   "gamebar_ad_lifetime": 22000,
+   "gamebar_min_visible": 14000,
+   "gamebar_delay_before_next_ad": 4000
+  }
+ }
+}

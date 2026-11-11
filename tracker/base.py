@@ -31,6 +31,13 @@ class SourceAdapter(ABC):
         """Return current counters for the given games. Batch where the platform allows it.
         Missing games (404, private) are returned with status='gone'."""
 
+    def platform_totals(self) -> dict | None:
+        """Optional. Whole-platform figures (not just the tracked lists), read after discover() in a full run:
+        any of plays_total (all-time plays/launches across the platform), games, creators, players_now (players
+        online now, platform-wide), people_recent (people active in a recent window), extra (dict). Return None when
+        the platform publishes no such figures or this run could not see the whole catalogue."""
+        return None
+
     def fetch_creator(self, creator_ref: str) -> CreatorProfile | None:
         """Optional. Profile name, URL, followers, external links (x, youtube, tiktok, discord, website)."""
         return None

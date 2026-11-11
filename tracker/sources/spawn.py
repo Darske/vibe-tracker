@@ -164,6 +164,15 @@ def _row_body(row: bytes) -> bytes:
     return row[row.index(b":") + 1 :].rstrip(b"\n")
 
 
+PEOPLE_NOW = re.compile(r'peopleNow\\?"\s*:\s*\{\s*\\?"people\\?"\s*:\s*(\d+)')
+
+
+def parse_people_now(html: str) -> int | None:
+    """Site-wide people on Spawn in the last hour, from the RSC payload (`peopleNow:{people:N, minute:M}`)."""
+    m = PEOPLE_NOW.search(html)
+    return int(m.group(1)) if m else None
+
+
 def parse_flight(html: str) -> list[Any]:
     """Return every JSON payload in the page's RSC flight stream (see `_iter_rows`).
     Non-JSON rows and anything that fails to json-load are ignored."""
@@ -380,6 +389,7 @@ class Spawn(SourceAdapter):
         self._on_multiplayer: set[str] = set()  # external_ids seen on /?filter=multiplayer
         self._live: dict[str, int] = {}  # game id → playingNow from liveRooms
         self._followers: dict[str, int] = {}  # username → follower_count seen on game pages
+        self._people_now: int | None = None  # site-wide "people on Spawn in the last hour" (peopleNow.people)
 
     # ------------------------------------------------------------------ urls
     @staticmethod
@@ -420,6 +430,9 @@ class Spawn(SourceAdapter):
         return cards
 
     # ------------------------------------------------------------------ SourceAdapter
+    def platform_totals(self) -> dict | None:
+        return {"people_recent": self._people_now} if self._people_now is not None else None
+
     def discover(self, lists: list[str], top_n: int) -> Iterable[tuple[GameRef, ListPlacement]]:
         for list_name in lists:
             url = self.list_url(list_name)
@@ -427,6 +440,9 @@ class Spawn(SourceAdapter):
             if resp.status_code in (404, 410):
                 log.warning("spawn: list %r → 404 at %s, skipping", list_name, url)
                 continue
+            people = parse_people_now(resp.text)
+            if people is not None:
+                self._people_now = max(people, self._people_now or 0)
             cards = self._cards_from_page(resp.text, what=f"list {list_name}")
             if not cards:
                 log.warning("spawn: list %r produced no cards (%s)", list_name, url)
