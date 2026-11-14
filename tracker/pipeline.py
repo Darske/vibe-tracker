@@ -81,19 +81,22 @@ def run_source(conn, name: str, cfg: dict, run_ts: datetime, budget: TimeBudget,
             conn.writes["placements"] += len(pending)
         placements = pending
         log.info("%s: discovered %d games across %d placements", name, len(discovered), len(placements))
-        if not ccu:  # whole-platform figures (where the platform publishes them); never fails the run
-            try:
-                totals = adapter.platform_totals()
-                if totals and not dry:
-                    db.upsert_platform_totals(conn, name, utcnow(), totals)
-                    conn.commit()
-                if totals:
-                    log.info("%s: platform totals %s", name, {k: v for k, v in totals.items() if k != "extra"})
-            except BudgetExceeded:
-                raise
-            except Exception as e:  # noqa: BLE001
-                conn.rollback() if not dry else None
-                log.warning("%s: platform totals unavailable: %s", name, e)
+        # whole-platform figures (full runs) + site-wide "online" counters (every run); never fails the run
+        try:
+            totals = dict(adapter.platform_totals() or {}) if not ccu else {}
+            online = adapter.site_online() or {}
+            totals.update({k: v for k, v in online.items() if v is not None})
+            totals = totals or None
+            if totals and not dry:
+                db.upsert_platform_totals(conn, name, utcnow(), totals)
+                conn.commit()
+            if totals:
+                log.info("%s: platform totals %s", name, {k: v for k, v in totals.items() if k != "extra"})
+        except BudgetExceeded:
+            raise
+        except Exception as e:  # noqa: BLE001
+            conn.rollback() if not dry else None
+            log.warning("%s: platform totals unavailable: %s", name, e)
 
         # 2. watchlist ----------------------------------------------------
         refs = dict(discovered)

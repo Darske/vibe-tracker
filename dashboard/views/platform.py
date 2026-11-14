@@ -86,6 +86,42 @@ with st.container(border=True):
         if labels.get("plays"):
             st.caption(f"Definition on {row['display_name']}: {labels['plays']}")
 
+# ---------------------------------------------------------------- site-wide "online" counter (the platform's own)
+SITE_ONLINE = {  # source -> (platform_totals column, title, what it counts)
+    "spawn": ("people_recent", "People on Spawn (last hour)",
+              "Spawn's own counter, the big number on its homepage: everyone on the site in the past hour, browsing or playing. "
+              "It is much higher than players right now, which counts only people inside a game room at this moment."),
+    "bitmagic": ("players_now", "Playing now, whole site",
+                 "Bitmagic's own site-wide count of people playing, across every game rather than just the tracked top 100."),
+}
+if src in SITE_ONLINE:
+    col_, title_, what_ = SITE_ONLINE[src]
+    tot = q.platform_totals((src,))
+    tot = tot.dropna(subset=[col_]) if len(tot) else tot
+    with st.container(border=True):
+        o1, o2 = st.columns(2)
+        if tot.empty:
+            ui.eyebrow(title_, "👥")
+            st.caption("Recorded every 30 minutes from now on; the first value appears after the next players poll.")
+        else:
+            last_ = tot.iloc[-1]
+            peaks_ = tot.set_index("day")[f"{col_}_peak"].dropna()
+            with o1:
+                ui.eyebrow(title_, "👥")
+                ui.hero(full(last_[col_]), ui.ago(last_["captured_at"]))
+            with o2:
+                ui.eyebrow("Busiest day", "🏆")
+                ui.hero(full(peaks_.max()) if len(peaks_) else "—", f"{pd.Timestamp(peaks_.idxmax()):%b %-d}" if len(peaks_) else None, white=True)
+            pw_ = peaks_[pd.to_datetime(peaks_.index).date >= f.window_start]
+            if len(pw_) >= 2:
+                fig = add_daily(go.Figure(), pw_.index, pw_.values, color, unit="(daily peak)")
+                fig.update_layout(height=240, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key="site_online")
+            else:
+                st.caption("The daily chart appears after the second day.")
+        st.markdown(f"<div class='vt-sub'>One point per day: the day's highest reading (checked every 30 minutes). {what_}</div>",
+                    unsafe_allow_html=True)
+
 # ---------------------------------------------------------------- tiles
 lk = now["likes_lifetime"].iloc[0] if not now.empty else None
 pk_ = now["plays_with_likes"].iloc[0] if not now.empty else None

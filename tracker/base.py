@@ -31,6 +31,12 @@ class SourceAdapter(ABC):
         """Return current counters for the given games. Batch where the platform allows it.
         Missing games (404, private) are returned with status='gone'."""
 
+    def site_online(self) -> dict | None:
+        """Optional. A site-wide "people online" figure the platform shows itself, read after discover() in every run,
+        including the 30-minute players poll: players_now (playing right now, whole site) and/or people_recent
+        (people on the site recently, e.g. Spawn's last hour). None when the platform shows no such figure."""
+        return None
+
     def platform_totals(self) -> dict | None:
         """Optional. Whole-platform figures (not just the tracked lists), read after discover() in a full run:
         any of plays_total (all-time plays/launches across the platform), games, creators, players_now (players

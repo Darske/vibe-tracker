@@ -47,6 +47,15 @@ def test_spawn_people_now_parsing():
     assert parse_people_now("no counter here") is None
 
 
+def test_spawn_site_online_from_list_pages_read_this_run():
+    from tracker.sources.spawn import Spawn
+    sp = Spawn.__new__(Spawn)
+    sp._people_now = None
+    assert sp.site_online() is None
+    sp._people_now = 974
+    assert sp.site_online() == {"people_recent": 974} == sp.platform_totals()
+
+
 URL = os.environ.get("TEST_DATABASE_URL")
 needs_db = pytest.mark.skipif(not URL, reason="TEST_DATABASE_URL not set")
 

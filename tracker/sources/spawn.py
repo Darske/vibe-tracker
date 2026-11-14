@@ -431,6 +431,10 @@ class Spawn(SourceAdapter):
 
     # ------------------------------------------------------------------ SourceAdapter
     def platform_totals(self) -> dict | None:
+        return self.site_online()
+
+    def site_online(self) -> dict | None:
+        """"N people online in the last hour" from the list pages this run read (no extra request)."""
         return {"people_recent": self._people_now} if self._people_now is not None else None
 
     def discover(self, lists: list[str], top_n: int) -> Iterable[tuple[GameRef, ListPlacement]]:

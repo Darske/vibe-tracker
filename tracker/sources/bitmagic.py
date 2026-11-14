@@ -120,9 +120,22 @@ class Bitmagic(SourceAdapter):
             headers = {"X-API-Token": self.token(refresh=True)}
             return self.http.get_json(url, params=params or None, headers=headers)
 
+    def _stats(self):
+        """/api/catalog/stats, fetched at most once per run (platform_totals and site_online both use it)."""
+        if not hasattr(self, "_stats_cache"):
+            self._stats_cache = self._api("/api/catalog/stats")
+        return self._stats_cache
+
+    def site_online(self) -> dict | None:
+        """Bitmagic's own site-wide "playing now" (one request, shared with platform_totals)."""
+        data = self._stats() or {}
+        st = data.get("stats") if isinstance(data.get("stats"), dict) else data
+        v = st.get("playingNow") if isinstance(st, dict) else None
+        return {"players_now": int(v)} if isinstance(v, (int, float)) else None
+
     def platform_totals(self) -> dict | None:
         """GET /api/catalog/stats: platform-wide plays, games, creators and players online (one request)."""
-        data = self._api("/api/catalog/stats") or {}
+        data = self._stats() or {}
         st = data.get("stats") if isinstance(data.get("stats"), dict) else data
         if not isinstance(st, dict) or st.get("totalPlays") is None:
             return None

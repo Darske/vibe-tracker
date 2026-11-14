@@ -91,6 +91,9 @@ class FakeHttp:
                 return FakeResponse(200, json.dumps({"success": True, "games": games}), url)
             counts = self.live_counts if self.live_counts is not None else json.loads((FIX / "live_batch.json").read_text())["counts"]
             return FakeResponse(200, json.dumps({"success": True, "counts": {k: v for k, v in counts.items() if k in ids}}), url)
+        if path == "/api/catalog/stats":
+            return FakeResponse(200, json.dumps({"success": True, "stats": {"totalPlays": 143264, "totalGames": 157,
+                                                                             "totalCreators": 86, "playingNow": 9}}), url)
         m = re.fullmatch(r"/api/players/([^/]+)/profile", path)
         if m:
             body = self._profiles.get(m.group(1))
@@ -271,3 +274,12 @@ def test_fetch_creator(adapter):
     assert prof.followers == raw["followerCount"]
     assert ("website" in prof.links) == bool(raw.get("homePageUrl"))
     assert adapter.fetch_creator("no-such-brand-xyz") is None
+
+
+def test_site_online_and_totals_share_one_stats_request(token):
+    http = FakeHttp(token)
+    ad = Bitmagic(http, CFG)
+    assert ad.site_online() == {"players_now": 9}
+    tot = ad.platform_totals()
+    assert tot["players_now"] == 9 and tot["plays_total"] == 143264
+    assert sum(1 for u, _ in http.calls if u.endswith("/api/catalog/stats")) == 1
