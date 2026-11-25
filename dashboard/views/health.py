@@ -26,6 +26,7 @@ except Exception as e:  # noqa: BLE001
 
 now = datetime.now(timezone.utc)
 colors = color_map(list(srcs["name"]))
+names = dict(zip(srcs["name"], srcs["display_name"]))
 
 # ---------------------------------------------------------------- headline tiles
 first_day = stats.get("first_day")
@@ -128,6 +129,29 @@ if not hist.empty:
                                   hovertemplate="%{y:.0f} s<extra>%{fullData.name}</extra>"))
     fig2.update_layout(height=260)
     st.plotly_chart(fig2, use_container_width=True, config={"displayModeBar": False})
+
+# ---------------------------------------------------------------- storage breakdown (what fills the 500 MB)
+ui.title("Storage by table")
+try:
+    stt = q.storage_tables()
+    sg = q.storage_growth(3)
+except Exception as e:  # noqa: BLE001 — never break the Health page over a stats query
+    stt, sg = pd.DataFrame(), pd.DataFrame()
+    st.caption(f"Storage stats unavailable: {e}")
+if len(stt):
+    disp_s = pd.DataFrame({
+        "Table": stt["table"], "Total MB": (stt["total_bytes"] / 1e6).round(1), "Data MB": (stt["table_bytes"] / 1e6).round(1),
+        "Index MB": (stt["index_bytes"] / 1e6).round(1), "Live rows": stt["live_rows"].map(lambda v: f"{int(v):,}"),
+        "Dead rows": stt["dead_rows"].map(lambda v: f"{int(v):,}"),
+        "Last vacuum": pd.to_datetime(stt["last_vacuum"]).dt.strftime("%b %-d %H:%M").fillna("—"),
+    })
+    st.dataframe(disp_s, hide_index=True, width="stretch")
+    st.caption("Dead rows = space left behind by updates and deletes that Postgres has not reclaimed yet.")
+if len(sg):
+    piv = sg.pivot_table(index="source", columns="tbl", values="rows_per_day", aggfunc="sum").fillna(0).round(0).astype(int)
+    piv.index = [names.get(i, i) for i in piv.index]
+    ui.eyebrow("Rows added per day, last 3 full days")
+    st.dataframe(piv.reset_index().rename(columns={"index": "Platform"}), hide_index=True, width="stretch")
 
 with st.expander("Metric labels per platform (metric_map)"):
     for _, s in srcs.iterrows():

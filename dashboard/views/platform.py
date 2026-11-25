@@ -12,7 +12,7 @@ import streamlit as st
 from dashboard import queries as q, ui
 from dashboard.components import badge, fmt_dt, metric_card, phone_table, selected_row
 from dashboard.filters import go as nav, label_for, param, range_bar, sidebar, today_utc
-from dashboard.theme import abbrev, add_series, closed_days, color_map, full, likes_per_k, pct, ratio_fmt, time_axis
+from dashboard.theme import ACCENT, INK, abbrev, add_series, closed_days, color_map, full, likes_per_k, pct, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("platforms")
@@ -89,6 +89,49 @@ with st.container(border=True):
         st.markdown(f"<div class='vt-sub'>Daily plays = our measured day-over-day increase across the tracked top 100 · {row['display_name']} publishes no live player count.</div>", unsafe_allow_html=True)
         if labels.get("plays"):
             st.caption(f"Definition on {row['display_name']}: {labels['plays']}")
+
+# ---------------------------------------------------------------- whole catalogue vs tracked top 100
+_tot = q.platform_totals((src,))
+_whole = _tot[(_tot["gap_days"] == 1) & _tot["plays_day"].notna() & (_tot["plays_day"] >= 0)] if len(_tot) else _tot
+if len(_whole):
+    _w = _whole.assign(day=pd.to_datetime(_whole["day"])).set_index("day")["plays_day"].astype(float)
+    _w = _w[_w.index.date < today_utc()]  # finished days only
+    _t = pdaily.assign(day=pd.to_datetime(pdaily["day"])).set_index("day")["plays_delta_top100"].dropna().astype(float)
+    _t = _t[_t.index.date < today_utc()]
+    with st.container(border=True):
+        ui.eyebrow("Daily plays: whole catalogue vs tracked top 100", "📈")
+        if len(_w) >= 1 and len(_t):
+            common = _w.index.intersection(_t.index)[-7:]
+            share = _t[common].sum() / _w[common].sum() if len(common) and _w[common].sum() else None
+            k1, k2, k3 = st.columns(3)
+            with k1:
+                ui.tile("Whole catalogue, 7-day average", abbrev(_w.tail(7).mean()), "plays per day")
+            with k2:
+                ui.tile("Top 100, 7-day average", abbrev(_t.tail(7).mean()), "plays per day")
+            with k3:
+                ui.tile("Top 100 share", "—" if share is None else f"{share * 100:.0f}%",
+                        f"of whole-catalogue plays, last {len(common)} days" if share is not None else "needs overlapping days")
+        if len(_w) >= 2:
+            fig = go.Figure()
+            start_ = pd.Timestamp(f.window_start) - pd.Timedelta(days=6)
+            for series, nm, col_, dash in ((_w, "Whole catalogue", ACCENT, None), (_t, "Top 100", INK["secondary"], "dot")):
+                ser = series[series.index >= start_]
+                avg = series.rolling(7, min_periods=3).mean()
+                avg = avg[avg.index >= start_]
+                fig.add_scatter(x=ser.index, y=ser, name=f"{nm}, daily", mode="markers+lines", line=dict(color=col_, width=1, dash=dash),
+                                marker=dict(size=5), opacity=0.45, hovertemplate="%{x|%a %b %-d}: %{y:,.0f}<extra>" + nm + ", daily</extra>")
+                fig.add_scatter(x=avg.index, y=avg, name=f"{nm}, 7-day average", mode="lines", line=dict(color=col_, width=3.5, dash=dash),
+                                hovertemplate="%{x|%b %-d}: %{y:,.0f}<extra>" + nm + ", 7-day avg</extra>")
+            fig.update_layout(height=320, margin=dict(t=36), legend=dict(orientation="h", x=0, y=1.02, yanchor="bottom"),
+                              yaxis=dict(rangemode="tozero", tickformat="~s"), xaxis=dict(tickformat="%a %b %-d"))
+            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key="whole_vs_top100")
+        else:
+            st.caption("The whole-catalogue line appears after two consecutive days of readings.")
+        st.markdown(f"<div class='vt-sub'>Whole catalogue = the day-over-day change of the play counters of every game "
+                    f"{row['display_name']} lists (games whose counters it hides are left out). Thin lines are single days, thick lines "
+                    "the 7-day average, which smooths out the weekly cycle and the drift in when each day's reading is taken. "
+                    "Always drawn as lines: the top 100 is part of the whole catalogue, so stacking them would count it twice.</div>",
+                    unsafe_allow_html=True)
 
 # ---------------------------------------------------------------- site-wide "online" counter (the platform's own)
 SITE_ONLINE = {  # source -> (platform_totals column, title, what it counts)

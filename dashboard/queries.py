@@ -559,3 +559,37 @@ def creator_crossover(source: str, start: date) -> pd.DataFrame:
             group by 1, 2, 3, 4, 5 order by plays_window desc nulls last, games desc""",
         (list(GENERIC_CREATORS), start, source),
     )
+
+
+@st.cache_data(ttl=600)
+def storage_tables() -> pd.DataFrame:
+    """Size per table (data + indexes) with live and dead rows: dead rows are space left by updates/deletes that
+    Postgres has not reclaimed yet (autovacuum reuses it; only VACUUM FULL gives it back)."""
+    return _read(
+        """select c.relname as table, s.n_live_tup as live_rows, s.n_dead_tup as dead_rows,
+                  pg_relation_size(c.oid) as table_bytes, pg_indexes_size(c.oid) as index_bytes,
+                  pg_total_relation_size(c.oid) as total_bytes, greatest(s.last_autovacuum, s.last_vacuum) as last_vacuum
+             from pg_class c join pg_stat_user_tables s on s.relid = c.oid
+            order by pg_total_relation_size(c.oid) desc"""
+    )
+
+
+@st.cache_data(ttl=600)
+def storage_growth(days: int = 3) -> pd.DataFrame:
+    """Rows added per day over the last `days` full days, per history table and platform."""
+    return _read(
+        """select 'snapshots' as tbl, g.source, count(*)::float / %(d)s as rows_per_day
+             from snapshots s join games g on g.id = s.game_id
+            where s.captured_at >= current_date - %(d)s and s.captured_at < current_date group by 1, 2
+           union all
+           select 'game_daily', g.source, count(*)::float / %(d)s
+             from game_daily gd join games g on g.id = gd.game_id
+            where gd.day >= current_date - %(d)s and gd.day < current_date group by 1, 2
+           union all
+           select 'list_placements', lp.source, count(*)::float / %(d)s
+             from list_placements lp where lp.run_ts >= current_date - %(d)s and lp.run_ts < current_date group by 1, 2
+           union all
+           select 'games (new)', g.source, count(*)::float / %(d)s
+             from games g where g.first_seen >= current_date - %(d)s and g.first_seen < current_date group by 1, 2""",
+        {"d": days},
+    )
