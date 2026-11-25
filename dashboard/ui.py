@@ -3,8 +3,11 @@ lists with rank badges and deltas, range pills, stat tiles. Pure presentation â€
 
 from __future__ import annotations
 
+import base64
+import functools
 from datetime import datetime, timezone
 from html import escape
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
@@ -28,6 +31,19 @@ div[data-testid="stVerticalBlockBorderWrapper"] {{ background: var(--surface); b
 .vt-hero {{ font-size: 2.1rem; font-weight: 700; color: var(--accent); line-height: 1.1; margin: 0; letter-spacing: -0.01em; }}
 .vt-hero.white {{ color: var(--ink); }}
 .vt-big {{ font-size: 1.6rem; font-weight: 700; color: var(--ink); line-height: 1.15; margin: 0; }}
+/* "which sites are in this chart" strip under chart titles */
+.vt-sites {{ display:flex; flex-wrap:wrap; align-items:center; gap:6px 6px; margin: 4px 0 10px 0; font-size:.8rem; }}
+.vt-sites .k {{ color: var(--ink2); font-weight:600; margin-right:2px; }}
+.vt-sites .k.out {{ margin-left:8px; color: var(--muted); }}
+.vt-chip {{ display:inline-flex; align-items:center; gap:5px; padding:2px 8px 2px 3px; border-radius:999px;
+  background: rgba(255,255,255,.06); border:1px solid var(--border); color: var(--ink); white-space:nowrap; }}
+.vt-chip img {{ width:16px; height:16px; border-radius:4px; display:block; }}
+.vt-chip.icon {{ padding:2px; }}
+.vt-chip.icon img {{ width:18px; height:18px; }}
+.vt-chip.out {{ opacity:.45; background: transparent; text-decoration: line-through; text-decoration-color: rgba(255,255,255,.35); }}
+.vt-logo {{ width:22px; height:22px; border-radius:5px; vertical-align:-4px; margin-right:6px; }}
+.vt-logo-sm {{ width:16px; height:16px; border-radius:4px; vertical-align:-3px; margin-right:5px; }}
+.vt-logo-lg {{ width:34px; height:34px; border-radius:8px; vertical-align:-5px; margin-right:10px; }}
 .vt-sub {{ color: var(--muted); font-size: .86rem; margin: 2px 0 10px 0; }}
 .vt-title {{ font-size: 1.25rem; font-weight: 700; color: var(--ink); margin: 0 0 6px 0; }}
 .vt-row {{ display: flex; align-items: center; gap: 10px; padding: 9px 2px; border-bottom: 1px solid var(--border); }}
@@ -68,6 +84,51 @@ div[data-testid="stDataFrame"] {{ border: 1px solid var(--border); border-radius
 }}
 </style>
 """
+
+
+LOGO_DIR = Path(__file__).resolve().parent / "static" / "logos"
+
+
+@functools.lru_cache(maxsize=64)
+def logo_uri(source: str) -> str | None:
+    """Platform icon (taken from the platform's own site, 64 px PNG in dashboard/static/logos) as a data URI."""
+    f = LOGO_DIR / f"{source}.png"
+    return "data:image/png;base64," + base64.b64encode(f.read_bytes()).decode() if f.exists() else None
+
+
+def logo_html(source: str, cls: str = "vt-logo") -> str:
+    uri = logo_uri(source)
+    return f"<img class='{cls}' src='{uri}' alt=''/>" if uri else ""
+
+
+def _chip(source: str, label: str, out: bool = False, why: str | None = None, compact: bool = False) -> str:
+    uri = logo_uri(source)
+    img = f"<img src='{uri}' alt=''/>" if uri else ""
+    tip = escape(label + (f": {why}" if why else ""))
+    cls = "vt-chip" + (" out" if out else "") + (" icon" if compact and uri else "")
+    text = "" if compact and uri else escape(label)
+    return f"<span class='{cls}' title='{tip}'>{img}{text}</span>"
+
+
+def sites(included, names: dict, excluded: dict | None = None, label: str = "Includes", compact: bool = False) -> None:
+    """The row of platform logos right under a chart title: which sites the chart covers and, faded and struck
+    through, which selected sites it leaves out (hover a faded chip for the reason). `included` is an iterable of
+    source keys, `excluded` maps source key -> reason. compact=True shows the left-out platforms as logos only (name on hover) for narrow cards."""
+    inc = list(dict.fromkeys(included))
+    exc = {k: v for k, v in (excluded or {}).items() if k not in inc}
+    if not inc and not exc:
+        return
+    parts = [f"<span class='k'>{escape(label)}</span>"] + [_chip(s, names.get(s, s)) for s in inc]
+    if not inc:
+        parts.append("<span class='vt-chip out' style='text-decoration:none'>none in this range</span>")
+    groups: dict[str, list[str]] = {}
+    for s_, r in exc.items():  # one labelled group per reason, so it reads without hovering (phones)
+        groups.setdefault(r, []).append(s_)
+    for i, (r, srcs) in enumerate(groups.items()):
+        head = (f"Not included ({r})" if i == 0 else f"({r})")
+        parts.append(f"<span class='k out'>{escape(head)}</span>")
+        parts += [_chip(s_, names.get(s_, s_), out=True, why=r, compact=compact) for s_ in srcs]
+    st.markdown(f"<div class='vt-sites'>{''.join(parts)}</div>", unsafe_allow_html=True)
 
 
 def inject_css() -> None:
@@ -171,11 +232,14 @@ def legend_dots(items: list[tuple[str, str]]) -> None:
     ), unsafe_allow_html=True)
 
 
-def page_header(title_text: str, sub: str | None = None, eyebrow_text: str | None = None, icon: str = "") -> None:
-    """rotrends-style page head: optional eyebrow, big title, muted one-liner."""
+def page_header(title_text: str, sub: str | None = None, eyebrow_text: str | None = None, icon: str = "",
+                logo: str | None = None) -> None:
+    """rotrends-style page head: optional eyebrow, big title (with the platform's logo when `logo` is a source key),
+    muted one-liner."""
     if eyebrow_text:
         eyebrow(eyebrow_text, icon)
-    st.markdown(f"<h1 style='margin-top:0'>{escape(title_text)}</h1>", unsafe_allow_html=True)
+    img = logo_html(logo, "vt-logo vt-logo-lg") if logo else ""
+    st.markdown(f"<h1 style='margin-top:0'>{img}{escape(title_text)}</h1>", unsafe_allow_html=True)
     if sub:
         st.markdown(f"<div class='vt-sub' style='margin-top:-4px'>{sub}</div>", unsafe_allow_html=True)
 

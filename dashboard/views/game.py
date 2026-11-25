@@ -37,7 +37,7 @@ with hc1:
         st.markdown(f"<img class='vt-art' src='{g['thumbnail_url']}'/>", unsafe_allow_html=True)
 with hc2:
     ui.page_header(g.get("title") or g["url"],
-                   f"{badge(g['display_name'], color)} &nbsp; by <b style='color:var(--ink)'>{g.get('creator_name') or '—'}</b> &nbsp;·&nbsp; "
+                   f"{ui.logo_html(g['source'], 'vt-logo vt-logo-sm')}{badge(g['display_name'], color)} &nbsp; by <b style='color:var(--ink)'>{g.get('creator_name') or '—'}</b> &nbsp;·&nbsp; "
                    f"published {fmt_dt(pub)} &nbsp;·&nbsp; <a class='vt-link' href='{g['url']}' target='_blank'>play ↗</a>",
                    eyebrow_text="Game", icon="🕹️")
     bits = [(abbrev(last.get("likes")), "likes") if last.get("likes") is not None else None,

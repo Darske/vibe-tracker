@@ -92,6 +92,20 @@ tracking_start = pd.to_datetime(cov["since"]).min() if len(cov) and cov["since"]
 x_fmt = "%b %Y" if period == "month" else "%b %-d"
 with st.container(border=True):
     ui.eyebrow(f"Games released per {unit}", "📈")
+    _have = set(df["source"])
+    _sel = [x for x in f.sources["name"] if x in f.selected]
+    _cohort = dict(zip(f.sources["name"], f.sources["cohort"]))
+    _why = {}
+    for x in _sel:
+        if x in _have:
+            continue
+        if x in partial and not with_partial:
+            _why[x] = "partial count, switch on above"
+        elif _cohort.get(x) == "legacy":
+            _why[x] = "release counts not built yet"
+        else:
+            _why[x] = "no release data yet"
+    ui.sites([x for x in _sel if x in _have], names, _why)
     fig = go.Figure()
     if view == "Combined":
         add_daily(fig, combined["period"], combined["releases"], ACCENT, "", unit="games", partial_from=cur_start, x_fmt=x_fmt)
@@ -112,7 +126,7 @@ with st.container(border=True):
         f"<div class='vt-sub'>The dotted end of each line is the current {unit}, still in progress. "
         "Before release tracking started, only games with a known publish date are counted (complete for Tesana and Bitmagic; "
         "Spawn, Remix and Wavedash fill in day by day; Rosebud and Playgama AI have no history). "
-        + ("Astrocade and Playgama are included but partial." if with_partial else "Astrocade and Playgama are left out (partial); switch them on above.")
+        + ("Astrocade and Playgama are partial: they count only games that reached a tracked list." if with_partial else "")
         + "</div>", unsafe_allow_html=True)
 
 # ---------------------------------------------------------------- coverage

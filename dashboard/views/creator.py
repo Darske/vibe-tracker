@@ -47,7 +47,7 @@ with hc1:
     else:
         st.markdown(f"<div class='vt-thumb ph vt-art round' style='height:auto;font-size:2rem'>{(c.get('name') or '?')[:1].upper()}</div>", unsafe_allow_html=True)
 with hc2:
-    ui.page_header(c.get("name") or c["external_id"], None, eyebrow_text=names.get(c["source"], c["source"]), icon="👤")
+    ui.page_header(c.get("name") or c["external_id"], None, eyebrow_text=names.get(c["source"], c["source"]), icon=ui.logo_html(c["source"], "vt-logo vt-logo-sm"))
     link_buttons(links, c.get("url"), names.get(c["source"], c["source"]))
     if c.get("bio"):
         st.caption(c["bio"][:300])

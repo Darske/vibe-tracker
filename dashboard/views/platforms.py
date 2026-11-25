@@ -50,9 +50,27 @@ def plat_link(src: str) -> str:
 # Which selected platforms publish a live player count (and so appear in the players-online figures)
 _ccu_srcs = set(pdaily.dropna(subset=["ccu_peak_top100"])["source"])
 _with_ccu = [names.get(x, x) for x in f.sources["name"] if x in f.selected and x in _ccu_srcs]
-_without_ccu = [names.get(x, x) for x in f.sources["name"] if x in f.selected and x not in _ccu_srcs]
-ccu_note = ((f"Included: {', '.join(_with_ccu)}" + (" (Wavedash counts only its ~12 trending games)" if "Wavedash" in _with_ccu else "") + ". ")
-            if _with_ccu else "") + (f"Not included, because they publish no live player count: {', '.join(_without_ccu)}." if _without_ccu else "")
+ccu_note = "Wavedash counts only its ~12 trending games." if "Wavedash" in _with_ccu else ""  # sites themselves: logo row above each chart
+
+# Which selected platforms each kind of chart can include (shown as a logo row under every chart title)
+SEL = [x for x in f.sources["name"] if x in f.selected]
+_plays_srcs = set(pdaily.dropna(subset=["plays_delta_top100"])["source"])
+HAS_PLAYS = [x for x in SEL if x in _plays_srcs]
+NO_PLAYS = {x: "no play counter" for x in SEL if x not in _plays_srcs}
+HAS_CCU = [x for x in SEL if x in _ccu_srcs]
+NO_CCU = {x: "no live player count" for x in SEL if x not in _ccu_srcs}
+
+
+def why_out(x, why: str, capable=None) -> str:
+    """Reason a selected platform is missing from a chart: it lacks the figure, or just has none in this range."""
+    return "no data in this range" if capable is not None and x in capable else why
+
+
+def sites_of(df, col="source", why="no data for this list", capable=None, compact=True):
+    """Logo row for a board built from `df`: platforms that actually appear in it vs the other selected ones."""
+    have = set(df[col]) if df is not None and len(df) and col in df else set()
+    ui.sites([x for x in SEL if x in have], names, {x: why_out(x, why, capable) for x in SEL if x not in have}, compact=compact)
+
 
 # ================================================================== hero
 if daily_mode:
@@ -72,6 +90,7 @@ if daily_mode:
                 ui.hero(full(all_days.max()), f"{pd.Timestamp(all_days.idxmax()):%b %-d}", white=True)
             else:
                 ui.hero("—", None, white=True)
+        ui.sites(HAS_PLAYS, names, NO_PLAYS)
         if len(per_day) < 2:
             st.caption("Not enough days of history in this range yet.")
         else:
@@ -92,6 +111,8 @@ if daily_mode:
             ui.eyebrow("Activity index (=100 at start)", "📈")
         with h2:
             per_plat = st.toggle("Show each platform", value=False, key="idx_per_platform")
+        _hist_srcs = set(hist["source"])
+        ui.sites([x for x in SEL if x in _hist_srcs], names, {x: "no play counter" for x in SEL if x not in _hist_srcs})
         comp = rebase(composite(sm)[["volume", "momentum"]], idx_start) if not sm.empty else pd.DataFrame()
         if comp.empty or len(comp.dropna(how="all")) < 2:
             st.caption("Needs about a week of finished days before the index can be drawn.")
@@ -114,13 +135,9 @@ if daily_mode:
             if len(last_v) and len(last_m):
                 st.markdown(f"<div class='vt-sub'>Latest: volume <b>{last_v.iloc[-1]:.0f}</b> · momentum <b>{last_m.iloc[-1]:.0f}</b> "
                             f"(since {pd.Timestamp(comp.index[0]):%b %-d})</div>", unsafe_allow_html=True)
-        _in = [names.get(x, x) for x in f.sources["name"] if x in f.selected and x in set(hist["source"])]
-        _out = [names.get(x, x) for x in f.sources["name"] if x in f.selected and x not in set(hist["source"])]
         st.caption("Each platform is compared only with itself: its daily plays (7-day average) are set to 100 at the start, so platforms that "
                    "count plays differently can be combined. Volume = total plays across platforms (big platforms weigh more). "
-                   "Momentum = the typical platform's change (every platform weighs the same). Platforms joining later are linked in without a jump. "
-                   + (f"Included: {', '.join(_in)}. " if _in else "")
-                   + (f"Not included, because they publish no play counter: {', '.join(_out)}." if _out else ""))
+                   "Momentum = the typical platform's change (every platform weighs the same). Platforms joining later are linked in without a jump.")
 else:
     ccu = q.ccu_now(f.selected)
     peaks_all = pdaily.dropna(subset=["ccu_peak_top100"])
@@ -137,6 +154,7 @@ else:
                 ui.hero(full(peak_by_day.max()), f"{pd.Timestamp(peak_by_day.idxmax()):%b %-d}", white=True)
             else:
                 ui.hero("—", None, white=True)
+        ui.sites(HAS_CCU, names, NO_CCU)
         if len(peak_win) < 2:
             st.caption("Not enough days in this range yet.")
         else:
@@ -152,6 +170,7 @@ with c1, st.container(border=True):
     palette = GAME_TONES
     if daily_mode:
         ui.eyebrow("Top game by daily plays", "🏆")
+        ui.sites(HAS_PLAYS, names, NO_PLAYS, compact=True)
         top_games = q.top_games_day(f.selected, latest_day, 5) if latest_day is not None else pd.DataFrame()
         if top_games.empty:
             st.caption("No measured day yet.")
@@ -174,6 +193,7 @@ with c1, st.container(border=True):
                 nav("games", by="Plays")
     else:
         ui.eyebrow("Top game right now", "🏆")
+        ui.sites(HAS_CCU, names, NO_CCU, compact=True)
         top_games = q.top_games_now(f.selected, 5)
         if top_games.empty:
             st.caption("No live counts yet.")
@@ -200,6 +220,7 @@ with c1, st.container(border=True):
 with c2, st.container(border=True):
     if daily_mode:
         ui.eyebrow("Top platform by daily plays", "🏆")
+        ui.sites(HAS_PLAYS, names, NO_PLAYS, compact=True)
         today_rows = pdaily[pdaily["day"] == latest_day].dropna(subset=["plays_delta_top100"]).sort_values("plays_delta_top100", ascending=False) if latest_day is not None else pd.DataFrame()
         if today_rows.empty:
             st.caption("No measured day yet.")
@@ -220,9 +241,10 @@ with c2, st.container(border=True):
             ui.ranked_list([{"title": names.get(r["source"], r["source"]), "href": f"platform?platform={r['source']}", "value": r["plays_delta_top100"],
                              "sub": f"{int(r['games_tracked']) if pd.notna(r['games_tracked']) else 0} games tracked", "rank": i + 1} for i, (_, r) in enumerate(today_rows.iterrows())],
                             "value", "plain", show_thumb=False)
-            st.caption("Tap a platform to see its top games by total plays. Playgama and Wavedash publish no play counter.")
+            st.caption("Tap a platform to see its top games by total plays.")
     else:
         ui.eyebrow("Top platform right now", "🏆")
+        ui.sites(HAS_CCU, names, NO_CCU, compact=True)
         latest = q.ccu_latest_by_platform(f.selected).sort_values("players", ascending=False)
         if latest.empty:
             st.caption("No live counts yet.")
@@ -271,19 +293,25 @@ def rows_for(df: pd.DataFrame, value_key: str) -> list[dict]:
 p1, p2, p3 = st.columns(3)
 with p1, st.container(border=True):
     ui.eyebrow("Trending today", "🔥"); ui.title("Top moving games")
-    mv = games.dropna(subset=["rank_change"]).sort_values("rank_change", ascending=False).head(5)
+    _mv = games.dropna(subset=["rank_change"])
+    sites_of(_mv, why="no rank history yet")
+    mv = _mv.sort_values("rank_change", ascending=False).head(5)
     ui.ranked_list(rows_for(mv, "rank_change"), "value", "rank")
     if st.button("Explore list", key="ex_movers", width='stretch'):
         nav("games", mode="Movers")
 with p2, st.container(border=True):
     ui.eyebrow("Trending today", "🔥"); ui.title("New and rising")
-    nr = games[pd.to_datetime(games["first_seen"]).dt.date >= today_utc() - timedelta(days=7)].sort_values("plays_window", ascending=False, na_position="last").head(5)
+    _nr = games[(pd.to_datetime(games["first_seen"]).dt.date >= today_utc() - timedelta(days=7)) & games["plays_window"].notna()]
+    sites_of(_nr, why="no new games with plays this week")
+    nr = _nr.sort_values("plays_window", ascending=False).head(5)
     ui.ranked_list(rows_for(nr, "plays_window"), "value", "num")
     if st.button("Explore list", key="ex_new", width='stretch'):
         nav("games", mode="New")
 with p3, st.container(border=True):
     ui.eyebrow("Leaderboard", "🏆"); ui.title(f"Top by plays, {f.window}")
-    tp = games.sort_values("plays_window", ascending=False, na_position="last").head(5)
+    _tp = games.dropna(subset=["plays_window"])
+    sites_of(_tp, why="no play counter", capable=_plays_srcs)
+    tp = _tp.sort_values("plays_window", ascending=False).head(5)
     ui.ranked_list(rows_for(tp, "plays_window"), "value", "plain")
     if st.button("Explore list", key="ex_top", width='stretch'):
         nav("games")
@@ -291,19 +319,25 @@ with p3, st.container(border=True):
 p4, p5 = st.columns(2)
 with p4, st.container(border=True):
     ui.eyebrow("Leaderboard", "🏆"); ui.title("Best liked (≥1k plays)")
-    bl = games.dropna(subset=["likes_per_k"]).sort_values("likes_per_k", ascending=False).head(5)
+    _bl = games.dropna(subset=["likes_per_k"])
+    sites_of(_bl, why="no likes or plays to compare")
+    bl = _bl.sort_values("likes_per_k", ascending=False).head(5)
     ui.ranked_list(rows_for(bl, "likes_per_k"), "value", "plain", value_suffix=" /1k")
     if st.button("Explore list", key="ex_liked", width='stretch'):
         nav("games", by="Likes")
 with p5, st.container(border=True):
     ui.eyebrow("Leaderboard", "🏆"); ui.title("Top creators by plays")
-    cr = q.creators_window(f.window_start, f.selected).sort_values("plays_window", ascending=False, na_position="last").head(5)
+    _cr = q.creators_window(f.window_start, f.selected)
+    _cr = _cr.dropna(subset=["plays_window"]) if "plays_window" in _cr else _cr
+    sites_of(_cr, why="no play counter", capable=_plays_srcs)
+    cr = _cr.sort_values("plays_window", ascending=False).head(5)
     ui.ranked_list(ui.creator_rows(cr, "plays_window"), "value", "plain", rank_key=None)
     if st.button("Explore list", key="ex_creators", width='stretch'):
         nav("creators")
 
 # ================================================================== platform table
 ui.title("Platforms")
+ui.sites(SEL, names)
 METRICS = {
     "Daily plays (top 100)": "plays_delta_top100", "Peak concurrent players (top 100)": "ccu_peak_top100",
     "Average concurrent players (top 100)": "ccu_avg_top100", "New games / day": "games_new",
@@ -372,6 +406,8 @@ st.caption("Lifetime plays = each platform's own cumulative counter summed over 
 _pt = q.platform_totals(tuple(f.selected))
 if not _pt.empty:
     ui.title("Whole platform")
+    _pt_srcs = set(_pt["source"])
+    ui.sites([x for x in SEL if x in _pt_srcs], names, {x: "publishes no whole-platform figures" for x in SEL if x not in _pt_srcs})
     trows = []
     for src in [s_ for s_ in f.sources["name"] if s_ in set(_pt["source"])]:
         g = _pt[_pt["source"] == src].sort_values("day")
@@ -405,8 +441,9 @@ ui.title("Over time")
 indexed = st.toggle("Indexed (=100 at anchor date)", value=False, help="Raw counts are not comparable across platforms; indexing shows relative movement.")
 
 
-def line_chart(column: str, title: str):
+def line_chart(column: str, title: str, why: str):
     fig = go.Figure()
+    drawn = []
     for src, g in pdaily.groupby("source", sort=False):
         g = g.sort_values("day").dropna(subset=[column])
         g = g[g["day"] >= f.window_start - timedelta(days=1)] if not indexed else g
@@ -420,7 +457,10 @@ def line_chart(column: str, title: str):
                 continue
             y = y / base * 100
         add_daily(fig, g["day"], y, colors.get(src, INK["muted"]), names.get(src, src), width=2, unit="")
+        drawn.append(src)
     ui.eyebrow(title)
+    capable = _plays_srcs if column == "plays_delta_top100" else _ccu_srcs
+    ui.sites([x for x in SEL if x in drawn], names, {x: why_out(x, why, capable) for x in SEL if x not in drawn})
     if not fig.data:
         st.caption("No data for the selected platforms (not every platform publishes this figure).")
         return
@@ -428,12 +468,13 @@ def line_chart(column: str, title: str):
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key=f"over_time_{column}")
 
 
-line_chart("plays_delta_top100", "Daily plays per platform (tracked top 100)")
-line_chart("ccu_peak_top100", "Peak concurrent players per platform (tracked top 100)")
-st.caption("Players chart: " + ccu_note)
+line_chart("plays_delta_top100", "Daily plays per platform (tracked top 100)", "no play counter")
+line_chart("ccu_peak_top100", "Peak concurrent players per platform (tracked top 100)", "no live player count")
 st.caption("Colours are fixed per platform on every page. Figures cover the tracked top 100 per platform, not the whole platform.")
 
 ui.title("Share of tracked daily plays")
+_won = set(win.dropna(subset=["plays_delta_top100"])["source"])
+ui.sites([x for x in SEL if x in _won], names, {x: why_out(x, "no play counter", _plays_srcs) for x in SEL if x not in _won})
 by_seg = {}
 for seg, g in win.groupby("segment"):
     for src, gg in g.groupby("source"):
@@ -441,5 +482,4 @@ for seg, g in win.groupby("segment"):
         if pd.notna(v) and v > 0:
             by_seg[f"{names.get(src, src)} ({'A' if seg == 'aggregator' else 'B'})"] = float(v)
 share_donut(f"Tracked plays by platform, last {f.window} (A = aggregator, B = creation)", by_seg,
-            colors={f"{names.get(s, s)} ({'A' if seg == 'aggregator' else 'B'})": colors[s] for s, seg in zip(f.sources["name"], f.sources["segment"])},
-            note="Platforms that publish no play counter (placements/CCU only) are absent by design.")
+            colors={f"{names.get(s, s)} ({'A' if seg == 'aggregator' else 'B'})": colors[s] for s, seg in zip(f.sources["name"], f.sources["segment"])})

@@ -41,19 +41,25 @@ if search:
     g = g[g["name"].fillna("").str.lower().str.contains(search.lower())]
 sort_cols = {"Top": ["plays_window", "plays_7d"], "Rising": ["acceleration", "plays_window"], "Lifetime": ["plays_lifetime", "plays_window"]}[view]
 g = g.sort_values(sort_cols, ascending=False, na_position="last").head(300).reset_index(drop=True)
+_pool_srcs = set(g.dropna(subset=[sort_cols[0]])["source"]) if len(g) else set()
+_sel = [x for x in f.sources["name"] if x in f.selected]
+_why = "no play counter" if view != "Rising" else "no creators with two growing games"
 
 # ---------------------------------------------------------------- ranked list
 with st.container(border=True):
     if view == "Rising":
         ui.eyebrow("Trending today", "🔥"); ui.title("Rising creators")
+        ui.sites([x for x in _sel if x in _pool_srcs], f.names, {x: _why for x in _sel if x not in _pool_srcs})
         ui.ranked_list(ui.creator_rows(g.head(25), "acceleration"), "value", "pct", rank_key=None)
         sub = f"value = acceleration (this week's plays vs last week's), creators with ≥2 games · threshold {threshold:.2f}"
     elif view == "Lifetime":
         ui.eyebrow("Leaderboard", "🏆"); ui.title("Top creators by lifetime plays")
+        ui.sites([x for x in _sel if x in _pool_srcs], f.names, {x: _why for x in _sel if x not in _pool_srcs})
         ui.ranked_list(ui.creator_rows(g.head(25), "plays_lifetime"), "value", "plain", rank_key=None)
         sub = "each platform's own cumulative counters, summed over the creator's tracked games"
     else:
         ui.eyebrow("Leaderboard", "🏆"); ui.title(f"Top creators by plays, {f.window}")
+        ui.sites([x for x in _sel if x in _pool_srcs], f.names, {x: _why for x in _sel if x not in _pool_srcs})
         ui.ranked_list(ui.creator_rows(g.head(25), "plays_window"), "value", "plain", rank_key=None)
         sub = f"plays over the last {f.window}, summed over the creator's tracked games on that platform"
     st.markdown(f"<div class='vt-sub'>{sub}</div>", unsafe_allow_html=True)

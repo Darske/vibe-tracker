@@ -26,7 +26,7 @@ color = color_map(list(f.sources["name"]))[src]
 labels = row["metric_map"] or {}
 
 ui.page_header(row["display_name"], f"{badge(row['segment'])} &nbsp; <a class='vt-link' href='{row['base_url']}' target='_blank'>{row['base_url']}</a>",
-               eyebrow_text="Platform", icon="📊")
+               eyebrow_text="Platform", icon="📊", logo=src)
 f = range_bar(f, show_cohort=False)
 
 if row.get("cohort") == "legacy":  # legacy portals mix AI and non-AI games: separate view for how AI games are doing

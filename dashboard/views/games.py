@@ -68,7 +68,11 @@ if sort_col == "likes_per_k":
     g = g.dropna(subset=["likes_per_k"])
 if mode != "Movers":
     g = g.sort_values(sort_col, ascending=False, na_position="last")
-g = g.head(200).reset_index(drop=True)
+_pool = g if mode == "Movers" else g.dropna(subset=[sort_col])  # games that can rank on this measure
+_pool_srcs = set(_pool["source"])
+_why = {"Movers": "no rank history yet", "New": "no new games this week"}.get(mode) or {
+    "Plays": "no play counter", "Lifetime": "no play counter", "Players": "no live player count", "Likes": "no likes or plays"}[by]
+g = _pool.head(200).reset_index(drop=True) if mode != "New" else g.head(200).reset_index(drop=True)
 
 # ---------------------------------------------------------------- ranked list (top 25)
 head_title = {"All": f"Top games by {by_label.lower()}" + (f", {f.window}" if by in ("Plays", "Players") else ""), "Movers": "Top moving games", "New": "New and rising"}[mode]
@@ -80,6 +84,8 @@ elif by == "Likes":
 with st.container(border=True):
     ui.eyebrow("Trending today" if mode != "All" else "Leaderboard", "🔥" if mode != "All" else "🏆")
     ui.title(head_title)
+    _sel = [x for x in f.sources["name"] if x in f.selected]
+    ui.sites([x for x in _sel if x in _pool_srcs], f.names, {x: _why for x in _sel if x not in _pool_srcs})
     rows = ui.game_rows(g.head(25), value_key, sub_key=None)
     for r, (_, src) in zip(rows, g.head(25).iterrows()):
         r["creator"] = f"{src['creator_name']} · {src['display_name']}" if src.get("creator_name") else src["display_name"]
