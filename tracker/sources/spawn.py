@@ -167,6 +167,20 @@ def _row_body(row: bytes) -> bytes:
 PEOPLE_NOW = re.compile(r'peopleNow\\?"\s*:\s*\{\s*\\?"people\\?"\s*:\s*(\d+)')
 
 
+def merge_playing(old: dict | None, new: dict) -> dict:
+    """A game can appear on several list pages in one run (top, multiplayer, genres). Use the newest card, but keep
+    the highest `playing` any of them showed, so a page that omits the count never wipes one another page had."""
+    if not old:
+        return new
+    vals = [_int_or_none(c.get("playing")) for c in (old, new) if "playing" in c]
+    vals = [v for v in vals if v is not None]
+    if not vals:
+        return new
+    merged = dict(new)
+    merged["playing"] = max(vals)
+    return merged
+
+
 def parse_people_now(html: str) -> int | None:
     """Site-wide people on Spawn in the last hour, from the RSC payload (`peopleNow:{people:N, minute:M}`)."""
     m = PEOPLE_NOW.search(html)
@@ -422,7 +436,8 @@ class Spawn(SourceAdapter):
         payloads = parse_flight(html)
         cards = find_all_cards(payloads)
         if cards:
-            self._live.update(find_live_rooms(payloads))
+            for gid, n in find_live_rooms(payloads).items():  # keep the highest reading seen this run
+                self._live[gid] = max(n, self._live.get(gid, n))
             return cards
         cards = parse_signs_of_life(html)
         if cards:
@@ -462,7 +477,7 @@ class Spawn(SourceAdapter):
                     continue
                 seen.add(ext)
                 pos += 1
-                self._cards[ext] = card
+                self._cards[ext] = merge_playing(self._cards.get(ext), card)
                 if list_name == "multiplayer":
                     self._on_multiplayer.add(ext)
                 yield (
@@ -535,13 +550,10 @@ class Spawn(SourceAdapter):
             if loves is not None or hates is not None:
                 votes = (loves or 0) + (hates or 0)
 
-        players_now: int | None
-        if "playing" in card:
-            players_now = _int_or_none(card.get("playing"))
-        else:
-            players_now = self._live.get(ref.external_id)
-            if players_now is None and from_multiplayer:
-                players_now = 0  # multiplayer list omits `playing` when the game has no live room
+        # Highest of: the card's `playing` (already the max over every list that showed this game this run) and the
+        # live-rooms strip. The multiplayer list omits `playing` for games with no live room, so there it means 0.
+        readings = [v for v in (_int_or_none(card.get("playing")), self._live.get(ref.external_id)) if v is not None]
+        players_now: int | None = max(readings) if readings else (0 if from_multiplayer else None)
 
         return GameSnapshot(
             source=self.name,

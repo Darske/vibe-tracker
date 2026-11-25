@@ -246,7 +246,7 @@ def test_players_now_is_none_when_unknown_outside_multiplayer_list():
     for s in snaps:
         c = cards[s.external_id]
         if "playing" in c:
-            assert s.players_now == c["playing"]
+            assert s.players_now == max(c["playing"], live.get(s.external_id, 0))
         elif s.external_id in live:
             assert s.players_now == live[s.external_id]
         else:
@@ -372,3 +372,35 @@ def test_fixtures_are_trimmed_and_robots_clean(name):
     assert (FIX / name).stat().st_size <= (320 if name == "list_multiplayer.html" else 200) * 1024
     assert "__next_f.push" in text or "data-signs-of-life" in text
     assert "spawn.co/api/" not in text
+
+
+def test_merge_playing_keeps_the_highest_reading():
+    from tracker.sources.spawn import merge_playing
+    assert merge_playing(None, {"x": 1}) == {"x": 1}
+    assert merge_playing({"playing": 12}, {"playing": 30, "x": 2}) == {"playing": 30, "x": 2}
+    assert merge_playing({"playing": 30}, {"playing": 12})["playing"] == 30
+    assert merge_playing({"playing": 30}, {"x": 3}) == {"x": 3, "playing": 30}  # a page without the count keeps it
+    assert merge_playing({"x": 1}, {"x": 2}) == {"x": 2}
+
+
+def test_players_now_is_the_highest_across_top_and_multiplayer():
+    adapter, _ = make()
+    refs = {r.external_id: r for r, _ in adapter.discover(["multiplayer", "top", "new"], 100)}
+    snaps = {s.external_id: s for s in adapter.fetch(list(refs.values()))}
+    seen = {}
+    for f in ("list_multiplayer.html", "list_top.html", "list_new.html"):
+        flight = parse_flight(load(f))
+        for c in find_all_cards(flight):
+            if "playing" in c and c["playing"] is not None:
+                seen[c["game"]["id"]] = max(c["playing"], seen.get(c["game"]["id"], 0))
+        for gid, n in find_live_rooms(flight).items():
+            seen[gid] = max(n, seen.get(gid, 0))
+    assert seen, "fixtures should carry live counts"
+    for gid, n in seen.items():
+        if gid in snaps:
+            assert snaps[gid].players_now == n
+
+
+def test_spawn_ccu_poll_reads_top_and_multiplayer():
+    from tracker.registry import load_sources
+    assert set(load_sources()["spawn"]["ccu_lists"]) == {"multiplayer", "top"}

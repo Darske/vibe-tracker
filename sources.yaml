@@ -85,7 +85,7 @@ spawn:
   # else = /?genre=<name>; each list is its first page (23-24 cards, 63 on multiplayer — ?offset= paging
   # returns the same page). multiplayer is sorted by concurrent players and is the CCU source.
   lists: [top, multiplayer, new, action, shooter, rpg, strategy, horror, cozy, puzzle]
-  ccu_lists: [multiplayer]          # the one page that carries players-online for ~60 games (1 request)
+  ccu_lists: [multiplayer, top]     # both pages show players-online (2 requests); each game keeps its highest reading
   top_n: 100
   poll_every_hours: 2
   rate_limit_rps: 1
