@@ -103,7 +103,7 @@ def test_live_players_are_never_folded():
 
 @needs_db
 def test_platform_totals_count_every_game_after_folding(conn):
-    from dashboard.queries import PLATFORM_NOW_SQL
+    from dashboard.sql import PLATFORM_NOW_SQL
     now = datetime.now(timezone.utc).replace(microsecond=0)
     t0 = now - timedelta(hours=3) if (now - timedelta(hours=3)).date() == now.date() else now - timedelta(minutes=30)
     t1 = t0 + timedelta(minutes=20)

@@ -49,9 +49,39 @@ MIGRATIONS: list[tuple[str, list[str]]] = [
 ]
 
 
-def init(conn: psycopg.Connection) -> None:
-    conn.execute(SCHEMA.read_text())
-    conn.commit()
+def init(conn: psycopg.Connection, *, attempts: int = 6, wait_s: float = 20.0) -> None:
+    """Apply sql/schema.sql (idempotent) and pending one-off migrations.
+
+    Skipped when the file is unchanged since the last successful apply (hash in `maintenance`): even an
+    `alter table … add column if not exists` takes an exclusive lock on the table, so re-running the schema while a
+    scrape is writing snapshots used to wait until the statement timed out (the `schema` job failing after ~2 min)
+    and, while waiting, block every other reader of that table. When the schema did change, each attempt waits at
+    most 15 s for locks, then backs off and retries."""
+    import hashlib
+    import time
+
+    text = SCHEMA.read_text()
+    digest = hashlib.sha256(text.encode()).hexdigest()
+    try:
+        if get_maintenance(conn, "schema_sha256") == digest:
+            conn.commit()
+            migrate(conn)
+            return
+    except psycopg.errors.UndefinedTable:  # brand-new database: no maintenance table yet
+        conn.rollback()
+    for attempt in range(1, attempts + 1):
+        try:
+            conn.execute("set local lock_timeout = '15s'")
+            conn.execute(text)
+            set_maintenance(conn, "schema_sha256", digest)
+            conn.commit()
+            break
+        except psycopg.errors.LockNotAvailable:
+            conn.rollback()
+            if attempt == attempts:
+                raise
+            log.warning("schema: tables busy (attempt %d/%d), retrying in %.0fs", attempt, attempts, wait_s * attempt)
+            time.sleep(wait_s * attempt)
     migrate(conn)
 
 

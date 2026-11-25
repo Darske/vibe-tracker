@@ -10,6 +10,11 @@ from tracker.registry import adapter_class, load_sources
 SOURCES = {k: v for k, v in load_sources().items() if v["enabled"]}
 
 
+# Platforms that publish no per-game counters on their first list: list positions are the data (itch.io shows no
+# plays, players or likes; ratings appear only on its top-rated list).
+PLACEMENTS_ONLY = {"itchio"}
+
+
 @pytest.mark.live
 @pytest.mark.parametrize("name", sorted(SOURCES))
 def test_live_smoke(name):
@@ -27,8 +32,10 @@ def test_live_smoke(name):
                 refs.append(ref)
         snaps = list(adapter.fetch(refs[:5]))
         assert any(s.status == "ok" for s in snaps), f"{name}: no snapshot"
-        assert any(
-            s.plays_total is not None or s.players_now is not None or s.likes is not None for s in snaps
-        ), f"{name}: no counter populated"
+        if name not in PLACEMENTS_ONLY:
+            assert any(
+                s.plays_total is not None or s.players_now is not None or s.likes is not None or s.votes is not None
+                for s in snaps
+            ), f"{name}: no counter populated"
     finally:
         http.close()
