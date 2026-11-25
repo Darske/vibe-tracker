@@ -138,6 +138,39 @@ def add_daily(fig, days, values, color: str, name: str = "", width: float = 2.5,
     return fig
 
 
+def add_daily_bar(fig, days, values, color: str, name: str = "", unit: str = "plays", partial_from=None, x_fmt: str = "%b %-d"):
+    """Bar version of add_daily for stacked-bar charts: finished periods solid, the still-running one hatched and
+    faded so a half-day (or half-month) bar never reads as a drop. Use with layout barmode="stack"."""
+    from datetime import datetime, timezone
+
+    import pandas as pd
+
+    today = partial_from or datetime.now(timezone.utc).date()
+    s = pd.DataFrame({"day": pd.to_datetime(pd.Series(list(days))).dt.date, "v": list(values)}).dropna(subset=["v"]).sort_values("day")
+    closed, part = s[s["day"] < today], s[s["day"] >= today]
+    tail = "<extra>" + name + "</extra>" if name else "<extra></extra>"
+    fig.add_trace(go.Bar(x=closed["day"], y=closed["v"], name=name, legendgroup=name or None, showlegend=bool(name),
+                         marker=dict(color=color, line=dict(width=0)),
+                         hovertemplate="%{x|" + x_fmt + "}: %{y:,.0f} " + unit + tail))
+    if not part.empty:
+        fig.add_trace(go.Bar(x=part["day"], y=part["v"], name=(name + " (so far)") if name else "so far", legendgroup=name or None,
+                             showlegend=False, opacity=0.7, marker=dict(color=color, pattern=dict(shape="/", fillmode="overlay", fgcolor="rgba(15,17,21,.55)", size=6), line=dict(width=0)),
+                             hovertemplate="%{x|" + x_fmt + "}: %{y:,.0f} " + unit + " so far (not finished)" + tail))
+    return fig
+
+
+def add_series(fig, style: str, days, values, color: str, name: str = "", *, unit: str = "plays", partial_from=None,
+               x_fmt: str = "%b %-d", width: float = 2.5, marker: int = 5):
+    """add_daily (style "Lines") or add_daily_bar (style "Stacked bars")."""
+    if style == STACKED:
+        return add_daily_bar(fig, days, values, color, name, unit=unit, partial_from=partial_from, x_fmt=x_fmt)
+    return add_daily(fig, days, values, color, name, width=width, unit=unit, marker=marker, partial_from=partial_from, x_fmt=x_fmt)
+
+
+LINES, STACKED = "Lines", "Stacked bars"
+CHART_STYLES = [LINES, STACKED]
+
+
 def closed_days(df, day_col: str = "day"):
     """Rows for finished UTC days only (drop today's partial day) — for averages and 'latest day' figures."""
     from datetime import datetime, timezone

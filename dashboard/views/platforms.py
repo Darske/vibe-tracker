@@ -14,7 +14,8 @@ from dashboard import ui
 from dashboard.indexing import composite, platform_indexes, rebase, smooth
 from dashboard.components import phone_table, selected_row, share_donut
 from dashboard.filters import go as nav, label_for, range_bar, sidebar, today_utc
-from dashboard.theme import ACCENT, GAME_TONES, INK, abbrev, add_daily, closed_days, color_map, full, pct, ratio_fmt, time_axis
+from dashboard.theme import (ACCENT, GAME_TONES, INK, STACKED, abbrev, add_daily, add_series, closed_days, color_map, full, pct,
+                             ratio_fmt, time_axis)
 
 f = sidebar()
 ui.topnav("platforms")
@@ -31,10 +32,24 @@ pdaily = pdaily[pdaily["source"].isin(f.selected)]
 nowf = now[now["source"].isin(f.selected)]
 
 # ================================================================== metric toggle: daily plays (default) | players online
-mcol, _ = st.columns([2, 3])
+mcol, scol, _ = st.columns([2, 2, 1])
 with mcol:
     metric = ui.pills("Metric", ["Daily plays", "Players online"], "home_metric", "Daily plays")
+with scol:
+    style = ui.chart_style()
 daily_mode = metric == "Daily plays"
+stacked = style == STACKED
+
+
+def by_platform_chart(df, col: str, unit: str, height: int = 300, key: str | None = None):
+    """Stacked bars, one colour per platform (bar height = the total), for a platform_daily column."""
+    fig = go.Figure()
+    for src_ in [x for x in f.sources["name"] if x in set(df.dropna(subset=[col])["source"])]:
+        d = df[df["source"] == src_].dropna(subset=[col]).sort_values("day")
+        add_series(fig, STACKED, d["day"], d[col], colors[src_], names.get(src_, src_), unit=unit)
+    fig.update_layout(barmode="stack", height=height, margin=dict(t=36), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"),
+                      legend=dict(orientation="h", x=0, y=1.02, yanchor="bottom"))
+    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key=key)
 win = pdaily[pdaily["day"] >= f.window_start]
 latest_day = q.latest_play_day(f.selected)
 if latest_day is not None and latest_day >= today_utc():  # today is partial: prefer the last closed day when it exists
@@ -94,11 +109,14 @@ if daily_mode:
         if len(per_day) < 2:
             st.caption("Not enough days of history in this range yet.")
         else:
-            fig = add_daily(go.Figure(), per_day.index, per_day.values, ACCENT)
-            fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
-            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+            if stacked:
+                by_platform_chart(win, "plays_delta_top100", "plays", key="hero_plays_bars")
+            else:
+                fig = add_daily(go.Figure(), per_day.index, per_day.values, ACCENT)
+                fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         st.caption("Daily plays = the day-over-day increase of each platform's own play counter, summed over the tracked top 100 per platform. "
-                   "Headline figures use the last finished UTC day; the dotted end of each line is today so far.")
+                   "Headline figures use the last finished UTC day; " + ("the hatched last bar" if stacked else "the dotted end of each line") + " is today so far.")
 
     # ---------------------------------------------------------- activity index (comparable across platforms)
     hist = closed_days(pdaily.dropna(subset=["plays_delta_top100"]))
@@ -132,6 +150,8 @@ if daily_mode:
             fig.add_hline(y=100, line=dict(color=INK["muted"], width=1, dash="dash"))
             fig.update_layout(height=300, margin=dict(t=36), legend=dict(orientation="h", x=0, y=1.02, yanchor="bottom"), yaxis=dict(tickformat=",.0f"))
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key="activity_index")
+            if stacked:
+                st.caption("The activity index stays a line chart: index points can't be added up, so they don't stack.")
             if len(last_v) and len(last_m):
                 st.markdown(f"<div class='vt-sub'>Latest: volume <b>{last_v.iloc[-1]:.0f}</b> · momentum <b>{last_m.iloc[-1]:.0f}</b> "
                             f"(since {pd.Timestamp(comp.index[0]):%b %-d})</div>", unsafe_allow_html=True)
@@ -158,11 +178,14 @@ else:
         if len(peak_win) < 2:
             st.caption("Not enough days in this range yet.")
         else:
-            fig = add_daily(go.Figure(), peak_win.index, peak_win.values, ACCENT, unit="players (daily peak)")
-            fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
-            st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+            if stacked:
+                by_platform_chart(win, "ccu_peak_top100", "players (daily peak)", key="hero_ccu_bars")
+            else:
+                fig = add_daily(go.Figure(), peak_win.index, peak_win.values, ACCENT, unit="players (daily peak)")
+                fig.update_layout(height=300, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         st.caption("One point per day: the peak number of players online at once that day, added up across platforms "
-                   "(each platform's own peak, over its tracked top 100). The dotted end is today so far. " + ccu_note)
+                   "(each platform's own peak, over its tracked top 100). " + ("The hatched last bar" if stacked else "The dotted end") + " is today so far. " + ccu_note)
 
 # ================================================================== top game / top platform
 c1, c2 = st.columns(2)
@@ -186,8 +209,8 @@ with c1, st.container(border=True):
                 fig = go.Figure()
                 for i, (_, row) in enumerate(top_games.iterrows()):
                     s_ = gs[gs["game_id"] == row["id"]].dropna(subset=["plays_delta"])
-                    add_daily(fig, s_["day"], s_["plays_delta"], palette[i], str(row["title"])[:30], width=2.4 if i == 0 else 1.6, marker=4)
-                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                    add_series(fig, style, s_["day"], s_["plays_delta"], palette[i], str(row["title"])[:30], width=2.4 if i == 0 else 1.6, marker=4)
+                fig.update_layout(height=240, showlegend=False, barmode="stack", xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
             if st.button("Top games →", key="to_games", type="tertiary"):
                 nav("games", by="Plays")
@@ -209,11 +232,11 @@ with c1, st.container(border=True):
                 fig = go.Figure()
                 for i, (_, row) in enumerate(top_games.iterrows()):
                     s_ = gs[gs["game_id"] == row["id"]]
-                    add_daily(fig, s_["day"], s_["ccu_peak"], palette[i], str(row["title"])[:30], width=2.4 if i == 0 else 1.6,
-                              unit="players (daily peak)", marker=4)
-                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                    add_series(fig, style, s_["day"], s_["ccu_peak"], palette[i], str(row["title"])[:30], width=2.4 if i == 0 else 1.6,
+                               unit="players (daily peak)", marker=4)
+                fig.update_layout(height=240, showlegend=False, barmode="stack", xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
-            st.caption("Lines: each game's daily peak of players online.")
+            st.caption(("Bars" if stacked else "Lines") + ": each game's daily peak of players online.")
             if st.button("Top games →", key="to_games", type="tertiary"):
                 nav("games", by="Players")
 
@@ -235,8 +258,8 @@ with c2, st.container(border=True):
                 fig = go.Figure()
                 for s_ in order:
                     d = win[win["source"] == s_].dropna(subset=["plays_delta_top100"]).sort_values("day")
-                    add_daily(fig, d["day"], d["plays_delta_top100"], colors[s_], names.get(s_, s_), width=2, marker=4)
-                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                    add_series(fig, style, d["day"], d["plays_delta_top100"], colors[s_], names.get(s_, s_), width=2, marker=4)
+                fig.update_layout(height=240, showlegend=False, barmode="stack", xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
             ui.ranked_list([{"title": names.get(r["source"], r["source"]), "href": f"platform?platform={r['source']}", "value": r["plays_delta_top100"],
                              "sub": f"{int(r['games_tracked']) if pd.notna(r['games_tracked']) else 0} games tracked", "rank": i + 1} for i, (_, r) in enumerate(today_rows.iterrows())],
@@ -258,8 +281,8 @@ with c2, st.container(border=True):
                 fig = go.Figure()
                 for s_ in order:
                     d = pw[pw["source"] == s_].sort_values("day")
-                    add_daily(fig, d["day"], d["ccu_peak_top100"], colors[s_], names.get(s_, s_), width=2, unit="players (daily peak)", marker=4)
-                fig.update_layout(height=240, showlegend=False, xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
+                    add_series(fig, style, d["day"], d["ccu_peak_top100"], colors[s_], names.get(s_, s_), width=2, unit="players (daily peak)", marker=4)
+                fig.update_layout(height=240, showlegend=False, barmode="stack", xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"))
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
             else:
                 st.caption("Not enough days in this range to draw a line yet.")
@@ -456,7 +479,7 @@ def line_chart(column: str, title: str, why: str):
             if not base:
                 continue
             y = y / base * 100
-        add_daily(fig, g["day"], y, colors.get(src, INK["muted"]), names.get(src, src), width=2, unit="")
+        add_series(fig, style if not indexed else "Lines", g["day"], y, colors.get(src, INK["muted"]), names.get(src, src), width=2, unit="")
         drawn.append(src)
     ui.eyebrow(title)
     capable = _plays_srcs if column == "plays_delta_top100" else _ccu_srcs
@@ -464,8 +487,10 @@ def line_chart(column: str, title: str, why: str):
     if not fig.data:
         st.caption("No data for the selected platforms (not every platform publishes this figure).")
         return
-    fig.update_layout(height=320, margin=dict(t=28), yaxis=dict(tickformat="~s" if not indexed else ",.0f", rangemode="tozero"))
+    fig.update_layout(height=320, margin=dict(t=28), barmode="stack", yaxis=dict(tickformat="~s" if not indexed else ",.0f", rangemode="tozero"))
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key=f"over_time_{column}")
+    if indexed and stacked:
+        st.caption("Indexed values are shown as lines: index points can't be added up, so stacking them would mean nothing.")
 
 
 line_chart("plays_delta_top100", "Daily plays per platform (tracked top 100)", "no play counter")

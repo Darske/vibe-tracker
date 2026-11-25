@@ -302,6 +302,12 @@ def pills(label: str, options: list[str], key: str, default: str | None = None) 
     return st.session_state[store]
 
 
+def chart_style() -> str:
+    """The "Lines | Stacked bars" switch, one setting shared by every page (stored like pills())."""
+    from dashboard.theme import CHART_STYLES, LINES
+    return pills("Chart style", CHART_STYLES, "chart_style", LINES)
+
+
 def pills_value(key: str, default: str) -> str:
     """The stored value of a pills() control without rendering it."""
     return st.session_state.get(f"{key}__value") or default

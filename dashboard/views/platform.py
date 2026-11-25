@@ -12,7 +12,7 @@ import streamlit as st
 from dashboard import queries as q, ui
 from dashboard.components import badge, fmt_dt, metric_card, phone_table, selected_row
 from dashboard.filters import go as nav, label_for, param, range_bar, sidebar, today_utc
-from dashboard.theme import abbrev, add_daily, closed_days, color_map, full, likes_per_k, pct, ratio_fmt, time_axis
+from dashboard.theme import abbrev, add_series, closed_days, color_map, full, likes_per_k, pct, ratio_fmt, time_axis
 
 f = sidebar()
 ui.topnav("platforms")
@@ -36,6 +36,10 @@ if row.get("cohort") == "legacy":  # legacy portals mix AI and non-AI games: sep
 
         ai_view.render(src, row["display_name"], f, today_utc())
         st.stop()
+
+_sc, _ = st.columns([2, 3])
+with _sc:
+    style = ui.chart_style()
 
 pdaily = q.platform_daily()
 pdaily = pdaily[pdaily["source"] == src].sort_values("day")
@@ -61,11 +65,11 @@ with st.container(border=True):
         if len(pw) < 2:
             st.caption("Not enough days in this range yet.")
         else:
-            fig = add_daily(go.Figure(), pw["day"], pw["ccu_peak_top100"], color, unit="players (daily peak)")
+            fig = add_series(go.Figure(), style, pw["day"], pw["ccu_peak_top100"], color, unit="players (daily peak)")
             fig.update_layout(height=260, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         st.markdown("<div class='vt-sub'>One point per day: the peak number of players online at once, summed over the tracked top 100. "
-                    "The dotted end is today so far.</div>", unsafe_allow_html=True)
+                    + ("The hatched last bar" if style == "Stacked bars" else "The dotted end") + " is today so far.</div>", unsafe_allow_html=True)
         if labels.get("players_now"):
             st.caption(f"Definition on {row['display_name']}: {labels['players_now']}")
     else:
@@ -77,7 +81,7 @@ with st.container(border=True):
             lifetime = now["plays_lifetime"].iloc[0] if not now.empty else None
             ui.hero(full(lifetime), "the platform's own counters, summed over tracked games", white=True)
         if win["plays_delta_top100"].notna().sum() >= 2:
-            fig = add_daily(go.Figure(), win["day"], win["plays_delta_top100"], color)
+            fig = add_series(go.Figure(), style, win["day"], win["plays_delta_top100"], color)
             fig.update_layout(height=240, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
             st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         else:
@@ -114,7 +118,7 @@ if src in SITE_ONLINE:
                 ui.hero(full(peaks_.max()) if len(peaks_) else "—", f"{pd.Timestamp(peaks_.idxmax()):%b %-d}" if len(peaks_) else None, white=True)
             pw_ = peaks_[pd.to_datetime(peaks_.index).date >= f.window_start]
             if len(pw_) >= 2:
-                fig = add_daily(go.Figure(), pw_.index, pw_.values, color, unit="(daily peak)")
+                fig = add_series(go.Figure(), style, pw_.index, pw_.values, color, unit="(daily peak)")
                 fig.update_layout(height=240, margin=dict(t=16), xaxis=time_axis(f.window_days), yaxis=dict(rangemode="tozero"), showlegend=False)
                 st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False}, key="site_online")
             else:

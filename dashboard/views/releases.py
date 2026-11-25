@@ -14,7 +14,7 @@ import streamlit as st
 
 from dashboard import queries as q, ui
 from dashboard.filters import sidebar, today_utc
-from dashboard.theme import ACCENT, STATUS, abbrev, add_daily, color_map, full
+from dashboard.theme import ACCENT, STACKED, STATUS, abbrev, add_daily, add_series, color_map, full
 from tracker.release_queries import COVERAGE, DATE_LOOKUP
 
 f = sidebar()
@@ -32,6 +32,10 @@ with c3:
 with c4:
     with_partial = st.toggle("Include partial platforms", value=False, key="rel_partial",
                              help="Astrocade and Playgama counts cover only games that reached a tracked list, so they are left out of the totals unless you switch them on.")
+
+_sc, _ = st.columns([2, 4])
+with _sc:
+    style = ui.chart_style()
 
 if f.cohort == "Legacy":
     st.info("Release counts cover the new-entrant platforms so far. Legacy platforms (CrazyGames, Poki, itch.io, Kongregate) "
@@ -107,7 +111,13 @@ with st.container(border=True):
             _why[x] = "no release data yet"
     ui.sites([x for x in _sel if x in _have], names, _why)
     fig = go.Figure()
-    if view == "Combined":
+    if style == STACKED:  # bars stacked by platform: the bar height is the combined count
+        for src in [s for s in f.sources["name"] if s in set(df["source"])]:
+            d = df[df["source"] == src]
+            add_series(fig, STACKED, d["period"], d["releases"], colors.get(src), names.get(src, src), unit="games",
+                       partial_from=cur_start, x_fmt=x_fmt)
+        fig.update_layout(barmode="stack", legend=dict(orientation="h", x=0, y=1.02, yanchor="bottom"))
+    elif view == "Combined":
         add_daily(fig, combined["period"], combined["releases"], ACCENT, "", unit="games", partial_from=cur_start, x_fmt=x_fmt)
         fig.update_layout(showlegend=False)
     else:
@@ -123,7 +133,7 @@ with st.container(border=True):
                       xaxis=dict(tickformat=x_fmt))
     st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
     st.markdown(
-        f"<div class='vt-sub'>The dotted end of each line is the current {unit}, still in progress. "
+        f"<div class='vt-sub'>The {'hatched last bar' if style == STACKED else 'dotted end of each line'} is the current {unit}, still in progress. "
         "Before release tracking started, only games with a known publish date are counted (complete for Tesana and Bitmagic; "
         "Spawn, Remix and Wavedash fill in day by day; Rosebud and Playgama AI have no history). "
         + ("Astrocade and Playgama are partial: they count only games that reached a tracked list." if with_partial else "")
